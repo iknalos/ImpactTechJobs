@@ -86,13 +86,20 @@
     <div class="sub" style="margin-bottom:12px">ATS-optimized 2-page resume tailored to this posting — mirrors the job's keywords, picks your most relevant projects, never invents facts.</div>
     <div id="status"></div>
     <div class="row">
-      <button class="btn g" id="genBtn">⚡ Generate (API)</button>
-      <button class="btn p" id="copyBtn">📋 Copy prompt for Claude</button>
+      <button class="btn p" id="copyBtn">📋 1. Copy prompt for Claude</button>
+      <a class="btn" href="https://claude.ai/new" target="_blank" rel="noopener" style="text-decoration:none">2. Open claude.ai ↗</a>
+      <button class="btn g" id="genBtn">⚡ Generate (API key)</button>
     </div>
-    <div id="pasteWrap" style="display:none; margin-top:12px">
-      <span class="lbl">Paste Claude's full reply here</span>
-      <textarea id="pasteBack" rows="6" placeholder="Paste everything Claude returned (it contains <RESUMEHTML>…</RESUMEHTML>)…"></textarea>
-      <div class="row" style="margin-top:8px"><button class="btn p" id="renderBtn">Render resume</button></div>
+    <div id="pasteWrap" style="margin-top:14px">
+      <div class="hint" style="margin-bottom:8px">
+        <b>How it works (free, uses your Claude subscription):</b><br>
+        1. <b>Copy prompt</b> above &nbsp;→&nbsp; 2. open <b>claude.ai</b> (or Claude Code), paste the prompt and send
+        &nbsp;→&nbsp; 3. Claude writes the resume &nbsp;→&nbsp; 4. copy Claude's <b>entire reply</b> and paste it below.
+        <br>⚠️ Don't paste the prompt itself here — this box is only for Claude's <b>answer</b>.
+      </div>
+      <span class="lbl">3. Paste Claude's reply here</span>
+      <textarea id="pasteBack" rows="6" placeholder="Paste Claude's answer (it contains <RESUMEHTML>…</RESUMEHTML> with your actual resume inside)…"></textarea>
+      <div class="row" style="margin-top:8px"><button class="btn p" id="renderBtn">4. Render resume</button></div>
     </div>
   </div>
 
@@ -329,15 +336,19 @@ const fullPrompt = () => SYS_RESUME + '\n\n---\nCANDIDATE CV:\n' + $('cv').value
 $('copyBtn').onclick = () => {
   if (!JOB) return;
   navigator.clipboard.writeText(fullPrompt()).then(() => {
-    status('Prompt copied! Paste it into Claude (claude.ai or Claude Code), then paste the full reply below.', 'ok');
-    $('pasteWrap').style.display = 'block';
-  }).catch(() => status('Clipboard blocked — select-all in the console instead.', 'err'));
+    status('Prompt copied! Now open claude.ai (button 2), paste it there and send. Then copy Claude\'s reply and paste it in box 3 below.', 'ok');
+  }).catch(() => status('Clipboard blocked by the browser — allow clipboard access and try again.', 'err'));
 };
 $('renderBtn').onclick = () => {
-  const got = parseResume($('pasteBack').value);
-  if (!got) { status('Could not find <RESUMEHTML> in the pasted text — paste Claude\'s complete reply.', 'err'); return; }
+  const txt = $('pasteBack').value;
+  if (/\[Full resume inner HTML/.test(txt) || /CANDIDATE CV:/.test(txt)) {
+    status('That looks like the PROMPT, not Claude\'s reply. Paste the prompt into claude.ai first, send it, then paste Claude\'s ANSWER here.', 'err');
+    return;
+  }
+  const got = parseResume(txt);
+  if (!got) { status('Could not find <RESUMEHTML> in the pasted text — make sure you copied Claude\'s complete reply.', 'err'); return; }
   showResume(got);
-  status('Resume rendered from pasted reply.', 'ok');
+  status('Resume rendered — print to PDF or download .doc below.', 'ok');
 };
 
 /* ---------------- generation: API path ---------------- */
@@ -407,15 +418,25 @@ function showResume(r) {
 }
 
 $('pdfBtn').onclick = () => {
+  if (!RESUME.html) { status('Nothing to print yet — generate or render a resume first.', 'err'); return; }
+  // print via hidden iframe: immune to popup blockers
   const printCSS = '@page{size:letter;margin:.75in .85in}@media print{body{margin:0}}';
-  const w = window.open('', '_blank');
-  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Rahul_Solanki_' +
+  const fr = document.createElement('iframe');
+  fr.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0';
+  document.body.appendChild(fr);
+  fr.contentDocument.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Rahul_Solanki_' +
     esc(RESUME.company).replace(/\s+/g, '_') + '</title><style>' + RCSS + printCSS + '</style></head><body>' +
-    RESUME.html + '<script>window.onload=function(){window.print();}<\/script></body></html>');
-  w.document.close();
+    RESUME.html + '</body></html>');
+  fr.contentDocument.close();
+  fr.onload = () => {
+    fr.contentWindow.focus();
+    fr.contentWindow.print();
+    setTimeout(() => fr.remove(), 60000);
+  };
 };
 
 $('docBtn').onclick = () => {
+  if (!RESUME.html) { status('Nothing to download yet — generate or render a resume first.', 'err'); return; }
   const css = RCSS + '.page{padding:.72in .85in .85in}';
   const doc = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]--><style>@page WordSection1{size:8.5in 11in;margin:.75in .85in .85in .85in;}div.WordSection1{page:WordSection1;}' +
     css + '</style></head><body><div class="WordSection1"><div class="page">' + RESUME.html + '</div></div></body></html>';
@@ -428,6 +449,7 @@ $('docBtn').onclick = () => {
 };
 
 $('htmlBtn').onclick = () => {
+  if (!RESUME.html) { status('Nothing to copy yet — generate or render a resume first.', 'err'); return; }
   navigator.clipboard.writeText(RESUME.html).then(() => status('Resume HTML copied.', 'ok'));
 };
 </script>
