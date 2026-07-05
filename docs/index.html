@@ -3,100 +3,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elder Tech Jobs — Data / IT / AI roles in aging services</title>
+<title>Elder Tech Jobs — Data, IT &amp; AI careers in aging services</title>
 <style>
   :root {
-    --bg: #0f1420; --card: #1a2130; --card2: #202a3d; --text: #e8ecf4;
-    --muted: #93a0b5; --accent: #4fc3f7; --new: #66bb6a; --border: #2b3650;
-    --ai: #ce93d8; --data: #4fc3f7; --sw: #ffb74d; --it: #a5d6a7;
+    --page: #f3f5f8; --card: #ffffff; --ink: #1a2433; --muted: #5b6b81;
+    --line: #e2e8f0; --accent: #1a56db; --accent-soft: #eaf1fe;
+    --new-bg: #def7e4; --new-ink: #116932;
+    --ai-bg: #f3e8fd; --ai-ink: #6d28d9; --data-bg: #e0f0fe; --data-ink: #075e9c;
+    --sw-bg: #fef0e0; --sw-ink: #9a4b08; --it-bg: #e2f6ea; --it-ink: #17693a;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
-  header { padding: 24px 20px 12px; max-width: 1100px; margin: 0 auto; }
-  h1 { margin: 0 0 4px; font-size: 26px; }
-  h1 span { color: var(--accent); }
-  .sub { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
-  #updated { color: var(--muted); font-size: 13px; }
-  #updated b { color: var(--new); }
-  .controls { max-width: 1100px; margin: 12px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  input[type=search], select {
-    background: var(--card); color: var(--text); border: 1px solid var(--border);
-    border-radius: 8px; padding: 9px 12px; font-size: 14px; outline: none;
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: var(--page); color: var(--ink); font-size: 15px; }
+  a { color: inherit; }
+
+  /* ---------- header ---------- */
+  .hero { background: linear-gradient(135deg, #12315f 0%, #1a56db 100%); color: #fff; padding: 34px 20px 26px; }
+  .hero-inner { max-width: 1080px; margin: 0 auto; }
+  .hero h1 { margin: 0; font-size: 27px; letter-spacing: -.3px; }
+  .hero h1 small { font-weight: 400; opacity: .85; }
+  .hero p { margin: 7px 0 0; opacity: .88; font-size: 14.5px; max-width: 720px; }
+  .stats { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+  .stat { background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.22); border-radius: 8px; padding: 8px 14px; font-size: 13px; }
+  .stat b { font-size: 17px; display: block; }
+  #updated { margin-top: 12px; font-size: 12.5px; opacity: .75; }
+
+  /* ---------- toolbar ---------- */
+  .toolbar-wrap { position: sticky; top: 0; z-index: 20; background: var(--card); border-bottom: 1px solid var(--line); box-shadow: 0 1px 6px rgba(16,30,54,.06); }
+  .toolbar { max-width: 1080px; margin: 0 auto; padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 9px; align-items: center; }
+  .search { flex: 1 1 240px; position: relative; }
+  .search input {
+    width: 100%; padding: 9px 12px 9px 34px; border: 1px solid var(--line); border-radius: 8px;
+    font-size: 14px; background: #fbfcfe; outline: none; color: var(--ink);
   }
-  input[type=search] { flex: 1; min-width: 200px; }
-  input[type=search]:focus { border-color: var(--accent); }
-  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
-  .chip {
-    border: 1px solid var(--border); background: var(--card); color: var(--muted);
-    border-radius: 999px; padding: 7px 14px; font-size: 13px; cursor: pointer; user-select: none;
+  .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .search::before { content: "🔍"; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 13px; opacity: .55; }
+  select {
+    padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px; background: #fbfcfe;
+    font-size: 13.5px; color: var(--ink); outline: none; cursor: pointer; max-width: 190px;
   }
-  .chip.on { color: #0f1420; font-weight: 600; }
-  .chip[data-cat="All"].on { background: var(--text); }
-  .chip[data-cat="AI"].on { background: var(--ai); }
-  .chip[data-cat="Data"].on { background: var(--data); }
-  .chip[data-cat="Software"].on { background: var(--sw); }
-  .chip[data-cat="IT"].on { background: var(--it); }
-  label.cb { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 5px; cursor: pointer; }
-  #stats { max-width: 1100px; margin: 10px auto 0; padding: 0 20px; color: var(--muted); font-size: 13px; }
-  #list { max-width: 1100px; margin: 12px auto 40px; padding: 0 20px; display: grid; gap: 10px; }
-  .job {
-    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-    padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px;
-    text-decoration: none; color: inherit; transition: border-color .15s, background .15s;
+  select:focus { border-color: var(--accent); }
+  .toggle { display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--muted); cursor: pointer; user-select: none; white-space: nowrap; }
+  .btn {
+    padding: 8px 13px; border: 1px solid var(--line); background: var(--card); border-radius: 8px;
+    font-size: 13px; cursor: pointer; color: var(--muted);
   }
-  .job:hover { border-color: var(--accent); background: var(--card2); }
-  .jt { font-size: 15.5px; font-weight: 600; }
-  .org { color: var(--accent); font-size: 13.5px; }
-  .meta { color: var(--muted); font-size: 13px; grid-column: 1; }
-  .right { grid-column: 2; grid-row: 1 / span 3; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
-  .cat { font-size: 11.5px; padding: 3px 9px; border-radius: 999px; font-weight: 700; color: #0f1420; }
-  .cat.AI { background: var(--ai); } .cat.Data { background: var(--data); }
-  .cat.Software { background: var(--sw); } .cat.IT { background: var(--it); }
-  .date { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
-  .badge-new { background: var(--new); color: #0f1420; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
-  .empty { color: var(--muted); text-align: center; padding: 40px 0; }
-  footer { max-width: 1100px; margin: 0 auto 30px; padding: 0 20px; color: var(--muted); font-size: 12px; }
-  @media (max-width: 600px) { .job { grid-template-columns: 1fr; } .right { grid-column: 1; grid-row: auto; flex-direction: row; align-items: center; } }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .view { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .view button { border: 0; background: var(--card); padding: 8px 13px; font-size: 13px; cursor: pointer; color: var(--muted); }
+  .view button.on { background: var(--accent); color: #fff; font-weight: 600; }
+
+  /* ---------- content ---------- */
+  main { max-width: 1080px; margin: 18px auto 50px; padding: 0 20px; }
+  #resultbar { color: var(--muted); font-size: 13px; margin: 2px 2px 12px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  #resultbar .linklike { color: var(--accent); cursor: pointer; text-decoration: underline; background: none; border: none; font-size: 13px; padding: 0; }
+
+  .company { background: var(--card); border: 1px solid var(--line); border-radius: 12px; margin-bottom: 14px; overflow: hidden; }
+  .co-head { display: flex; align-items: center; gap: 13px; padding: 14px 18px; cursor: pointer; user-select: none; }
+  .co-head:hover { background: #f8fafc; }
+  .avatar {
+    width: 40px; height: 40px; border-radius: 9px; flex: none; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 15px; color: #fff;
+  }
+  .co-name { font-weight: 650; font-size: 15.5px; }
+  .co-sub { color: var(--muted); font-size: 12.5px; margin-top: 1px; }
+  .co-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .count-pill { background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 12.5px; padding: 4px 11px; border-radius: 999px; white-space: nowrap; }
+  .chev { color: var(--muted); font-size: 12px; transition: transform .15s; }
+  .company.closed .chev { transform: rotate(-90deg); }
+  .company.closed .co-body { display: none; }
+
+  .co-body { border-top: 1px solid var(--line); }
+  .cols, .row { display: grid; grid-template-columns: minmax(0,1fr) 210px 175px; gap: 14px; align-items: center; padding: 10px 18px; }
+  .cols { font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); background: #f8fafc; border-bottom: 1px solid var(--line); padding-top: 8px; padding-bottom: 8px; }
+  .row { border-bottom: 1px solid #eef2f7; text-decoration: none; }
+  .row:last-child { border-bottom: 0; }
+  .row:hover { background: #f5f8ff; }
+  .row .title { font-weight: 600; font-size: 14.5px; color: var(--ink); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .row:hover .title { color: var(--accent); text-decoration: underline; }
+  .row .co-inline { color: var(--muted); font-size: 12.5px; font-weight: 400; }
+  .loc { color: var(--muted); font-size: 13.5px; }
+  .posted { font-size: 13px; color: var(--muted); text-align: right; white-space: nowrap; }
+  .posted b { color: var(--ink); font-weight: 600; }
+
+  .tag { font-size: 11px; font-weight: 700; padding: 2.5px 9px; border-radius: 999px; flex: none; }
+  .tag.AI { background: var(--ai-bg); color: var(--ai-ink); }
+  .tag.Data { background: var(--data-bg); color: var(--data-ink); }
+  .tag.Software { background: var(--sw-bg); color: var(--sw-ink); }
+  .tag.IT { background: var(--it-bg); color: var(--it-ink); }
+  .tag.new { background: var(--new-bg); color: var(--new-ink); }
+
+  .flat .co-head { display: none; }
+  .empty { background: var(--card); border: 1px dashed var(--line); border-radius: 12px; padding: 46px 20px; text-align: center; color: var(--muted); }
+  footer { max-width: 1080px; margin: 0 auto 34px; padding: 0 20px; color: var(--muted); font-size: 12.5px; line-height: 1.5; }
+
+  @media (max-width: 720px) {
+    .cols { display: none; }
+    .row { grid-template-columns: 1fr; gap: 3px; padding: 12px 16px; }
+    .posted { text-align: left; }
+    .co-right .latest { display: none; }
+    select { max-width: 46vw; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>Elder Tech <span>Jobs</span></h1>
-  <div class="sub">Data · IT · AI openings at elder-support agencies, aging nonprofits, AgeTech companies &amp; senior healthcare across the US</div>
-  <div id="updated">Loading…</div>
-</header>
 
-<div class="controls">
-  <input type="search" id="q" placeholder="Search title, company, location… (e.g. analyst, remote, Boston)">
-  <div class="chips" id="cats">
-    <div class="chip on" data-cat="All">All</div>
-    <div class="chip" data-cat="AI">AI</div>
-    <div class="chip" data-cat="Data">Data</div>
-    <div class="chip" data-cat="Software">Software</div>
-    <div class="chip" data-cat="IT">IT / Other</div>
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Elder Tech Jobs <small>· careers modernizing aging services</small></h1>
+    <p>Data, IT &amp; AI openings at Area Agencies on Aging, national aging nonprofits, AgeTech companies and senior-focused healthcare across the US. Refreshed automatically every morning.</p>
+    <div class="stats">
+      <div class="stat"><b id="stOpen">–</b>open roles</div>
+      <div class="stat"><b id="stCo">–</b>companies</div>
+      <div class="stat"><b id="stNew">–</b>posted this week</div>
+      <div class="stat"><b id="stRemote">–</b>remote-friendly</div>
+    </div>
+    <div id="updated">Loading…</div>
   </div>
-  <select id="orgSel"><option value="">All companies</option></select>
-  <select id="days">
-    <option value="">Any date</option>
-    <option value="7">Last 7 days</option>
-    <option value="14">Last 14 days</option>
-    <option value="30" selected>Last 30 days</option>
-    <option value="60">Last 60 days</option>
-  </select>
-  <label class="cb"><input type="checkbox" id="remoteOnly"> Remote only</label>
 </div>
 
-<div id="stats"></div>
-<div id="list"><div class="empty">Loading jobs…</div></div>
+<div class="toolbar-wrap">
+  <div class="toolbar">
+    <div class="search"><input type="search" id="q" placeholder="Search job title, company or keyword…"></div>
+    <select id="fCat">
+      <option value="">All categories</option>
+      <option value="AI">AI / Machine Learning</option>
+      <option value="Data">Data & Analytics</option>
+      <option value="Software">Software Engineering</option>
+      <option value="IT">IT & Systems</option>
+    </select>
+    <select id="fLoc"><option value="">All locations</option></select>
+    <select id="fCo"><option value="">All companies</option></select>
+    <select id="fDays">
+      <option value="">Posted anytime</option>
+      <option value="7">Last 7 days</option>
+      <option value="14">Last 14 days</option>
+      <option value="30">Last 30 days</option>
+      <option value="60">Last 60 days</option>
+    </select>
+    <label class="toggle"><input type="checkbox" id="fRemote"> Remote only</label>
+    <div class="view">
+      <button id="vGroup" class="on" title="Group openings by company">By company</button>
+      <button id="vFlat" title="One flat list, most recent first">Newest first</button>
+    </div>
+    <button class="btn" id="reset">Reset</button>
+  </div>
+</div>
+
+<main>
+  <div id="resultbar"></div>
+  <div id="list"></div>
+</main>
+
 <footer>
-  Auto-refreshed daily by GitHub Actions from each employer's job board API, plus curated postings from agencies without public APIs.
-  Postings marked with a date older than 60 days may still be open — always verify on the linked page.
+  <b>How this works:</b> a scraper queries each employer's job-board API daily (GitHub Actions, ~7 AM ET) and republishes this page.
+  Roles from agencies without public APIs are curated by hand and may not show an exact posting date — always confirm details on the linked posting.
+  Source code: <a href="https://github.com/iknalos/ElderTechJobs">github.com/iknalos/ElderTechJobs</a>.
 </footer>
 
 <script>
-let JOBS = [], CAT = 'All';
+'use strict';
 const $ = id => document.getElementById(id);
+const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const daysAgo = iso => iso ? Math.floor((Date.now() - new Date(iso + 'T00:00:00Z')) / 864e5) : null;
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const STATES = new Set(('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC').split(' '));
+const STATE_NAMES = {alabama:'AL',alaska:'AK',arizona:'AZ',arkansas:'AR',california:'CA',colorado:'CO',connecticut:'CT',delaware:'DE',florida:'FL',georgia:'GA',hawaii:'HI',idaho:'ID',illinois:'IL',indiana:'IN',iowa:'IA',kansas:'KS',kentucky:'KY',louisiana:'LA',maine:'ME',maryland:'MD',massachusetts:'MA',michigan:'MI',minnesota:'MN',mississippi:'MS',missouri:'MO',montana:'MT',nebraska:'NE',nevada:'NV','new hampshire':'NH','new jersey':'NJ','new mexico':'NM','new york':'NY','north carolina':'NC','north dakota':'ND',ohio:'OH',oklahoma:'OK',oregon:'OR',pennsylvania:'PA','rhode island':'RI','south carolina':'SC','south dakota':'SD',tennessee:'TN',texas:'TX',utah:'UT',vermont:'VT',virginia:'VA',washington:'WA','west virginia':'WV',wisconsin:'WI',wyoming:'WY','washington dc':'DC'};
+const AVATAR_COLORS = ['#1a56db','#0e7490','#7c3aed','#b45309','#be185d','#15803d','#4338ca','#a21caf','#0f766e','#c2410c'];
+
+let JOBS = [], VIEW = 'group';
+
+const isRemote = j => /remote|work from home|anywhere|virtual/i.test(j.location);
+function jobStates(j) {
+  const found = new Set(), loc = j.location || '';
+  for (const m of loc.matchAll(/\b([A-Z]{2})\b/g)) if (STATES.has(m[1])) found.add(m[1]);
+  const low = loc.toLowerCase();
+  for (const name in STATE_NAMES) {
+    // "new york" (state) also covers the city; ok for a location filter
+    if (low.includes(name)) found.add(STATE_NAMES[name]);
+  }
+  return [...found];
+}
+function fmtDate(iso) {
+  if (!iso) return null;
+  const d = new Date(iso + 'T00:00:00Z');
+  return MONTHS[d.getUTCMonth()] + ' ' + d.getUTCDate() + ', ' + d.getUTCFullYear();
+}
+function postedCell(j) {
+  const a = daysAgo(j.posted);
+  if (a === null) return '<span>Date not listed</span>';
+  const rel = a === 0 ? 'today' : a === 1 ? 'yesterday' : a + ' days ago';
+  return `${a <= 7 ? '<span class="tag new">NEW</span> ' : ''}<b>${fmtDate(j.posted)}</b><br><span>${rel}</span>`;
+}
+const initials = org => org.split(/[\s(/]+/).filter(w => /^[A-Za-z]/.test(w)).slice(0, 2).map(w => w[0].toUpperCase()).join('');
+const hue = org => AVATAR_COLORS[[...org].reduce((a, c) => a + c.charCodeAt(0), 0) % AVATAR_COLORS.length];
 
 function loadData() {
   return fetch('jobs.json?t=' + Date.now()).then(r => r.json())
@@ -108,58 +208,109 @@ function loadData() {
       document.head.appendChild(s);
     }));
 }
+
 loadData().then(d => {
   JOBS = d.jobs || [];
+  $('stOpen').textContent = JOBS.length;
+  $('stCo').textContent = new Set(JOBS.map(j => j.org)).size;
+  $('stNew').textContent = JOBS.filter(j => { const a = daysAgo(j.posted); return a !== null && a <= 7; }).length;
+  $('stRemote').textContent = JOBS.filter(isRemote).length;
   const upd = new Date(d.updated);
-  const fresh = JOBS.filter(j => { const a = daysAgo(j.posted); return a !== null && a <= 7; }).length;
-  $('updated').innerHTML = `Last refreshed: <b>${upd.toLocaleString()}</b> · ${d.count} openings tracked · <b>${fresh} posted in the last 7 days</b>` +
-    (d.errors && d.errors.length ? ` · <span style="color:#ef9a9a">${d.errors.length} source(s) failed this run</span>` : '');
-  const orgs = [...new Set(JOBS.map(j => j.org))].sort();
-  orgs.forEach(o => { const op = document.createElement('option'); op.value = op.textContent = o; $('orgSel').appendChild(op); });
-  render();
-}).catch(e => { $('updated').textContent = 'Could not load jobs.json — ' + e; });
+  $('updated').textContent = 'Last refreshed ' + upd.toLocaleString() +
+    (d.errors && d.errors.length ? ' · ' + d.errors.length + ' source(s) failed this run' : '');
 
-function render() {
-  const q = $('q').value.toLowerCase(), org = $('orgSel').value,
-        maxD = $('days').value ? +$('days').value : null, rem = $('remoteOnly').checked;
-  const rows = JOBS.filter(j => {
-    if (CAT !== 'All' && j.category !== CAT) return false;
-    if (org && j.org !== org) return false;
-    if (rem && !/remote|work from home|anywhere/i.test(j.location)) return false;
+  // location dropdown: Remote + states by frequency
+  const stCount = {};
+  JOBS.forEach(j => new Set(jobStates(j)).forEach(s => stCount[s] = (stCount[s] || 0) + 1));
+  const locSel = $('fLoc');
+  const remOpt = new Option('Remote (' + JOBS.filter(isRemote).length + ')', 'REMOTE');
+  locSel.appendChild(remOpt);
+  Object.keys(stCount).sort((a, b) => stCount[b] - stCount[a] || a.localeCompare(b))
+    .forEach(s => locSel.appendChild(new Option(s + ' (' + stCount[s] + ')', s)));
+
+  [...new Set(JOBS.map(j => j.org))].sort((a, b) => a.localeCompare(b))
+    .forEach(o => $('fCo').appendChild(new Option(o, o)));
+
+  render();
+}).catch(e => { $('list').innerHTML = '<div class="empty">Could not load job data — ' + esc(e.message) + '</div>'; });
+
+function filtered() {
+  const q = $('q').value.trim().toLowerCase(), cat = $('fCat').value, loc = $('fLoc').value,
+        co = $('fCo').value, maxD = $('fDays').value ? +$('fDays').value : null, rem = $('fRemote').checked;
+  return JOBS.filter(j => {
+    if (cat && j.category !== cat) return false;
+    if (co && j.org !== co) return false;
+    if (rem && !isRemote(j)) return false;
+    if (loc === 'REMOTE' && !isRemote(j)) return false;
+    if (loc && loc !== 'REMOTE' && !jobStates(j).includes(loc)) return false;
     if (maxD !== null) { const a = daysAgo(j.posted); if (a === null || a > maxD) return false; }
     if (q && !(j.title + ' ' + j.org + ' ' + j.location).toLowerCase().includes(q)) return false;
     return true;
   });
-  $('stats').textContent = `${rows.length} of ${JOBS.length} openings shown` + (maxD === null ? ' (includes undated postings)' : ' — undated postings hidden; set date filter to "Any date" to see them');
-  const list = $('list');
-  list.innerHTML = '';
-  if (!rows.length) { list.innerHTML = '<div class="empty">No openings match — try widening the date filter or clearing search.</div>'; return; }
-  for (const j of rows) {
-    const a = daysAgo(j.posted);
-    const el = document.createElement('a');
-    el.className = 'job'; el.href = j.url; el.target = '_blank'; el.rel = 'noopener';
-    el.innerHTML = `
-      <div class="jt">${esc(j.title)}</div>
-      <div class="org">${esc(j.org)}</div>
-      <div class="meta">${esc(j.location)}</div>
-      <div class="right">
-        <span class="cat ${j.category}">${j.category}</span>
-        ${a !== null && a <= 7 ? '<span class="badge-new">NEW</span>' : ''}
-        <span class="date">${j.posted ? (a === 0 ? 'today' : a + 'd ago — ' + j.posted) : 'date unknown'}</span>
-      </div>`;
-    list.appendChild(el);
-  }
 }
-const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-$('q').addEventListener('input', render);
-$('orgSel').addEventListener('change', render);
-$('days').addEventListener('change', render);
-$('remoteOnly').addEventListener('change', render);
-$('cats').addEventListener('click', e => {
-  const c = e.target.closest('.chip'); if (!c) return;
-  document.querySelectorAll('.chip').forEach(x => x.classList.remove('on'));
-  c.classList.add('on'); CAT = c.dataset.cat; render();
-});
+
+const byDate = (a, b) => (b.posted || '0000').localeCompare(a.posted || '0000');
+
+function rowHTML(j, withCompany) {
+  return `<a class="row" href="${esc(j.url)}" target="_blank" rel="noopener">
+    <span class="title">${esc(j.title)} <span class="tag ${j.category}">${j.category}</span>
+      ${withCompany ? '<span class="co-inline">· ' + esc(j.org) + '</span>' : ''}</span>
+    <span class="loc">${esc(j.location)}</span>
+    <span class="posted">${postedCell(j)}</span>
+  </a>`;
+}
+const colsHTML = '<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">Posted</span></div>';
+
+function render() {
+  const rows = filtered(), list = $('list');
+  const nCo = new Set(rows.map(j => j.org)).size;
+  $('resultbar').innerHTML =
+    `<span>Showing <b>${rows.length}</b> of ${JOBS.length} openings across <b>${nCo}</b> compan${nCo === 1 ? 'y' : 'ies'}</span>` +
+    (VIEW === 'group' ? '<span><button class="linklike" id="expAll">Expand all</button> · <button class="linklike" id="colAll">Collapse all</button></span>' : '');
+  if (!rows.length) {
+    list.innerHTML = '<div class="empty">No openings match these filters.<br>Try clearing the search or widening the date range.</div>';
+    return;
+  }
+  if (VIEW === 'flat') {
+    list.innerHTML = `<div class="company flat"><div class="co-body">${colsHTML}${rows.sort(byDate).map(j => rowHTML(j, true)).join('')}</div></div>`;
+    return;
+  }
+  // group by company
+  const groups = new Map();
+  rows.forEach(j => { (groups.get(j.org) || groups.set(j.org, []).get(j.org)).push(j); });
+  const names = [...groups.keys()].sort((a, b) => a.localeCompare(b));
+  list.innerHTML = names.map(org => {
+    const js = groups.get(org).sort(byDate);
+    const newest = js[0].posted ? 'Latest: ' + fmtDate(js[0].posted) : 'Dates not listed';
+    const anyNew = js.some(j => { const a = daysAgo(j.posted); return a !== null && a <= 7; });
+    return `<section class="company" data-org="${esc(org)}">
+      <div class="co-head">
+        <div class="avatar" style="background:${hue(org)}">${esc(initials(org))}</div>
+        <div><div class="co-name">${esc(org)}</div><div class="co-sub">${newest}</div></div>
+        <div class="co-right">
+          ${anyNew ? '<span class="tag new">NEW THIS WEEK</span>' : ''}
+          <span class="count-pill">${js.length} opening${js.length > 1 ? 's' : ''}</span>
+          <span class="chev">▼</span>
+        </div>
+      </div>
+      <div class="co-body">${colsHTML}${js.map(j => rowHTML(j, false)).join('')}</div>
+    </section>`;
+  }).join('');
+  list.querySelectorAll('.co-head').forEach(h =>
+    h.addEventListener('click', () => h.parentElement.classList.toggle('closed')));
+  const expAll = $('expAll'), colAll = $('colAll');
+  if (expAll) expAll.onclick = () => list.querySelectorAll('.company').forEach(c => c.classList.remove('closed'));
+  if (colAll) colAll.onclick = () => list.querySelectorAll('.company').forEach(c => c.classList.add('closed'));
+}
+
+['q', 'fCat', 'fLoc', 'fCo', 'fDays', 'fRemote'].forEach(id =>
+  $(id).addEventListener(id === 'q' ? 'input' : 'change', render));
+$('vGroup').onclick = () => { VIEW = 'group'; $('vGroup').classList.add('on'); $('vFlat').classList.remove('on'); render(); };
+$('vFlat').onclick = () => { VIEW = 'flat'; $('vFlat').classList.add('on'); $('vGroup').classList.remove('on'); render(); };
+$('reset').onclick = () => {
+  $('q').value = ''; $('fCat').value = ''; $('fLoc').value = ''; $('fCo').value = ''; $('fDays').value = ''; $('fRemote').checked = false;
+  render();
+};
 </script>
 </body>
 </html>
