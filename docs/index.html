@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elder Tech Jobs — Data / IT / AI roles in aging services</title>
+<style>
+  :root {
+    --bg: #0f1420; --card: #1a2130; --card2: #202a3d; --text: #e8ecf4;
+    --muted: #93a0b5; --accent: #4fc3f7; --new: #66bb6a; --border: #2b3650;
+    --ai: #ce93d8; --data: #4fc3f7; --sw: #ffb74d; --it: #a5d6a7;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+  header { padding: 24px 20px 12px; max-width: 1100px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 26px; }
+  h1 span { color: var(--accent); }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+  #updated { color: var(--muted); font-size: 13px; }
+  #updated b { color: var(--new); }
+  .controls { max-width: 1100px; margin: 12px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  input[type=search], select {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 9px 12px; font-size: 14px; outline: none;
+  }
+  input[type=search] { flex: 1; min-width: 200px; }
+  input[type=search]:focus { border-color: var(--accent); }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip {
+    border: 1px solid var(--border); background: var(--card); color: var(--muted);
+    border-radius: 999px; padding: 7px 14px; font-size: 13px; cursor: pointer; user-select: none;
+  }
+  .chip.on { color: #0f1420; font-weight: 600; }
+  .chip[data-cat="All"].on { background: var(--text); }
+  .chip[data-cat="AI"].on { background: var(--ai); }
+  .chip[data-cat="Data"].on { background: var(--data); }
+  .chip[data-cat="Software"].on { background: var(--sw); }
+  .chip[data-cat="IT"].on { background: var(--it); }
+  label.cb { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 5px; cursor: pointer; }
+  #stats { max-width: 1100px; margin: 10px auto 0; padding: 0 20px; color: var(--muted); font-size: 13px; }
+  #list { max-width: 1100px; margin: 12px auto 40px; padding: 0 20px; display: grid; gap: 10px; }
+  .job {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px;
+    text-decoration: none; color: inherit; transition: border-color .15s, background .15s;
+  }
+  .job:hover { border-color: var(--accent); background: var(--card2); }
+  .jt { font-size: 15.5px; font-weight: 600; }
+  .org { color: var(--accent); font-size: 13.5px; }
+  .meta { color: var(--muted); font-size: 13px; grid-column: 1; }
+  .right { grid-column: 2; grid-row: 1 / span 3; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .cat { font-size: 11.5px; padding: 3px 9px; border-radius: 999px; font-weight: 700; color: #0f1420; }
+  .cat.AI { background: var(--ai); } .cat.Data { background: var(--data); }
+  .cat.Software { background: var(--sw); } .cat.IT { background: var(--it); }
+  .date { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+  .badge-new { background: var(--new); color: #0f1420; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+  .empty { color: var(--muted); text-align: center; padding: 40px 0; }
+  footer { max-width: 1100px; margin: 0 auto 30px; padding: 0 20px; color: var(--muted); font-size: 12px; }
+  @media (max-width: 600px) { .job { grid-template-columns: 1fr; } .right { grid-column: 1; grid-row: auto; flex-direction: row; align-items: center; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Elder Tech <span>Jobs</span></h1>
+  <div class="sub">Data · IT · AI openings at elder-support agencies, aging nonprofits, AgeTech companies &amp; senior healthcare across the US</div>
+  <div id="updated">Loading…</div>
+</header>
+
+<div class="controls">
+  <input type="search" id="q" placeholder="Search title, company, location… (e.g. analyst, remote, Boston)">
+  <div class="chips" id="cats">
+    <div class="chip on" data-cat="All">All</div>
+    <div class="chip" data-cat="AI">AI</div>
+    <div class="chip" data-cat="Data">Data</div>
+    <div class="chip" data-cat="Software">Software</div>
+    <div class="chip" data-cat="IT">IT / Other</div>
+  </div>
+  <select id="orgSel"><option value="">All companies</option></select>
+  <select id="days">
+    <option value="">Any date</option>
+    <option value="7">Last 7 days</option>
+    <option value="14">Last 14 days</option>
+    <option value="30" selected>Last 30 days</option>
+    <option value="60">Last 60 days</option>
+  </select>
+  <label class="cb"><input type="checkbox" id="remoteOnly"> Remote only</label>
+</div>
+
+<div id="stats"></div>
+<div id="list"><div class="empty">Loading jobs…</div></div>
+<footer>
+  Auto-refreshed daily by GitHub Actions from each employer's job board API, plus curated postings from agencies without public APIs.
+  Postings marked with a date older than 60 days may still be open — always verify on the linked page.
+</footer>
+
+<script>
+let JOBS = [], CAT = 'All';
+const $ = id => document.getElementById(id);
+const daysAgo = iso => iso ? Math.floor((Date.now() - new Date(iso + 'T00:00:00Z')) / 864e5) : null;
+
+fetch('jobs.json?t=' + Date.now()).then(r => r.json()).then(d => {
+  JOBS = d.jobs || [];
+  const upd = new Date(d.updated);
+  const fresh = JOBS.filter(j => { const a = daysAgo(j.posted); return a !== null && a <= 7; }).length;
+  $('updated').innerHTML = `Last refreshed: <b>${upd.toLocaleString()}</b> · ${d.count} openings tracked · <b>${fresh} posted in the last 7 days</b>` +
+    (d.errors && d.errors.length ? ` · <span style="color:#ef9a9a">${d.errors.length} source(s) failed this run</span>` : '');
+  const orgs = [...new Set(JOBS.map(j => j.org))].sort();
+  orgs.forEach(o => { const op = document.createElement('option'); op.value = op.textContent = o; $('orgSel').appendChild(op); });
+  render();
+}).catch(e => { $('updated').textContent = 'Could not load jobs.json — ' + e; });
+
+function render() {
+  const q = $('q').value.toLowerCase(), org = $('orgSel').value,
+        maxD = $('days').value ? +$('days').value : null, rem = $('remoteOnly').checked;
+  const rows = JOBS.filter(j => {
+    if (CAT !== 'All' && j.category !== CAT) return false;
+    if (org && j.org !== org) return false;
+    if (rem && !/remote|work from home|anywhere/i.test(j.location)) return false;
+    if (maxD !== null) { const a = daysAgo(j.posted); if (a === null || a > maxD) return false; }
+    if (q && !(j.title + ' ' + j.org + ' ' + j.location).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  $('stats').textContent = `${rows.length} of ${JOBS.length} openings shown` + (maxD === null ? ' (includes undated postings)' : ' — undated postings hidden; set date filter to "Any date" to see them');
+  const list = $('list');
+  list.innerHTML = '';
+  if (!rows.length) { list.innerHTML = '<div class="empty">No openings match — try widening the date filter or clearing search.</div>'; return; }
+  for (const j of rows) {
+    const a = daysAgo(j.posted);
+    const el = document.createElement('a');
+    el.className = 'job'; el.href = j.url; el.target = '_blank'; el.rel = 'noopener';
+    el.innerHTML = `
+      <div class="jt">${esc(j.title)}</div>
+      <div class="org">${esc(j.org)}</div>
+      <div class="meta">${esc(j.location)}</div>
+      <div class="right">
+        <span class="cat ${j.category}">${j.category}</span>
+        ${a !== null && a <= 7 ? '<span class="badge-new">NEW</span>' : ''}
+        <span class="date">${j.posted ? (a === 0 ? 'today' : a + 'd ago — ' + j.posted) : 'date unknown'}</span>
+      </div>`;
+    list.appendChild(el);
+  }
+}
+const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+$('q').addEventListener('input', render);
+$('orgSel').addEventListener('change', render);
+$('days').addEventListener('change', render);
+$('remoteOnly').addEventListener('change', render);
+$('cats').addEventListener('click', e => {
+  const c = e.target.closest('.chip'); if (!c) return;
+  document.querySelectorAll('.chip').forEach(x => x.classList.remove('on'));
+  c.classList.add('on'); CAT = c.dataset.cat; render();
+});
+</script>
+</body>
+</html>
