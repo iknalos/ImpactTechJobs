@@ -98,7 +98,17 @@ let JOBS = [], CAT = 'All';
 const $ = id => document.getElementById(id);
 const daysAgo = iso => iso ? Math.floor((Date.now() - new Date(iso + 'T00:00:00Z')) / 864e5) : null;
 
-fetch('jobs.json?t=' + Date.now()).then(r => r.json()).then(d => {
+function loadData() {
+  return fetch('jobs.json?t=' + Date.now()).then(r => r.json())
+    .catch(() => new Promise((res, rej) => {   // file:// fallback: jobs.js sets window.JOBS_DATA
+      const s = document.createElement('script');
+      s.src = 'jobs.js?t=' + Date.now();
+      s.onload = () => window.JOBS_DATA ? res(window.JOBS_DATA) : rej(new Error('no data'));
+      s.onerror = () => rej(new Error('jobs.js not found'));
+      document.head.appendChild(s);
+    }));
+}
+loadData().then(d => {
   JOBS = d.jobs || [];
   const upd = new Date(d.updated);
   const fresh = JOBS.filter(j => { const a = daysAgo(j.posted); return a !== null && a <= 7; }).length;

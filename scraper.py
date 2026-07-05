@@ -253,12 +253,17 @@ def main():
 
     unique.sort(key=lambda j: j.get("posted") or "0000", reverse=True)
 
-    OUT.write_text(json.dumps({
+    payload = {
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "count": len(unique),
         "errors": errors,
         "jobs": unique,
-    }, indent=1), encoding="utf-8")
+    }
+    OUT.write_text(json.dumps(payload, indent=1), encoding="utf-8")
+    # jobs.js mirror lets index.html work when opened straight from disk
+    # (file:// blocks fetch), no web server needed
+    (OUT.parent / "jobs.js").write_text(
+        "window.JOBS_DATA = " + json.dumps(payload) + ";", encoding="utf-8")
     print("Wrote %d unique jobs -> %s (%d source errors)" % (len(unique), OUT, len(errors)))
 
 
