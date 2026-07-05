@@ -75,9 +75,9 @@
         <button class="btn" id="saveCv">Save CV</button>
       </div>
       <span class="lbl">Anthropic API key <span style="font-weight:400;color:var(--muted)">(optional — enables one-click generation)</span></span>
-      <input type="password" id="apiKey" placeholder="sk-ant-…  (leave empty to use the copy-prompt method with your Claude subscription)">
-      <div class="hint">Without a key: use <b>Copy prompt</b> below, paste it into Claude (claude.ai or Claude Code), then paste Claude's reply back here — same result, no API cost.
-      The key, like the CV, is stored only in this browser's localStorage and is sent only to api.anthropic.com.</div>
+      <input type="password" id="apiKey" placeholder="sk-ant-…  (not needed if the local Claude Code bridge is running)">
+      <div class="hint">Engines, in order of preference: 🟢 <b>local bridge</b> (start_resume_bridge.bat — free, your Claude Code subscription) → <b>API key</b> (this field) → manual copy-prompt.
+      The key, like the CV, is stored only in this browser's localStorage and sent only to api.anthropic.com.</div>
     </details>
   </div>
 
@@ -85,22 +85,27 @@
     <h2>Generate tailored resume</h2>
     <div class="sub" style="margin-bottom:12px">ATS-optimized 2-page resume tailored to this posting — mirrors the job's keywords, picks your most relevant projects, never invents facts.</div>
     <div id="status"></div>
+    <div id="bridgeState" class="hint" style="margin-bottom:10px">Checking for local Claude Code bridge…</div>
     <div class="row">
-      <button class="btn p" id="copyBtn">📋 1. Copy prompt for Claude</button>
-      <a class="btn" href="https://claude.ai/new" target="_blank" rel="noopener" style="text-decoration:none">2. Open claude.ai ↗</a>
-      <button class="btn g" id="genBtn">⚡ Generate (API key)</button>
+      <button class="btn g" id="genBtn">⚡ Generate resume</button>
     </div>
-    <div id="pasteWrap" style="margin-top:14px">
-      <div class="hint" style="margin-bottom:8px">
-        <b>How it works (free, uses your Claude subscription):</b><br>
-        1. <b>Copy prompt</b> above &nbsp;→&nbsp; 2. open <b>claude.ai</b> (or Claude Code), paste the prompt and send
-        &nbsp;→&nbsp; 3. Claude writes the resume &nbsp;→&nbsp; 4. copy Claude's <b>entire reply</b> and paste it below.
-        <br>⚠️ Don't paste the prompt itself here — this box is only for Claude's <b>answer</b>.
+    <details style="margin-top:14px">
+      <summary style="font-size:13.5px">Manual fallback — copy-prompt via claude.ai</summary>
+      <div class="row" style="margin-top:10px">
+        <button class="btn p" id="copyBtn">📋 1. Copy prompt for Claude</button>
+        <a class="btn" href="https://claude.ai/new" target="_blank" rel="noopener" style="text-decoration:none">2. Open claude.ai ↗</a>
       </div>
-      <span class="lbl">3. Paste Claude's reply here</span>
-      <textarea id="pasteBack" rows="6" placeholder="Paste Claude's answer (it contains <RESUMEHTML>…</RESUMEHTML> with your actual resume inside)…"></textarea>
-      <div class="row" style="margin-top:8px"><button class="btn p" id="renderBtn">4. Render resume</button></div>
-    </div>
+      <div id="pasteWrap" style="margin-top:12px">
+        <div class="hint" style="margin-bottom:8px">
+          1. <b>Copy prompt</b> &nbsp;→&nbsp; 2. paste into <b>claude.ai</b> and send
+          &nbsp;→&nbsp; 3. copy Claude's <b>entire reply</b> and paste it below &nbsp;→&nbsp; 4. <b>Render</b>.
+          ⚠️ This box is for Claude's <b>answer</b>, not the prompt itself.
+        </div>
+        <span class="lbl">3. Paste Claude's reply here</span>
+        <textarea id="pasteBack" rows="6" placeholder="Paste Claude's answer (it contains <RESUMEHTML>…</RESUMEHTML> with your actual resume inside)…"></textarea>
+        <div class="row" style="margin-top:8px"><button class="btn p" id="renderBtn">4. Render resume</button></div>
+      </div>
+    </details>
   </div>
 
   <div class="card" id="outCard" style="display:none">
@@ -110,7 +115,7 @@
       <button class="btn" id="htmlBtn">Copy HTML</button>
       <span style="margin-left:auto"></span>
       <input type="text" id="editReq" placeholder="Ask a change, e.g. 'shorter summary, more Power BI'…" style="flex:1;min-width:200px;font-family:inherit">
-      <button class="btn" id="editBtn">Edit (API)</button>
+      <button class="btn" id="editBtn">✏ Edit</button>
     </div>
     <iframe id="preview" title="Resume preview"></iframe>
   </div>
@@ -351,6 +356,49 @@ $('renderBtn').onclick = () => {
   status('Resume rendered — print to PDF or download .doc below.', 'ok');
 };
 
+/* ---------------- generation: local Claude Code bridge ---------------- */
+const BRIDGE = 'http://127.0.0.1:8765';
+
+async function bridgeAlive() {
+  try {
+    const c = new AbortController();
+    const t = setTimeout(() => c.abort(), 1500);
+    const r = await fetch(BRIDGE + '/health', { signal: c.signal });
+    clearTimeout(t);
+    return r.ok;
+  } catch (e) { return false; }
+}
+
+async function callBridge(system, userMsg) {
+  const r = await fetch(BRIDGE + '/generate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-ETJ': '1' },
+    body: JSON.stringify({ system: system, user: userMsg })
+  });
+  const d = await r.json();
+  if (!r.ok) throw new Error('Bridge: ' + (d.error || r.status));
+  return d.text;
+}
+
+/* pick the best available engine: local bridge > API key > tell the user */
+async function generateText(system, userMsg) {
+  if (await bridgeAlive()) {
+    status('Generating via your local Claude Code — usually 30–90 seconds…', 'info');
+    return callBridge(system, userMsg);
+  }
+  if ($('apiKey').value.trim()) {
+    status('Generating via Anthropic API… (~30 sec)', 'info');
+    return callClaude(system, userMsg);
+  }
+  throw new Error('Bridge not running: double-click start_resume_bridge.bat in your ElderTechJobs folder, then press Generate again. (Or use the manual copy-prompt fallback below.)');
+}
+
+bridgeAlive().then(up => {
+  $('bridgeState').innerHTML = up
+    ? '🟢 <b>Local Claude Code bridge detected</b> — one-click Generate is ready (free, uses your subscription).'
+    : '⚪ Bridge not running. For one-click Generate: double-click <b>start_resume_bridge.bat</b> in <code>C:\\Users\\test\\Projects\\ElderTechJobs</code> and keep its window open. Otherwise use the manual fallback below.';
+});
+
 /* ---------------- generation: API path ---------------- */
 async function callClaude(system, userMsg, maxTok) {
   const key = $('apiKey').value.trim();
@@ -374,11 +422,10 @@ async function callClaude(system, userMsg, maxTok) {
 $('genBtn').onclick = async () => {
   if (!JOB) return;
   $('genBtn').disabled = true;
-  status('Generating tailored resume… (~30 sec)', 'info');
   try {
-    const txt = await callClaude(SYS_RESUME, 'CANDIDATE CV:\n' + $('cv').value + '\n\n---\n' + jobBlock());
+    const txt = await generateText(SYS_RESUME, 'CANDIDATE CV:\n' + $('cv').value + '\n\n---\n' + jobBlock());
     const got = parseResume(txt);
-    if (!got) throw new Error('Unexpected response format.');
+    if (!got) throw new Error('Unexpected response format — try Generate again.');
     showResume(got);
     status('Done — review below, then print to PDF or download .doc.', 'ok');
   } catch (e) { status(e.message, 'err'); }
@@ -391,7 +438,7 @@ $('editBtn').onclick = async () => {
   $('editBtn').disabled = true;
   status('Applying edit…', 'info');
   try {
-    const txt = await callClaude(SYS_EDIT, 'CURRENT RESUME HTML:\n' + RESUME.html + '\n\nUSER REQUEST: ' + req);
+    const txt = await generateText(SYS_EDIT, 'CURRENT RESUME HTML:\n' + RESUME.html + '\n\nUSER REQUEST: ' + req);
     const hm = txt.match(/<RESUMEHTML>([\s\S]*?)<\/RESUMEHTML>/);
     if (!hm) throw new Error('Edit failed — unexpected response.');
     showResume({ html: hm[1].trim(), company: RESUME.company, title: RESUME.title });
