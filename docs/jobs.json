@@ -1,6 +1,6 @@
 {
  "new_today": 0,
- "updated": "2026-07-05T20:10:28+00:00",
+ "updated": "2026-07-05T20:34:49+00:00",
  "count": 202,
  "errors": [],
  "jobs": [
@@ -12,6 +12,7 @@
    "posted": "2026-07-03",
    "source": "manual",
    "category": "AI",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -22,6 +23,7 @@
    "posted": "2026-07-02",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -32,6 +34,7 @@
    "posted": "2026-07-02",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -42,6 +45,7 @@
    "posted": "2026-07-02",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -52,6 +56,7 @@
    "posted": "2026-07-02",
    "category": "AI",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -62,6 +67,7 @@
    "posted": "2026-07-01",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -72,6 +78,7 @@
    "posted": "2026-07-01",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -82,6 +89,7 @@
    "posted": "2026-07-01",
    "category": "IT",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -92,6 +100,7 @@
    "posted": "2026-07-01",
    "category": "IT",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -102,6 +111,7 @@
    "posted": "2026-07-01",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -112,6 +122,7 @@
    "posted": "2026-06-30",
    "category": "IT",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -122,6 +133,7 @@
    "posted": "2026-06-30",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -132,6 +144,7 @@
    "posted": "2026-06-29",
    "category": "AI",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -142,6 +155,7 @@
    "posted": "2026-06-29",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -152,6 +166,7 @@
    "posted": "2026-06-29",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -162,6 +177,7 @@
    "posted": "2026-06-29",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -172,6 +188,7 @@
    "posted": "2026-06-29",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -182,6 +199,7 @@
    "posted": "2026-06-29",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -192,6 +210,7 @@
    "posted": "2026-06-29",
    "source": "manual",
    "category": "IT",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -202,6 +221,7 @@
    "posted": "2026-06-29",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -212,6 +232,7 @@
    "posted": "2026-06-27",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -222,6 +243,7 @@
    "posted": "2026-06-27",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -232,6 +254,7 @@
    "posted": "2026-06-27",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -242,6 +265,7 @@
    "posted": "2026-06-27",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -252,6 +276,7 @@
    "posted": "2026-06-27",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -262,6 +287,7 @@
    "posted": "2026-06-26",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -272,6 +298,7 @@
    "posted": "2026-06-26",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -282,6 +309,7 @@
    "posted": "2026-06-26",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -292,6 +320,7 @@
    "posted": "2026-06-26",
    "category": "Software",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -302,6 +331,7 @@
    "posted": "2026-06-26",
    "category": "Software",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -312,6 +342,7 @@
    "posted": "2026-06-26",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -322,6 +353,7 @@
    "posted": "2026-06-26",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -332,6 +364,7 @@
    "posted": "2026-06-26",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -342,6 +375,7 @@
    "posted": "2026-06-26",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -352,6 +386,7 @@
    "posted": "2026-06-26",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -362,6 +397,7 @@
    "posted": "2026-06-26",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -372,6 +408,7 @@
    "posted": "2026-06-25",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -382,6 +419,7 @@
    "posted": "2026-06-25",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -392,6 +430,7 @@
    "posted": "2026-06-25",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -402,6 +441,7 @@
    "posted": "2026-06-25",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -412,6 +452,7 @@
    "posted": "2026-06-25",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -422,6 +463,7 @@
    "posted": "2026-06-25",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -432,6 +474,7 @@
    "posted": "2026-06-24",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -442,6 +485,7 @@
    "posted": "2026-06-24",
    "source": "manual",
    "category": "AI",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -452,6 +496,7 @@
    "posted": "2026-06-24",
    "source": "manual",
    "category": "Software",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -462,6 +507,7 @@
    "posted": "2026-06-23",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -472,6 +518,7 @@
    "posted": "2026-06-23",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -482,6 +529,7 @@
    "posted": "2026-06-23",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -492,6 +540,7 @@
    "posted": "2026-06-23",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -502,6 +551,7 @@
    "posted": "2026-06-23",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -512,6 +562,7 @@
    "posted": "2026-06-23",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -522,6 +573,7 @@
    "posted": "2026-06-23",
    "source": "manual",
    "category": "AI",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -532,6 +584,7 @@
    "posted": "2026-06-22",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -542,6 +595,7 @@
    "posted": "2026-06-22",
    "category": "IT",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -552,6 +606,7 @@
    "posted": "2026-06-22",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -562,6 +617,7 @@
    "posted": "2026-06-22",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -572,6 +628,7 @@
    "posted": "2026-06-22",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -582,6 +639,7 @@
    "posted": "2026-06-22",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -592,6 +650,7 @@
    "posted": "2026-06-22",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -602,6 +661,7 @@
    "posted": "2026-06-22",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -612,6 +672,7 @@
    "posted": "2026-06-21",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -622,6 +683,7 @@
    "posted": "2026-06-20",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -632,6 +694,7 @@
    "posted": "2026-06-20",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -642,6 +705,7 @@
    "posted": "2026-06-18",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -652,6 +716,7 @@
    "posted": "2026-06-18",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -662,6 +727,7 @@
    "posted": "2026-06-17",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -672,6 +738,7 @@
    "posted": "2026-06-16",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -682,6 +749,7 @@
    "posted": "2026-06-16",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -692,6 +760,7 @@
    "posted": "2026-06-16",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -702,6 +771,7 @@
    "posted": "2026-06-16",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -712,6 +782,7 @@
    "posted": "2026-06-15",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -722,6 +793,7 @@
    "posted": "2026-06-15",
    "category": "AI",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -732,6 +804,7 @@
    "posted": "2026-06-15",
    "category": "IT",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -742,6 +815,7 @@
    "posted": "2026-06-15",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -752,6 +826,7 @@
    "posted": "2026-06-15",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -762,6 +837,7 @@
    "posted": "2026-06-13",
    "source": "manual",
    "category": "Software",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -772,6 +848,7 @@
    "posted": "2026-06-12",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -782,6 +859,7 @@
    "posted": "2026-06-12",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -792,6 +870,7 @@
    "posted": "2026-06-12",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -802,6 +881,7 @@
    "posted": "2026-06-11",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -812,6 +892,7 @@
    "posted": "2026-06-11",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -822,6 +903,7 @@
    "posted": "2026-06-11",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -832,6 +914,7 @@
    "posted": "2026-06-11",
    "category": "AI",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -842,6 +925,7 @@
    "posted": "2026-06-11",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -852,6 +936,7 @@
    "posted": "2026-06-10",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -862,6 +947,7 @@
    "posted": "2026-06-10",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -872,6 +958,7 @@
    "posted": "2026-06-09",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -882,6 +969,7 @@
    "posted": "2026-06-09",
    "category": "AI",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -892,6 +980,7 @@
    "posted": "2026-06-09",
    "category": "AI",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -902,6 +991,7 @@
    "posted": "2026-06-08",
    "category": "Data",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -912,6 +1002,7 @@
    "posted": "2026-06-08",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -922,6 +1013,7 @@
    "posted": "2026-06-08",
    "category": "Software",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -932,6 +1024,7 @@
    "posted": "2026-06-08",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -942,6 +1035,7 @@
    "posted": "2026-06-08",
    "source": "manual",
    "category": "IT",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -952,6 +1046,7 @@
    "posted": "2026-06-05",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -962,6 +1057,7 @@
    "posted": "2026-06-05",
    "category": "AI",
    "source": "ashby",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -972,6 +1068,7 @@
    "posted": "2026-06-05",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -982,6 +1079,7 @@
    "posted": "2026-06-05",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -992,6 +1090,7 @@
    "posted": "2026-06-05",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1002,6 +1101,7 @@
    "posted": "2026-06-05",
    "category": "IT",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1012,6 +1112,7 @@
    "posted": "2026-06-05",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1022,6 +1123,7 @@
    "posted": "2026-06-05",
    "category": "AI",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1032,6 +1134,7 @@
    "posted": "2026-06-05",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1042,6 +1145,7 @@
    "posted": "2026-06-05",
    "category": "IT",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1052,6 +1156,7 @@
    "posted": "2026-06-05",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1062,6 +1167,7 @@
    "posted": "2026-06-05",
    "category": "IT",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1072,6 +1178,7 @@
    "posted": "2026-06-05",
    "category": "AI",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1082,6 +1189,7 @@
    "posted": "2026-06-05",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1092,6 +1200,7 @@
    "posted": "2026-06-05",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1102,6 +1211,7 @@
    "posted": "2026-06-05",
    "category": "IT",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1112,6 +1222,7 @@
    "posted": "2026-06-05",
    "category": "Data",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1122,6 +1233,7 @@
    "posted": "2026-06-05",
    "category": "IT",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1132,6 +1244,7 @@
    "posted": "2026-06-05",
    "category": "Software",
    "source": "workday",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1142,6 +1255,7 @@
    "posted": "2026-06-05",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1152,6 +1266,7 @@
    "posted": "2026-06-05",
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1162,6 +1277,7 @@
    "posted": "2026-06-04",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1172,6 +1288,7 @@
    "posted": "2026-06-04",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1182,6 +1299,7 @@
    "posted": "2026-06-04",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1192,6 +1310,7 @@
    "posted": "2026-06-02",
    "category": "Software",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1202,6 +1321,7 @@
    "posted": "2026-06-02",
    "category": "Software",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1212,6 +1332,7 @@
    "posted": "2026-06-01",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1222,6 +1343,7 @@
    "posted": "2026-06-01",
    "source": "manual",
    "category": "AI",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1232,6 +1354,7 @@
    "posted": "2026-05-29",
    "category": "AI",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1242,6 +1365,7 @@
    "posted": "2026-05-29",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1252,6 +1376,7 @@
    "posted": "2026-05-27",
    "category": "IT",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1262,6 +1387,7 @@
    "posted": "2026-05-27",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1272,6 +1398,7 @@
    "posted": "2026-05-26",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1282,6 +1409,7 @@
    "posted": "2026-05-26",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1292,6 +1420,7 @@
    "posted": "2026-05-26",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1302,6 +1431,7 @@
    "posted": "2026-05-26",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1312,6 +1442,7 @@
    "posted": "2026-05-26",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1322,6 +1453,7 @@
    "posted": "2026-05-20",
    "category": "Data",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1332,6 +1464,7 @@
    "posted": "2026-05-20",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1342,6 +1475,7 @@
    "posted": "2026-05-19",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1352,6 +1486,7 @@
    "posted": "2026-05-19",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1362,6 +1497,7 @@
    "posted": "2026-05-19",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1372,6 +1508,7 @@
    "posted": "2026-05-15",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1382,6 +1519,7 @@
    "posted": "2026-05-15",
    "source": "manual",
    "category": "IT",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1392,6 +1530,7 @@
    "posted": "2026-05-14",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1402,6 +1541,7 @@
    "posted": "2026-05-11",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1412,6 +1552,7 @@
    "posted": "2026-05-07",
    "source": "manual",
    "category": "IT",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1422,6 +1563,7 @@
    "posted": "2026-05-06",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1432,6 +1574,7 @@
    "posted": "2026-05-06",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1442,6 +1585,7 @@
    "posted": "2026-05-06",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1452,6 +1596,7 @@
    "posted": "2026-05-06",
    "category": "Software",
    "source": "ashby",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1462,6 +1607,7 @@
    "posted": "2026-05-05",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1472,6 +1618,7 @@
    "posted": "2026-04-30",
    "category": "Data",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1482,6 +1629,7 @@
    "posted": "2026-04-30",
    "category": "IT",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1492,6 +1640,7 @@
    "posted": "2026-04-29",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1502,6 +1651,7 @@
    "posted": "2026-04-27",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1512,6 +1662,7 @@
    "posted": "2026-04-24",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1522,6 +1673,7 @@
    "posted": "2026-04-21",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1532,6 +1684,7 @@
    "posted": "2026-04-21",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1542,6 +1695,7 @@
    "posted": "2026-04-20",
    "category": "Data",
    "source": "ashby",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1552,6 +1706,7 @@
    "posted": "2026-04-17",
    "category": "Software",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1562,6 +1717,7 @@
    "posted": "2026-04-16",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1572,6 +1728,7 @@
    "posted": "2026-04-14",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1582,6 +1739,7 @@
    "posted": "2026-04-14",
    "category": "AI",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1592,6 +1750,7 @@
    "posted": "2026-04-13",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1602,6 +1761,7 @@
    "posted": "2026-04-13",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1612,6 +1772,7 @@
    "posted": "2026-04-13",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1622,6 +1783,7 @@
    "posted": "2026-04-13",
    "category": "IT",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1632,6 +1794,7 @@
    "posted": "2026-04-08",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1642,6 +1805,7 @@
    "posted": "2026-04-05",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1652,6 +1816,7 @@
    "posted": "2026-04-01",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1662,6 +1827,7 @@
    "posted": "2026-04-01",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1672,6 +1838,7 @@
    "posted": "2026-04-01",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1682,6 +1849,7 @@
    "posted": "2026-04-01",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1692,6 +1860,7 @@
    "posted": "2026-04-01",
    "category": "Data",
    "source": "jibe",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1702,6 +1871,7 @@
    "posted": "2026-03-13",
    "category": "IT",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1712,6 +1882,7 @@
    "posted": "2026-03-12",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1722,6 +1893,7 @@
    "posted": "2026-03-11",
    "category": "Data",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1732,6 +1904,7 @@
    "posted": "2026-03-09",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1742,6 +1915,7 @@
    "posted": "2026-03-09",
    "category": "AI",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1752,6 +1926,7 @@
    "posted": "2026-03-09",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1762,6 +1937,7 @@
    "posted": "2026-03-02",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1772,6 +1948,7 @@
    "posted": "2026-02-27",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1782,6 +1959,7 @@
    "posted": "2026-02-22",
    "category": "IT",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1792,6 +1970,7 @@
    "posted": "2026-02-22",
    "category": "IT",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1802,6 +1981,7 @@
    "posted": "2026-02-13",
    "category": "AI",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1812,6 +1992,7 @@
    "posted": "2026-02-05",
    "source": "manual",
    "category": "AI",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1822,6 +2003,7 @@
    "posted": "2026-02-05",
    "source": "manual",
    "category": "AI",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1832,6 +2014,7 @@
    "posted": "2026-01-30",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1842,6 +2025,7 @@
    "posted": "2026-01-26",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1852,6 +2036,7 @@
    "posted": "2026-01-22",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1862,6 +2047,7 @@
    "posted": "2026-01-14",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1872,6 +2058,7 @@
    "posted": "2026-01-14",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1882,6 +2069,7 @@
    "posted": "2026-01-08",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1892,6 +2080,7 @@
    "posted": "2026-01-08",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1902,6 +2091,7 @@
    "posted": "2026-01-07",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1912,6 +2102,7 @@
    "posted": "2026-01-07",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1922,6 +2113,7 @@
    "posted": "2025-12-09",
    "category": "Software",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1932,6 +2124,7 @@
    "posted": "2025-12-03",
    "category": "Software",
    "source": "greenhouse",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1942,6 +2135,7 @@
    "posted": "2025-11-24",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1952,6 +2146,7 @@
    "posted": "2025-11-24",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1962,6 +2157,7 @@
    "posted": "2025-08-13",
    "category": "Data",
    "source": "lever",
+   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1972,6 +2168,7 @@
    "posted": null,
    "source": "manual",
    "category": "Data",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1982,6 +2179,7 @@
    "posted": null,
    "source": "manual",
    "category": "Software",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -1992,6 +2190,7 @@
    "posted": null,
    "source": "manual",
    "category": "Software",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -2002,6 +2201,7 @@
    "posted": null,
    "source": "manual",
    "category": "AI",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -2012,6 +2212,7 @@
    "posted": null,
    "source": "manual",
    "category": "AI",
+   "citizen_req": null,
    "first_seen": null
   },
   {
@@ -2022,6 +2223,7 @@
    "posted": null,
    "source": "manual",
    "category": "Software",
+   "citizen_req": null,
    "first_seen": null
   }
  ]

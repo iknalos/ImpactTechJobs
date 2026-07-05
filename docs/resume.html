@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume Tailor — Elder Tech Jobs</title>
+<style>
+  :root { --page:#f3f5f8; --card:#fff; --ink:#1a2433; --muted:#5b6b81; --line:#e2e8f0; --accent:#1a56db; --accent-soft:#eaf1fe; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,'Segoe UI',Roboto,sans-serif; background:var(--page); color:var(--ink); font-size:15px; }
+  header { background:linear-gradient(135deg,#12315f,#1a56db); color:#fff; padding:18px 20px; }
+  .hin { max-width:1060px; margin:0 auto; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .hin a { color:#cfe0fb; text-decoration:none; font-size:13.5px; }
+  .hin a:hover { color:#fff; }
+  .hin h1 { margin:0; font-size:20px; }
+  main { max-width:1060px; margin:16px auto 60px; padding:0 20px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-bottom:14px; }
+  .card h2 { margin:0 0 4px; font-size:16px; }
+  .sub { color:var(--muted); font-size:13px; }
+  .jt { font-size:18px; font-weight:700; }
+  .jm { color:var(--muted); font-size:13.5px; margin-top:3px; }
+  .jm a { color:var(--accent); }
+  textarea, input[type=text], input[type=password] {
+    width:100%; border:1px solid var(--line); border-radius:8px; padding:9px 11px; font-size:13px;
+    font-family:Consolas,monospace; background:#fbfcfe; color:var(--ink); outline:none;
+  }
+  textarea:focus, input:focus { border-color:var(--accent); }
+  .btn { padding:9px 16px; border-radius:8px; font-size:13.5px; cursor:pointer; border:1px solid var(--line); background:#fff; color:var(--ink); }
+  .btn:hover { border-color:var(--accent); color:var(--accent); }
+  .btn.p { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; }
+  .btn.p:hover { background:#1244ad; color:#fff; }
+  .btn.g { background:#17693a; border-color:#17693a; color:#fff; font-weight:600; }
+  .btn.g:hover { background:#115229; }
+  .btn:disabled { opacity:.45; cursor:not-allowed; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .desc-box { max-height:170px; overflow-y:auto; background:#f8fafc; border:1px solid var(--line); border-radius:8px; padding:12px 14px; font-size:13px; color:#33415c; line-height:1.55; white-space:pre-wrap; }
+  details summary { cursor:pointer; font-weight:600; font-size:14px; padding:4px 0; color:var(--ink); }
+  .lbl { font-size:12.5px; font-weight:600; margin:12px 0 5px; display:block; }
+  .hint { font-size:12px; color:var(--muted); margin-top:5px; line-height:1.5; }
+  #status { font-size:13px; padding:10px 14px; border-radius:8px; display:none; margin-bottom:12px; }
+  #status.info { display:block; background:var(--accent-soft); color:#12315f; }
+  #status.err { display:block; background:#fde8e8; color:#b02a2a; }
+  #status.ok { display:block; background:#def7e4; color:#116932; }
+  #preview { width:100%; height:1150px; border:none; background:#fff; border-radius:8px; box-shadow:0 3px 14px rgba(16,30,54,.12); }
+  .tag { font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; background:#fde8e8; color:#b02a2a; }
+  .visa-ok { background:#def7e4; color:#116932; }
+  .warn { background:#fff7e0; border:1px solid #f2dc9b; color:#7a5b0d; border-radius:8px; padding:10px 14px; font-size:13px; margin-top:10px; }
+</style>
+</head>
+<body>
+<header><div class="hin">
+  <a href="index.html">← Back to jobs</a>
+  <h1>Resume Tailor</h1>
+</div></header>
+
+<main>
+  <div class="card" id="jobCard">
+    <div class="jt" id="jTitle">Loading job…</div>
+    <div class="jm" id="jMeta"></div>
+    <div class="lbl">Job description <span style="font-weight:400;color:var(--muted)">(auto-fetched by the daily scraper)</span></div>
+    <div class="desc-box" id="jDesc">…</div>
+    <div id="descMissing" style="display:none">
+      <div class="warn">No auto-fetched description for this posting (hand-curated source). Open the posting, copy the description, and paste it below.</div>
+      <textarea id="descManual" rows="6" placeholder="Paste the job description here…" style="margin-top:8px"></textarea>
+    </div>
+  </div>
+
+  <div class="card">
+    <details id="setup">
+      <summary>⚙️ Your CV &amp; settings (saved in this browser)</summary>
+      <span class="lbl">Master CV — the tailor picks the most relevant parts for each job</span>
+      <textarea id="cv" rows="14" spellcheck="false"></textarea>
+      <div class="row" style="margin-top:8px">
+        <button class="btn" id="loadDefault">Load built-in CV (Rahul, updated July 2026)</button>
+        <button class="btn" id="saveCv">Save CV</button>
+      </div>
+      <span class="lbl">Anthropic API key <span style="font-weight:400;color:var(--muted)">(optional — enables one-click generation)</span></span>
+      <input type="password" id="apiKey" placeholder="sk-ant-…  (leave empty to use the copy-prompt method with your Claude subscription)">
+      <div class="hint">Without a key: use <b>Copy prompt</b> below, paste it into Claude (claude.ai or Claude Code), then paste Claude's reply back here — same result, no API cost.
+      The key, like the CV, is stored only in this browser's localStorage and is sent only to api.anthropic.com.</div>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>Generate tailored resume</h2>
+    <div class="sub" style="margin-bottom:12px">ATS-optimized 2-page resume tailored to this posting — mirrors the job's keywords, picks your most relevant projects, never invents facts.</div>
+    <div id="status"></div>
+    <div class="row">
+      <button class="btn g" id="genBtn">⚡ Generate (API)</button>
+      <button class="btn p" id="copyBtn">📋 Copy prompt for Claude</button>
+    </div>
+    <div id="pasteWrap" style="display:none; margin-top:12px">
+      <span class="lbl">Paste Claude's full reply here</span>
+      <textarea id="pasteBack" rows="6" placeholder="Paste everything Claude returned (it contains <RESUMEHTML>…</RESUMEHTML>)…"></textarea>
+      <div class="row" style="margin-top:8px"><button class="btn p" id="renderBtn">Render resume</button></div>
+    </div>
+  </div>
+
+  <div class="card" id="outCard" style="display:none">
+    <div class="row" style="margin-bottom:12px">
+      <button class="btn p" id="pdfBtn">🖨 Print / Save as PDF</button>
+      <button class="btn" id="docBtn">⬇ Download .doc (Word)</button>
+      <button class="btn" id="htmlBtn">Copy HTML</button>
+      <span style="margin-left:auto"></span>
+      <input type="text" id="editReq" placeholder="Ask a change, e.g. 'shorter summary, more Power BI'…" style="flex:1;min-width:200px;font-family:inherit">
+      <button class="btn" id="editBtn">Edit (API)</button>
+    </div>
+    <iframe id="preview" title="Resume preview"></iframe>
+  </div>
+</main>
+
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------------- built-in master CV (public contact info only) ---------------- */
+const DEFAULT_CV = `RAHUL SOLANKI
+Cambridge, MA | rahulsolanki.work@gmail.com | github.com/iknalos | layoutstudio.org
+
+EDUCATION
+Executive M.S. - AI and Computer Science (Expected 2026), University of Cumberlands, KY
+M.S. - Data Analytics (2020), Clarkson University, NY
+M.S. - Wireless Communication, Signal and Networks (2016), Dr. S. & S.S. Ghandhy College of Engineering, Gujarat, India
+B.S. - Electronics and Telecommunication (2013), Shri Sad Vidhya Mandal Institute of Technology, Gujarat, India
+
+PROFESSIONAL EXPERIENCE
+
+Machine Learning & Data Consultant | Jan 2026 - Present
+Stealth Deep-Tech Startup, Cambridge, MA
+- Advised on data strategy and pipeline architecture for a 9-sensor hyperspectral camera system, defining how raw sensor data is structured, validated, and made usable for analysis
+- Designed and deployed a full data-to-decision pipeline: spectral feature extraction, ensemble ML classification (SVM + Random Forest + XGBoost), browser-based prediction interface; 100% image-level accuracy in client testing
+- Prototyped a portable prediction tool enabling field use without a data science team present
+
+Data Analyst | March 2023 - September 2025
+Somerville-Cambridge Elder Services, Cambridge, MA
+- Owned data quality and reporting infrastructure across four service departments in an Area Agency on Aging serving 1,500+ elderly clients
+- Designed multi-layered KPI reporting framework tracking longitudinal care outcomes; built Power BI dashboards and DAX metric trees, reducing manual reporting time by ~60%
+- Built automated ETL pipelines integrating 3+ healthcare management systems into SharePoint, eliminating manual transfers and cutting reporting lag from days to near real-time; reduced ad hoc data requests by ~50%
+- Implemented HIPAA-compliant data validation scripts reducing data entry errors by ~35%
+- Conducted cross-dataset demographic analysis (MA state + internal records) using Python and SQL to identify service delivery gaps; findings directly informed resource allocation
+- Primary liaison between operational teams and data systems; trained staff and improved self-service analytics across 4 departments
+
+Data Analyst | August 2021 - March 2023
+Star House Inc, Bolingbrook, IL
+- Built Power BI dashboards integrating 4+ data sources; reduced reporting cycle from 3 days to same-day
+- Identified 15+ recurring data inconsistencies using SQL validation logic, improving reporting accuracy
+
+Data Analyst - Graduate Research | August 2020 - August 2021
+Clarkson University, Potsdam, NY
+- Migrated 500K+ records across MongoDB and SQL Server using Python ETL pipelines; automated data quality scripts reduced post-migration errors by 90%+
+
+Graduate Teaching Assistant | 2018 - 2020
+Clarkson University, Potsdam, NY
+- Graded undergraduate Probability & Statistics coursework with written feedback
+
+TECHNICAL PROJECTS (select most relevant per job)
+
+Boston Senior Navigator - Age-Friendly Civic Resource Map (Live Product)
+2026 - Present | iknalos.github.io/Boston-senior-navigator | github.com/iknalos/Boston-senior-navigator
+- Built civic web app mapping hospitals, senior centers, clinics, food pantries, cooling/warming centers for elderly Boston residents and caregivers
+- Designed every interaction for older users: adjustable 17-20pt fonts, large touch targets, click-to-call, high contrast, no logins/tracking
+- Integrated MBTA real-time vehicles, NWS weather alerts, Boston 311 hazard reports; shipped solo across 47 releases
+Stack: Vanilla JavaScript, Leaflet.js, MBTA/NWS/311 APIs, GitHub Pages
+
+Elder Tech Jobs - Aging-Services Job Market Data Pipeline (Live Product)
+2026 - Present | iknalos.github.io/ElderTechJobs | github.com/iknalos/ElderTechJobs
+- Built automated daily ETL pipeline aggregating live postings from 14 employer ATS APIs (Greenhouse, Lever, Workday, Ashby) across the US aging-services sector
+- Zero-maintenance GitHub Actions cron: deduplication, first-seen tracking, regex-based requirement flagging, static-site publishing
+Stack: Python, requests, GitHub Actions, GitHub Pages
+
+Hyperspectral Image Classifier (Live Product)
+Jan 2026 - Present | image-classifier-1.streamlit.app | github.com/iknalos/Image-Classifier
+- End-to-end ML platform classifying hyperspectral TIFF images from a 9-sensor camera; browser upload, ROI definition, ensemble training, batch prediction with no coding
+- Soft-voting ensemble (SVM RBF + Random Forest + XGBoost) with Leave-One-Image-Out cross-validation; 100% image-level accuracy in client testing
+- Integrated Google Drive OAuth for 500MB-1GB datasets, bypassing Streamlit's 200MB upload limit
+Stack: Python, scikit-learn, XGBoost, Streamlit, Google Drive API, OAuth 2.0
+
+Layout Studio - Browser-Based Semiconductor Layout Editor (Live Product)
+Jan 2026 - Present | layoutstudio.org | github.com/iknalos/Layout-Studio-App
+- Engineered complete binary GDSII/OASIS parser and writer from scratch in TypeScript (no external geometry libraries)
+- Integrated AI shape assistant (Groq LLaMA 3.3 70B via Vercel serverless) interpreting plain-English commands into geometry
+- Draw tools, 30-step undo/redo, DRC checks, measurement rulers, PNG/GDS/OASIS export
+Stack: TypeScript, React, HTML5 Canvas, Vercel Serverless, Groq API
+
+Personal AI Assistant - Local Agentic AI System
+Nov 2024 - Present | github.com/iknalos/Personal-Ai-Assistant
+- Architected multi-model pipeline: Flask orchestration, Gemini API NLU, AnythingLLM agent executor, custom Python MCP server
+- Automatic model rotation and rate-limit fallback across 4 Gemini tiers (99%+ uptime); human-in-the-loop confirmation before destructive operations
+Stack: Python, Flask, Gemini API, Ollama (Qwen 2.5), AnythingLLM, MCP Protocol
+
+Live Transcribe Multiplatform - Offline Accessibility Tool
+2026 | github.com/iknalos/Live-Transcribe-Multiplatform
+- Offline, speaker-tagged live speech-to-text for deaf/hard-of-hearing users across Android (native APK), Windows desktop, and Chrome PWA
+Stack: Python (RealtimeSTT), Kotlin, GitHub Actions CI
+
+WEE Discount Tracker - Automated Cloud Data Pipeline
+2024 - Present | github.com/iknalos/WEE-Discount-Tracker
+- Headless Selenium + BeautifulSoup4 scraper with authenticated session injection; pandas ETL; Twilio WhatsApp + SMTP alerting; GitHub Actions cron
+Stack: Python, Selenium, pandas, Twilio API, GitHub Actions
+
+ACADEMIC RESEARCH
+Machine Learning for Disease Prediction (U. of Cumberlands): breast cancer 97%, diabetes 98% accuracy using ensemble ML
+Cross-Lingual NLP and Sentiment Analysis (U. of Cumberlands): bilingual NLP pipeline on Gujarati corpus
+LSTM-Based Text Generation (U. of Cumberlands): TensorFlow/Keras deep learning model
+NLP-Based Job Market Analysis (Clarkson): web scraping + NLP pipeline; Selenium, MySQL, Tableau
+Breast Cancer Statistical Analysis (Clarkson): PCA, ANOVA, correlation analysis in SPSS and R
+
+PUBLICATIONS
+Solanki, R. (2016). Performance Enhancement of Multicell Multiuser MIMO. IRJET, 3(6), Serial No. 365.
+Summer School on Deep Learning, Gdansk University of Technology, Poland, 2019 (invited participant)
+
+TECHNICAL SKILLS
+Data: Data governance, data quality management, ETL pipeline design, Power BI (Advanced), DAX, Power Query, Tableau, Looker, SQL, PostgreSQL, MySQL, MongoDB, dbt, pandas
+AI/ML: scikit-learn, XGBoost, TensorFlow, Keras, LSTM, NLP, ensemble modeling, model deployment, prompt engineering, RAG, MCP protocol, Claude/Gemini/Groq APIs, Ollama
+Programming: Python, TypeScript, JavaScript, SQL, R, SPSS
+Web & Deployment: React, Flask, REST APIs, Streamlit, Vercel, GitHub Actions, GitHub Pages, Azure, Docker
+
+CERTIFICATIONS
+Programming for Everybody - University of Michigan (Coursera); Tableau Essential Training - LinkedIn Learning; Python: Working with Predictive Analysis - LinkedIn Learning; Using Python to Access Web Data - Coursera
+
+LANGUAGES: English (Excellent), Hindi (Excellent), Gujarati (Native)`;
+
+/* ---------------- resume prompt & CSS (ported from the original optimizer) ---------------- */
+const SYS_RESUME = `You are an expert resume writer specializing in ATS-optimized, job-tailored resumes.
+
+Given a candidate CV and a job posting, create a tailored 2-page resume.
+
+Return ONLY in this exact format, nothing before or after:
+<COMPANY>Company Name</COMPANY>
+<JOBTITLE>Exact Job Title</JOBTITLE>
+<RESUMEHTML>
+[Full resume inner HTML using the CSS classes listed below - no inline styles]
+</RESUMEHTML>
+
+CSS CLASSES:
+div.rheader > div.rname + div.rcontact
+div.rtitle (one pipe-separated line, max 2 lines e.g. "Senior Data Analyst | SQL | Power BI | Healthcare Analytics")
+div.sh (section headers)
+div.sy (summary paragraph)
+div.sk (skills, b tags for labels, br between categories)
+Work exp: div.mb9 > [div.row > span.jt + span.jd] + div.jo + ul.bl > li
+Projects: div.mb7 > [div.row > span.pn + span.jd] + div.pm + ul.bl > li + div.stt
+Education: div.mb4 > [div.row > span.ed + span.ey] + div.ei
+
+SECTIONS: Professional Summary, Technical Skills, Work Experience, Key Projects, Education, Certifications
+
+RULES:
+Mirror exact keywords from the job description where truthfully applicable.
+The CV lists more projects than fit: select ONLY the 2-4 projects most relevant to THIS job; drop the rest.
+If the employer serves older adults / healthcare, lead with the candidate's elder-services and healthcare data experience.
+Tailor summary to this specific role. 3-5 bullets per major role, 1-2 minor, 1-3 per project.
+Max 850 words total. Never invent facts or metrics not present in the CV.
+CRITICAL: Copy employer names, job titles, locations, dates VERBATIM from the CV. Do not add, infer or change any descriptors, industry labels, or org type not explicitly in the CV.
+Contact line: Cambridge, MA | rahulsolanki.work@gmail.com | github.com/iknalos | layoutstudio.org`;
+
+const SYS_EDIT = `You are a resume editor. The user asks for a change to their resume HTML.
+Return ONLY the updated full resume HTML inside <RESUMEHTML>...</RESUMEHTML> tags. Nothing else.
+Preserve all CSS class names. Never add inline styles. Only make the requested change.
+Never invent new facts, metrics, or experiences.`;
+
+const RCSS = `*{margin:0;padding:0;box-sizing:border-box}body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#000;background:#fff}
+.rname{font-size:21pt;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.rcontact{font-size:9.5pt;color:#333;line-height:1.9}
+.rheader{text-align:center;border-bottom:2px solid #000;padding-bottom:10px;margin-bottom:14px}
+.rtitle{font-size:11pt;font-weight:700;border-bottom:1.5px solid #000;padding-bottom:3px;margin:7px 0 5px}
+.sh{font-weight:700;font-size:9.5pt;text-transform:uppercase;letter-spacing:1px;border-bottom:.5px solid #999;padding-bottom:2px;margin:10px 0 5px}
+.row{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:2px}
+.jt{font-weight:700;font-size:10.5pt}.jd{font-size:9.5pt;color:#333}
+.jo{font-size:10pt;color:#444;margin-bottom:3px;font-style:italic}
+.sy{font-size:10pt;line-height:1.6;color:#111}
+.sk{font-size:10pt;line-height:1.9}.sk b{font-size:9pt;text-transform:uppercase;letter-spacing:.4px}
+ul.bl{margin:2px 0 0;padding-left:17px}ul.bl li{font-size:10pt;margin-bottom:2px;line-height:1.5}
+.pn{font-weight:700;font-size:10.5pt}.pm{font-size:9.5pt;color:#555;margin-bottom:2px}
+.stt{font-size:9pt;color:#555;margin-top:2px}
+.ed{font-weight:700;font-size:10.5pt}.ey{font-size:9.5pt;color:#444}.ei{font-size:10pt;color:#444;font-style:italic}
+.mb9{margin-bottom:9px}.mb7{margin-bottom:7px}.mb4{margin-bottom:4px}`;
+
+/* ---------------- state ---------------- */
+let JOB = null, RESUME = { html: '', company: '', title: '' };
+const jobKey = j => (j.url || j.org) + '|' + j.title;
+
+function status(msg, cls) { const s = $('status'); s.textContent = msg; s.className = cls || 'info'; }
+
+function loadJson(file, globalVar) {
+  return fetch(file + '?t=' + Date.now()).then(r => r.json())
+    .catch(() => new Promise((res, rej) => {
+      const s = document.createElement('script');
+      s.src = file.replace('.json', '.js') + '?t=' + Date.now();
+      s.onload = () => window[globalVar] ? res(window[globalVar]) : rej(new Error('no data'));
+      s.onerror = () => rej(new Error(file + ' not found'));
+      document.head.appendChild(s);
+    }));
+}
+
+/* ---------------- load job from URL param ---------------- */
+const wantKey = new URLSearchParams(location.search).get('job') || '';
+Promise.all([loadJson('jobs.json', 'JOBS_DATA'), loadJson('desc.json', 'DESC_DATA').catch(() => ({}))])
+  .then(([jd, descs]) => {
+    JOB = (jd.jobs || []).find(j => jobKey(j) === wantKey);
+    if (!JOB) { $('jTitle').textContent = 'Job not found — go back and click 📄 on a job row.'; return; }
+    JOB.desc = descs[wantKey] || '';
+    $('jTitle').innerHTML = esc(JOB.title) + (JOB.citizen_req ? ' <span class="tag">US CITIZEN/GC REQUIRED</span>'
+      : JOB.citizen_req === false ? ' <span class="tag visa-ok">OPT/CPT FRIENDLY</span>' : '');
+    $('jMeta').innerHTML = esc(JOB.org) + ' · ' + esc(JOB.location) +
+      (JOB.posted ? ' · posted ' + esc(JOB.posted) : '') +
+      ' · <a href="' + esc(JOB.url) + '" target="_blank" rel="noopener">open posting ↗</a>';
+    if (JOB.desc) { $('jDesc').textContent = JOB.desc; }
+    else { $('jDesc').style.display = 'none'; $('descMissing').style.display = 'block'; }
+  })
+  .catch(e => { $('jTitle').textContent = 'Could not load job data — ' + e.message; });
+
+/* ---------------- CV & key persistence ---------------- */
+$('cv').value = localStorage.getItem('etj_cv') || '';
+$('apiKey').value = localStorage.getItem('etj_apikey') || '';
+if (!$('cv').value) { $('setup').open = true; $('cv').value = DEFAULT_CV; }
+$('loadDefault').onclick = () => { $('cv').value = DEFAULT_CV; };
+$('saveCv').onclick = () => { localStorage.setItem('etj_cv', $('cv').value); status('CV saved in this browser.', 'ok'); };
+$('apiKey').addEventListener('change', () => localStorage.setItem('etj_apikey', $('apiKey').value.trim()));
+
+function jobBlock() {
+  const desc = JOB.desc || $('descManual').value.trim();
+  return 'JOB POSTING:\nCompany: ' + JOB.org + '\nTitle: ' + JOB.title + '\nLocation: ' + JOB.location +
+    '\nURL: ' + JOB.url + '\n\nDescription:\n' + (desc || '(no description available - tailor using the title, company and location)');
+}
+const fullPrompt = () => SYS_RESUME + '\n\n---\nCANDIDATE CV:\n' + $('cv').value + '\n\n---\n' + jobBlock();
+
+/* ---------------- generation: copy-prompt path ---------------- */
+$('copyBtn').onclick = () => {
+  if (!JOB) return;
+  navigator.clipboard.writeText(fullPrompt()).then(() => {
+    status('Prompt copied! Paste it into Claude (claude.ai or Claude Code), then paste the full reply below.', 'ok');
+    $('pasteWrap').style.display = 'block';
+  }).catch(() => status('Clipboard blocked — select-all in the console instead.', 'err'));
+};
+$('renderBtn').onclick = () => {
+  const got = parseResume($('pasteBack').value);
+  if (!got) { status('Could not find <RESUMEHTML> in the pasted text — paste Claude\'s complete reply.', 'err'); return; }
+  showResume(got);
+  status('Resume rendered from pasted reply.', 'ok');
+};
+
+/* ---------------- generation: API path ---------------- */
+async function callClaude(system, userMsg, maxTok) {
+  const key = $('apiKey').value.trim();
+  if (!key) throw new Error('No API key saved — use "Copy prompt for Claude" instead (free with your Claude subscription).');
+  const r = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': key,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    },
+    body: JSON.stringify({ model: 'claude-sonnet-4-6', max_tokens: maxTok || 4000, system: system,
+      messages: [{ role: 'user', content: userMsg }] })
+  });
+  if (!r.ok) throw new Error('API ' + r.status + ': ' + (await r.text()).slice(0, 180));
+  const d = await r.json();
+  return (d.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
+}
+
+$('genBtn').onclick = async () => {
+  if (!JOB) return;
+  $('genBtn').disabled = true;
+  status('Generating tailored resume… (~30 sec)', 'info');
+  try {
+    const txt = await callClaude(SYS_RESUME, 'CANDIDATE CV:\n' + $('cv').value + '\n\n---\n' + jobBlock());
+    const got = parseResume(txt);
+    if (!got) throw new Error('Unexpected response format.');
+    showResume(got);
+    status('Done — review below, then print to PDF or download .doc.', 'ok');
+  } catch (e) { status(e.message, 'err'); }
+  $('genBtn').disabled = false;
+};
+
+$('editBtn').onclick = async () => {
+  const req = $('editReq').value.trim();
+  if (!req || !RESUME.html) return;
+  $('editBtn').disabled = true;
+  status('Applying edit…', 'info');
+  try {
+    const txt = await callClaude(SYS_EDIT, 'CURRENT RESUME HTML:\n' + RESUME.html + '\n\nUSER REQUEST: ' + req);
+    const hm = txt.match(/<RESUMEHTML>([\s\S]*?)<\/RESUMEHTML>/);
+    if (!hm) throw new Error('Edit failed — unexpected response.');
+    showResume({ html: hm[1].trim(), company: RESUME.company, title: RESUME.title });
+    $('editReq').value = '';
+    status('Edit applied.', 'ok');
+  } catch (e) { status(e.message, 'err'); }
+  $('editBtn').disabled = false;
+};
+
+/* ---------------- render & export ---------------- */
+function parseResume(txt) {
+  const hm = txt.match(/<RESUMEHTML>([\s\S]*?)<\/RESUMEHTML>/);
+  if (!hm) return null;
+  const cm = txt.match(/<COMPANY>([\s\S]*?)<\/COMPANY>/), tm = txt.match(/<JOBTITLE>([\s\S]*?)<\/JOBTITLE>/);
+  return { html: hm[1].trim(), company: cm ? cm[1].trim() : JOB.org, title: tm ? tm[1].trim() : JOB.title };
+}
+
+function showResume(r) {
+  RESUME = r;
+  $('outCard').style.display = 'block';
+  $('preview').srcdoc = '<!DOCTYPE html><html><head><meta charset="UTF-8"><style>' + RCSS +
+    '.page{padding:.72in .85in .85in}</style></head><body><div class="page">' + r.html + '</div></body></html>';
+  $('outCard').scrollIntoView({ behavior: 'smooth' });
+}
+
+$('pdfBtn').onclick = () => {
+  const printCSS = '@page{size:letter;margin:.75in .85in}@media print{body{margin:0}}';
+  const w = window.open('', '_blank');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Rahul_Solanki_' +
+    esc(RESUME.company).replace(/\s+/g, '_') + '</title><style>' + RCSS + printCSS + '</style></head><body>' +
+    RESUME.html + '<script>window.onload=function(){window.print();}<\/script></body></html>');
+  w.document.close();
+};
+
+$('docBtn').onclick = () => {
+  const css = RCSS + '.page{padding:.72in .85in .85in}';
+  const doc = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View></w:WordDocument></xml><![endif]--><style>@page WordSection1{size:8.5in 11in;margin:.75in .85in .85in .85in;}div.WordSection1{page:WordSection1;}' +
+    css + '</style></head><body><div class="WordSection1"><div class="page">' + RESUME.html + '</div></div></body></html>';
+  const blob = new Blob(['﻿', doc], { type: 'application/msword' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'Rahul_Solanki_' + (RESUME.company + '_' + RESUME.title).replace(/[^\w]+/g, '_') + '.doc';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+};
+
+$('htmlBtn').onclick = () => {
+  navigator.clipboard.writeText(RESUME.html).then(() => status('Resume HTML copied.', 'ok'));
+};
+</script>
+</body>
+</html>

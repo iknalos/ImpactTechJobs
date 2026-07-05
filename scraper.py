@@ -8,6 +8,7 @@ dashboard (docs/index.html).
 Run: python scraper.py
 """
 
+import html as htmllib
 import json
 import re
 import sys
@@ -18,6 +19,7 @@ import requests
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "docs" / "jobs.json"
+DESC_OUT = ROOT / "docs" / "desc.json"
 MANUAL = ROOT / "manual_jobs.json"
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (ElderTechJobs job dashboard; personal use)"}
@@ -59,7 +61,28 @@ def categorize(title):
     return "IT"
 
 
-def job(org, title, location, url, posted_iso, source):
+# phrases meaning F-1/OPT candidates cannot apply (citizenship / green card /
+# clearance requirements). Deliberately does NOT match "no sponsorship" — OPT
+# does not need sponsorship.
+CITIZEN_RE = re.compile(
+    r"(\bu\.?s\.?\s*citizen|united states citizen|citizenship\s+(is\s+)?required|"
+    r"must\s+be\s+a\s+citizen|green\s*card|permanent\s+resident|lawful\s+permanent|"
+    r"security\s+clearance|\bu\.?s\.?\s+person\b|\bitar\b)",
+    re.IGNORECASE,
+)
+
+TAG_RE = re.compile(r"<[^>]+>")
+WS_RE = re.compile(r"\s+")
+
+
+def strip_html(s):
+    if not s:
+        return ""
+    s = htmllib.unescape(htmllib.unescape(s))
+    return WS_RE.sub(" ", TAG_RE.sub(" ", s)).strip()[:8000]
+
+
+def job(org, title, location, url, posted_iso, source, desc=""):
     return {
         "org": org,
         "title": title.strip(),
@@ -68,6 +91,7 @@ def job(org, title, location, url, posted_iso, source):
         "posted": posted_iso,  # ISO date string or None
         "category": categorize(title),
         "source": source,
+        "_desc": desc,  # stripped out into desc.json before writing jobs.json
     }
 
 
@@ -75,7 +99,7 @@ def job(org, title, location, url, posted_iso, source):
 
 def fetch_greenhouse(org, board):
     r = requests.get(
-        "https://boards-api.greenhouse.io/v1/boards/%s/jobs?content=false" % board,
+        "https://boards-api.greenhouse.io/v1/boards/%s/jobs?content=true" % board,
         headers=HEADERS, timeout=TIMEOUT)
     r.raise_for_status()
     out = []
@@ -85,7 +109,8 @@ def fetch_greenhouse(org, board):
             continue
         posted = (j.get("first_published") or j.get("updated_at") or "")[:10] or None
         out.append(job(org, title, (j.get("location") or {}).get("name"),
-                       j.get("absolute_url"), posted, "greenhouse"))
+                       j.get("absolute_url"), posted, "greenhouse",
+                       strip_html(j.get("content", ""))))
     return out
 
 
@@ -102,7 +127,12 @@ def fetch_lever(org, slug):
         if j.get("createdAt"):
             posted = datetime.fromtimestamp(j["createdAt"] / 1000, tz=timezone.utc).date().isoformat()
         loc = (j.get("categories") or {}).get("location")
-        out.append(job(org, title, loc, j.get("hostedUrl"), posted, "lever"))
+        desc = j.get("descriptionPlain") or strip_html(j.get("description", ""))
+        for lst in j.get("lists", []):
+            desc += " " + lst.get("text", "") + ": " + strip_html(lst.get("content", ""))
+        desc += " " + (j.get("additionalPlain") or strip_html(j.get("additional", "")))
+        out.append(job(org, title, loc, j.get("hostedUrl"), posted, "lever",
+                       WS_RE.sub(" ", desc).strip()[:8000]))
     return out
 
 
@@ -117,7 +147,8 @@ def fetch_ashby(org, slug):
             continue
         posted = (j.get("publishedAt") or "")[:10] or None
         loc = j.get("location") or ("Remote" if j.get("isRemote") else "")
-        out.append(job(org, title, loc, j.get("jobUrl") or j.get("applyUrl"), posted, "ashby"))
+        desc = j.get("descriptionPlain") or strip_html(j.get("descriptionHtml", ""))
+        out.append(job(org, title, loc, j.get("jobUrl") or j.get("applyUrl"), posted, "ashby", desc))
     return out
 
 
@@ -140,7 +171,8 @@ def fetch_jibe(org, base):
             url = (d.get("meta_data") or {}).get("canonical_url") or \
                   "%s/jobs/%s" % (base, d.get("slug") or d.get("req_id", ""))
             loc = d.get("full_location") or d.get("city") or ""
-            out.append(job(org, title, loc, url, posted, "jibe"))
+            out.append(job(org, title, loc, url, posted, "jibe",
+                           strip_html(d.get("description", ""))))
         page += 1
     return out
 
@@ -198,10 +230,21 @@ def fetch_workday(org, host, tenant, site):
                     continue
                 jurl = "https://%s/en-US/%s%s" % (host, site, path)
                 out.append(job(org, title, j.get("locationsText"), jurl,
-                               _workday_posted(j.get("postedOn")), "workday"))
+                               _workday_posted(j.get("postedOn")), "workday", path))
             if new == 0:
                 break
             offset += 20
+    # second pass: fetch full descriptions only for the jobs that matched
+    for j in out:
+        path, j["_desc"] = j["_desc"], ""
+        try:
+            r = requests.get("https://%s/wday/cxs/%s/%s%s" % (host, tenant, site, path),
+                             headers=dict(HEADERS, Accept="application/json"), timeout=TIMEOUT)
+            r.raise_for_status()
+            j["_desc"] = strip_html(
+                (r.json().get("jobPostingInfo") or {}).get("jobDescription", ""))
+        except Exception:
+            pass
     return out
 
 
@@ -242,13 +285,20 @@ def main():
         all_jobs.extend(manual)
         print("  %-28s %3d roles" % ("manual_jobs.json", len(manual)))
 
-    # de-dupe by URL
-    seen, unique = set(), []
+    # de-dupe by URL; pull descriptions out into their own file and use them
+    # to flag citizenship/green-card requirements (F-1/OPT filter)
+    seen, unique, descs = set(), [], {}
     for j in all_jobs:
         key = (j.get("url") or j["org"]) + "|" + j["title"]
         if key in seen:
             continue
         seen.add(key)
+        desc = j.pop("_desc", "") or ""
+        if desc:
+            descs[key] = desc
+            j["citizen_req"] = bool(CITIZEN_RE.search(desc))
+        else:
+            j["citizen_req"] = None  # unknown (no description available)
         unique.append(j)
 
     unique.sort(key=lambda j: j.get("posted") or "0000", reverse=True)
@@ -285,11 +335,16 @@ def main():
         "jobs": unique,
     }
     OUT.write_text(json.dumps(payload, indent=1), encoding="utf-8")
-    # jobs.js mirror lets index.html work when opened straight from disk
+    DESC_OUT.write_text(json.dumps(descs), encoding="utf-8")
+    # .js mirrors let the pages work when opened straight from disk
     # (file:// blocks fetch), no web server needed
     (OUT.parent / "jobs.js").write_text(
         "window.JOBS_DATA = " + json.dumps(payload) + ";", encoding="utf-8")
+    (OUT.parent / "desc.js").write_text(
+        "window.DESC_DATA = " + json.dumps(descs) + ";", encoding="utf-8")
+    flagged = sum(1 for j in unique if j.get("citizen_req"))
     print("Wrote %d unique jobs -> %s (%d source errors)" % (len(unique), OUT, len(errors)))
+    print("Descriptions: %d | citizen/GC-flagged: %d" % (len(descs), flagged))
 
 
 if __name__ == "__main__":
