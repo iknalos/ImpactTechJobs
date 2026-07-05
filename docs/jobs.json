@@ -1,5 +1,6 @@
 {
- "updated": "2026-07-05T19:39:25+00:00",
+ "new_today": 0,
+ "updated": "2026-07-05T20:10:28+00:00",
  "count": 202,
  "errors": [],
  "jobs": [
@@ -10,7 +11,8 @@
    "url": "https://careers.workforceinnovationcenter.com/companies/council-on-aging/jobs/85084103-ai-systems-integrator",
    "posted": "2026-07-03",
    "source": "manual",
-   "category": "AI"
+   "category": "AI",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -19,7 +21,8 @@
    "url": "https://jobs.lever.co/hhaexchange/8a347d44-0cbd-4fe9-9cbc-8f9b9c767844",
    "posted": "2026-07-02",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -28,7 +31,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Remote/Staffing-and-Resource-Forecasting-Analyst_JR4810",
    "posted": "2026-07-02",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -37,7 +41,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Software-Engineer_JR4873",
    "posted": "2026-07-02",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Devoted Health",
@@ -46,7 +51,8 @@
    "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Associate-Director--AI-Performance---Operations_R3340",
    "posted": "2026-07-02",
    "category": "AI",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -55,7 +61,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Data-Scientist_JR4883",
    "posted": "2026-07-01",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -64,7 +71,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Data-Scientist_JR4884",
    "posted": "2026-07-01",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -73,7 +81,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Technical-Consultant-II_JR4879",
    "posted": "2026-07-01",
    "category": "IT",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Devoted Health",
@@ -82,7 +91,8 @@
    "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Contract-Digital-Marketing-Associate_R3329",
    "posted": "2026-07-01",
    "category": "IT",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Trinity Health (PACE parent)",
@@ -91,7 +101,8 @@
    "url": "https://jobs.trinity-health.org/job/00673696",
    "posted": "2026-07-01",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "InnovAge (PACE)",
@@ -100,7 +111,8 @@
    "url": "https://careers.innovage.com/jobs/6731",
    "posted": "2026-06-30",
    "category": "IT",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -109,7 +121,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Remote---US/Sr-Software-Engineer_JR4858",
    "posted": "2026-06-30",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Honor / Home Instead",
@@ -118,7 +131,8 @@
    "url": "https://boards.greenhouse.io/honor/jobs/8612615002?gh_jid=8612615002",
    "posted": "2026-06-29",
    "category": "AI",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -127,7 +141,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8612388002",
    "posted": "2026-06-29",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -136,7 +151,8 @@
    "url": "https://jobs.lever.co/pointclickcare/08ba62e8-23ca-4fe2-bf0e-1406701dd73e",
    "posted": "2026-06-29",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -145,7 +161,8 @@
    "url": "https://jobs.lever.co/pointclickcare/f6dcb46b-64cb-4354-b7a9-b1b6609eb88a",
    "posted": "2026-06-29",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -154,7 +171,8 @@
    "url": "https://jobs.vnshealth.org/jobs/4664?lang=en-us",
    "posted": "2026-06-29",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -163,7 +181,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Remote---US/Sr-Data-Engineer_JR4729",
    "posted": "2026-06-29",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Alzheimer's Association",
@@ -172,7 +191,8 @@
    "url": "https://jobs.alz.org/svp-information-technology-enterprise-systems/job/A56F0ABFCCC8DCEB57301230C4E821B4",
    "posted": "2026-06-29",
    "source": "manual",
-   "category": "IT"
+   "category": "IT",
+   "first_seen": null
   },
   {
    "org": "Oak Street Health (CVS)",
@@ -181,7 +201,8 @@
    "url": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/IL---Work-from-home/Sr-Analyst--Process_R0922429-1",
    "posted": "2026-06-29",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "Sunrise Senior Living",
@@ -190,7 +211,8 @@
    "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/en-US/SUNRISE_EXT_CAREERS/job/McLean-VA---Community-Support-Office/Business-Analyst---Enterprise-Systems_JR115515-1",
    "posted": "2026-06-27",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Sunrise Senior Living",
@@ -199,7 +221,8 @@
    "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/en-US/SUNRISE_EXT_CAREERS/job/McLean-VA---Community-Support-Office/Senior-Payroll-Analyst_JR116660-1",
    "posted": "2026-06-27",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Sunrise Senior Living",
@@ -208,7 +231,8 @@
    "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/en-US/SUNRISE_EXT_CAREERS/job/McLean-VA---Community-Support-Office/Senior-Payroll-Analyst_JR116661-1",
    "posted": "2026-06-27",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Sunrise Senior Living",
@@ -217,7 +241,8 @@
    "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/en-US/SUNRISE_EXT_CAREERS/job/McLean-VA---Community-Support-Office/Development-Analyst_JR116460-1",
    "posted": "2026-06-27",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Sunrise Senior Living",
@@ -226,7 +251,8 @@
    "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/en-US/SUNRISE_EXT_CAREERS/job/McLean-VA---Community-Support-Office/Senior-Accounts-Payable-Analyst_JR116015",
    "posted": "2026-06-27",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -235,7 +261,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8609854002",
    "posted": "2026-06-26",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -244,7 +271,8 @@
    "url": "https://jobs.lever.co/pointclickcare/fd619f37-555a-4ad5-8d9e-24af12f3e94d",
    "posted": "2026-06-26",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -253,7 +281,8 @@
    "url": "https://jobs.lever.co/hhaexchange/d6539c2c-8626-4363-9a5e-18ff76ac34f6",
    "posted": "2026-06-26",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -262,7 +291,8 @@
    "url": "https://careers.aarp.org/jobs/7467?lang=en-us",
    "posted": "2026-06-26",
    "category": "Software",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -271,7 +301,8 @@
    "url": "https://careers.aarp.org/jobs/7465?lang=en-us",
    "posted": "2026-06-26",
    "category": "Software",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -280,7 +311,8 @@
    "url": "https://jobs.vnshealth.org/jobs/5048?lang=en-us",
    "posted": "2026-06-26",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -289,7 +321,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Software-Engineer--Forward-Deployed-Engineer-_JR4861",
    "posted": "2026-06-26",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -298,7 +331,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Support-Analyst_JR4830",
    "posted": "2026-06-26",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Cityblock Health",
@@ -307,7 +341,8 @@
    "url": "https://cityblockhealth.wd1.myworkdayjobs.com/en-US/CityblockExternalCareerSite/job/USA/Manager--Healthcare-Analytics_R-1533",
    "posted": "2026-06-26",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Humana / CenterWell",
@@ -316,7 +351,8 @@
    "url": "https://careers.humana.com/job/R-419413",
    "posted": "2026-06-26",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "Humana / CenterWell",
@@ -325,7 +361,8 @@
    "url": "https://careers.humana.com/job/R-417657",
    "posted": "2026-06-26",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -334,7 +371,8 @@
    "url": "https://jobs.lever.co/pointclickcare/708c41cf-816e-4e06-8528-e33ed111aeaf",
    "posted": "2026-06-25",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -343,7 +381,8 @@
    "url": "https://jobs.lever.co/pointclickcare/f8250782-ea79-41ed-93b5-b2f93668218c",
    "posted": "2026-06-25",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -352,7 +391,8 @@
    "url": "https://jobs.lever.co/pointclickcare/aaf25d98-16b0-4f01-9386-5ffaf059af93",
    "posted": "2026-06-25",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -361,7 +401,8 @@
    "url": "https://jobs.lever.co/pointclickcare/b924d7a9-41d0-44bd-b7fc-da5841a5ed68",
    "posted": "2026-06-25",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -370,7 +411,8 @@
    "url": "https://jobs.vnshealth.org/jobs/5040?lang=en-us",
    "posted": "2026-06-25",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "Oak Street Health (CVS)",
@@ -379,7 +421,8 @@
    "url": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/IL---Work-from-home/Sr-Analyst--Marketing-Operations_R0948401-1",
    "posted": "2026-06-25",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -388,7 +431,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Software-Engineer_R0048361",
    "posted": "2026-06-24",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "A Place for Mom",
@@ -397,7 +441,8 @@
    "url": "https://www.builtinnyc.com/job/staff-software-engineer/8507471",
    "posted": "2026-06-24",
    "source": "manual",
-   "category": "AI"
+   "category": "AI",
+   "first_seen": null
   },
   {
    "org": "A Place for Mom",
@@ -406,7 +451,8 @@
    "url": "https://www.builtinnyc.com/job/sr-manager-engineering-b2b-platform/8735995",
    "posted": "2026-06-24",
    "source": "manual",
-   "category": "Software"
+   "category": "Software",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -415,7 +461,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8604716002",
    "posted": "2026-06-23",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -424,7 +471,8 @@
    "url": "https://jobs.lever.co/pointclickcare/9c6205d9-6ff7-4ffe-9998-068bcc49c587",
    "posted": "2026-06-23",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -433,7 +481,8 @@
    "url": "https://jobs.lever.co/pointclickcare/69271749-0d70-4a86-a432-6008399b4646",
    "posted": "2026-06-23",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -442,7 +491,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Staff-Data-Analyst_JR4889",
    "posted": "2026-06-23",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Devoted Health",
@@ -451,7 +501,8 @@
    "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Principal-Data-Scientist--Growth---Membership-Operations_R3300",
    "posted": "2026-06-23",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -460,7 +511,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Healthcare-Analytics-Consultant_R0048824-1",
    "posted": "2026-06-23",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Humana / CenterWell",
@@ -469,7 +521,8 @@
    "url": "https://careers.humana.com/job/R-415616",
    "posted": "2026-06-23",
    "source": "manual",
-   "category": "AI"
+   "category": "AI",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -478,7 +531,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8602126002",
    "posted": "2026-06-22",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "InnovAge (PACE)",
@@ -487,7 +541,8 @@
    "url": "https://careers.innovage.com/jobs/6732",
    "posted": "2026-06-22",
    "category": "IT",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -496,7 +551,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Staff-Data-Engineer_JR4803",
    "posted": "2026-06-22",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -505,7 +561,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Staff-Software-Engineer_JR4768",
    "posted": "2026-06-22",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -514,7 +571,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Staff-Software-Engineer_JR4814",
    "posted": "2026-06-22",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -523,7 +581,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Associate-Software-Engineer---Onsite_JR4907",
    "posted": "2026-06-22",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Devoted Health",
@@ -532,7 +591,8 @@
    "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Principal-Engineer--Enterprise-Engineering_R3289",
    "posted": "2026-06-22",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Devoted Health",
@@ -541,7 +601,8 @@
    "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Treasury-Analyst_R3286",
    "posted": "2026-06-22",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -550,7 +611,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Associate-Solution-Manager---DME-HME-Software-Solutions_JR4684",
    "posted": "2026-06-21",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -559,7 +621,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8601969002",
    "posted": "2026-06-20",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -568,7 +631,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8601973002",
    "posted": "2026-06-20",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -577,7 +641,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8599188002",
    "posted": "2026-06-18",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "On Lok (PACE)",
@@ -586,7 +651,8 @@
    "url": "https://onlok.applicantpro.com/jobs/",
    "posted": "2026-06-18",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -595,7 +661,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Support-Analyst_JR4809",
    "posted": "2026-06-17",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -604,7 +671,8 @@
    "url": "https://jobs.lever.co/pointclickcare/06c5f8c4-b24a-47a7-af25-d08924aa661d",
    "posted": "2026-06-16",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -613,7 +681,8 @@
    "url": "https://jobs.lever.co/pointclickcare/84924d6e-6564-472a-991f-2554478999c2",
    "posted": "2026-06-16",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -622,7 +691,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Support-Engineer---Operations_JR4832",
    "posted": "2026-06-16",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "NCOA (National Council on Aging)",
@@ -631,7 +701,8 @@
    "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=8efa0a0b-5556-4fc4-83b9-32d6d0dbab79&ccId=19000101_000001&lang=en_US",
    "posted": "2026-06-16",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -640,7 +711,8 @@
    "url": "https://jobs.lever.co/hhaexchange/545a47b0-c6ac-47ad-9570-5db68bcdd51d",
    "posted": "2026-06-15",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -649,7 +721,8 @@
    "url": "https://jobs.vnshealth.org/jobs/5002?lang=en-us",
    "posted": "2026-06-15",
    "category": "AI",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -658,7 +731,8 @@
    "url": "https://jobs.vnshealth.org/jobs/5001?lang=en-us",
    "posted": "2026-06-15",
    "category": "IT",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -667,7 +741,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Staff-Software-Engineer_JR4773",
    "posted": "2026-06-15",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Humana / CenterWell",
@@ -676,7 +751,8 @@
    "url": "https://careers.humana.com/job/R-410243",
    "posted": "2026-06-15",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "Council on Aging of Southwestern Ohio (AAA)",
@@ -685,7 +761,8 @@
    "url": "https://www.help4seniors.org/careers/open-positions/",
    "posted": "2026-06-13",
    "source": "manual",
-   "category": "Software"
+   "category": "Software",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -694,7 +771,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Applications--ServiceNow--Engineer_R0048673",
    "posted": "2026-06-12",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Council on Aging of Southwestern Ohio (AAA)",
@@ -703,7 +781,8 @@
    "url": "https://www.help4seniors.org/careers/open-positions/",
    "posted": "2026-06-12",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "A Place for Mom",
@@ -712,7 +791,8 @@
    "url": "https://www.builtinnyc.com/job/principal-data-engineer-data-platform/9719968",
    "posted": "2026-06-12",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -721,7 +801,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8587623002",
    "posted": "2026-06-11",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -730,7 +811,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8587897002",
    "posted": "2026-06-11",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -739,7 +821,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Staff-Software-Engineer---Cloud-Infrastructure-Engineer_JR4741-1",
    "posted": "2026-06-11",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Cityblock Health",
@@ -748,7 +831,8 @@
    "url": "https://cityblockhealth.wd1.myworkdayjobs.com/en-US/CityblockExternalCareerSite/job/USA/Principal--Executive-Operations---AI-Enablement_R-1525",
    "posted": "2026-06-11",
    "category": "AI",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Trinity Health (PACE parent)",
@@ -757,7 +841,8 @@
    "url": "https://jobs.trinity-health.org/job/00656544",
    "posted": "2026-06-11",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -766,7 +851,8 @@
    "url": "https://jobs.vnshealth.org/jobs/4742?lang=en-us",
    "posted": "2026-06-10",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "Oak Street Health (CVS)",
@@ -775,7 +861,8 @@
    "url": "https://cvshealth.wd1.myworkdayjobs.com/CVS_Health_Careers/job/IL---Work-from-home/Sr-Analyst--Operations-Strategy_R0872379",
    "posted": "2026-06-10",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -784,7 +871,8 @@
    "url": "https://jobs.lever.co/hhaexchange/e17ddc0f-c8a5-4155-a45d-ff737e2585bc",
    "posted": "2026-06-09",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -793,7 +881,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/AI-Software-Engineer_R0047787",
    "posted": "2026-06-09",
    "category": "AI",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Cityblock Health",
@@ -802,7 +891,8 @@
    "url": "https://cityblockhealth.wd1.myworkdayjobs.com/en-US/CityblockExternalCareerSite/job/USA/AI-Staff-Software-Engineer_R-1461",
    "posted": "2026-06-09",
    "category": "AI",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Honor / Home Instead",
@@ -811,7 +901,8 @@
    "url": "https://boards.greenhouse.io/honor/jobs/8582881002?gh_jid=8582881002",
    "posted": "2026-06-08",
    "category": "Data",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -820,7 +911,8 @@
    "url": "https://careers.aarp.org/jobs/7445?lang=en-us",
    "posted": "2026-06-08",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -829,7 +921,8 @@
    "url": "https://careers.aarp.org/jobs/7427?lang=en-us",
    "posted": "2026-06-08",
    "category": "Software",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -838,7 +931,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Software-Engineer_JR4777",
    "posted": "2026-06-08",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Alzheimer's Association",
@@ -847,7 +941,8 @@
    "url": "https://jobs.alz.org/sr-director-it-project-management/job/23901083B28A21EE5BC37075C98AFC8D",
    "posted": "2026-06-08",
    "source": "manual",
-   "category": "IT"
+   "category": "IT",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -856,7 +951,8 @@
    "url": "https://jobs.lever.co/pointclickcare/0149539a-8971-409a-83b1-275bd9a4b2f6",
    "posted": "2026-06-05",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "August Health",
@@ -865,7 +961,8 @@
    "url": "https://jobs.ashbyhq.com/august-health/637eedff-bfc3-4a78-b491-ddb9b4ddfc90",
    "posted": "2026-06-05",
    "category": "AI",
-   "source": "ashby"
+   "source": "ashby",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -874,7 +971,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Software-Engineer---NET_JR4683",
    "posted": "2026-06-05",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -883,7 +981,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Software-Engineer_JR4630",
    "posted": "2026-06-05",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -892,7 +991,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Software-Engineer_JR4478-1",
    "posted": "2026-06-05",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "WellSky",
@@ -901,7 +1001,8 @@
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Technical-Program-Manager_JR4790",
    "posted": "2026-06-05",
    "category": "IT",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Devoted Health",
@@ -910,7 +1011,8 @@
    "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Associate-Director--Medicare-Advantage-Bid-Strategy---Analytics_R3211",
    "posted": "2026-06-05",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Devoted Health",
@@ -919,7 +1021,8 @@
    "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Senior-Manager--Agentic-Strategy---Operations_R3171",
    "posted": "2026-06-05",
    "category": "AI",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Devoted Health",
@@ -928,7 +1031,8 @@
    "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Senior-Internal-Controls-Analyst_R3182",
    "posted": "2026-06-05",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -937,7 +1041,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Associate-IT-Field-Support-Technician_R0048452",
    "posted": "2026-06-05",
    "category": "IT",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -946,7 +1051,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Health-Economics-Analyst_R0048547",
    "posted": "2026-06-05",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -955,7 +1061,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Associate-IT-Product-Manager_R0048067",
    "posted": "2026-06-05",
    "category": "IT",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -964,7 +1071,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-AI-Software-Engineer_R0047784",
    "posted": "2026-06-05",
    "category": "AI",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -973,7 +1081,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Data-Engineer_R0047163",
    "posted": "2026-06-05",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -982,7 +1091,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Director--Software-Engineering_R0046888",
    "posted": "2026-06-05",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -991,7 +1101,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Associate-IT-Architect_R0046454",
    "posted": "2026-06-05",
    "category": "IT",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -1000,7 +1111,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Data-Engineer_R0046239",
    "posted": "2026-06-05",
    "category": "Data",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "ChenMed",
@@ -1009,7 +1121,8 @@
    "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Associate-Systems-Administrator_R0047360",
    "posted": "2026-06-05",
    "category": "IT",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "Cityblock Health",
@@ -1018,7 +1131,8 @@
    "url": "https://cityblockhealth.wd1.myworkdayjobs.com/en-US/CityblockExternalCareerSite/job/USA/Platform-Engineer_R-1462",
    "posted": "2026-06-05",
    "category": "Software",
-   "source": "workday"
+   "source": "workday",
+   "first_seen": null
   },
   {
    "org": "NYC Department for the Aging",
@@ -1027,7 +1141,8 @@
    "url": "https://cityjobs.nyc.gov/job/analyst-in-manhattan-jid-44298",
    "posted": "2026-06-05",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "NYC Department for the Aging",
@@ -1036,7 +1151,8 @@
    "url": "https://cityjobs.nyc.gov/job/analyst-in-manhattan-jid-44279",
    "posted": "2026-06-05",
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1045,7 +1161,8 @@
    "url": "https://jobs.lever.co/pointclickcare/92bd0a33-a934-499a-81ec-b38956488cc5",
    "posted": "2026-06-04",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -1054,7 +1171,8 @@
    "url": "https://careers.aarp.org/jobs/7437?lang=en-us",
    "posted": "2026-06-04",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "InnovAge (PACE)",
@@ -1063,7 +1181,8 @@
    "url": "https://careers.innovage.com/jobs/6683",
    "posted": "2026-06-04",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -1072,7 +1191,8 @@
    "url": "https://careers.aarp.org/jobs/7428?lang=en-us",
    "posted": "2026-06-02",
    "category": "Software",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -1081,7 +1201,8 @@
    "url": "https://jobs.vnshealth.org/jobs/4961?lang=en-us",
    "posted": "2026-06-02",
    "category": "Software",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1090,7 +1211,8 @@
    "url": "https://jobs.lever.co/pointclickcare/aa350ca4-59d6-4ffd-aa7f-00dceb82c3a6",
    "posted": "2026-06-01",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Humana / CenterWell",
@@ -1099,7 +1221,8 @@
    "url": "https://careers.humana.com/job/R-413794",
    "posted": "2026-06-01",
    "source": "manual",
-   "category": "AI"
+   "category": "AI",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -1108,7 +1231,8 @@
    "url": "https://careers.aarp.org/jobs/7416?lang=en-us",
    "posted": "2026-05-29",
    "category": "AI",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -1117,7 +1241,8 @@
    "url": "https://careers.aarp.org/jobs/7415?lang=en-us",
    "posted": "2026-05-29",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -1126,7 +1251,8 @@
    "url": "https://careers.aarp.org/jobs/7424?lang=en-us",
    "posted": "2026-05-27",
    "category": "IT",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -1135,7 +1261,8 @@
    "url": "https://jobs.vnshealth.org/jobs/4887?lang=en-us",
    "posted": "2026-05-27",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -1144,7 +1271,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8564168002",
    "posted": "2026-05-26",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1153,7 +1281,8 @@
    "url": "https://jobs.lever.co/pointclickcare/9b4f3dd9-2e55-475e-8130-b9db0cd19831",
    "posted": "2026-05-26",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1162,7 +1291,8 @@
    "url": "https://jobs.lever.co/pointclickcare/bc344a3b-9adc-41de-9ce0-0e62ad1971a3",
    "posted": "2026-05-26",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1171,7 +1301,8 @@
    "url": "https://jobs.lever.co/pointclickcare/2030e765-aefb-4ac3-9187-dd87a9c325eb",
    "posted": "2026-05-26",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1180,7 +1311,8 @@
    "url": "https://jobs.lever.co/pointclickcare/60b0ac1f-37fa-4429-a3d2-43b972d89de3",
    "posted": "2026-05-26",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -1189,7 +1321,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8557864002",
    "posted": "2026-05-20",
    "category": "Data",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -1198,7 +1331,8 @@
    "url": "https://jobs.vnshealth.org/jobs/4918?lang=en-us",
    "posted": "2026-05-20",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1207,7 +1341,8 @@
    "url": "https://jobs.lever.co/pointclickcare/43defc56-cbc6-4ab2-849d-6269879721dd",
    "posted": "2026-05-19",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1216,7 +1351,8 @@
    "url": "https://jobs.lever.co/pointclickcare/21d6bf7c-1806-4cd6-a172-9fde6c5e9420",
    "posted": "2026-05-19",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "InnovAge (PACE)",
@@ -1225,7 +1361,8 @@
    "url": "https://careers.innovage.com/jobs/6552",
    "posted": "2026-05-19",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1234,7 +1371,8 @@
    "url": "https://jobs.lever.co/pointclickcare/ffc095c1-0f5b-4bb8-8819-8525e9072aa1",
    "posted": "2026-05-15",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Element Care PACE",
@@ -1243,7 +1381,8 @@
    "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=52532d91-0809-4e90-8901-6cf15157199d&ccId=19000101_000001&lang=en_US",
    "posted": "2026-05-15",
    "source": "manual",
-   "category": "IT"
+   "category": "IT",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1252,7 +1391,8 @@
    "url": "https://jobs.lever.co/hhaexchange/b4d266dd-fc11-4237-bce2-60c7d8eddae2",
    "posted": "2026-05-14",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1261,7 +1401,8 @@
    "url": "https://jobs.lever.co/hhaexchange/f3ef261c-3ef2-4ed4-b0f2-cf2f8b2fa24f",
    "posted": "2026-05-11",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Council on Aging of Southwestern Ohio (AAA)",
@@ -1270,7 +1411,8 @@
    "url": "https://careers.workforceinnovationcenter.com/companies/council-on-aging/jobs/77768332-tier-3-it-support-specialist",
    "posted": "2026-05-07",
    "source": "manual",
-   "category": "IT"
+   "category": "IT",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1279,7 +1421,8 @@
    "url": "https://jobs.lever.co/pointclickcare/c68b5bd3-6dda-410c-bf32-28144f64289f",
    "posted": "2026-05-06",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1288,7 +1431,8 @@
    "url": "https://jobs.lever.co/pointclickcare/2870f41a-b610-4896-90f4-65c9ce3a8ccc",
    "posted": "2026-05-06",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1297,7 +1441,8 @@
    "url": "https://jobs.lever.co/hhaexchange/c0646bd3-80f5-4c32-9d3c-43a81fec4514",
    "posted": "2026-05-06",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "August Health",
@@ -1306,7 +1451,8 @@
    "url": "https://jobs.ashbyhq.com/august-health/f575edd6-5a99-49dd-9504-fb25b810919e",
    "posted": "2026-05-06",
    "category": "Software",
-   "source": "ashby"
+   "source": "ashby",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1315,7 +1461,8 @@
    "url": "https://jobs.lever.co/pointclickcare/560fc3cf-e98e-44aa-b9b8-3ac3f3513b68",
    "posted": "2026-05-05",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Honor / Home Instead",
@@ -1324,7 +1471,8 @@
    "url": "https://boards.greenhouse.io/honor/jobs/8531886002?gh_jid=8531886002",
    "posted": "2026-04-30",
    "category": "Data",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -1333,7 +1481,8 @@
    "url": "https://jobs.vnshealth.org/jobs/4765?lang=en-us",
    "posted": "2026-04-30",
    "category": "IT",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1342,7 +1491,8 @@
    "url": "https://jobs.lever.co/hhaexchange/3d1d4b12-0876-429f-a981-57aa3b8546e5",
    "posted": "2026-04-29",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -1351,7 +1501,8 @@
    "url": "https://jobs.vnshealth.org/jobs/4688?lang=en-us",
    "posted": "2026-04-27",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -1360,7 +1511,8 @@
    "url": "https://careers.aarp.org/jobs/7362?lang=en-us",
    "posted": "2026-04-24",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1369,7 +1521,8 @@
    "url": "https://jobs.lever.co/pointclickcare/e1e6551d-5de2-45c5-92fe-a32558fad250",
    "posted": "2026-04-21",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1378,7 +1531,8 @@
    "url": "https://jobs.lever.co/pointclickcare/264e2c0a-82c0-49dd-8c8d-44a183a8f97e",
    "posted": "2026-04-21",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "August Health",
@@ -1387,7 +1541,8 @@
    "url": "https://jobs.ashbyhq.com/august-health/44a31e8c-1494-40d0-8a13-a89ee92437c9",
    "posted": "2026-04-20",
    "category": "Data",
-   "source": "ashby"
+   "source": "ashby",
+   "first_seen": null
   },
   {
    "org": "VNS Health",
@@ -1396,7 +1551,8 @@
    "url": "https://jobs.vnshealth.org/jobs/4755?lang=en-us",
    "posted": "2026-04-17",
    "category": "Software",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -1405,7 +1561,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8510658002",
    "posted": "2026-04-16",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -1414,7 +1571,8 @@
    "url": "https://careers.aarp.org/jobs/7355?lang=en-us",
    "posted": "2026-04-14",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -1423,7 +1581,8 @@
    "url": "https://careers.aarp.org/jobs/7348?lang=en-us",
    "posted": "2026-04-14",
    "category": "AI",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "Honor / Home Instead",
@@ -1432,7 +1591,8 @@
    "url": "https://boards.greenhouse.io/honor/jobs/8493085002?gh_jid=8493085002",
    "posted": "2026-04-13",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1441,7 +1601,8 @@
    "url": "https://jobs.lever.co/pointclickcare/0e75d6ca-522d-4dfc-a360-f34312393259",
    "posted": "2026-04-13",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1450,7 +1611,8 @@
    "url": "https://jobs.lever.co/pointclickcare/3315f828-6757-4c48-95d2-39ac887eca21",
    "posted": "2026-04-13",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "InnovAge (PACE)",
@@ -1459,7 +1621,8 @@
    "url": "https://careers.innovage.com/jobs/6346",
    "posted": "2026-04-13",
    "category": "IT",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1468,7 +1631,8 @@
    "url": "https://jobs.lever.co/hhaexchange/37711e74-f9e9-42c5-9c4f-66df2afab2e2",
    "posted": "2026-04-08",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1477,7 +1641,8 @@
    "url": "https://jobs.lever.co/pointclickcare/52de573a-db3a-401d-83b6-ab29525c399b",
    "posted": "2026-04-05",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -1486,7 +1651,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8489750002",
    "posted": "2026-04-01",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1495,7 +1661,8 @@
    "url": "https://jobs.lever.co/pointclickcare/94b85a28-9893-48c5-a2bb-a50175887ef1",
    "posted": "2026-04-01",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1504,7 +1671,8 @@
    "url": "https://jobs.lever.co/pointclickcare/53e0c620-e7e9-4e54-90f5-3ff2bff10a35",
    "posted": "2026-04-01",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1513,7 +1681,8 @@
    "url": "https://jobs.lever.co/pointclickcare/64597a6f-76b4-404d-9632-1e031e56c585",
    "posted": "2026-04-01",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "InnovAge (PACE)",
@@ -1522,7 +1691,8 @@
    "url": "https://careers.innovage.com/jobs/6286",
    "posted": "2026-04-01",
    "category": "Data",
-   "source": "jibe"
+   "source": "jibe",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1531,7 +1701,8 @@
    "url": "https://jobs.lever.co/hhaexchange/3e91a459-918d-4fd6-8804-38e35df08e50",
    "posted": "2026-03-13",
    "category": "IT",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -1540,7 +1711,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8459704002",
    "posted": "2026-03-12",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -1549,7 +1721,8 @@
    "url": "https://alayacare.com/open-positions?gh_jid=8459659002",
    "posted": "2026-03-11",
    "category": "Data",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1558,7 +1731,8 @@
    "url": "https://jobs.lever.co/pointclickcare/f898bbb1-6d98-4708-9762-414799038ea4",
    "posted": "2026-03-09",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1567,7 +1741,8 @@
    "url": "https://jobs.lever.co/pointclickcare/2e2fd17b-7360-449b-9fd4-de722f49a51f",
    "posted": "2026-03-09",
    "category": "AI",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1576,7 +1751,8 @@
    "url": "https://jobs.lever.co/hhaexchange/22f2f494-5fbb-4f23-ae7f-abad9be4d474",
    "posted": "2026-03-09",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1585,7 +1761,8 @@
    "url": "https://jobs.lever.co/hhaexchange/4387bac1-7973-42d7-be37-41e1bfdb5058",
    "posted": "2026-03-02",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Wellthy",
@@ -1594,7 +1771,8 @@
    "url": "https://wellthy.com/careers/post/?gh_jid=7647853003",
    "posted": "2026-02-27",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1603,7 +1781,8 @@
    "url": "https://jobs.lever.co/pointclickcare/6768d2b6-301e-47a3-a69d-79359c1e21b6",
    "posted": "2026-02-22",
    "category": "IT",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1612,7 +1791,8 @@
    "url": "https://jobs.lever.co/pointclickcare/8c607ffa-e08d-4091-9723-66fa16dcad3c",
    "posted": "2026-02-22",
    "category": "IT",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Wellthy",
@@ -1621,7 +1801,8 @@
    "url": "https://wellthy.com/careers/post/?gh_jid=7624465003",
    "posted": "2026-02-13",
    "category": "AI",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "Element Care PACE",
@@ -1630,7 +1811,8 @@
    "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=52532d91-0809-4e90-8901-6cf15157199d&ccId=19000101_000001&lang=en_US",
    "posted": "2026-02-05",
    "source": "manual",
-   "category": "AI"
+   "category": "AI",
+   "first_seen": null
   },
   {
    "org": "Element Care PACE",
@@ -1639,7 +1821,8 @@
    "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=52532d91-0809-4e90-8901-6cf15157199d&ccId=19000101_000001&lang=en_US",
    "posted": "2026-02-05",
    "source": "manual",
-   "category": "AI"
+   "category": "AI",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1648,7 +1831,8 @@
    "url": "https://jobs.lever.co/hhaexchange/4f77e5a4-f088-4e54-8137-0a6acdb90c4e",
    "posted": "2026-01-30",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Honor / Home Instead",
@@ -1657,7 +1841,8 @@
    "url": "https://boards.greenhouse.io/honor/jobs/8382000002?gh_jid=8382000002",
    "posted": "2026-01-26",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1666,7 +1851,8 @@
    "url": "https://jobs.lever.co/hhaexchange/58b599a5-48d2-4c12-a93c-c9d82678ab0b",
    "posted": "2026-01-22",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1675,7 +1861,8 @@
    "url": "https://jobs.lever.co/pointclickcare/1a88bdc7-ef46-4c3a-a7c2-db9541a8ed4e",
    "posted": "2026-01-14",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1684,7 +1871,8 @@
    "url": "https://jobs.lever.co/pointclickcare/b7571461-c5d3-4752-a4e4-0e7365584704",
    "posted": "2026-01-14",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1693,7 +1881,8 @@
    "url": "https://jobs.lever.co/pointclickcare/27ea212e-092c-4567-bb56-fc17a71fcc4c",
    "posted": "2026-01-08",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1702,7 +1891,8 @@
    "url": "https://jobs.lever.co/pointclickcare/3e4fb2bc-cc9e-4dab-97af-51e8bdcf05fd",
    "posted": "2026-01-08",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1711,7 +1901,8 @@
    "url": "https://jobs.lever.co/pointclickcare/85ba9c8c-7156-4644-93d8-def035381261",
    "posted": "2026-01-07",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1720,7 +1911,8 @@
    "url": "https://jobs.lever.co/pointclickcare/bd934958-3123-4d6d-babc-b73f5b210055",
    "posted": "2026-01-07",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1729,7 +1921,8 @@
    "url": "https://jobs.lever.co/pointclickcare/1ffdd16e-0f99-42ae-ad44-fbdf90d2ff73",
    "posted": "2025-12-09",
    "category": "Software",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Honor / Home Instead",
@@ -1738,7 +1931,8 @@
    "url": "https://boards.greenhouse.io/honor/jobs/8297124002?gh_jid=8297124002",
    "posted": "2025-12-03",
    "category": "Software",
-   "source": "greenhouse"
+   "source": "greenhouse",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1747,7 +1941,8 @@
    "url": "https://jobs.lever.co/pointclickcare/7402dc5f-80c6-449c-979e-3718851c2cc3",
    "posted": "2025-11-24",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -1756,7 +1951,8 @@
    "url": "https://jobs.lever.co/pointclickcare/ac96224a-c756-457e-8ff3-49c5d92be1ec",
    "posted": "2025-11-24",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "HHAeXchange",
@@ -1765,7 +1961,8 @@
    "url": "https://jobs.lever.co/hhaexchange/1c16c741-a7e3-4d06-a5b1-d4b60bbac23d",
    "posted": "2025-08-13",
    "category": "Data",
-   "source": "lever"
+   "source": "lever",
+   "first_seen": null
   },
   {
    "org": "Detroit Area Agency on Aging",
@@ -1774,7 +1971,8 @@
    "url": "https://www.detroitseniorsolution.com/open-positions/",
    "posted": null,
    "source": "manual",
-   "category": "Data"
+   "category": "Data",
+   "first_seen": null
   },
   {
    "org": "Mon Ami (aging & disability services data platform)",
@@ -1783,7 +1981,8 @@
    "url": "https://www.monami.io/jobs/senior-rails-engineer",
    "posted": null,
    "source": "manual",
-   "category": "Software"
+   "category": "Software",
+   "first_seen": null
   },
   {
    "org": "Mon Ami (aging & disability services data platform)",
@@ -1792,7 +1991,8 @@
    "url": "https://www.monami.io/jobs/senior-devops-engineer",
    "posted": null,
    "source": "manual",
-   "category": "Software"
+   "category": "Software",
+   "first_seen": null
   },
   {
    "org": "Sensi.AI",
@@ -1801,7 +2001,8 @@
    "url": "https://www.sensi.ai/careers/co/austin-tx/07.D68/prompt-engineer/all",
    "posted": null,
    "source": "manual",
-   "category": "AI"
+   "category": "AI",
+   "first_seen": null
   },
   {
    "org": "Aaniie / Smartcare Software",
@@ -1810,7 +2011,8 @@
    "url": "https://aaniie.com/careers/",
    "posted": null,
    "source": "manual",
-   "category": "AI"
+   "category": "AI",
+   "first_seen": null
   },
   {
    "org": "CarePredict",
@@ -1819,7 +2021,8 @@
    "url": "https://www.carepredict.com/careers",
    "posted": null,
    "source": "manual",
-   "category": "Software"
+   "category": "Software",
+   "first_seen": null
   }
  ]
 }

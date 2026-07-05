@@ -253,7 +253,32 @@ def main():
 
     unique.sort(key=lambda j: j.get("posted") or "0000", reverse=True)
 
+    # carry over first_seen from the previous run so the dashboard can show
+    # "added today"; jobs from before tracking started keep first_seen=null
+    prev_seen, had_prev = {}, False
+    if OUT.exists():
+        try:
+            for old in json.loads(OUT.read_text(encoding="utf-8")).get("jobs", []):
+                k = (old.get("url") or old.get("org", "")) + "|" + old.get("title", "")
+                prev_seen[k] = old.get("first_seen")
+            had_prev = True
+        except Exception:
+            pass
+    today = datetime.now(timezone.utc).date().isoformat()
+    new_today = 0
+    for j in unique:
+        k = (j.get("url") or j["org"]) + "|" + j["title"]
+        if k in prev_seen:
+            j["first_seen"] = prev_seen[k]
+        else:
+            # on the very first tracked run everything would count as "new";
+            # suppress that by only stamping dates once a previous file exists
+            j["first_seen"] = today if had_prev else None
+        if j["first_seen"] == today:
+            new_today += 1
+
     payload = {
+        "new_today": new_today,
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "count": len(unique),
         "errors": errors,

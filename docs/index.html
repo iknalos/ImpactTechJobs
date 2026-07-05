@@ -110,6 +110,18 @@
   .restore:hover { border-color: var(--accent); color: var(--accent); }
   .tag.applied { background: var(--new-bg); color: var(--new-ink); }
   .tag.gone { background: #fde8e8; color: #b02a2a; }
+  .tag.today { background: #dbeffe; color: #075e9c; }
+  #todayBanner {
+    background: linear-gradient(90deg, #e6f3fe, #eef7ff); border: 1px solid #b9dcf8; color: #0b4e8a;
+    border-radius: 12px; padding: 13px 17px; margin-bottom: 13px; display: flex; align-items: center; gap: 10px;
+    font-size: 14.5px; font-weight: 550;
+  }
+  #todayBanner button {
+    margin-left: auto; border: 1px solid #1a56db; background: #1a56db; color: #fff; border-radius: 8px;
+    padding: 7px 14px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;
+  }
+  #todayBanner button:hover { background: #1244ad; }
+  #todayBanner button.off { background: #fff; color: #1a56db; }
   #toast {
     position: fixed; right: 18px; bottom: 18px; z-index: 60; background: #fff; border: 1px solid var(--line);
     border-radius: 14px; box-shadow: 0 10px 34px rgba(16,30,54,.22); padding: 16px 18px; max-width: 350px; display: none;
@@ -146,6 +158,7 @@
       <div class="stat"><b id="stCo">–</b>companies</div>
       <div class="stat"><b id="stNew">–</b>posted this week</div>
       <div class="stat"><b id="stRemote">–</b>remote-friendly</div>
+      <div class="stat"><b id="stToday">–</b>added today</div>
       <div class="stat"><b id="stApplied">–</b>applied</div>
     </div>
     <div id="updated">Loading…</div>
@@ -182,6 +195,10 @@
 </div>
 
 <main>
+  <div id="todayBanner" style="display:none">
+    <span id="tbText"></span>
+    <button id="tbBtn">Show me →</button>
+  </div>
   <div id="resultbar"></div>
   <div id="list"></div>
 </main>
@@ -209,7 +226,8 @@ const STATES = new Set(('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA M
 const STATE_NAMES = {alabama:'AL',alaska:'AK',arizona:'AZ',arkansas:'AR',california:'CA',colorado:'CO',connecticut:'CT',delaware:'DE',florida:'FL',georgia:'GA',hawaii:'HI',idaho:'ID',illinois:'IL',indiana:'IN',iowa:'IA',kansas:'KS',kentucky:'KY',louisiana:'LA',maine:'ME',maryland:'MD',massachusetts:'MA',michigan:'MI',minnesota:'MN',mississippi:'MS',missouri:'MO',montana:'MT',nebraska:'NE',nevada:'NV','new hampshire':'NH','new jersey':'NJ','new mexico':'NM','new york':'NY','north carolina':'NC','north dakota':'ND',ohio:'OH',oklahoma:'OK',oregon:'OR',pennsylvania:'PA','rhode island':'RI','south carolina':'SC','south dakota':'SD',tennessee:'TN',texas:'TX',utah:'UT',vermont:'VT',virginia:'VA',washington:'WA','west virginia':'WV',wisconsin:'WI',wyoming:'WY','washington dc':'DC'};
 const AVATAR_COLORS = ['#1a56db','#0e7490','#7c3aed','#b45309','#be185d','#15803d','#4338ca','#a21caf','#0f766e','#c2410c'];
 
-let JOBS = [], VIEW = 'group';
+let JOBS = [], VIEW = 'group', LATEST = '', NEW_ONLY = false;
+const isNewToday = j => j.first_seen && j.first_seen === LATEST;
 
 /* ---- applied tracker (persists in this browser's localStorage) ---- */
 const jobKey = j => (j.url || j.org) + '|' + j.title;
@@ -287,6 +305,14 @@ function loadData() {
 
 loadData().then(d => {
   JOBS = d.jobs || [];
+  LATEST = (d.updated || '').slice(0, 10);
+  const nToday = JOBS.filter(isNewToday).length;
+  $('stToday').textContent = nToday;
+  if (nToday > 0) {
+    $('todayBanner').style.display = 'flex';
+    $('tbText').textContent = '🆕 ' + nToday + ' job' + (nToday === 1 ? '' : 's') +
+      ' added in today’s refresh — fresh postings are your best shot, apply early!';
+  }
   $('stOpen').textContent = JOBS.length;
   $('stCo').textContent = new Set(JOBS.map(j => j.org)).size;
   $('stNew').textContent = JOBS.filter(j => { const a = daysAgo(j.posted); return a !== null && a <= 7; }).length;
@@ -316,6 +342,7 @@ function filtered() {
         co = $('fCo').value, maxD = $('fDays').value ? +$('fDays').value : null, rem = $('fRemote').checked;
   return JOBS.filter(j => {
     if (APPLIED.has(jobKey(j))) return false;
+    if (NEW_ONLY && !isNewToday(j)) return false;
     if (cat && j.category !== cat) return false;
     if (co && j.org !== co) return false;
     if (rem && !isRemote(j)) return false;
@@ -333,6 +360,7 @@ function rowHTML(j, withCompany) {
   const key = jobKey(j);
   return `<a class="row" href="${esc(j.url)}" target="_blank" rel="noopener" data-key="${esc(key)}">
     <span class="title">${esc(j.title)} <span class="tag ${j.category}">${j.category}</span>
+      ${isNewToday(j) ? '<span class="tag today">ADDED TODAY</span>' : ''}
       ${withCompany ? '<span class="co-inline">· ' + esc(j.org) + '</span>' : ''}</span>
     <span class="loc">${esc(j.location)}</span>
     <span class="posted">${postedCell(j)}</span>
@@ -427,8 +455,16 @@ function setView(v) {
 $('vGroup').onclick = () => setView('group');
 $('vFlat').onclick = () => setView('flat');
 $('vApplied').onclick = () => setView('applied');
+
+$('tbBtn').onclick = () => {
+  NEW_ONLY = !NEW_ONLY;
+  $('tbBtn').textContent = NEW_ONLY ? 'Show all openings' : 'Show me →';
+  $('tbBtn').classList.toggle('off', NEW_ONLY);
+  if (NEW_ONLY) setView('flat'); else render();
+};
 $('reset').onclick = () => {
   $('q').value = ''; $('fCat').value = ''; $('fLoc').value = ''; $('fCo').value = ''; $('fDays').value = ''; $('fRemote').checked = false;
+  NEW_ONLY = false; $('tbBtn').textContent = 'Show me →'; $('tbBtn').classList.remove('off');
   render();
 };
 </script>
