@@ -74,7 +74,8 @@
   .company.closed .co-body { display: none; }
 
   .co-body { border-top: 1px solid var(--line); }
-  .cols, .row { display: grid; grid-template-columns: minmax(0,1fr) 210px 175px; gap: 14px; align-items: center; padding: 10px 18px; }
+  .cols, .row { display: grid; grid-template-columns: minmax(0,1fr) 200px 165px 32px; gap: 14px; align-items: center; padding: 10px 18px; }
+  .applied-view .cols, .applied-view .row { grid-template-columns: minmax(0,1fr) 200px 165px 100px; }
   .cols { font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); background: #f8fafc; border-bottom: 1px solid var(--line); padding-top: 8px; padding-bottom: 8px; }
   .row { border-bottom: 1px solid #eef2f7; text-decoration: none; }
   .row:last-child { border-bottom: 0; }
@@ -95,6 +96,34 @@
 
   .flat .co-head { display: none; }
   .empty { background: var(--card); border: 1px dashed var(--line); border-radius: 12px; padding: 46px 20px; text-align: center; color: var(--muted); }
+
+  /* ---------- applied tracker ---------- */
+  .mark {
+    width: 27px; height: 27px; border-radius: 50%; border: 1px solid var(--line); background: #fff;
+    color: var(--muted); cursor: pointer; font-size: 13px; line-height: 1; flex: none; justify-self: end;
+  }
+  .mark:hover { background: var(--new-bg); color: var(--new-ink); border-color: var(--new-ink); }
+  .restore {
+    padding: 5px 11px; border-radius: 7px; border: 1px solid var(--line); background: #fff;
+    color: var(--muted); cursor: pointer; font-size: 12px; justify-self: end; white-space: nowrap;
+  }
+  .restore:hover { border-color: var(--accent); color: var(--accent); }
+  .tag.applied { background: var(--new-bg); color: var(--new-ink); }
+  .tag.gone { background: #fde8e8; color: #b02a2a; }
+  #toast {
+    position: fixed; right: 18px; bottom: 18px; z-index: 60; background: #fff; border: 1px solid var(--line);
+    border-radius: 14px; box-shadow: 0 10px 34px rgba(16,30,54,.22); padding: 16px 18px; max-width: 350px; display: none;
+  }
+  #toast.show { display: block; animation: pop .18s ease-out; }
+  @keyframes pop { from { transform: translateY(8px); opacity: 0; } to { transform: none; opacity: 1; } }
+  #toast .t-q { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  #toast .t-job { font-weight: 650; font-size: 14.5px; margin-bottom: 12px; }
+  #toast .t-btns { display: flex; gap: 8px; }
+  #toast button { flex: 1; padding: 8px 10px; border-radius: 8px; font-size: 13.5px; cursor: pointer; }
+  #tYes { border: 0; background: #17693a; color: #fff; font-weight: 600; }
+  #tYes:hover { background: #115229; }
+  #tNo { border: 1px solid var(--line); background: #fff; color: var(--muted); }
+  #tNo:hover { border-color: var(--muted); }
   footer { max-width: 1080px; margin: 0 auto 34px; padding: 0 20px; color: var(--muted); font-size: 12.5px; line-height: 1.5; }
 
   @media (max-width: 720px) {
@@ -117,6 +146,7 @@
       <div class="stat"><b id="stCo">–</b>companies</div>
       <div class="stat"><b id="stNew">–</b>posted this week</div>
       <div class="stat"><b id="stRemote">–</b>remote-friendly</div>
+      <div class="stat"><b id="stApplied">–</b>applied</div>
     </div>
     <div id="updated">Loading…</div>
   </div>
@@ -145,6 +175,7 @@
     <div class="view">
       <button id="vGroup" class="on" title="Group openings by company">By company</button>
       <button id="vFlat" title="One flat list, most recent first">Newest first</button>
+      <button id="vApplied" title="Jobs you marked as applied">Applied (<span id="apCount">0</span>)</button>
     </div>
     <button class="btn" id="reset">Reset</button>
   </div>
@@ -154,6 +185,13 @@
   <div id="resultbar"></div>
   <div id="list"></div>
 </main>
+
+<div id="toast">
+  <div class="t-q">You just viewed this posting —</div>
+  <div class="t-job" id="tJob"></div>
+  <div class="t-q" style="margin-bottom:10px">Did you apply?</div>
+  <div class="t-btns"><button id="tYes">✓ Yes, I applied</button><button id="tNo">Not yet</button></div>
+</div>
 
 <footer>
   <b>How this works:</b> a scraper queries each employer's job-board API daily (GitHub Actions, ~7 AM ET) and republishes this page.
@@ -172,6 +210,44 @@ const STATE_NAMES = {alabama:'AL',alaska:'AK',arizona:'AZ',arkansas:'AR',califor
 const AVATAR_COLORS = ['#1a56db','#0e7490','#7c3aed','#b45309','#be185d','#15803d','#4338ca','#a21caf','#0f766e','#c2410c'];
 
 let JOBS = [], VIEW = 'group';
+
+/* ---- applied tracker (persists in this browser's localStorage) ---- */
+const jobKey = j => (j.url || j.org) + '|' + j.title;
+let APPLIED = new Map();
+try { JSON.parse(localStorage.getItem('etj_applied') || '[]').forEach(r => APPLIED.set(r.key, r)); } catch (e) {}
+const saveApplied = () => localStorage.setItem('etj_applied', JSON.stringify([...APPLIED.values()]));
+let PENDING = [], toastKey = null;
+
+function updateAppliedUI() {
+  $('apCount').textContent = APPLIED.size;
+  $('stApplied').textContent = APPLIED.size;
+}
+function markApplied(key) {
+  const j = JOBS.find(x => jobKey(x) === key) || (APPLIED.get(key));
+  if (!j) return;
+  APPLIED.set(key, Object.assign({}, j, { key: key, appliedOn: new Date().toISOString().slice(0, 10) }));
+  saveApplied(); updateAppliedUI(); render();
+}
+function restoreJob(key) { APPLIED.delete(key); saveApplied(); updateAppliedUI(); render(); }
+
+function showToast(j, key) {
+  toastKey = key;
+  $('tJob').textContent = j.title + ' — ' + j.org;
+  $('toast').classList.add('show');
+}
+function hideToast() { $('toast').classList.remove('show'); toastKey = null; }
+function maybeAsk() {
+  if (toastKey) return;                       // one question at a time
+  while (PENDING.length) {
+    const p = PENDING.shift();
+    if (APPLIED.has(p.key)) continue;
+    if (Date.now() - p.ts < 6000) continue;   // came back too fast to have applied
+    const j = JOBS.find(x => jobKey(x) === p.key);
+    if (j) { showToast(j, p.key); break; }
+  }
+}
+window.addEventListener('focus', maybeAsk);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) maybeAsk(); });
 
 const isRemote = j => /remote|work from home|anywhere|virtual/i.test(j.location);
 function jobStates(j) {
@@ -231,6 +307,7 @@ loadData().then(d => {
   [...new Set(JOBS.map(j => j.org))].sort((a, b) => a.localeCompare(b))
     .forEach(o => $('fCo').appendChild(new Option(o, o)));
 
+  updateAppliedUI();
   render();
 }).catch(e => { $('list').innerHTML = '<div class="empty">Could not load job data — ' + esc(e.message) + '</div>'; });
 
@@ -238,6 +315,7 @@ function filtered() {
   const q = $('q').value.trim().toLowerCase(), cat = $('fCat').value, loc = $('fLoc').value,
         co = $('fCo').value, maxD = $('fDays').value ? +$('fDays').value : null, rem = $('fRemote').checked;
   return JOBS.filter(j => {
+    if (APPLIED.has(jobKey(j))) return false;
     if (cat && j.category !== cat) return false;
     if (co && j.org !== co) return false;
     if (rem && !isRemote(j)) return false;
@@ -252,16 +330,39 @@ function filtered() {
 const byDate = (a, b) => (b.posted || '0000').localeCompare(a.posted || '0000');
 
 function rowHTML(j, withCompany) {
-  return `<a class="row" href="${esc(j.url)}" target="_blank" rel="noopener">
+  const key = jobKey(j);
+  return `<a class="row" href="${esc(j.url)}" target="_blank" rel="noopener" data-key="${esc(key)}">
     <span class="title">${esc(j.title)} <span class="tag ${j.category}">${j.category}</span>
       ${withCompany ? '<span class="co-inline">· ' + esc(j.org) + '</span>' : ''}</span>
     <span class="loc">${esc(j.location)}</span>
     <span class="posted">${postedCell(j)}</span>
+    <button class="mark" data-key="${esc(key)}" title="Mark as applied">✓</button>
   </a>`;
 }
-const colsHTML = '<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">Posted</span></div>';
+const colsHTML = '<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">Posted</span><span></span></div>';
+
+function renderApplied() {
+  const list = $('list');
+  const recs = [...APPLIED.values()].sort((a, b) => (b.appliedOn || '').localeCompare(a.appliedOn || ''));
+  $('resultbar').innerHTML = `<span>You've applied to <b>${recs.length}</b> job${recs.length === 1 ? '' : 's'} · stored in this browser</span>`;
+  if (!recs.length) {
+    list.innerHTML = '<div class="empty">Nothing here yet.<br>When you open a posting and come back, I\'ll ask if you applied — or hit the ✓ on any row.</div>';
+    return;
+  }
+  const stillLive = new Set(JOBS.map(jobKey));
+  const cols = '<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">Applied</span><span></span></div>';
+  list.innerHTML = `<div class="company flat applied-view"><div class="co-body">${cols}${recs.map(r => `
+    <a class="row" href="${esc(r.url)}" target="_blank" rel="noopener">
+      <span class="title">${esc(r.title)} <span class="co-inline">· ${esc(r.org)}</span>
+        <span class="tag applied">APPLIED</span>${stillLive.has(r.key) ? '' : ' <span class="tag gone">NO LONGER LISTED</span>'}</span>
+      <span class="loc">${esc(r.location)}</span>
+      <span class="posted"><b>${fmtDate(r.appliedOn) || ''}</b></span>
+      <button class="restore" data-key="${esc(r.key)}" title="Move back to open roles">↩ Undo</button>
+    </a>`).join('')}</div></div>`;
+}
 
 function render() {
+  if (VIEW === 'applied') return renderApplied();
   const rows = filtered(), list = $('list');
   const nCo = new Set(rows.map(j => j.org)).size;
   $('resultbar').innerHTML =
@@ -303,10 +404,29 @@ function render() {
   if (colAll) colAll.onclick = () => list.querySelectorAll('.company').forEach(c => c.classList.add('closed'));
 }
 
+/* clicks inside the list: ✓ mark, ↩ undo, or a job link (queue the "did you apply?" ask) */
+$('list').addEventListener('click', e => {
+  const mark = e.target.closest('.mark');
+  if (mark) { e.preventDefault(); e.stopPropagation(); markApplied(mark.dataset.key); return; }
+  const undo = e.target.closest('.restore');
+  if (undo) { e.preventDefault(); e.stopPropagation(); restoreJob(undo.dataset.key); return; }
+  const row = e.target.closest('a.row');
+  if (row && row.dataset.key) PENDING.push({ key: row.dataset.key, ts: Date.now() });
+});
+$('tYes').onclick = () => { if (toastKey) markApplied(toastKey); hideToast(); maybeAsk(); };
+$('tNo').onclick = () => { hideToast(); maybeAsk(); };
+
 ['q', 'fCat', 'fLoc', 'fCo', 'fDays', 'fRemote'].forEach(id =>
   $(id).addEventListener(id === 'q' ? 'input' : 'change', render));
-$('vGroup').onclick = () => { VIEW = 'group'; $('vGroup').classList.add('on'); $('vFlat').classList.remove('on'); render(); };
-$('vFlat').onclick = () => { VIEW = 'flat'; $('vFlat').classList.add('on'); $('vGroup').classList.remove('on'); render(); };
+function setView(v) {
+  VIEW = v;
+  const map = { group: 'vGroup', flat: 'vFlat', applied: 'vApplied' };
+  for (const k in map) $(map[k]).classList.toggle('on', k === v);
+  render();
+}
+$('vGroup').onclick = () => setView('group');
+$('vFlat').onclick = () => setView('flat');
+$('vApplied').onclick = () => setView('applied');
 $('reset').onclick = () => {
   $('q').value = ''; $('fCat').value = ''; $('fLoc').value = ''; $('fCo').value = ''; $('fDays').value = ''; $('fRemote').checked = false;
   render();
