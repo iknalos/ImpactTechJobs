@@ -204,6 +204,11 @@
 </div>
 
 <main>
+  <div id="offlineNote" style="display:none; background:#fff7e0; border:1px solid #f2dc9b; color:#7a5b0d; border-radius:12px; padding:12px 16px; margin-bottom:13px; font-size:14px;">
+    ⚠️ You're viewing the <b>offline copy</b> on your disk — it does <b>not</b> auto-update.
+    The always-current dashboard is at
+    <a href="https://iknalos.github.io/ElderTechJobs/" style="color:#7a5b0d;font-weight:700">iknalos.github.io/ElderTechJobs</a>.
+  </div>
   <div id="todayBanner" style="display:none">
     <span id="tbText"></span>
     <button id="tbBtn">Show me →</button>
@@ -315,6 +320,7 @@ function loadData() {
 loadData().then(d => {
   JOBS = d.jobs || [];
   LATEST = (d.updated || '').slice(0, 10);
+  if (location.protocol === 'file:') $('offlineNote').style.display = 'block';
   const nToday = JOBS.filter(isNewToday).length;
   $('stToday').textContent = nToday;
   if (nToday > 0) {
