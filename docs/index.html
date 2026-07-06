@@ -74,7 +74,13 @@
   .company.closed .co-body { display: none; }
 
   .co-body { border-top: 1px solid var(--line); }
-  .cols, .row { display: grid; grid-template-columns: minmax(0,1fr) 185px 150px 128px; gap: 14px; align-items: center; padding: 10px 18px; }
+  .cols, .row { display: grid; grid-template-columns: minmax(0,1fr) 175px 145px 162px; gap: 14px; align-items: center; padding: 10px 18px; }
+  .dis {
+    width: 27px; height: 27px; border-radius: 50%; border: 1px solid var(--line); background: #fff;
+    color: var(--muted); cursor: pointer; font-size: 13px; line-height: 1; flex: none; padding: 0;
+  }
+  .dis:hover { background: #fde8e8; color: #b02a2a; border-color: #b02a2a; }
+  .tag.na { background: #e9eaf0; color: #555e70; }
   .acts { display: flex; gap: 6px; justify-self: end; align-items: center; }
   .rbtn {
     height: 27px; border-radius: 7px; border: 1px solid var(--accent); background: var(--accent-soft);
@@ -198,6 +204,7 @@
       <button id="vGroup" class="on" title="Group openings by company">By company</button>
       <button id="vFlat" title="One flat list, most recent first">Newest first</button>
       <button id="vApplied" title="Jobs you marked as applied">Applied (<span id="apCount">0</span>)</button>
+      <button id="vDismissed" title="Jobs you marked as not relevant">Not applicable (<span id="disCount">0</span>)</button>
     </div>
     <button class="btn" id="reset">Reset</button>
   </div>
@@ -245,22 +252,33 @@ const isNewToday = j => j.first_seen && j.first_seen === LATEST;
 
 /* ---- applied tracker (persists in this browser's localStorage) ---- */
 const jobKey = j => (j.url || j.org) + '|' + j.title;
-let APPLIED = new Map();
+let APPLIED = new Map(), DISMISSED = new Map();
 try { JSON.parse(localStorage.getItem('etj_applied') || '[]').forEach(r => APPLIED.set(r.key, r)); } catch (e) {}
+try { JSON.parse(localStorage.getItem('etj_dismissed') || '[]').forEach(r => DISMISSED.set(r.key, r)); } catch (e) {}
 const saveApplied = () => localStorage.setItem('etj_applied', JSON.stringify([...APPLIED.values()]));
+const saveDismissed = () => localStorage.setItem('etj_dismissed', JSON.stringify([...DISMISSED.values()]));
 let PENDING = [], toastKey = null;
 
 function updateAppliedUI() {
   $('apCount').textContent = APPLIED.size;
   $('stApplied').textContent = APPLIED.size;
+  $('disCount').textContent = DISMISSED.size;
 }
 function markApplied(key) {
   const j = JOBS.find(x => jobKey(x) === key) || (APPLIED.get(key));
   if (!j) return;
   APPLIED.set(key, Object.assign({}, j, { key: key, appliedOn: new Date().toISOString().slice(0, 10) }));
+  DISMISSED.delete(key); saveDismissed();
   saveApplied(); updateAppliedUI(); render();
 }
 function restoreJob(key) { APPLIED.delete(key); saveApplied(); updateAppliedUI(); render(); }
+function dismissJob(key) {
+  const j = JOBS.find(x => jobKey(x) === key);
+  if (!j) return;
+  DISMISSED.set(key, Object.assign({}, j, { key: key, dismissedOn: new Date().toISOString().slice(0, 10) }));
+  saveDismissed(); updateAppliedUI(); render();
+}
+function restoreDismissed(key) { DISMISSED.delete(key); saveDismissed(); updateAppliedUI(); render(); }
 
 function showToast(j, key) {
   toastKey = key;
@@ -272,7 +290,7 @@ function maybeAsk() {
   if (toastKey) return;                       // one question at a time
   while (PENDING.length) {
     const p = PENDING.shift();
-    if (APPLIED.has(p.key)) continue;
+    if (APPLIED.has(p.key) || DISMISSED.has(p.key)) continue;
     if (Date.now() - p.ts < 6000) continue;   // came back too fast to have applied
     const j = JOBS.find(x => jobKey(x) === p.key);
     if (j) { showToast(j, p.key); break; }
@@ -356,7 +374,7 @@ function filtered() {
   const q = $('q').value.trim().toLowerCase(), cat = $('fCat').value, loc = $('fLoc').value,
         co = $('fCo').value, maxD = $('fDays').value ? +$('fDays').value : null, rem = $('fRemote').checked;
   return JOBS.filter(j => {
-    if (APPLIED.has(jobKey(j))) return false;
+    if (APPLIED.has(jobKey(j)) || DISMISSED.has(jobKey(j))) return false;
     if (NEW_ONLY && !isNewToday(j)) return false;
     if ($('fVisa').checked && j.citizen_req) return false;
     if (cat && j.category !== cat) return false;
@@ -384,33 +402,39 @@ function rowHTML(j, withCompany) {
     <span class="acts">
       <button class="rbtn" data-key="${esc(key)}" title="Generate a resume tailored to this job">📄 Resume</button>
       <button class="mark" data-key="${esc(key)}" title="Mark as applied">✓</button>
+      <button class="dis" data-key="${esc(key)}" title="Not relevant — move to Not applicable">✕</button>
     </span>
   </a>`;
 }
 const colsHTML = '<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">Posted</span><span></span></div>';
 
-function renderApplied() {
+function renderSaved(kind) {
+  const cfg = kind === 'applied'
+    ? { map: APPLIED, date: 'appliedOn', tag: '<span class="tag applied">APPLIED</span>', col: 'Applied',
+        bar: n => `You've applied to <b>${n}</b> job${n === 1 ? '' : 's'} · stored in this browser`,
+        empty: 'Nothing here yet.<br>When you open a posting and come back, I\'ll ask if you applied — or hit the ✓ on any row.' }
+    : { map: DISMISSED, date: 'dismissedOn', tag: '<span class="tag na">NOT APPLICABLE</span>', col: 'Dismissed',
+        bar: n => `<b>${n}</b> job${n === 1 ? '' : 's'} marked not applicable · hidden from all other views`,
+        empty: 'Nothing here yet.<br>Hit the ✕ on any job that isn\'t relevant to move it here and keep your list clean.' };
   const list = $('list');
-  const recs = [...APPLIED.values()].sort((a, b) => (b.appliedOn || '').localeCompare(a.appliedOn || ''));
-  $('resultbar').innerHTML = `<span>You've applied to <b>${recs.length}</b> job${recs.length === 1 ? '' : 's'} · stored in this browser</span>`;
-  if (!recs.length) {
-    list.innerHTML = '<div class="empty">Nothing here yet.<br>When you open a posting and come back, I\'ll ask if you applied — or hit the ✓ on any row.</div>';
-    return;
-  }
+  const recs = [...cfg.map.values()].sort((a, b) => (b[cfg.date] || '').localeCompare(a[cfg.date] || ''));
+  $('resultbar').innerHTML = `<span>${cfg.bar(recs.length)}</span>`;
+  if (!recs.length) { list.innerHTML = `<div class="empty">${cfg.empty}</div>`; return; }
   const stillLive = new Set(JOBS.map(jobKey));
-  const cols = '<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">Applied</span><span></span></div>';
+  const cols = `<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">${cfg.col}</span><span></span></div>`;
   list.innerHTML = `<div class="company flat applied-view"><div class="co-body">${cols}${recs.map(r => `
     <a class="row" href="${esc(r.url)}" target="_blank" rel="noopener">
       <span class="title">${esc(r.title)} <span class="co-inline">· ${esc(r.org)}</span>
-        <span class="tag applied">APPLIED</span>${stillLive.has(r.key) ? '' : ' <span class="tag gone">NO LONGER LISTED</span>'}</span>
+        ${cfg.tag}${stillLive.has(r.key) ? '' : ' <span class="tag gone">NO LONGER LISTED</span>'}</span>
       <span class="loc">${esc(r.location)}</span>
-      <span class="posted"><b>${fmtDate(r.appliedOn) || ''}</b></span>
-      <button class="restore" data-key="${esc(r.key)}" title="Move back to open roles">↩ Undo</button>
+      <span class="posted"><b>${fmtDate(r[cfg.date]) || ''}</b></span>
+      <button class="restore" data-kind="${kind}" data-key="${esc(r.key)}" title="Move back to open roles">↩ Undo</button>
     </a>`).join('')}</div></div>`;
 }
 
 function render() {
-  if (VIEW === 'applied') return renderApplied();
+  if (VIEW === 'applied') return renderSaved('applied');
+  if (VIEW === 'dismissed') return renderSaved('dismissed');
   const rows = filtered(), list = $('list');
   const nCo = new Set(rows.map(j => j.org)).size;
   $('resultbar').innerHTML =
@@ -458,8 +482,14 @@ $('list').addEventListener('click', e => {
   if (rb) { e.preventDefault(); e.stopPropagation(); window.open('resume.html?job=' + encodeURIComponent(rb.dataset.key), '_blank'); return; }
   const mark = e.target.closest('.mark');
   if (mark) { e.preventDefault(); e.stopPropagation(); markApplied(mark.dataset.key); return; }
+  const dis = e.target.closest('.dis');
+  if (dis) { e.preventDefault(); e.stopPropagation(); dismissJob(dis.dataset.key); return; }
   const undo = e.target.closest('.restore');
-  if (undo) { e.preventDefault(); e.stopPropagation(); restoreJob(undo.dataset.key); return; }
+  if (undo) {
+    e.preventDefault(); e.stopPropagation();
+    (undo.dataset.kind === 'dismissed' ? restoreDismissed : restoreJob)(undo.dataset.key);
+    return;
+  }
   const row = e.target.closest('a.row');
   if (row && row.dataset.key) PENDING.push({ key: row.dataset.key, ts: Date.now() });
 });
@@ -470,13 +500,14 @@ $('tNo').onclick = () => { hideToast(); maybeAsk(); };
   $(id).addEventListener(id === 'q' ? 'input' : 'change', render));
 function setView(v) {
   VIEW = v;
-  const map = { group: 'vGroup', flat: 'vFlat', applied: 'vApplied' };
+  const map = { group: 'vGroup', flat: 'vFlat', applied: 'vApplied', dismissed: 'vDismissed' };
   for (const k in map) $(map[k]).classList.toggle('on', k === v);
   render();
 }
 $('vGroup').onclick = () => setView('group');
 $('vFlat').onclick = () => setView('flat');
 $('vApplied').onclick = () => setView('applied');
+$('vDismissed').onclick = () => setView('dismissed');
 
 $('tbBtn').onclick = () => {
   NEW_ONLY = !NEW_ONLY;
