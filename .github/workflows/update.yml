@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # lets the retry step re-run a failed Pages deployment
 
 jobs:
   update:
@@ -28,10 +29,37 @@ jobs:
         run: |
           git config user.name "iknalos"
           git config user.email "iknalos@users.noreply.github.com"
-          git add docs/jobs.json
+          git add docs/
           if git diff --cached --quiet; then
             echo "No changes today."
           else
             git commit -m "Daily job refresh $(date -u +%F)"
             git push
           fi
+
+      # GitHub's branch-based Pages deploy fails transiently ("try again
+      # later") a few times a week; without this the site serves stale data
+      # until someone notices. Poll the deploy this push triggered and re-run
+      # it on failure, up to 3 times.
+      - name: Ensure Pages deployment succeeded
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in 1 2 3; do
+            sleep 60
+            run=$(gh api "repos/${{ github.repository }}/actions/runs?per_page=5" \
+              --jq '[.workflow_runs[] | select(.name=="pages build and deployment")][0]')
+            [ -z "$run" ] && { echo "no pages run found"; exit 0; }
+            status=$(echo "$run" | jq -r .status)
+            concl=$(echo "$run" | jq -r .conclusion)
+            id=$(echo "$run" | jq -r .id)
+            echo "attempt $attempt: pages run $id -> $status/$concl"
+            if [ "$status" != "completed" ]; then sleep 60; concl=$(gh api "repos/${{ github.repository }}/actions/runs/$id" --jq .conclusion); fi
+            [ "$concl" = "success" ] && exit 0
+            if [ "$concl" = "failure" ]; then
+              echo "re-running failed pages deploy $id"
+              gh api -X POST "repos/${{ github.repository }}/actions/runs/$id/rerun-failed-jobs" || true
+            fi
+          done
+          echo "pages deploy still not green after retries" >&2
+          exit 1
