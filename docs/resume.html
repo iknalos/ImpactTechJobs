@@ -466,6 +466,7 @@ function showResume(r) {
 
 $('pdfBtn').onclick = () => {
   if (!RESUME.html) { status('Nothing to print yet — generate or render a resume first.', 'err'); return; }
+  status('In the print dialog: Destination "Save as PDF" — and under More settings, untick "Headers and footers" so the filename/URL line doesn\'t appear on the page.', 'info');
   // print via hidden iframe: immune to popup blockers
   const printCSS = '@page{size:letter;margin:.75in .85in}@media print{body{margin:0}}';
   const fr = document.createElement('iframe');
