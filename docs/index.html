@@ -224,6 +224,8 @@
   <div id="list"></div>
 </main>
 
+<input type="file" id="impFile" accept=".json,application/json" style="display:none">
+
 <div id="toast">
   <div class="t-q">You just viewed this posting —</div>
   <div class="t-job" id="tJob"></div>
@@ -255,9 +257,60 @@ const jobKey = j => (j.url || j.org) + '|' + j.title;
 let APPLIED = new Map(), DISMISSED = new Map();
 try { JSON.parse(localStorage.getItem('etj_applied') || '[]').forEach(r => APPLIED.set(r.key, r)); } catch (e) {}
 try { JSON.parse(localStorage.getItem('etj_dismissed') || '[]').forEach(r => DISMISSED.set(r.key, r)); } catch (e) {}
-const saveApplied = () => localStorage.setItem('etj_applied', JSON.stringify([...APPLIED.values()]));
-const saveDismissed = () => localStorage.setItem('etj_dismissed', JSON.stringify([...DISMISSED.values()]));
+const saveApplied = () => { localStorage.setItem('etj_applied', JSON.stringify([...APPLIED.values()])); pushStateToBridge(); };
+const saveDismissed = () => { localStorage.setItem('etj_dismissed', JSON.stringify([...DISMISSED.values()])); pushStateToBridge(); };
 let PENDING = [], toastKey = null;
+
+/* ---- bridge file sync: mirrors both lists to tracker_state.json on the
+   laptop via the local bridge, so a browser data wipe can't lose them ---- */
+const BRIDGE = 'http://127.0.0.1:8765';
+let bridgeUp = false;
+
+function pushStateToBridge() {
+  if (!bridgeUp) return;
+  fetch(BRIDGE + '/state', {
+    method: 'POST', headers: { 'Content-Type': 'application/json', 'X-ETJ': '1' },
+    body: JSON.stringify({ applied: [...APPLIED.values()], dismissed: [...DISMISSED.values()] })
+  }).catch(() => {});
+}
+
+async function syncWithBridge() {
+  try {
+    const c = new AbortController();
+    const t = setTimeout(() => c.abort(), 1500);
+    const r = await fetch(BRIDGE + '/state', { signal: c.signal });
+    clearTimeout(t);
+    if (!r.ok) return;
+    bridgeUp = true;
+    const s = await r.json();
+    let merged = 0;
+    (s.applied || []).forEach(rec => { if (rec && rec.key && !APPLIED.has(rec.key)) { APPLIED.set(rec.key, rec); merged++; } });
+    (s.dismissed || []).forEach(rec => { if (rec && rec.key && !DISMISSED.has(rec.key)) { DISMISSED.set(rec.key, rec); merged++; } });
+    localStorage.setItem('etj_applied', JSON.stringify([...APPLIED.values()]));
+    localStorage.setItem('etj_dismissed', JSON.stringify([...DISMISSED.values()]));
+    pushStateToBridge();
+    updateAppliedUI();
+    if (merged) render();
+  } catch (e) { /* bridge not running — localStorage only */ }
+}
+
+function exportState() {
+  const blob = new Blob([JSON.stringify({ applied: [...APPLIED.values()], dismissed: [...DISMISSED.values()],
+    exported: new Date().toISOString() }, null, 1)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'elder-tech-jobs-tracker-backup.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(a.href);
+}
+function importState(file) {
+  file.text().then(txt => {
+    const d = JSON.parse(txt);
+    (d.applied || []).forEach(r => { if (r && r.key) APPLIED.set(r.key, r); });
+    (d.dismissed || []).forEach(r => { if (r && r.key) DISMISSED.set(r.key, r); });
+    saveApplied(); saveDismissed(); updateAppliedUI(); render();
+  }).catch(e => alert('Could not import: ' + e.message));
+}
 
 function updateAppliedUI() {
   $('apCount').textContent = APPLIED.size;
@@ -368,6 +421,9 @@ loadData().then(d => {
 
   updateAppliedUI();
   render();
+  if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
+  syncWithBridge();
+  $('impFile').addEventListener('change', e => { if (e.target.files[0]) importState(e.target.files[0]); e.target.value = ''; });
 }).catch(e => { $('list').innerHTML = '<div class="empty">Could not load job data — ' + esc(e.message) + '</div>'; });
 
 function filtered() {
@@ -418,7 +474,10 @@ function renderSaved(kind) {
         empty: 'Nothing here yet.<br>Hit the ✕ on any job that isn\'t relevant to move it here and keep your list clean.' };
   const list = $('list');
   const recs = [...cfg.map.values()].sort((a, b) => (b[cfg.date] || '').localeCompare(a[cfg.date] || ''));
-  $('resultbar').innerHTML = `<span>${cfg.bar(recs.length)}</span>`;
+  $('resultbar').innerHTML = `<span>${cfg.bar(recs.length)}${bridgeUp ? ' · <b style="color:var(--new-ink)">also saved to laptop file ✓</b>' : ''}</span>` +
+    `<span><button class="linklike" id="expState">Export backup</button> · <button class="linklike" id="impState">Import backup</button></span>`;
+  $('expState').onclick = exportState;
+  $('impState').onclick = () => $('impFile').click();
   if (!recs.length) { list.innerHTML = `<div class="empty">${cfg.empty}</div>`; return; }
   const stillLive = new Set(JOBS.map(jobKey));
   const cols = `<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">${cfg.col}</span><span></span></div>`;

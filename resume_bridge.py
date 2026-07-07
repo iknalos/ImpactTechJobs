@@ -11,6 +11,11 @@ you're applying to jobs. Ctrl+C to stop.
 import json
 import subprocess
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from pathlib import Path
+
+# applied / not-applicable lists, mirrored from the browser so a browser
+# data wipe can never lose them again
+STATE_FILE = Path(__file__).parent / "tracker_state.json"
 
 PORT = 8765
 ALLOWED_ORIGINS = {"https://iknalos.github.io", "null"}  # site + local file://
@@ -56,23 +61,55 @@ class Handler(BaseHTTPRequestHandler):
         self._cors()
         self.end_headers()
 
-    def do_GET(self):
-        if self.path == "/health":
-            self._json(200, {"ok": True, "engine": "claude-code-local"})
-        else:
-            self._json(404, {"error": "not found"})
-
-    def do_POST(self):
-        if self.path != "/generate":
-            self._json(404, {"error": "not found"})
-            return
+    def _guard(self):
+        """Shared auth for state-changing endpoints; True if request allowed."""
         if self.headers.get("X-ETJ") != "1":
             self._json(403, {"error": "missing X-ETJ header"})
-            return
+            return False
         origin = self.headers.get("Origin", "")
         if origin and origin not in ALLOWED_ORIGINS and \
                 not origin.startswith(("http://localhost", "http://127.0.0.1")):
             self._json(403, {"error": "origin not allowed"})
+            return False
+        return True
+
+    def do_GET(self):
+        if self.path == "/health":
+            self._json(200, {"ok": True, "engine": "claude-code-local",
+                             "state": STATE_FILE.exists()})
+        elif self.path == "/state":
+            try:
+                state = json.loads(STATE_FILE.read_text(encoding="utf-8")) \
+                    if STATE_FILE.exists() else {}
+            except Exception:
+                state = {}
+            self._json(200, {"applied": state.get("applied", []),
+                             "dismissed": state.get("dismissed", [])})
+        else:
+            self._json(404, {"error": "not found"})
+
+    def do_POST(self):
+        if self.path == "/state":
+            if not self._guard():
+                return
+            try:
+                n = int(self.headers.get("Content-Length", 0))
+                data = json.loads(self.rfile.read(n).decode("utf-8"))
+                state = {"applied": list(data.get("applied", [])),
+                         "dismissed": list(data.get("dismissed", []))}
+                tmp = STATE_FILE.with_suffix(".tmp")
+                tmp.write_text(json.dumps(state, indent=1), encoding="utf-8")
+                tmp.replace(STATE_FILE)
+                self._json(200, {"ok": True,
+                                 "applied": len(state["applied"]),
+                                 "dismissed": len(state["dismissed"])})
+            except Exception as e:  # noqa: BLE001
+                self._json(500, {"error": str(e)[:300]})
+            return
+        if self.path != "/generate":
+            self._json(404, {"error": "not found"})
+            return
+        if not self._guard():
             return
         try:
             n = int(self.headers.get("Content-Length", 0))
