@@ -1,41 +1,74 @@
 {
- "new_today": 9,
- "updated": "2026-07-07T13:15:06+00:00",
- "count": 197,
+ "new_today": 6,
+ "updated": "2026-07-08T12:17:45+00:00",
+ "count": 194,
  "errors": [],
  "jobs": [
   {
+   "org": "WellSky",
+   "title": "Healthcare Data Analyst",
+   "location": "Overland Park, KS",
+   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Healthcare-Data-Analyst_JR4081",
+   "posted": "2026-07-07",
+   "category": "Data",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": "2026-07-08"
+  },
+  {
+   "org": "ChenMed",
+   "title": "IT Service Desk Technician ( Miami Gardens)",
+   "location": "Corporate Office",
+   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/IT-Service-Desk-Technician---Miami-Gardens-_R0049047",
+   "posted": "2026-07-07",
+   "category": "IT",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": "2026-07-08"
+  },
+  {
+   "org": "Cityblock Health",
+   "title": "Senior Data Analyst, Advanced Analytics",
+   "location": "NY - Remote",
+   "url": "https://cityblockhealth.wd1.myworkdayjobs.com/en-US/CityblockExternalCareerSite/job/NY---Remote/Senior-Data-Analyst_R-1528-1",
+   "posted": "2026-07-07",
+   "category": "Data",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": "2026-07-08"
+  },
+  {
    "org": "PointClickCare",
-   "title": "Strategic Finance Analyst Manager (Canada)",
+   "title": "Strategic Finance Analytics Manager (Canada)",
    "location": "Remote or Mississauga",
    "url": "https://jobs.lever.co/pointclickcare/344a98be-f2db-484d-90c9-6073dd0fb341",
    "posted": "2026-07-06",
    "category": "Data",
    "source": "lever",
    "citizen_req": false,
-   "first_seen": "2026-07-07"
+   "first_seen": "2026-07-08"
   },
   {
    "org": "PointClickCare",
-   "title": "Strategic Finance Analyst Manager (USA)",
+   "title": "Strategic Finance Analytics Manager (USA)",
    "location": "Remote, USA",
    "url": "https://jobs.lever.co/pointclickcare/b72d088d-155e-44ca-9e56-e7582659fc0e",
    "posted": "2026-07-06",
    "category": "Data",
    "source": "lever",
    "citizen_req": false,
-   "first_seen": "2026-07-07"
+   "first_seen": "2026-07-08"
   },
   {
    "org": "August Health",
-   "title": "Data Analyst - Customer Insights",
+   "title": "Senior Data Analyst",
    "location": "United States",
    "url": "https://jobs.ashbyhq.com/august-health/6917cb58-4960-4e25-b243-044885816f2b",
    "posted": "2026-07-06",
    "category": "Data",
    "source": "ashby",
    "citizen_req": false,
-   "first_seen": "2026-07-07"
+   "first_seen": "2026-07-08"
   },
   {
    "org": "WellSky",
@@ -1051,9 +1084,163 @@
   },
   {
    "org": "WellSky",
+   "title": "Sr. Software Engineer - .NET",
+   "location": "Overland Park, KS",
+   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Software-Engineer---NET_JR4683",
+   "posted": "2026-06-08",
+   "category": "Software",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "WellSky",
+   "title": "Software Engineer",
+   "location": "Overland Park, KS",
+   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Software-Engineer_JR4630",
+   "posted": "2026-06-08",
+   "category": "Software",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "WellSky",
+   "title": "Sr. Software Engineer - SRE",
+   "location": "Overland Park, KS",
+   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Software-Engineer_JR4478-1",
+   "posted": "2026-06-08",
+   "category": "Software",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "WellSky",
    "title": "Software Engineer",
    "location": "Overland Park, KS",
    "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Software-Engineer_JR4777",
+   "posted": "2026-06-08",
+   "category": "Software",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "WellSky",
+   "title": "Sr. Technical Program Manager",
+   "location": "Overland Park, KS",
+   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Technical-Program-Manager_JR4790",
+   "posted": "2026-06-08",
+   "category": "IT",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "Devoted Health",
+   "title": "Associate Director, Medicare Advantage Bid Strategy & Analytics",
+   "location": "Remote USA",
+   "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Associate-Director--Medicare-Advantage-Bid-Strategy---Analytics_R3211",
+   "posted": "2026-06-08",
+   "category": "Data",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "Devoted Health",
+   "title": "Senior Manager, AI Performance & Operations",
+   "location": "Remote USA",
+   "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Senior-Manager--Agentic-Strategy---Operations_R3171",
+   "posted": "2026-06-08",
+   "category": "AI",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "ChenMed",
+   "title": "Senior Health Economics Analyst",
+   "location": "Corporate Office",
+   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Health-Economics-Analyst_R0048547",
+   "posted": "2026-06-08",
+   "category": "Data",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "ChenMed",
+   "title": "Associate IT Product Manager",
+   "location": "Corporate Office",
+   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Associate-IT-Product-Manager_R0048067",
+   "posted": "2026-06-08",
+   "category": "IT",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "ChenMed",
+   "title": "Senior AI Software Engineer",
+   "location": "Corporate Office",
+   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-AI-Software-Engineer_R0047784",
+   "posted": "2026-06-08",
+   "category": "AI",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "ChenMed",
+   "title": "Senior Data Engineer",
+   "location": "Corporate Office",
+   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Data-Engineer_R0047163",
+   "posted": "2026-06-08",
+   "category": "Data",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "ChenMed",
+   "title": "Senior Director, Software Engineering",
+   "location": "Corporate Office",
+   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Director--Software-Engineering_R0046888",
+   "posted": "2026-06-08",
+   "category": "Software",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "ChenMed",
+   "title": "Associate IT Architect",
+   "location": "Corporate Office",
+   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Associate-IT-Architect_R0046454",
+   "posted": "2026-06-08",
+   "category": "IT",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "ChenMed",
+   "title": "Senior Data Engineer",
+   "location": "Corporate Office",
+   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Data-Engineer_R0046239",
+   "posted": "2026-06-08",
+   "category": "Data",
+   "source": "workday",
+   "citizen_req": false,
+   "first_seen": null
+  },
+  {
+   "org": "Cityblock Health",
+   "title": "Platform Engineer",
+   "location": "USA",
+   "url": "https://cityblockhealth.wd1.myworkdayjobs.com/en-US/CityblockExternalCareerSite/job/USA/Platform-Engineer_R-1462",
    "posted": "2026-06-08",
    "category": "Software",
    "source": "workday",
@@ -1069,160 +1256,6 @@
    "source": "manual",
    "category": "IT",
    "citizen_req": null,
-   "first_seen": null
-  },
-  {
-   "org": "WellSky",
-   "title": "Sr. Software Engineer - .NET",
-   "location": "Overland Park, KS",
-   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Software-Engineer---NET_JR4683",
-   "posted": "2026-06-07",
-   "category": "Software",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "WellSky",
-   "title": "Software Engineer",
-   "location": "Overland Park, KS",
-   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Software-Engineer_JR4630",
-   "posted": "2026-06-07",
-   "category": "Software",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "WellSky",
-   "title": "Sr. Software Engineer - SRE",
-   "location": "Overland Park, KS",
-   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Software-Engineer_JR4478-1",
-   "posted": "2026-06-07",
-   "category": "Software",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "WellSky",
-   "title": "Sr. Technical Program Manager",
-   "location": "Overland Park, KS",
-   "url": "https://wellsky.wd1.myworkdayjobs.com/en-US/WellSkyCareers/job/Overland-Park-KS/Sr-Technical-Program-Manager_JR4790",
-   "posted": "2026-06-07",
-   "category": "IT",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "Devoted Health",
-   "title": "Associate Director, Medicare Advantage Bid Strategy & Analytics",
-   "location": "Remote USA",
-   "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Associate-Director--Medicare-Advantage-Bid-Strategy---Analytics_R3211",
-   "posted": "2026-06-07",
-   "category": "Data",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "Devoted Health",
-   "title": "Senior Manager, AI Performance & Operations",
-   "location": "Remote USA",
-   "url": "https://devoted.wd1.myworkdayjobs.com/en-US/Devoted/job/Remote-USA/Senior-Manager--Agentic-Strategy---Operations_R3171",
-   "posted": "2026-06-07",
-   "category": "AI",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "ChenMed",
-   "title": "Senior Health Economics Analyst",
-   "location": "Corporate Office",
-   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Health-Economics-Analyst_R0048547",
-   "posted": "2026-06-07",
-   "category": "Data",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "ChenMed",
-   "title": "Associate IT Product Manager",
-   "location": "Corporate Office",
-   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Associate-IT-Product-Manager_R0048067",
-   "posted": "2026-06-07",
-   "category": "IT",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "ChenMed",
-   "title": "Senior AI Software Engineer",
-   "location": "Corporate Office",
-   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-AI-Software-Engineer_R0047784",
-   "posted": "2026-06-07",
-   "category": "AI",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "ChenMed",
-   "title": "Senior Data Engineer",
-   "location": "Corporate Office",
-   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Data-Engineer_R0047163",
-   "posted": "2026-06-07",
-   "category": "Data",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "ChenMed",
-   "title": "Senior Director, Software Engineering",
-   "location": "Corporate Office",
-   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Director--Software-Engineering_R0046888",
-   "posted": "2026-06-07",
-   "category": "Software",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "ChenMed",
-   "title": "Associate IT Architect",
-   "location": "Corporate Office",
-   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Associate-IT-Architect_R0046454",
-   "posted": "2026-06-07",
-   "category": "IT",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "ChenMed",
-   "title": "Senior Data Engineer",
-   "location": "Corporate Office",
-   "url": "https://chenmed.wd1.myworkdayjobs.com/en-US/ChenMed/job/Corporate-Office/Senior-Data-Engineer_R0046239",
-   "posted": "2026-06-07",
-   "category": "Data",
-   "source": "workday",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "Cityblock Health",
-   "title": "Platform Engineer",
-   "location": "USA",
-   "url": "https://cityblockhealth.wd1.myworkdayjobs.com/en-US/CityblockExternalCareerSite/job/USA/Platform-Engineer_R-1462",
-   "posted": "2026-06-07",
-   "category": "Software",
-   "source": "workday",
-   "citizen_req": false,
    "first_seen": null
   },
   {
@@ -1513,17 +1546,6 @@
   },
   {
    "org": "HHAeXchange",
-   "title": "Senior GTM Analyst",
-   "location": "New York City Metropolitan Area",
-   "url": "https://jobs.lever.co/hhaexchange/b4d266dd-fc11-4237-bce2-60c7d8eddae2",
-   "posted": "2026-05-14",
-   "category": "Data",
-   "source": "lever",
-   "citizen_req": false,
-   "first_seen": "2026-07-07"
-  },
-  {
-   "org": "HHAeXchange",
    "title": "GTM Engineer",
    "location": "New York City Metropolitan Area",
    "url": "https://jobs.lever.co/hhaexchange/f3ef261c-3ef2-4ed4-b0f2-cf2f8b2fa24f",
@@ -1607,17 +1629,6 @@
    "posted": "2026-04-30",
    "category": "Data",
    "source": "greenhouse",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "VNS Health",
-   "title": "Manager, SaaS Enterprise Platforms (Clinical EMR Systems)",
-   "location": "New York, New York",
-   "url": "https://jobs.vnshealth.org/jobs/4765?lang=en-us",
-   "posted": "2026-04-30",
-   "category": "IT",
-   "source": "jibe",
    "citizen_req": false,
    "first_seen": null
   },
@@ -1886,17 +1897,6 @@
    "first_seen": null
   },
   {
-   "org": "Wellthy",
-   "title": "Lead Full-Stack Engineer",
-   "location": "US",
-   "url": "https://wellthy.com/careers/post/?gh_jid=7647853003",
-   "posted": "2026-02-27",
-   "category": "Software",
-   "source": "greenhouse",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
    "org": "PointClickCare",
    "title": "Canada- Technical Program Manager (PEO)",
    "location": "Mississauga",
@@ -1915,17 +1915,6 @@
    "posted": "2026-02-22",
    "category": "IT",
    "source": "lever",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "Wellthy",
-   "title": "Senior Applied AI Engineer",
-   "location": "US",
-   "url": "https://wellthy.com/careers/post/?gh_jid=7624465003",
-   "posted": "2026-02-13",
-   "category": "AI",
-   "source": "greenhouse",
    "citizen_req": false,
    "first_seen": null
   },
@@ -1979,28 +1968,6 @@
    "location": "United States",
    "url": "https://jobs.lever.co/hhaexchange/58b599a5-48d2-4c12-a93c-c9d82678ab0b",
    "posted": "2026-01-22",
-   "category": "Data",
-   "source": "lever",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "PointClickCare",
-   "title": "Senior Database Reliability Engineer (SQL)",
-   "location": "Remote or Mississauga",
-   "url": "https://jobs.lever.co/pointclickcare/1a88bdc7-ef46-4c3a-a7c2-db9541a8ed4e",
-   "posted": "2026-01-14",
-   "category": "Data",
-   "source": "lever",
-   "citizen_req": false,
-   "first_seen": null
-  },
-  {
-   "org": "PointClickCare",
-   "title": "Senior Database Reliability Engineer (SQL)",
-   "location": "Remote, USA",
-   "url": "https://jobs.lever.co/pointclickcare/b7571461-c5d3-4752-a4e4-0e7365584704",
-   "posted": "2026-01-14",
    "category": "Data",
    "source": "lever",
    "citizen_req": false,
