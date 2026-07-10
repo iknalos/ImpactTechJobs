@@ -61,6 +61,18 @@ def categorize(title):
     return "IT"
 
 
+# years-of-experience requirement: "5+ years of experience", "experience: 5 years"
+YEARS_FWD_RE = re.compile(r"(\d{1,2})\s*\+?\s*(?:years?|yrs?)\b[^.;]{0,50}?\b(?:experience|exp)\b", re.I)
+YEARS_BCK_RE = re.compile(r"\bexperience\b[^.;]{0,30}?(\d{1,2})\s*\+?\s*(?:years?|yrs?)\b", re.I)
+
+
+def years_required(desc):
+    found = [int(m.group(1)) for m in YEARS_FWD_RE.finditer(desc)]
+    found += [int(m.group(1)) for m in YEARS_BCK_RE.finditer(desc)]
+    found = [y for y in found if 1 <= y <= 20]
+    return max(found) if found else None
+
+
 # phrases meaning F-1/OPT candidates cannot apply (citizenship / green card /
 # clearance requirements). Deliberately does NOT match "no sponsorship" — OPT
 # does not need sponsorship.
@@ -196,7 +208,7 @@ def _workday_posted(text):
 
 
 WD_TERMS = ["data", "analyst", "engineer", "software", "developer", "analytics",
-            "information technology", "AI", "systems", "database", "cloud"]
+            "information technology", "AI", "database"]
 
 
 def fetch_workday(org, host, tenant, site):
@@ -248,33 +260,88 @@ def fetch_workday(org, host, tenant, site):
     return out
 
 
+def fetch_pinpoint(org, base):
+    r = requests.get(base + "/postings.json", headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    d = r.json()
+    items = d.get("data", d) if isinstance(d, dict) else d
+    out = []
+    for j in items or []:
+        title = j.get("title", "")
+        if not wanted(title):
+            continue
+        loc = j.get("location")
+        if isinstance(loc, dict):
+            loc = loc.get("name") or loc.get("city")
+        url = j.get("url") or j.get("careers_url") or base
+        posted = (j.get("created_at") or j.get("published_at") or "")[:10] or None
+        out.append(job(org, title, loc, url, posted, "pinpoint",
+                       strip_html(j.get("description", ""))))
+    return out
+
+
+# (org, fetcher, args, sector)
 SOURCES = [
-    ("Honor / Home Instead", fetch_greenhouse, ("honor",)),
-    ("Wellthy", fetch_greenhouse, ("wellthy",)),
-    ("AlayaCare", fetch_greenhouse, ("alayacare",)),
-    ("PointClickCare", fetch_lever, ("pointclickcare",)),
-    ("HHAeXchange", fetch_lever, ("hhaexchange",)),
-    ("August Health", fetch_ashby, ("august-health",)),
-    ("AARP", fetch_jibe, ("https://careers.aarp.org",)),
-    ("InnovAge (PACE)", fetch_jibe, ("https://careers.innovage.com",)),
-    ("VNS Health", fetch_jibe, ("https://jobs.vnshealth.org",)),
-    ("WellSky", fetch_workday, ("wellsky.wd1.myworkdayjobs.com", "wellsky", "WellSkyCareers")),
-    ("Devoted Health", fetch_workday, ("devoted.wd1.myworkdayjobs.com", "devoted", "Devoted")),
-    ("ChenMed", fetch_workday, ("chenmed.wd1.myworkdayjobs.com", "chenmed", "ChenMed")),
-    ("Cityblock Health", fetch_workday, ("cityblockhealth.wd1.myworkdayjobs.com", "cityblockhealth", "CityblockExternalCareerSite")),
-    ("Sunrise Senior Living", fetch_workday, ("sunriseseniorliving.wd12.myworkdayjobs.com", "sunriseseniorliving", "SUNRISE_EXT_CAREERS")),
+    # --- aging services & senior-care (the original core) ---
+    ("Honor / Home Instead", fetch_greenhouse, ("honor",), "Tech / Software"),
+    ("Wellthy", fetch_greenhouse, ("wellthy",), "Tech / Software"),
+    ("AlayaCare", fetch_greenhouse, ("alayacare",), "Tech / Software"),
+    ("PointClickCare", fetch_lever, ("pointclickcare",), "Tech / Software"),
+    ("HHAeXchange", fetch_lever, ("hhaexchange",), "Tech / Software"),
+    ("August Health", fetch_ashby, ("august-health",), "Tech / Software"),
+    ("AARP", fetch_jibe, ("https://careers.aarp.org",), "Aging Services"),
+    ("InnovAge (PACE)", fetch_jibe, ("https://careers.innovage.com",), "Aging Services"),
+    ("VNS Health", fetch_jibe, ("https://jobs.vnshealth.org",), "Healthcare"),
+    ("WellSky", fetch_workday, ("wellsky.wd1.myworkdayjobs.com", "wellsky", "WellSkyCareers"), "Tech / Software"),
+    ("Devoted Health", fetch_workday, ("devoted.wd1.myworkdayjobs.com", "devoted", "Devoted"), "Healthcare"),
+    ("ChenMed", fetch_workday, ("chenmed.wd1.myworkdayjobs.com", "chenmed", "ChenMed"), "Healthcare"),
+    ("Cityblock Health", fetch_workday, ("cityblockhealth.wd1.myworkdayjobs.com", "cityblockhealth", "CityblockExternalCareerSite"), "Healthcare"),
+    ("Sunrise Senior Living", fetch_workday, ("sunriseseniorliving.wd12.myworkdayjobs.com", "sunriseseniorliving", "SUNRISE_EXT_CAREERS"), "Aging Services"),
+    # --- national nonprofits ---
+    ("American Red Cross", fetch_workday, ("americanredcross.wd1.myworkdayjobs.com", "americanredcross", "American_Red_Cross_Careers"), "Nonprofit & Civic"),
+    ("American Cancer Society", fetch_workday, ("acs.wd5.myworkdayjobs.com", "acs", "ACSCareers"), "Nonprofit & Civic"),
+    ("ALSAC / St. Jude", fetch_workday, ("alsacstjude.wd1.myworkdayjobs.com", "alsacstjude", "careersalsacstjude"), "Nonprofit & Civic"),
+    ("Planned Parenthood Federation", fetch_lever, ("ppfa",), "Nonprofit & Civic"),
+    ("The Trevor Project", fetch_lever, ("thetrevorproject",), "Nonprofit & Civic"),
+    ("ACLU", fetch_greenhouse, ("aclu",), "Nonprofit & Civic"),
+    ("Code for America", fetch_greenhouse, ("codeforamerica",), "Nonprofit & Civic"),
+    ("Nava PBC", fetch_greenhouse, ("navapbc",), "Nonprofit & Civic"),
+    ("ABCD Boston", fetch_pinpoint, ("https://careers.bostonabcd.org",), "Nonprofit & Civic"),
+    ("Year Up United", fetch_workday, ("yearup.wd503.myworkdayjobs.com", "yearup", "YearUp"), "Nonprofit & Civic"),
+    # --- research orgs & academia ---
+    ("American Institutes for Research", fetch_greenhouse, ("americaninstitutesforresearch",), "Academia & Research"),
+    ("ICF", fetch_workday, ("icf.wd5.myworkdayjobs.com", "icf", "ICFExternal_Career_Site"), "Academia & Research"),
+    ("Urban Institute", fetch_workday, ("urban.wd115.myworkdayjobs.com", "urban", "Urban-Careers"), "Academia & Research"),
+    ("RAND", fetch_workday, ("rand.wd5.myworkdayjobs.com", "rand", "External_Career_Site"), "Academia & Research"),
+    ("Northeastern University", fetch_workday, ("northeastern.wd1.myworkdayjobs.com", "northeastern", "careers"), "Academia & Research"),
+    ("Brandeis University", fetch_workday, ("brandeis.wd5.myworkdayjobs.com", "brandeis", "Jobs"), "Academia & Research"),
+    ("Tufts University", fetch_jibe, ("https://jobs.tufts.edu",), "Academia & Research"),
+    ("UMass Chan Medical School", fetch_jibe, ("https://talent.umassmed.edu",), "Academia & Research"),
+    # --- healthcare & academic medicine ---
+    ("Mass General Brigham", fetch_workday, ("massgeneralbrigham.wd1.myworkdayjobs.com", "massgeneralbrigham", "MGBExternal"), "Healthcare"),
+    ("Beth Israel Lahey Health", fetch_workday, ("bilh.wd1.myworkdayjobs.com", "bilh", "External"), "Healthcare"),
+    ("Dana-Farber Cancer Institute", fetch_workday, ("danafarber.wd5.myworkdayjobs.com", "danafarber", "dana-farber"), "Healthcare"),
+    ("Boston Medical Center", fetch_workday, ("bmc.wd1.myworkdayjobs.com", "bmc", "BMC"), "Healthcare"),
+    ("Tufts Medicine", fetch_workday, ("tuftsmedicine.wd1.myworkdayjobs.com", "tuftsmedicine", "Jobs"), "Healthcare"),
+    ("NeighborHealth (EBNHC)", fetch_workday, ("ebnhc.wd1.myworkdayjobs.com", "ebnhc", "EBNHC"), "Healthcare"),
+    ("Blue Cross Blue Shield of MA", fetch_workday, ("bcbsma.wd5.myworkdayjobs.com", "bcbsma", "BCBSMA"), "Healthcare"),
+    # --- nonprofit-serving software ---
+    ("Blackbaud", fetch_workday, ("blackbaud.wd1.myworkdayjobs.com", "blackbaud", "ExternalCareers"), "Tech / Software"),
+    ("Bonterra", fetch_workday, ("bonterra.wd1.myworkdayjobs.com", "bonterra", "bonterratech"), "Tech / Software"),
 ]
 
 
 def main():
     all_jobs, errors = [], []
-    for org, fn, args in SOURCES:
+    for org, fn, args, sector in SOURCES:
         try:
             found = fn(org, *args)
-            print("  %-28s %3d roles" % (org, len(found)))
+            for j in found:
+                j["sector"] = sector
+            print("  %-34s %3d roles" % (org, len(found)))
             all_jobs.extend(found)
         except Exception as e:  # noqa: BLE001 - one bad source must not kill the run
-            print("  %-28s FAILED: %s" % (org, e), file=sys.stderr)
+            print("  %-34s FAILED: %s" % (org, e), file=sys.stderr)
             errors.append({"org": org, "error": str(e)})
 
     if MANUAL.exists():
@@ -282,8 +349,9 @@ def main():
         for m in manual:
             m.setdefault("source", "manual")
             m.setdefault("category", categorize(m["title"]))
+            m.setdefault("sector", "Aging Services")
         all_jobs.extend(manual)
-        print("  %-28s %3d roles" % ("manual_jobs.json", len(manual)))
+        print("  %-34s %3d roles" % ("manual_jobs.json", len(manual)))
 
     # de-dupe by URL; pull descriptions out into their own file and use them
     # to flag citizenship/green-card requirements (F-1/OPT filter)
@@ -297,8 +365,10 @@ def main():
         if desc:
             descs[key] = desc
             j["citizen_req"] = bool(CITIZEN_RE.search(desc))
+            j["years_req"] = years_required(desc)
         else:
             j["citizen_req"] = None  # unknown (no description available)
+            j["years_req"] = j.get("years_req")
         unique.append(j)
 
     unique.sort(key=lambda j: j.get("posted") or "0000", reverse=True)
