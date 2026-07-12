@@ -280,6 +280,78 @@ def fetch_pinpoint(org, base):
     return out
 
 
+def fetch_smartrecruiters(org, company):
+    """SmartRecruiters public postings API. NOTE: returns HTTP 200 with an
+    empty list for unknown slugs — emptiness is not an error signal."""
+    out, offset = [], 0
+    while offset < 500:
+        r = requests.get("https://api.smartrecruiters.com/v1/companies/%s/postings" % company,
+                         params={"limit": 100, "offset": offset}, headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        items = r.json().get("content", [])
+        if not items:
+            break
+        for j in items:
+            title = j.get("name", "")
+            if not wanted(title):
+                continue
+            loc = j.get("location") or {}
+            city = loc.get("city") or ""
+            country = (loc.get("country") or "").upper()
+            url = "https://jobs.smartrecruiters.com/%s/%s" % (company, j.get("id"))
+            posted = (j.get("releasedDate") or "")[:10] or None
+            out.append(job(org, title, ("%s, %s" % (city, country)).strip(", "),
+                           url, posted, "smartrecruiters"))
+        offset += 100
+    return out
+
+
+# ---------------- abroad (Europe, relocation-feasible countries) ----------------
+# Only countries where a non-EU hire is applicant-driven and realistic in 2026:
+# Finland (specialist permit), Netherlands (HSM), Germany (Blue Card),
+# Ireland (Critical Skills), Sweden. Estonia/Denmark excluded (quota / salary bar).
+ABROAD_COUNTRIES = {
+    "Finland": ("finland", "helsinki", "espoo", "tampere", "oulu", ", fi"),
+    "Netherlands": ("netherlands", "amsterdam", "eindhoven", "rotterdam", "utrecht", ", nl"),
+    "Germany": ("germany", "berlin", "munich", "münchen", "hamburg", ", de"),
+    "Ireland": ("ireland", "dublin", ", ie"),
+    "Sweden": ("sweden", "stockholm", "gothenburg", ", se"),
+}
+# stricter than wanted(): abroad list only carries data/analytics/AI roles
+# that match the user's profile, not general software engineering
+ABROAD_PROFILE_RE = re.compile(
+    r"\b(data|analytics?|analyst|business intelligence|BI|insights?|"
+    r"machine learning|ML|AI)\b", re.IGNORECASE)
+RELO_RE = re.compile(r"relocat|visa (support|sponsorship|assistance)|work permit", re.I)
+
+
+def abroad_country(location):
+    low = (location or "").lower()
+    for country, keys in ABROAD_COUNTRIES.items():
+        if any(k in low for k in keys):
+            return country
+    return None
+
+
+ABROAD_SOURCES = [
+    ("Wolt", fetch_greenhouse, ("wolt",)),
+    ("Supercell", fetch_ashby, ("supercell",)),
+    ("Smartly.io", fetch_greenhouse, ("smartlyio",)),
+    ("Oura", fetch_greenhouse, ("oura",)),
+    ("Adyen", fetch_greenhouse, ("adyen",)),
+    ("Mollie", fetch_ashby, ("mollie",)),
+    ("GetYourGuide", fetch_greenhouse, ("getyourguide",)),
+    ("N26", fetch_greenhouse, ("n26",)),
+    ("HelloFresh", fetch_greenhouse, ("hellofresh",)),
+    ("Celonis", fetch_greenhouse, ("celonis",)),
+    ("Intercom", fetch_greenhouse, ("intercom",)),
+    ("Stripe", fetch_greenhouse, ("stripe",)),
+    ("Spotify", fetch_lever, ("spotify",)),
+    ("Delivery Hero", fetch_smartrecruiters, ("DeliveryHero",)),
+    ("Workhuman", fetch_workday, ("workhuman.wd1.myworkdayjobs.com", "workhuman", "WorkhumanCareers")),
+]
+
+
 # (org, fetcher, args, sector)
 SOURCES = [
     # --- aging services & senior-care (the original core) ---
@@ -341,6 +413,25 @@ def main():
             print("  %-34s %3d roles" % (org, len(found)))
             all_jobs.extend(found)
         except Exception as e:  # noqa: BLE001 - one bad source must not kill the run
+            print("  %-34s FAILED: %s" % (org, e), file=sys.stderr)
+            errors.append({"org": org, "error": str(e)})
+
+    for org, fn, args in ABROAD_SOURCES:
+        try:
+            found = fn(org, *args)
+            kept = []
+            for j in found:
+                country = abroad_country(j.get("location"))
+                if not country or not ABROAD_PROFILE_RE.search(j["title"]):
+                    continue
+                j["abroad"] = country
+                j["sector"] = "Tech / Software"
+                if RELO_RE.search(j.get("_desc") or ""):
+                    j["relo"] = True
+                kept.append(j)
+            print("  %-34s %3d roles (abroad)" % (org, len(kept)))
+            all_jobs.extend(kept)
+        except Exception as e:  # noqa: BLE001
             print("  %-34s FAILED: %s" % (org, e), file=sys.stderr)
             errors.append({"org": org, "error": str(e)})
 

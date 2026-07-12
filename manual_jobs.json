@@ -46,5 +46,7 @@
  {"org": "Boston Children's Hospital", "title": "Research Data Manager I", "location": "Brookline, MA", "url": "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=368&siteid=5205", "posted": null, "sector": "Healthcare"},
  {"org": "Combined Jewish Philanthropies", "title": "Business Intelligence Lead", "location": "Boston, MA", "url": "https://www.cjp.org/open-roles", "posted": null, "sector": "Nonprofit & Civic", "years_req": 5},
  {"org": "Combined Jewish Philanthropies", "title": "Data Analyst Co-op", "location": "Boston, MA", "url": "https://www.cjp.org/open-roles", "posted": null, "sector": "Nonprofit & Civic", "years_req": 1},
- {"org": "All In Energy", "title": "Programs Data Analyst", "location": "Lawrence, MA", "url": "https://www.idealist.org/en/data-evaluation-analysis-jobs-boston-ma", "posted": null, "sector": "Nonprofit & Civic"}
+ {"org": "All In Energy", "title": "Programs Data Analyst", "location": "Lawrence, MA", "url": "https://www.idealist.org/en/data-evaluation-analysis-jobs-boston-ma", "posted": null, "sector": "Nonprofit & Civic"},
+ {"org": "Aiven", "title": "Senior Data Engineer (apply via careers site)", "location": "Helsinki, Finland", "url": "https://aiven.io/careers", "posted": null, "sector": "Tech / Software", "abroad": "Finland"},
+ {"org": "Picnic (recognized IND sponsor)", "title": "Data Analyst", "location": "Amsterdam, Netherlands", "url": "https://jobs.picnic.app/en/vacancies", "posted": null, "sector": "Tech / Software", "abroad": "Netherlands", "relo": true}
 ]
