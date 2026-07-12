@@ -1,7 +1,7 @@
 {
  "new_today": 0,
- "updated": "2026-07-12T12:03:22+00:00",
- "count": 741,
+ "updated": "2026-07-12T15:57:53+00:00",
+ "count": 837,
  "errors": [],
  "jobs": [
   {
@@ -15,7 +15,7 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 7,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "AlayaCare",
@@ -28,7 +28,7 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "AARP",
@@ -470,7 +470,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 1,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Boston Medical Center",
@@ -496,6 +496,48 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Wolt",
+   "title": "Senior Data Scientist, Consumer Core",
+   "location": "Berlin, Germany; Helsinki, Finland; Stockholm, Sweden",
+   "url": "https://job-boards.greenhouse.io/wolt/jobs/8051073",
+   "posted": "2026-07-09",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Mollie",
+   "title": "Commercial Analyst - Sales",
+   "location": "Amsterdam",
+   "url": "https://jobs.ashbyhq.com/mollie/5eb7c69f-09be-4b34-87b3-02a57043765f",
+   "posted": "2026-07-09",
+   "category": "Data",
+   "source": "ashby",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Delivery Hero",
+   "title": "Intern, Data Labeler (Turkish Speaking) - (Global Discovery, Consumer)",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000136760675",
+   "posted": "2026-07-09",
+   "category": "Data",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -678,7 +720,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 3,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -691,7 +733,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Boston Medical Center",
@@ -730,6 +772,62 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Wolt",
+   "title": "Senior Data Scientist, Wolt+ Analytics",
+   "location": "Helsinki, Finland; Stockholm, Sweden",
+   "url": "https://job-boards.greenhouse.io/wolt/jobs/8050722",
+   "posted": "2026-07-08",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "GetYourGuide",
+   "title": "Senior Operations Analyst",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/8048163?gh_jid=8048163",
+   "posted": "2026-07-08",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Application Product Manager - AI System Transformations",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7798592003?gh_jid=7798592003",
+   "posted": "2026-07-08",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 7,
+   "first_seen": null
+  },
+  {
+   "org": "Delivery Hero",
+   "title": "Senior Data Analyst - AdTech",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000136449215",
+   "posted": "2026-07-08",
+   "category": "Data",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -1227,6 +1325,34 @@
    "first_seen": null
   },
   {
+   "org": "GetYourGuide",
+   "title": "Senior Data Scientist, Growth Data Products",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/8043161?gh_jid=8043161",
+   "posted": "2026-07-06",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Delivery Hero",
+   "title": "Data Engineer II, Python - (Logistics, Data & ML)",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000135979240",
+   "posted": "2026-07-06",
+   "category": "AI",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
    "org": "Tufts University",
    "title": "Associate Dean of Undergraduate Advising - Engineering",
    "location": "Medford, Massachusetts",
@@ -1393,7 +1519,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 4,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Boston Medical Center",
@@ -1666,7 +1792,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 10,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Bonterra",
@@ -1679,6 +1805,48 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Adyen",
+   "title": "Payment Risk Operations Analyst",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7988505",
+   "posted": "2026-06-30",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 1,
+   "first_seen": null
+  },
+  {
+   "org": "HelloFresh",
+   "title": "Senior Staff Machine Learning Engineer, Menu Personalisation (m,f,x)",
+   "location": "Berlin, Berlin, Germany",
+   "url": "https://careers.hellofresh.com/global/en/job/7988916?gh_jid=7988916",
+   "posted": "2026-06-30",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Application Product Manager - AI System Transformations",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7788415003?gh_jid=7788415003",
+   "posted": "2026-06-30",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -1822,7 +1990,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "NeighborHealth (EBNHC)",
@@ -1835,6 +2003,34 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 3,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Director, Product Analytics",
+   "location": "Berlin, Germany; Dublin, Ireland; EMEA, Remote; London, England",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8030046",
+   "posted": "2026-06-29",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Delivery Hero",
+   "title": "Senior Technical Product  Manager - AI & Service Strategy",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000134701317",
+   "posted": "2026-06-29",
+   "category": "AI",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -2332,6 +2528,20 @@
    "first_seen": null
   },
   {
+   "org": "Delivery Hero",
+   "title": "Senior Manager, Analytics & ML (AdTech)",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000134264308",
+   "posted": "2026-06-25",
+   "category": "AI",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
    "org": "Oak Street Health (CVS)",
    "title": "Sr Analyst, Marketing Operations",
    "location": "IL - Work from home",
@@ -2706,7 +2916,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 4,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -2719,7 +2929,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 6,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -2732,7 +2942,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 6,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Boston Medical Center",
@@ -2758,6 +2968,34 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 7,
+   "first_seen": null
+  },
+  {
+   "org": "Delivery Hero",
+   "title": "Senior Technical Product Manager, Agentic AI IDEs (Developer Tools)-Tech Foundations",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000133613719",
+   "posted": "2026-06-23",
+   "category": "AI",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Delivery Hero",
+   "title": "Principal ML Engineer (Agentic AI)-Vendor Data Team",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000133609345",
+   "posted": "2026-06-23",
+   "category": "AI",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -3047,6 +3285,20 @@
    "first_seen": null
   },
   {
+   "org": "Stripe",
+   "title": "Data Scientist, Payments",
+   "location": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=8018297",
+   "posted": "2026-06-19",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 3,
+   "first_seen": null
+  },
+  {
    "org": "AlayaCare",
    "title": "Senior Fullstack Developer (Python - AWS)",
    "location": "United States",
@@ -3213,7 +3465,63 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 1,
-   "first_seen": "2026-07-11"
+   "first_seen": null
+  },
+  {
+   "org": "Wolt",
+   "title": "Sales Operations Analyst, Wolt for Work (m/w/d)",
+   "location": "Berlin, Germany",
+   "url": "https://job-boards.greenhouse.io/wolt/jobs/8006882",
+   "posted": "2026-06-18",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 3,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Client Engagement Partner - AI-Driven Transformation & Process Intelligence (Logistics/Transportation)",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7777097003?gh_jid=7777097003",
+   "posted": "2026-06-18",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Client Value Partner- AI-Driven Transformation & Process Intelligence (Logistics/Transportation)",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7777096003?gh_jid=7777096003",
+   "posted": "2026-06-18",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Delivery Hero",
+   "title": "Senior Data Scientist - (Content, Consumer)",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000132808760",
+   "posted": "2026-06-18",
+   "category": "Data",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": null
   },
   {
    "org": "On Lok (PACE)",
@@ -3343,7 +3651,21 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
+  },
+  {
+   "org": "Delivery Hero",
+   "title": "Data Product Manager, Dynamic Assortment - (Quick Commerce)",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000132669539",
+   "posted": "2026-06-17",
+   "category": "Data",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": null
   },
   {
    "org": "PointClickCare",
@@ -3499,7 +3821,35 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
+  },
+  {
+   "org": "Wolt",
+   "title": "Senior Analytics Engineer, Merchant",
+   "location": "Berlin, Germany; Helsinki, Finland; Stockholm, Sweden",
+   "url": "https://job-boards.greenhouse.io/wolt/jobs/8006892",
+   "posted": "2026-06-16",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Oura",
+   "title": "Junior Data Scientist",
+   "location": "Hybrid - Helsinki, Uusimaa; Hybrid - Oulu, North Ostrobothnia",
+   "url": "https://job-boards.greenhouse.io/oura/jobs/4287026009",
+   "posted": "2026-06-16",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 2,
+   "first_seen": null
   },
   {
    "org": "NCOA (National Council on Aging)",
@@ -3629,6 +3979,36 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Supercell",
+   "title": "Senior Machine Learning Engineer",
+   "location": "Helsinki",
+   "url": "https://jobs.ashbyhq.com/supercell/afac0f22-9b86-4c60-8fe7-29f0e024126f",
+   "posted": "2026-06-15",
+   "category": "AI",
+   "source": "ashby",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "N26",
+   "title": "Information Security Controls Manager - Cloud & AI Governance",
+   "location": "Berlin",
+   "url": "https://n26.com/en-eu/careers/positions/7992395?gh_jid=7992395",
+   "posted": "2026-06-15",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 6,
    "first_seen": null
   },
   {
@@ -6944,7 +7324,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -6957,7 +7337,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 1,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -6970,7 +7350,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 1,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -6983,7 +7363,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 1,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -6996,7 +7376,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 15,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7009,7 +7389,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 5,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7022,7 +7402,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 3,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7035,7 +7415,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7048,7 +7428,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7061,7 +7441,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 5,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7074,7 +7454,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 2,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7087,7 +7467,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 5,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7100,7 +7480,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 2,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7113,7 +7493,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7126,7 +7506,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 2,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7139,7 +7519,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 2,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7152,7 +7532,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 10,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7165,7 +7545,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 6,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7178,7 +7558,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 8,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7191,7 +7571,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 7,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7204,7 +7584,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 4,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7217,7 +7597,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 2,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7230,7 +7610,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 3,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7243,7 +7623,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 5,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7256,7 +7636,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 6,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7269,7 +7649,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Dana-Farber Cancer Institute",
@@ -7282,7 +7662,7 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
   },
   {
    "org": "Boston Medical Center",
@@ -7688,6 +8068,34 @@
    "first_seen": null
   },
   {
+   "org": "Workhuman",
+   "title": "Principal Data Analyst, Pricing",
+   "location": "Dublin, Ireland",
+   "url": "https://workhuman.wd1.myworkdayjobs.com/en-US/WorkhumanCareers/job/Dublin-Ireland/Principal-Data-Analyst--Pricing_R3076",
+   "posted": "2026-06-12",
+   "category": "Data",
+   "source": "workday",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Workhuman",
+   "title": "Principal Data Analyst, Paid media",
+   "location": "Dublin, Ireland (HQ)",
+   "url": "https://workhuman.wd1.myworkdayjobs.com/en-US/WorkhumanCareers/job/Dublin-Ireland-HQ/Principal-Data-Analyst--Paid-media_R3085",
+   "posted": "2026-06-12",
+   "category": "Data",
+   "source": "workday",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
    "org": "Council on Aging of Southwestern Ohio (AAA)",
    "title": "Continuous Improvement Specialist (data/QI)",
    "location": "Blue Ash, OH",
@@ -7750,7 +8158,49 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-07-11"
+   "first_seen": null
+  },
+  {
+   "org": "Smartly.io",
+   "title": "Senior Machine Learning Engineer, AI Platform",
+   "location": "Helsinki, Uusimaa, Finland",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5658123004",
+   "posted": "2026-06-11",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Smartly.io",
+   "title": "Senior Machine Learning Engineer, AI Platform",
+   "location": "Berlin, Berlin, Germany",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6020669004",
+   "posted": "2026-06-11",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Adyen",
+   "title": "Senior Data Platform Engineer - OLAP",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7068985",
+   "posted": "2026-06-11",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 6,
+   "first_seen": null
   },
   {
    "org": "Trinity Health (PACE parent)",
@@ -7776,6 +8226,20 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Wolt",
+   "title": "Analytics Manager, Marketing Analytics",
+   "location": "Berlin, Germany; Helsinki, Finland; London, United Kingdom; Stockholm, Sweden",
+   "url": "https://job-boards.greenhouse.io/wolt/jobs/7992265",
+   "posted": "2026-06-10",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 6,
    "first_seen": null
   },
   {
@@ -7818,6 +8282,21 @@
    "first_seen": null
   },
   {
+   "org": "HelloFresh",
+   "title": "(Senior) ESG Data & Reporting Manager (all genders)",
+   "location": "Berlin, Berlin, Germany",
+   "url": "https://careers.hellofresh.com/global/en/job/7979508?gh_jid=7979508",
+   "posted": "2026-06-09",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
    "org": "Honor / Home Instead",
    "title": "Staff Data Platform Engineer",
    "location": "Remote Position",
@@ -7841,6 +8320,20 @@
    "sector": "Aging Services",
    "citizen_req": false,
    "years_req": 10,
+   "first_seen": null
+  },
+  {
+   "org": "Oura",
+   "title": "AI Fullstack Engineer, Health Intelligence",
+   "location": "Hybrid - Helsinki, Uusimaa",
+   "url": "https://job-boards.greenhouse.io/oura/jobs/4273399009",
+   "posted": "2026-06-08",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 2,
    "first_seen": null
   },
   {
@@ -7893,6 +8386,48 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Smartly.io",
+   "title": "Software Engineer, Large-Scale Data Systems",
+   "location": "Helsinki, Uusimaa, Finland",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6010952004",
+   "posted": "2026-06-05",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Oura",
+   "title": "Senior Data Scientist",
+   "location": "Hybrid - Helsinki, Uusimaa; Hybrid - Oulu, North Ostrobothnia",
+   "url": "https://job-boards.greenhouse.io/oura/jobs/4273393009",
+   "posted": "2026-06-05",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 6,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Finance & Strategy Analyst",
+   "location": "CHI, SEA, NYC, SF",
+   "url": "https://stripe.com/jobs/search?gh_jid=7985368",
+   "posted": "2026-06-05",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 6,
    "first_seen": null
   },
   {
@@ -7974,6 +8509,48 @@
    "first_seen": null
   },
   {
+   "org": "Oura",
+   "title": "Core Platform Engineer, Data and Algo (All Levels)",
+   "location": "Hybrid - Helsinki, Uusimaa",
+   "url": "https://job-boards.greenhouse.io/oura/jobs/4259790009",
+   "posted": "2026-06-03",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Adyen",
+   "title": "Senior AI Research Engineer",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7908806",
+   "posted": "2026-06-03",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Finance and Strategy Analyst",
+   "location": "Dublin OR London",
+   "url": "https://stripe.com/jobs/search?gh_jid=7963763",
+   "posted": "2026-06-03",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 7,
+   "first_seen": null
+  },
+  {
    "org": "AARP",
    "title": "Platform Manager, Network Services",
    "location": "Washington, DC, United States",
@@ -7997,6 +8574,20 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Staff Software Engineer, Machine Learning Platform",
+   "location": "San Francisco, Seattle",
+   "url": "https://stripe.com/jobs/search?gh_jid=7939868",
+   "posted": "2026-06-02",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 10,
    "first_seen": null
   },
   {
@@ -8052,6 +8643,20 @@
    "first_seen": null
   },
   {
+   "org": "GetYourGuide",
+   "title": "Senior Data Analyst, Customer Care Analytics",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/7962548?gh_jid=7962548",
+   "posted": "2026-05-28",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
    "org": "AARP",
    "title": "Information Technology Intern (Graduate Student)",
    "location": "Washington, DC, United States",
@@ -8101,6 +8706,20 @@
    "sector": "Nonprofit & Civic",
    "citizen_req": false,
    "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Business Partner Analyst",
+   "location": "Dublin, Ireland",
+   "url": "https://stripe.com/jobs/search?gh_jid=7919064",
+   "posted": "2026-05-27",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 8,
    "first_seen": null
   },
   {
@@ -8179,6 +8798,20 @@
    "sector": "Academia & Research",
    "citizen_req": false,
    "years_req": 3,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Business Development Representative, Emerging AI Products",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7948297",
+   "posted": "2026-05-21",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 1,
    "first_seen": null
   },
   {
@@ -8273,6 +8906,20 @@
    "first_seen": null
   },
   {
+   "org": "GetYourGuide",
+   "title": "Senior workforce Management and AI Analyst",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/7921049?gh_jid=7921049",
+   "posted": "2026-05-15",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
    "org": "Element Care PACE",
    "title": "Project Manager, Clinical + Operational Innovations",
    "location": "Lynn, MA",
@@ -8283,6 +8930,48 @@
    "category": "IT",
    "citizen_req": null,
    "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Staff AI Designer",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7917235",
+   "posted": "2026-05-13",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Spotify",
+   "title": "Analytics Engineer II",
+   "location": "Stockholm",
+   "url": "https://jobs.lever.co/spotify/08d82da1-0c72-44d1-91eb-7fa22dee3d39",
+   "posted": "2026-05-13",
+   "category": "Data",
+   "source": "lever",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 2,
+   "first_seen": null
+  },
+  {
+   "org": "GetYourGuide",
+   "title": "Staff Data Analyst, Marketing Analytics",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/7906547?gh_jid=7906547",
+   "posted": "2026-05-12",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 8,
    "first_seen": null
   },
   {
@@ -8309,6 +8998,21 @@
    "sector": "Academia & Research",
    "citizen_req": false,
    "years_req": 8,
+   "first_seen": null
+  },
+  {
+   "org": "HelloFresh",
+   "title": "Senior GRC Analyst (m,f,x)",
+   "location": "Berlin, Berlin, Germany",
+   "url": "https://careers.hellofresh.com/global/en/job/7757706?gh_jid=7757706",
+   "posted": "2026-05-07",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 3,
    "first_seen": null
   },
   {
@@ -8377,6 +9081,34 @@
    "first_seen": null
   },
   {
+   "org": "GetYourGuide",
+   "title": "Senior Legal Counsel - Data, Privacy & AI",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/7837883?gh_jid=7837883",
+   "posted": "2026-05-06",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Field CTO - AI & Enterprise Modernization",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7610416003?gh_jid=7610416003",
+   "posted": "2026-05-06",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 20,
+   "first_seen": null
+  },
+  {
    "org": "PointClickCare",
    "title": "Senior Software Engineer, Platform Engineering",
    "location": "Mississauga",
@@ -8387,6 +9119,20 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Business Partner Analyst,  Financial Enablement",
+   "location": "Dublin, Ireland",
+   "url": "https://stripe.com/jobs/search?gh_jid=7874654",
+   "posted": "2026-05-01",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 4,
    "first_seen": null
   },
   {
@@ -8416,6 +9162,35 @@
    "first_seen": null
   },
   {
+   "org": "Adyen",
+   "title": "Senior Machine Learning Scientist",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7864993",
+   "posted": "2026-04-29",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "N26",
+   "title": "Product Manager - Data Governance & Analytics Engineering",
+   "location": "Berlin",
+   "url": "https://n26.com/en-eu/careers/positions/7861428?gh_jid=7861428",
+   "posted": "2026-04-29",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
    "org": "AARP",
    "title": "Engineer II, Data Platforms",
    "location": "Washington, DC, United States",
@@ -8426,6 +9201,20 @@
    "sector": "Aging Services",
    "citizen_req": false,
    "years_req": 6,
+   "first_seen": null
+  },
+  {
+   "org": "Adyen",
+   "title": "AI Transformation Manager - Finance",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7820051",
+   "posted": "2026-04-23",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -8442,6 +9231,62 @@
    "first_seen": null
   },
   {
+   "org": "Intercom",
+   "title": "Senior Engineering Manager, Fin AI Agent",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7825825",
+   "posted": "2026-04-20",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Backend Engineer, AI Security",
+   "location": "New York, San Francisco, Seattle, or Remote (US/Canada)",
+   "url": "https://stripe.com/jobs/search?gh_jid=7826765",
+   "posted": "2026-04-20",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "AI Infrastructure Engineer",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7820671",
+   "posted": "2026-04-17",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "AI Infrastructure Engineer",
+   "location": "Berlin, Germany",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7824142",
+   "posted": "2026-04-17",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
    "org": "AlayaCare",
    "title": "Manager, Software Development - EVV & Escalation Engineering",
    "location": "Montr\u00e9al, Quebec, Canada",
@@ -8452,6 +9297,20 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Engineering Manager, AI Models Infrastructure",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7818585",
+   "posted": "2026-04-15",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -8546,6 +9405,76 @@
    "first_seen": null
   },
   {
+   "org": "Intercom",
+   "title": "Senior Finance Data Scientist",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7774230",
+   "posted": "2026-04-10",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Senior Applied AI Solutions Consultant",
+   "location": "Stockholm, Sweden",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7695048003?gh_jid=7695048003",
+   "posted": "2026-04-09",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Senior Applied AI Solutions Consultant",
+   "location": "Copenhagen, Denmark",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7695043003?gh_jid=7695043003",
+   "posted": "2026-04-09",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Senior Management & Technology Consultant - AI & Process Analytics",
+   "location": "Copenhagen, Denmark",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7695045003?gh_jid=7695045003",
+   "posted": "2026-04-09",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Senior Management & Technology Consultant - AI & Process Analytics",
+   "location": "Stockholm, Sweden",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7695050003?gh_jid=7695050003",
+   "posted": "2026-04-09",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
    "org": "HHAeXchange",
    "title": "Full Stack Engineer",
    "location": "Washington DC-Baltimore Area",
@@ -8556,6 +9485,34 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 4,
+   "first_seen": null
+  },
+  {
+   "org": "GetYourGuide",
+   "title": "AI Governance Lead",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/7738772?gh_jid=7738772",
+   "posted": "2026-04-08",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Engineering Manager, AI Models Infrastructure",
+   "location": "Dublin, Ireland; London, England",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7784684",
+   "posted": "2026-04-07",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -8624,6 +9581,34 @@
    "first_seen": null
   },
   {
+   "org": "GetYourGuide",
+   "title": "Staff Data Scientist, Growth Data Products",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/7731706?gh_jid=7731706",
+   "posted": "2026-03-27",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Sales Compensation Analytics & Systems Specialist",
+   "location": "CHI, SF, NYC, SEA, US Remote",
+   "url": "https://stripe.com/jobs/search?gh_jid=7739207",
+   "posted": "2026-03-27",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 4,
+   "first_seen": null
+  },
+  {
    "org": "Wellthy",
    "title": "Data Analyst",
    "location": "US",
@@ -8634,6 +9619,20 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Integrated Campaigns Manager, Startups and AI",
+   "location": "San Francisco, New York, Seattle, Chicago, Remote in the US",
+   "url": "https://stripe.com/jobs/search?gh_jid=7587812",
+   "posted": "2026-03-17",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 10,
    "first_seen": null
   },
   {
@@ -8728,6 +9727,20 @@
    "first_seen": null
   },
   {
+   "org": "Stripe",
+   "title": "Product Lead, AI",
+   "location": "San Francisco, Seattle, New York, Chicago",
+   "url": "https://stripe.com/jobs/search?gh_jid=7655023",
+   "posted": "2026-02-25",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Sweden",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 10,
+   "first_seen": null
+  },
+  {
    "org": "Nava PBC",
    "title": "Engineering Resume Drop Off",
    "location": "Remote",
@@ -8767,6 +9780,20 @@
    "first_seen": null
   },
   {
+   "org": "GetYourGuide",
+   "title": "Data Engineering Manager, Supply",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/7602318?gh_jid=7602318",
+   "posted": "2026-02-16",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 3,
+   "first_seen": null
+  },
+  {
    "org": "Planned Parenthood Federation",
    "title": "Vice President, Data Strategy, Analytics and Insights",
    "location": "Washington, DC",
@@ -8777,6 +9804,34 @@
    "sector": "Nonprofit & Civic",
    "citizen_req": false,
    "years_req": 15,
+   "first_seen": null
+  },
+  {
+   "org": "Smartly.io",
+   "title": "Senior Data Scientist",
+   "location": "Helsinki, Uusimaa, Finland",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5790147004",
+   "posted": "2026-02-06",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "GetYourGuide",
+   "title": "Senior ML Ops Engineer, AI Platform Team",
+   "location": "Berlin",
+   "url": "https://getyourguide.careers/jobs/7594703?gh_jid=7594703",
+   "posted": "2026-02-06",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 4,
    "first_seen": null
   },
   {
@@ -8816,6 +9871,20 @@
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 8,
+   "first_seen": null
+  },
+  {
+   "org": "Adyen",
+   "title": "Data Center Engineer",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7479316",
+   "posted": "2026-01-30",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
    "first_seen": null
   },
   {
@@ -8949,6 +10018,34 @@
    "first_seen": null
   },
   {
+   "org": "Adyen",
+   "title": "Senior Software Engineer (Java) - Data Extraction & Accessibility",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7342905",
+   "posted": "2025-11-26",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 7,
+   "first_seen": null
+  },
+  {
+   "org": "Stripe",
+   "title": "Risk Operations Analyst, Financial Crimes",
+   "location": "Dublin",
+   "url": "https://stripe.com/jobs/search?gh_jid=7430332",
+   "posted": "2025-11-26",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 8,
+   "first_seen": null
+  },
+  {
    "org": "PointClickCare",
    "title": "Principal Data Engineer (streaming and real-time data systems)",
    "location": "Mississauga",
@@ -8975,6 +10072,105 @@
    "first_seen": null
   },
   {
+   "org": "Intercom",
+   "title": "Senior ML Science Manager",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7411373",
+   "posted": "2025-11-20",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Staff AI Product Manager",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7377200",
+   "posted": "2025-11-20",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Adyen",
+   "title": "Senior Data Platform Engineer",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7068990",
+   "posted": "2025-11-13",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 6,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Staff Product Engineer, AI",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7393950",
+   "posted": "2025-11-13",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 10,
+   "first_seen": null
+  },
+  {
+   "org": "Adyen",
+   "title": "Senior Data Scientist - Experimentation Platform",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/7300108",
+   "posted": "2025-11-06",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Smartly.io",
+   "title": "Senior Software Engineer (AI Platform)",
+   "location": "Helsinki",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5687122004",
+   "posted": "2025-11-04",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Smartly.io",
+   "title": "Senior Software Engineer (AI Platform)",
+   "location": "Berlin",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5697499004",
+   "posted": "2025-11-04",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
    "org": "ACLU",
    "title": "Product Manager II, CRM",
    "location": "New York, New York, United States",
@@ -8983,6 +10179,48 @@
    "category": "IT",
    "source": "greenhouse",
    "sector": "Nonprofit & Civic",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Senior Data Scientist - AI Tooling",
+   "location": "Dublin, Ireland; London, England",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/7314809",
+   "posted": "2025-10-10",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Celonis",
+   "title": "Lead Applied AI Engineer",
+   "location": "Amsterdam, Netherlands",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/7479634003?gh_jid=7479634003",
+   "posted": "2025-09-26",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Smartly.io",
+   "title": "(Senior) Manager, Data Platform",
+   "location": "Helsinki, Uusimaa, Finland",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5652745004",
+   "posted": "2025-09-19",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": null,
    "first_seen": null
@@ -9011,6 +10249,92 @@
    "sector": "Nonprofit & Civic",
    "citizen_req": false,
    "years_req": 6,
+   "first_seen": null
+  },
+  {
+   "org": "Adyen",
+   "title": "Senior Data Engineer",
+   "location": "Amsterdam",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/6919020",
+   "posted": "2025-06-27",
+   "category": "Data",
+   "source": "greenhouse",
+   "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 7,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "AI Design Leader",
+   "location": "Berlin, Germany; Dublin, Ireland; London, England",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/6781237",
+   "posted": "2025-04-10",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Smartly.io",
+   "title": "Staff Machine Learning Engineer (AI Platform)",
+   "location": "Helsinki",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5471822004",
+   "posted": "2025-03-17",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 8,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Staff Machine Learning Scientist",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/6654793",
+   "posted": "2025-02-22",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 8,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Senior Machine Learning Scientist",
+   "location": "Dublin, Ireland",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/6531495",
+   "posted": "2025-01-11",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": null
+  },
+  {
+   "org": "Intercom",
+   "title": "Senior Product Engineer, AI",
+   "location": "Dublin, Ireland; London, England",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/6276021",
+   "posted": "2024-09-27",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
    "first_seen": null
   },
   {
@@ -9631,6 +10955,35 @@
    "url": "https://www.idealist.org/en/data-evaluation-analysis-jobs-boston-ma",
    "posted": null,
    "sector": "Nonprofit & Civic",
+   "source": "manual",
+   "category": "Data",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Aiven",
+   "title": "Senior Data Engineer (apply via careers site)",
+   "location": "Helsinki, Finland",
+   "url": "https://aiven.io/careers",
+   "posted": null,
+   "sector": "Tech / Software",
+   "abroad": "Finland",
+   "source": "manual",
+   "category": "Data",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": null
+  },
+  {
+   "org": "Picnic (recognized IND sponsor)",
+   "title": "Data Analyst",
+   "location": "Amsterdam, Netherlands",
+   "url": "https://jobs.picnic.app/en/vacancies",
+   "posted": null,
+   "sector": "Tech / Software",
+   "abroad": "Netherlands",
+   "relo": true,
    "source": "manual",
    "category": "Data",
    "citizen_req": null,
