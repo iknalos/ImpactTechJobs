@@ -333,6 +333,158 @@ def abroad_country(location):
     return None
 
 
+# ---- abroad academia: research roles needing a Master's (not PhD) ----
+# doctoral researcher / PhD positions in FI/NL/SE/DE are salaried jobs with
+# Master's entry; postdoc/professor/lecturer roles are excluded (need PhD)
+ABROAD_ACADEMIC_RE = re.compile(
+    r"\b(data|analytics?|analyst|machine learning|ML|AI|artificial intelligence|"
+    r"statistic\w*|bioinformat\w*|computational|research software|data science|"
+    r"deep learning|computer vision|NLP|research engineer)\b", re.IGNORECASE)
+ACADEMIC_EXCLUDE_RE = re.compile(
+    r"\b(postdoc\w*|post-doc\w*|professor|lecturer|group leader|"
+    r"principal investigator|dean|docent)\b", re.IGNORECASE)
+
+
+def _get(url, **kw):
+    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT, **kw)
+    r.raise_for_status()
+    return r.text
+
+
+def fetch_helsinki_uni(org):
+    out, seen = [], set()
+    for q in ("data", "analyst", "machine learning", "AI"):
+        html = _get("https://jobs.helsinki.fi/search/", params={"q": q, "locale": "en_GB"})
+        for m in re.finditer(
+                r'<a[^>]*class="jobTitle-link"[^>]*href="([^"]+)"[^>]*>\s*([^<]+)', html):
+            path, title = m.group(1), m.group(2).strip()
+            if path in seen:
+                continue
+            seen.add(path)
+            out.append(job(org, title, "Helsinki, Finland",
+                           "https://jobs.helsinki.fi" + path, None, "sf-html"))
+    return out
+
+
+def fetch_laura_rss(org, feed, location):
+    xml = _get(feed)
+    out = []
+    for m in re.finditer(r"<item>.*?<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>"
+                         r".*?<link>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</link>.*?</item>",
+                         xml, re.S):
+        title = htmllib.unescape(m.group(1).strip())
+        out.append(job(org, title, location, m.group(2).strip(), None, "laura-rss"))
+    return out
+
+
+def fetch_varbi(org, tenant, location):
+    html = _get("https://%s.varbi.com/en/" % tenant)
+    jobs_by_id = {}
+    for m in re.finditer(r'href="(?:https?://[^"/]+)?(/en/what:job/jobID:(\d+)/[^"]*)"[^>]*>(.*?)</a>', html, re.S):
+        text = WS_RE.sub(" ", TAG_RE.sub(" ", m.group(3))).strip()
+        if not text:
+            continue
+        jobs_by_id.setdefault(m.group(2), {"path": m.group(1), "texts": []})["texts"].append(text)
+    out = []
+    for jid, info in jobs_by_id.items():
+        texts = info["texts"]
+        title = texts[0]
+        deadline = next((t for t in texts if re.fullmatch(r"\d{4}-\d{2}-\d{2}", t)), None)
+        out.append(job(org, title, location,
+                       "https://%s.varbi.com%s" % (tenant, info["path"]), None, "varbi"))
+        if deadline:
+            out[-1]["deadline"] = deadline
+    return out
+
+
+def fetch_academictransfer(org):
+    out, seen = [], set()
+    for q in ("data", "machine learning"):
+        html = _get("https://www.academictransfer.com/en/jobs/", params={"q": q})
+        for m in re.finditer(r'href="(/en/jobs/(\d+)/([^"/]+)/?)"[^>]*>(?:\s*<[^>]+>)*\s*([^<]{8,160})?', html):
+            jid = m.group(2)
+            if jid in seen:
+                continue
+            seen.add(jid)
+            title = (m.group(4) or "").strip()
+            if not title or title.startswith("<"):
+                title = m.group(3).replace("-", " ").strip().capitalize()
+            out.append(job(org, title, "Netherlands (via AcademicTransfer)",
+                           "https://www.academictransfer.com" + m.group(1), None, "at-html"))
+    return out
+
+
+def fetch_euraxess_r1(org, pages=10):
+    """EURAXESS First Stage Researcher (R1) offers; country parsed per card.
+    Rate-limited (429s) — pace requests and keep partial results."""
+    import time
+    out = []
+    for p in range(pages):
+        time.sleep(1.5)
+        try:
+            html = _get("https://euraxess.ec.europa.eu/jobs/search",
+                        params={"f[0]": "job_research_profile:447", "page": p})
+        except Exception:
+            break  # rate limited — keep what we have
+        blocks = html.split("<article")[1:]
+        if not blocks:
+            break
+        for b in blocks:
+            tm = re.search(r'href="(/jobs/\d+)"[^>]*>\s*([^<]+)', b)
+            if not tm:
+                continue
+            country = next((c for c in ABROAD_COUNTRIES
+                            if re.search(r"\b" + c + r"\b", b)), None)
+            if not country:
+                continue
+            out.append(job(org, tm.group(2).strip(), country,
+                           "https://euraxess.ec.europa.eu" + tm.group(1), None, "euraxess"))
+    return out
+
+
+def fetch_mpg_rss(org):
+    xml = _get("https://www.mpg.de/feeds/jobs.rss")
+    out = []
+    for m in re.finditer(r"<item>.*?<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>"
+                         r".*?<link>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</link>.*?</item>", xml, re.S):
+        out.append(job(org, htmllib.unescape(m.group(1).strip()), "Germany (Max Planck)",
+                       m.group(2).strip(), None, "mpg-rss"))
+    return out
+
+
+def fetch_hida(org):
+    html = _get("https://www.helmholtz-hida.de/en/jobs/job-offers/")
+    out = []
+    for m in re.finditer(r'<a[^>]*class="[^"]*list-item-job[^"]*"[^>]*href="([^"]+)"(.*?)</a>',
+                         html, re.S):
+        text = WS_RE.sub(" ", TAG_RE.sub(" ", m.group(2))).strip()
+        if not text:
+            continue
+        url = m.group(1)
+        if url.startswith("/"):
+            url = "https://www.helmholtz-hida.de" + url
+        out.append(job(org, text[:140], "Germany (Helmholtz)", url, None, "hida"))
+    return out
+
+
+# (org, fetcher, args, fixed country or None to detect from location)
+ABROAD_ACADEMIC_SOURCES = [
+    ("Aalto University", fetch_workday, ("aalto.wd3.myworkdayjobs.com", "aalto", "aalto"), "Finland"),
+    ("University of Helsinki", fetch_helsinki_uni, (), "Finland"),
+    ("Tampere University", fetch_laura_rss, ("https://tuni.rekrytointi.com/paikat/index.php?o=A_RSS&jgid=3", "Tampere, Finland"), "Finland"),
+    ("University of Oulu", fetch_varbi, ("oulunyliopisto", "Oulu, Finland"), "Finland"),
+    ("KTH Royal Institute of Technology", fetch_varbi, ("kth", "Stockholm, Sweden"), "Sweden"),
+    ("Karolinska Institutet", fetch_varbi, ("ki", "Stockholm, Sweden"), "Sweden"),
+    ("Uppsala University", fetch_varbi, ("uu", "Uppsala, Sweden"), "Sweden"),
+    ("Stockholm University", fetch_varbi, ("su", "Stockholm, Sweden"), "Sweden"),
+    ("Lund University", fetch_varbi, ("lu", "Lund, Sweden"), "Sweden"),
+    ("AcademicTransfer (NL universities)", fetch_academictransfer, (), "Netherlands"),
+    ("EURAXESS (EU research portal)", fetch_euraxess_r1, (), None),
+    ("Max Planck Society", fetch_mpg_rss, (), "Germany"),
+    ("Helmholtz HIDA", fetch_hida, (), "Germany"),
+]
+
+
 ABROAD_SOURCES = [
     ("Wolt", fetch_greenhouse, ("wolt",)),
     ("Supercell", fetch_ashby, ("supercell",)),
@@ -430,6 +582,26 @@ def main():
                     j["relo"] = True
                 kept.append(j)
             print("  %-34s %3d roles (abroad)" % (org, len(kept)))
+            all_jobs.extend(kept)
+        except Exception as e:  # noqa: BLE001
+            print("  %-34s FAILED: %s" % (org, e), file=sys.stderr)
+            errors.append({"org": org, "error": str(e)})
+
+    for org, fn, args, fixed_country in ABROAD_ACADEMIC_SOURCES:
+        try:
+            found = fn(org, *args)
+            kept = []
+            for j in found:
+                title = j["title"]
+                if ACADEMIC_EXCLUDE_RE.search(title) or not ABROAD_ACADEMIC_RE.search(title):
+                    continue
+                country = fixed_country or abroad_country(j.get("location"))
+                if not country:
+                    continue
+                j["abroad"] = country
+                j["sector"] = "Academia & Research"
+                kept.append(j)
+            print("  %-34s %3d roles (abroad academia)" % (org, len(kept)))
             all_jobs.extend(kept)
         except Exception as e:  # noqa: BLE001
             print("  %-34s FAILED: %s" % (org, e), file=sys.stderr)
