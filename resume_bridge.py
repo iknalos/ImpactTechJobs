@@ -1,7 +1,7 @@
-"""Local Claude Code bridge for the Elder Tech Jobs resume tailor.
+"""Local Claude Code bridge for the ImpactTech Jobs resume tailor.
 
 Runs a tiny HTTP server on 127.0.0.1:8765. The dashboard at
-https://iknalos.github.io/ElderTechJobs/resume.html calls it to generate
+https://iknalos.github.io/ImpactTechJobs/resume.html calls it to generate
 resumes through YOUR local Claude Code CLI (subscription, no API key).
 
 Start it with start_resume_bridge.bat and leave the window open while
@@ -132,7 +132,7 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    print("Elder Tech Jobs resume bridge running at http://127.0.0.1:%d" % PORT)
+    print("ImpactTech Jobs resume bridge running at http://127.0.0.1:%d" % PORT)
     print("Keep this window open while using the Generate button on the site.")
     print("Stop with Ctrl+C.")
     HTTPServer(("127.0.0.1", PORT), Handler).serve_forever()

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resume Tailor — Elder Tech Jobs</title>
+<title>Resume Tailor — ImpactTech Jobs</title>
 <style>
   :root { --page:#f3f5f8; --card:#fff; --ink:#1a2433; --muted:#5b6b81; --line:#e2e8f0; --accent:#1a56db; --accent-soft:#eaf1fe; }
   * { box-sizing: border-box; }
@@ -175,9 +175,9 @@ Boston Senior Navigator - Age-Friendly Civic Resource Map (Live Product)
 - Integrated MBTA real-time vehicles, NWS weather alerts, Boston 311 hazard reports; shipped solo across 47 releases
 Stack: Vanilla JavaScript, Leaflet.js, MBTA/NWS/311 APIs, GitHub Pages
 
-Elder Tech Jobs - Aging-Services Job Market Data Pipeline (Live Product)
-2026 - Present | iknalos.github.io/ElderTechJobs | github.com/iknalos/ElderTechJobs
-- Built automated daily ETL pipeline aggregating live postings from 14 employer ATS APIs (Greenhouse, Lever, Workday, Ashby) across the US aging-services sector
+ImpactTech Jobs - Mission-Driven Job Market Data Pipeline (Live Product)
+2026 - Present | iknalos.github.io/ImpactTechJobs | github.com/iknalos/ImpactTechJobs
+- Built automated daily ETL pipeline aggregating live postings from 40+ employer ATS APIs (Greenhouse, Lever, Workday, Ashby) across healthcare, nonprofit, academic, and aging-services employers
 - Zero-maintenance GitHub Actions cron: deduplication, first-seen tracking, regex-based requirement flagging, static-site publishing
 Stack: Python, requests, GitHub Actions, GitHub Pages
 
@@ -401,13 +401,13 @@ async function generateText(system, userMsg) {
     status('Generating via Anthropic API… (~30 sec)', 'info');
     return callClaude(system, userMsg);
   }
-  throw new Error('Bridge not running: double-click start_resume_bridge.bat in your ElderTechJobs folder, then press Generate again. (Or use the manual copy-prompt fallback below.)');
+  throw new Error('Bridge not running: double-click start_resume_bridge.bat in your ImpactTechJobs folder, then press Generate again. (Or use the manual copy-prompt fallback below.)');
 }
 
 bridgeAlive().then(up => {
   $('bridgeState').innerHTML = up
     ? '🟢 <b>Local Claude Code bridge detected</b> — one-click Generate is ready (free, uses your subscription).'
-    : '⚪ Bridge not running. For one-click Generate: double-click <b>start_resume_bridge.bat</b> in <code>C:\\Users\\test\\Projects\\ElderTechJobs</code> and keep its window open. Otherwise use the manual fallback below.';
+    : '⚪ Bridge not running. For one-click Generate: double-click <b>start_resume_bridge.bat</b> in <code>C:\\Users\\test\\Projects\\ImpactTechJobs</code> and keep its window open. Otherwise use the manual fallback below.';
 });
 
 /* ---------------- generation: API path ---------------- */
