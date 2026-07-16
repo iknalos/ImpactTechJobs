@@ -1,4 +1,4 @@
-"""Elder Tech Jobs scraper.
+"""ImpactTech Jobs scraper.
 
 Pulls current job postings from the ATS APIs of elder-support / aging-services
 organizations, keeps only data / IT / AI / software roles, merges in manually
@@ -22,7 +22,7 @@ OUT = ROOT / "docs" / "jobs.json"
 DESC_OUT = ROOT / "docs" / "desc.json"
 MANUAL = ROOT / "manual_jobs.json"
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (ElderTechJobs job dashboard; personal use)"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (ImpactTechJobs job dashboard; personal use)"}
 TIMEOUT = 30
 
 # ---------------------------------------------------------------- filtering

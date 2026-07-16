@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elder Tech Jobs — Data, IT &amp; AI careers in aging services</title>
+<title>ImpactTech Jobs — Data, Software &amp; AI careers at mission-driven organizations</title>
 <style>
   :root {
     --page: #f3f5f8; --card: #ffffff; --ink: #1a2433; --muted: #5b6b81;
@@ -168,8 +168,8 @@
 
 <div class="hero">
   <div class="hero-inner">
-    <h1>Elder Tech Jobs <small>· careers modernizing aging services</small></h1>
-    <p>Data, IT &amp; AI openings across mission-driven employers: aging services, healthcare &amp; academic medicine, national nonprofits, academia &amp; research orgs, and social-impact tech. Refreshed automatically every morning.</p>
+    <h1>ImpactTech Jobs <small>· tech careers with social impact</small></h1>
+    <p>Data, software &amp; AI openings across mission-driven employers: healthcare &amp; academic medicine, universities &amp; research orgs, national nonprofits, aging services, and social-impact tech — in the US and Europe. Refreshed automatically every morning.</p>
     <div class="stats">
       <div class="stat"><b id="stOpen">–</b>open roles</div>
       <div class="stat"><b id="stCo">–</b>companies</div>
@@ -219,7 +219,7 @@
   <div id="offlineNote" style="display:none; background:#fff7e0; border:1px solid #f2dc9b; color:#7a5b0d; border-radius:12px; padding:12px 16px; margin-bottom:13px; font-size:14px;">
     ⚠️ You're viewing the <b>offline copy</b> on your disk — it does <b>not</b> auto-update.
     The always-current dashboard is at
-    <a href="https://iknalos.github.io/ElderTechJobs/" style="color:#7a5b0d;font-weight:700">iknalos.github.io/ElderTechJobs</a>.
+    <a href="https://iknalos.github.io/ImpactTechJobs/" style="color:#7a5b0d;font-weight:700">iknalos.github.io/ImpactTechJobs</a>.
   </div>
   <div id="todayBanner" style="display:none">
     <span id="tbText"></span>
@@ -241,7 +241,7 @@
 <footer>
   <b>How this works:</b> a scraper queries each employer's job-board API daily (GitHub Actions, ~7 AM ET) and republishes this page.
   Roles from agencies without public APIs are curated by hand and may not show an exact posting date — always confirm details on the linked posting.
-  Source code: <a href="https://github.com/iknalos/ElderTechJobs">github.com/iknalos/ElderTechJobs</a>.
+  Source code: <a href="https://github.com/iknalos/ImpactTechJobs">github.com/iknalos/ImpactTechJobs</a>.
 </footer>
 
 <script>
@@ -304,7 +304,7 @@ function exportState() {
     exported: new Date().toISOString() }, null, 1)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'elder-tech-jobs-tracker-backup.json';
+  a.download = 'impacttech-jobs-tracker-backup.json';
   document.body.appendChild(a); a.click(); a.remove();
   URL.revokeObjectURL(a.href);
 }
@@ -412,22 +412,29 @@ loadData().then(d => {
   $('updated').textContent = 'Last refreshed ' + upd.toLocaleString() +
     (d.errors && d.errors.length ? ' · ' + d.errors.length + ' source(s) failed this run' : '');
 
-  // location dropdown: Remote + states by frequency
-  const stCount = {};
-  JOBS.forEach(j => new Set(jobStates(j)).forEach(s => stCount[s] = (stCount[s] || 0) + 1));
+  // location dropdown: Remote, then US section (all + states) and Abroad section (all + countries)
   const locSel = $('fLoc');
-  const remOpt = new Option('Remote (' + JOBS.filter(isRemote).length + ')', 'REMOTE');
-  locSel.appendChild(remOpt);
+  locSel.appendChild(new Option('Remote (' + JOBS.filter(isRemote).length + ')', 'REMOTE'));
+  const usAll = JOBS.filter(j => !j.abroad);
+  const ogUS = document.createElement('optgroup');
+  ogUS.label = '🇺🇸 United States';
+  ogUS.appendChild(new Option('All US (' + usAll.length + ')', 'US'));
+  const stCount = {};
+  usAll.forEach(j => new Set(jobStates(j)).forEach(s => stCount[s] = (stCount[s] || 0) + 1));
+  Object.keys(stCount).sort((a, b) => stCount[b] - stCount[a] || a.localeCompare(b))
+    .forEach(s => ogUS.appendChild(new Option(s + ' (' + stCount[s] + ')', s)));
+  locSel.appendChild(ogUS);
   const abroadAll = JOBS.filter(j => j.abroad);
   if (abroadAll.length) {
-    locSel.appendChild(new Option('🌍 Abroad — all (' + abroadAll.length + ')', 'ABROAD'));
+    const ogAb = document.createElement('optgroup');
+    ogAb.label = '🌍 Abroad';
+    ogAb.appendChild(new Option('All abroad (' + abroadAll.length + ')', 'ABROAD'));
     const cCount = {};
     abroadAll.forEach(j => cCount[j.abroad] = (cCount[j.abroad] || 0) + 1);
-    Object.keys(cCount).sort()
-      .forEach(c => locSel.appendChild(new Option('🌍 ' + c + ' (' + cCount[c] + ')', 'AB:' + c)));
+    Object.keys(cCount).sort((a, b) => cCount[b] - cCount[a] || a.localeCompare(b))
+      .forEach(c => ogAb.appendChild(new Option(c + ' (' + cCount[c] + ')', 'AB:' + c)));
+    locSel.appendChild(ogAb);
   }
-  Object.keys(stCount).sort((a, b) => stCount[b] - stCount[a] || a.localeCompare(b))
-    .forEach(s => locSel.appendChild(new Option(s + ' (' + stCount[s] + ')', s)));
 
   [...new Set(JOBS.map(j => j.org))].sort((a, b) => a.localeCompare(b))
     .forEach(o => $('fCo').appendChild(new Option(o, o)));
@@ -458,9 +465,10 @@ function filtered() {
     if (co && j.org !== co) return false;
     if (rem && !isRemote(j)) return false;
     if (loc === 'REMOTE' && !isRemote(j)) return false;
+    else if (loc === 'US') { if (j.abroad) return false; }
     else if (loc === 'ABROAD') { if (!j.abroad) return false; }
     else if (loc.startsWith('AB:')) { if (j.abroad !== loc.slice(3)) return false; }
-    else if (loc && loc !== 'REMOTE' && !jobStates(j).includes(loc)) return false;
+    else if (loc && loc !== 'REMOTE' && (j.abroad || !jobStates(j).includes(loc))) return false;
     if (maxD !== null) { const a = daysAgo(j.posted); if (a === null || a > maxD) return false; }
     if (q && !(j.title + ' ' + j.org + ' ' + j.location).toLowerCase().includes(q)) return false;
     return true;
