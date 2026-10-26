@@ -2,16 +2,25 @@ name: Daily job refresh
 
 on:
   schedule:
-    - cron: "0 11 * * *"   # every day at 11:00 UTC (~7 AM Eastern)
+    # GitHub starts scheduled runs late under load, worst on the hour: at
+    # 11:00 UTC this ran 3-9 h late (10 AM-4 PM ET). An odd minute in the
+    # quiet early-morning window lands before the workday even when delayed.
+    - cron: "41 7 * * *"   # 07:41 UTC (~3:41 AM Eastern)
   workflow_dispatch:
 
 permissions:
   contents: write
   actions: write   # lets the retry step re-run a failed Pages deployment
 
+# a slow run must never overlap the next day's (both would push docs/)
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 

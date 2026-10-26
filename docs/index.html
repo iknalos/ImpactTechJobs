@@ -92,6 +92,7 @@
   .tag.yrs { background: #fef0e0; color: #9a4b08; }
   .tag.abr { background: #e3e8fd; color: #3b47c4; }
   .tag.relo { background: #def7e4; color: #116932; }
+  .tag.cap { background: #e6f4ea; color: #0b6b3a; cursor: help; }
   .applied-view .cols, .applied-view .row { grid-template-columns: minmax(0,1fr) 200px 165px 100px; }
   .cols { font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); background: #f8fafc; border-bottom: 1px solid var(--line); padding-top: 8px; padding-bottom: 8px; }
   .row { border-bottom: 1px solid #eef2f7; text-decoration: none; }
@@ -205,6 +206,7 @@
     <label class="toggle"><input type="checkbox" id="fRemote"> Remote only</label>
     <label class="toggle" title="Hide jobs whose description requires US citizenship, green card, or security clearance"><input type="checkbox" id="fVisa" checked> OPT/CPT friendly</label>
     <label class="toggle" title="Hide jobs whose description asks for 7 or more years of experience"><input type="checkbox" id="fYears" checked> ≤6 yrs exp</label>
+    <label class="toggle" title="Only employers that DOL prevailing-wage filings show as ACWIA-covered (university, university-affiliated nonprofit, or nonprofit/government research org) — the H-1B cap-exempt categories: no lottery, apply any time of year"><input type="checkbox" id="fCap"> H-1B cap-exempt</label>
     <div class="view">
       <button id="vGroup" class="on" title="Group openings by company">By company</button>
       <button id="vFlat" title="One flat list, most recent first">Newest first</button>
@@ -239,9 +241,10 @@
 </div>
 
 <footer>
-  <b>How this works:</b> a scraper queries each employer's job-board API daily (GitHub Actions, ~7 AM ET) and republishes this page.
+  <b>How this works:</b> a scraper queries each employer's job-board API daily (GitHub Actions, early morning ET) and republishes this page.
   Roles from agencies without public APIs are curated by hand and may not show an exact posting date — always confirm details on the linked posting.
   Source code: <a href="https://github.com/iknalos/ImpactTechJobs">github.com/iknalos/ImpactTechJobs</a>.
+  <span id="capNote"></span>
 </footer>
 
 <script>
@@ -254,7 +257,7 @@ const STATES = new Set(('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA M
 const STATE_NAMES = {alabama:'AL',alaska:'AK',arizona:'AZ',arkansas:'AR',california:'CA',colorado:'CO',connecticut:'CT',delaware:'DE',florida:'FL',georgia:'GA',hawaii:'HI',idaho:'ID',illinois:'IL',indiana:'IN',iowa:'IA',kansas:'KS',kentucky:'KY',louisiana:'LA',maine:'ME',maryland:'MD',massachusetts:'MA',michigan:'MI',minnesota:'MN',mississippi:'MS',missouri:'MO',montana:'MT',nebraska:'NE',nevada:'NV','new hampshire':'NH','new jersey':'NJ','new mexico':'NM','new york':'NY','north carolina':'NC','north dakota':'ND',ohio:'OH',oklahoma:'OK',oregon:'OR',pennsylvania:'PA','rhode island':'RI','south carolina':'SC','south dakota':'SD',tennessee:'TN',texas:'TX',utah:'UT',vermont:'VT',virginia:'VA',washington:'WA','west virginia':'WV',wisconsin:'WI',wyoming:'WY','washington dc':'DC'};
 const AVATAR_COLORS = ['#1a56db','#0e7490','#7c3aed','#b45309','#be185d','#15803d','#4338ca','#a21caf','#0f766e','#c2410c'];
 
-let JOBS = [], VIEW = 'group', LATEST = '', NEW_ONLY = false;
+let JOBS = [], VIEW = 'group', LATEST = '', NEW_ONLY = false, CAP = {};
 const isNewToday = j => j.first_seen && j.first_seen === LATEST;
 
 /* ---- applied tracker (persists in this browser's localStorage) ---- */
@@ -395,6 +398,14 @@ function loadData() {
 
 loadData().then(d => {
   JOBS = d.jobs || [];
+  CAP = d.cap_exempt || {};
+  const cs = d.cap_exempt_source || {};
+  $('capNote').textContent = cs.files && cs.files.length
+    ? 'H-1B cap-exempt tags come from DOL prevailing-wage disclosure data (' +
+      cs.files.map(f => f.replace(/^PW_Disclosure_Data_|\.xlsx$/g, '').replace('_', ' ')).join(', ') +
+      ')' + (cs.age_days > 270 ? ' — this data is getting old and is due a refresh.' : '.') +
+      ' USCIS decides each petition, so confirm with the employer’s HR or international office.'
+    : '';
   LATEST = (d.updated || '').slice(0, 10);
   if (location.protocol === 'file:') $('offlineNote').style.display = 'block';
   const nToday = JOBS.filter(isNewToday).length;
@@ -409,8 +420,13 @@ loadData().then(d => {
   $('stNew').textContent = JOBS.filter(j => { const a = daysAgo(j.posted); return a !== null && a <= 7; }).length;
   $('stRemote').textContent = JOBS.filter(isRemote).length;
   const upd = new Date(d.updated);
+  // sources failing for days or stuck at zero matches (see source_health in scraper.py)
+  const sick = Object.entries(d.health || {}).filter(([, h]) => h.alert);
   $('updated').textContent = 'Last refreshed ' + upd.toLocaleString() +
-    (d.errors && d.errors.length ? ' · ' + d.errors.length + ' source(s) failed this run' : '');
+    (d.errors && d.errors.length ? ' · ' + d.errors.length + ' source(s) failed this run' : '') +
+    (sick.length ? ' · ' + sick.length + ' source(s) need a look' : '');
+  if (sick.length) $('updated').title = sick.map(([o, h]) => o + (h.fail_days
+    ? ' (failing ' + h.fail_days + ' days)' : ' (board empty for ' + h.empty_days + ' days)')).join('\n');
 
   // location dropdown: Remote, then US section (all + states) and Abroad section (all + countries)
   const locSel = $('fLoc');
@@ -460,6 +476,7 @@ function filtered() {
     if (NEW_ONLY && !isNewToday(j)) return false;
     if ($('fVisa').checked && j.citizen_req) return false;
     if ($('fYears').checked && j.years_req >= 7) return false;
+    if ($('fCap').checked && !j.cap_exempt) return false;
     if (sec && j.sector !== sec) return false;
     if (cat && j.category !== cat) return false;
     if (co && j.org !== co) return false;
@@ -486,6 +503,7 @@ function rowHTML(j, withCompany) {
       ${j.years_req >= 7 ? '<span class="tag yrs">' + j.years_req + '+ YRS</span>' : ''}
       ${j.abroad ? '<span class="tag abr">🌍 ' + esc(j.abroad).toUpperCase() + '</span>' : ''}
       ${j.relo ? '<span class="tag relo">RELO SUPPORT</span>' : ''}
+      ${j.cap_exempt ? '<span class="tag cap" title="' + esc(capTip(j.org)) + '">CAP-EXEMPT' + (CAP[j.org] && CAP[j.org].system ? '*' : '') + '</span>' : ''}
       ${withCompany ? '<span class="co-inline">· ' + esc(j.org) + '</span>' : ''}</span>
     <span class="loc">${esc(j.location)}</span>
     <span class="posted">${postedCell(j)}</span>
@@ -495,6 +513,15 @@ function rowHTML(j, withCompany) {
       <button class="dis" data-key="${esc(key)}" title="Not relevant — move to Not applicable">✕</button>
     </span>
   </a>`;
+}
+function capTip(org) {
+  const c = CAP[org];
+  if (!c) return '';
+  return 'H-1B cap-exempt: ' + c.basis + '\n' + c.filings + ' DOL prevailing-wage filings as an ACWIA employer, ' +
+    c.accepted + ' with the higher-ed wage issued by DOL' + (c.last ? ' (latest ' + c.last + ')' : '') +
+    '\nDOL employer: ' + c.entities.join('; ') +
+    (c.system ? '\n* Depends on the hiring entity: only some employers in this system are covered. Check the legal employer on the posting.' : '') +
+    '\nUSCIS decides each petition; confirm with HR / the international office.';
 }
 const colsHTML = '<div class="cols"><span>Role</span><span>Location</span><span style="text-align:right">Posted</span><span></span></div>';
 
@@ -589,7 +616,7 @@ $('list').addEventListener('click', e => {
 $('tYes').onclick = () => { if (toastKey) markApplied(toastKey); hideToast(); maybeAsk(); };
 $('tNo').onclick = () => { hideToast(); maybeAsk(); };
 
-['q', 'fCat', 'fSec', 'fLoc', 'fCo', 'fDays', 'fRemote', 'fVisa', 'fYears'].forEach(id =>
+['q', 'fCat', 'fSec', 'fLoc', 'fCo', 'fDays', 'fRemote', 'fVisa', 'fYears', 'fCap'].forEach(id =>
   $(id).addEventListener(id === 'q' ? 'input' : 'change', render));
 function setView(v) {
   VIEW = v;
@@ -610,7 +637,7 @@ $('tbBtn').onclick = () => {
 };
 $('reset').onclick = () => {
   $('q').value = ''; $('fCat').value = ''; $('fSec').value = ''; $('fLoc').value = ''; $('fCo').value = ''; $('fDays').value = ''; $('fRemote').checked = false;
-  $('fVisa').checked = true; $('fYears').checked = true;
+  $('fVisa').checked = true; $('fYears').checked = true; $('fCap').checked = false;
   NEW_ONLY = false; $('tbBtn').textContent = 'Show me →'; $('tbBtn').classList.remove('off');
   render();
 };
