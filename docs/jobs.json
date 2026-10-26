@@ -1,8 +1,21 @@
 {
  "new_today": 1004,
- "updated": "2026-10-26T21:21:56+00:00",
+ "updated": "2026-10-26T21:33:41+00:00",
  "count": 1505,
- "errors": [],
+ "errors": [
+  {
+   "org": "Access Care Partners",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "org": "Elder Services of Berkshire County",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "org": "Atlanta Regional Commission",
+   "error": "HTTPSConnectionPool(host='www.governmentjobs.com', port=443): Max retries exceeded with url: /careers/home/index?agency=atlantaregional&sort=PostingDate&isDescendingSort=true&page=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.governmentjobs.com', port=443) at 0x7f7ec4c477a0>, 'Connection to www.governmentjobs.com timed out. (connect timeout=30)'))"
+  }
+ ],
  "health": {
   "Honor / Home Instead": {
    "n": 3,
@@ -21,7 +34,7 @@
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "AlayaCare": {
@@ -151,7 +164,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 3,
+   "zero_days": 4,
    "alert": false
   },
   "SCES (Somerville-Cambridge Elder Services)": {
@@ -171,7 +184,7 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Central Boston Elder Services": {
@@ -181,7 +194,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Elder Services of Cape Cod & the Islands": {
@@ -191,7 +204,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "LifePath": {
@@ -201,7 +214,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Bristol Aging & Wellness": {
@@ -211,7 +224,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "AgeSpan": {
@@ -231,7 +244,7 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Greater Springfield Senior Services": {
@@ -241,7 +254,7 @@
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Mystic Valley Aging Services": {
@@ -251,7 +264,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Old Colony Elder Services": {
@@ -261,7 +274,7 @@
    "max_total": 30,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Greater Lynn Senior Services": {
@@ -271,7 +284,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Springwell": {
@@ -291,7 +304,7 @@
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Tri-Valley Inc.": {
@@ -301,7 +314,7 @@
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Coastline Elderly Services": {
@@ -321,7 +334,7 @@
    "max_total": 5,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Highland Valley Elder Services": {
@@ -331,7 +344,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "SeniorCare Inc.": {
@@ -341,7 +354,7 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Elder Services of Worcester Area": {
@@ -351,7 +364,7 @@
    "max_total": 6,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Ethos": {
@@ -361,25 +374,25 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Access Care Partners": {
-   "n": 0,
-   "total": 4,
+   "n": null,
+   "total": null,
    "last_hit": null,
    "max_total": 4,
-   "fail_days": 0,
+   "fail_days": 1,
    "empty_days": 0,
    "zero_days": 2,
    "alert": false
   },
   "Elder Services of Berkshire County": {
-   "n": 0,
-   "total": 6,
+   "n": null,
+   "total": null,
    "last_hit": null,
    "max_total": 6,
-   "fail_days": 0,
+   "fail_days": 1,
    "empty_days": 0,
    "zero_days": 2,
    "alert": false
@@ -411,7 +424,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Upham's Elder Service Plan (PACE)": {
@@ -421,7 +434,7 @@
    "max_total": 18,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Sherrill House": {
@@ -431,7 +444,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Harbor Health (Elder Service Plan)": {
@@ -441,7 +454,7 @@
    "max_total": 50,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Fallon Health (Summit ElderCare PACE)": {
@@ -481,7 +494,7 @@
    "max_total": 18,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Brightview Senior Living": {
@@ -535,11 +548,11 @@
    "alert": false
   },
   "Atlanta Regional Commission": {
-   "n": 1,
-   "total": 4,
+   "n": null,
+   "total": null,
    "last_hit": "2026-10-26",
    "max_total": 4,
-   "fail_days": 0,
+   "fail_days": 1,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
@@ -551,7 +564,7 @@
    "max_total": 408,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Alzheimer's Association": {
@@ -571,7 +584,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Council on Aging of Southwestern Ohio (AAA)": {
@@ -591,7 +604,7 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Philadelphia Corporation for Aging (AAA)": {
@@ -611,7 +624,7 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 1,
+   "zero_days": 2,
    "alert": false
   },
   "Direction Home Akron Canton (AAA)": {
@@ -621,7 +634,7 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Homage Senior Services (AAA, Snohomish County)": {
@@ -631,7 +644,7 @@
    "max_total": 3,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "USAging job board (AAAs nationwide)": {
@@ -641,7 +654,7 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "ADvancing States job board (aging & disability)": {
@@ -651,7 +664,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Mather": {
@@ -666,7 +679,7 @@
   },
   "Brookdale Senior Living": {
    "n": 3,
-   "total": 2034,
+   "total": 2031,
    "last_hit": "2026-10-26",
    "max_total": 2034,
    "fail_days": 0,
@@ -681,7 +694,7 @@
    "max_total": 36,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Help at Home": {
@@ -771,7 +784,7 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Arine": {
@@ -791,7 +804,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 2,
+   "zero_days": 3,
    "alert": false
   },
   "Sunrise Senior Living": {
@@ -916,7 +929,7 @@
   },
   "ICF": {
    "n": 157,
-   "total": 394,
+   "total": 393,
    "last_hit": "2026-10-26",
    "max_total": 394,
    "fail_days": 0,
@@ -1095,10 +1108,10 @@
    "alert": false
   },
   "Mass General Brigham": {
-   "n": 66,
-   "total": 995,
+   "n": 67,
+   "total": 998,
    "last_hit": "2026-10-26",
-   "max_total": 995,
+   "max_total": 998,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -1116,9 +1129,9 @@
   },
   "Dana-Farber Cancer Institute": {
    "n": 38,
-   "total": 275,
+   "total": 277,
    "last_hit": "2026-10-26",
-   "max_total": 275,
+   "max_total": 277,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -1126,7 +1139,7 @@
   },
   "Boston Medical Center": {
    "n": 20,
-   "total": 410,
+   "total": 409,
    "last_hit": "2026-10-26",
    "max_total": 410,
    "fail_days": 0,
@@ -1241,14 +1254,14 @@
    "max_total": 87,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 30,
+   "zero_days": 31,
    "alert": false
   },
   "Adyen": {
    "n": 16,
-   "total": 245,
+   "total": 247,
    "last_hit": "2026-10-26",
-   "max_total": 245,
+   "max_total": 247,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -1286,7 +1299,7 @@
   },
   "HelloFresh": {
    "n": 6,
-   "total": 383,
+   "total": 382,
    "last_hit": "2026-10-26",
    "max_total": 383,
    "fail_days": 0,
@@ -1381,7 +1394,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 25,
+   "zero_days": 26,
    "alert": false
   },
   "University of Oulu": {
@@ -1391,7 +1404,7 @@
    "max_total": 14,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 4,
+   "zero_days": 5,
    "alert": false
   },
   "KTH Royal Institute of Technology": {
@@ -1471,7 +1484,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 16,
+   "zero_days": 17,
    "alert": false
   }
  },
@@ -2419,9 +2432,9 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Software Engineer",
+   "title": "Senior Software Engineer - Workday",
    "location": "Remote, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-431316",
+   "url": "https://careers.humana.com/us/en/job/R-428176",
    "posted": "2026-10-26",
    "category": "Software",
    "source": "phenom",
@@ -2432,9 +2445,9 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer - Workday",
+   "title": "Software Engineer",
    "location": "Remote, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-428176",
+   "url": "https://careers.humana.com/us/en/job/R-431316",
    "posted": "2026-10-26",
    "category": "Software",
    "source": "phenom",
@@ -2675,6 +2688,19 @@
    "sector": "Academia & Research",
    "citizen_req": false,
    "years_req": 3,
+   "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Mass General Brigham",
+   "title": "Clinical Data Manager",
+   "location": "Somerville-MA",
+   "url": "https://massgeneralbrigham.wd1.myworkdayjobs.com/en-US/MGBExternal/job/Somerville-MA/Clinical-Data-Manager_RQ4081655-1",
+   "posted": "2026-10-26",
+   "category": "Data",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 1,
    "first_seen": "2026-10-26"
   },
   {
@@ -2953,6 +2979,19 @@
   },
   {
    "org": "Humana / CenterWell",
+   "title": "Lead DevOps Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-434263",
+   "posted": "2026-10-23",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Humana / CenterWell",
    "title": "Associate Director, IT Service Desk",
    "location": "Louisville, Kentucky, United States of America",
    "url": "https://careers.humana.com/us/en/job/R-430774",
@@ -2966,9 +3005,9 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead DevOps Engineer",
+   "title": "Lead SailPoint Solutions Engineer",
    "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434263",
+   "url": "https://careers.humana.com/us/en/job/R-431098",
    "posted": "2026-10-23",
    "category": "Software",
    "source": "phenom",
@@ -2984,19 +3023,6 @@
    "url": "https://careers.humana.com/us/en/job/R-425562",
    "posted": "2026-10-23",
    "category": "AI",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Lead SailPoint Solutions Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-431098",
-   "posted": "2026-10-23",
-   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3710,11 +3736,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Technology Solutions Professional",
+   "title": "Business Intelligence Lead, Conversational Channels",
    "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-433880",
+   "url": "https://careers.humana.com/us/en/job/R-427512",
    "posted": "2026-10-22",
-   "category": "IT",
+   "category": "Data",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3723,11 +3749,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Business Intelligence Lead, Conversational Channels",
+   "title": "Lead Release Train Engineer",
    "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-427512",
+   "url": "https://careers.humana.com/us/en/job/R-434254",
    "posted": "2026-10-22",
-   "category": "Data",
+   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3749,11 +3775,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead Release Train Engineer",
+   "title": "Technology Solutions Professional",
    "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434254",
+   "url": "https://careers.humana.com/us/en/job/R-433880",
    "posted": "2026-10-22",
-   "category": "Software",
+   "category": "IT",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -5547,11 +5573,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead Software Engineer \u2013 Enterprise Observability",
+   "title": "Senior Technology Leadership Professional",
    "location": "Dallas, Texas, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-433841",
+   "url": "https://careers.humana.com/us/en/job/R-431525",
    "posted": "2026-10-16",
-   "category": "Software",
+   "category": "IT",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -5560,11 +5586,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Technology Leadership Professional",
+   "title": "Lead Software Engineer \u2013 Enterprise Observability",
    "location": "Dallas, Texas, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-431525",
+   "url": "https://careers.humana.com/us/en/job/R-433841",
    "posted": "2026-10-16",
-   "category": "IT",
+   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -8843,9 +8869,9 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead Full Stack Engineer - NBA",
-   "location": "Remote, Massachusetts, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-421128",
+   "title": "Senior Software Engineer - NBA",
+   "location": "Remote, Tennessee, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-425861",
    "posted": "2026-10-05",
    "category": "Software",
    "source": "phenom",
@@ -8856,9 +8882,9 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer - NBA",
-   "location": "Remote, Tennessee, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-425861",
+   "title": "Lead Full Stack Engineer - NBA",
+   "location": "Remote, Massachusetts, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-421128",
    "posted": "2026-10-05",
    "category": "Software",
    "source": "phenom",
@@ -15098,32 +15124,6 @@
   },
   {
    "org": "Dana-Farber Cancer Institute",
-   "title": "Senior Application Analyst - Epic Grand Central/Prelude",
-   "location": "Boston Job Posting Location",
-   "url": "https://danafarber.wd5.myworkdayjobs.com/en-US/dana-farber/job/Boston-Job-Posting-Location/Senior-Application-Analyst---Epic-Grand-Central-Prelude_JR-3912-1",
-   "posted": "2026-09-26",
-   "category": "Data",
-   "source": "workday",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": 6,
-   "first_seen": "2026-09-06"
-  },
-  {
-   "org": "Dana-Farber Cancer Institute",
-   "title": "Senior IS Technical Project Manager - Project Management Office",
-   "location": "Boston Job Posting Location",
-   "url": "https://danafarber.wd5.myworkdayjobs.com/en-US/dana-farber/job/Boston-Job-Posting-Location/Senior-Technical-Project-Manager_JR-5211-1",
-   "posted": "2026-09-26",
-   "category": "IT",
-   "source": "workday",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-09-06"
-  },
-  {
-   "org": "Dana-Farber Cancer Institute",
    "title": "Senior Epic Business Analyst",
    "location": "Boston Job Posting Location",
    "url": "https://danafarber.wd5.myworkdayjobs.com/en-US/dana-farber/job/Boston-Job-Posting-Location/Senior-Epic-Business-Analyst_JR-259-1",
@@ -15146,6 +15146,32 @@
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": 2,
+   "first_seen": "2026-09-06"
+  },
+  {
+   "org": "Dana-Farber Cancer Institute",
+   "title": "Senior Application Analyst - Epic Grand Central/Prelude",
+   "location": "Boston Job Posting Location",
+   "url": "https://danafarber.wd5.myworkdayjobs.com/en-US/dana-farber/job/Boston-Job-Posting-Location/Senior-Application-Analyst---Epic-Grand-Central-Prelude_JR-3912-1",
+   "posted": "2026-09-26",
+   "category": "Data",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 6,
+   "first_seen": "2026-09-06"
+  },
+  {
+   "org": "Dana-Farber Cancer Institute",
+   "title": "Senior IS Technical Project Manager - Project Management Office",
+   "location": "Boston Job Posting Location",
+   "url": "https://danafarber.wd5.myworkdayjobs.com/en-US/dana-farber/job/Boston-Job-Posting-Location/Senior-Technical-Project-Manager_JR-5211-1",
+   "posted": "2026-09-26",
+   "category": "IT",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
    "first_seen": "2026-09-06"
   },
   {
@@ -18781,19 +18807,6 @@
    "category": "Data",
    "source": "icims",
    "sector": "Healthcare",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Atlanta Regional Commission - Office of the Chief Research & Innovation Officer  / Research & Innovation",
-   "title": "Data Analyst, Principal",
-   "location": "See posting",
-   "url": "https://www.governmentjobs.com/careers/atlantaregional/jobs/5453248/data-analyst-principal",
-   "posted": null,
-   "category": "Data",
-   "source": "neogov",
-   "sector": "Government & Public Sector",
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
