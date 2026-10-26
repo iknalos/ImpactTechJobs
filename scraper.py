@@ -47,7 +47,9 @@ INCLUDE = re.compile(
 EXCLUDE = re.compile(
     r"\b(nurse|RN|LPN|CNA|aide|driver|cook|chef|dietary|housekeep\w*|chaplain|"
     r"therapist|caregiver|care giver|social worker|custodian|janitor|"
-    r"receptionist|phlebotom\w*|medical assistant)\b",
+    r"receptionist|phlebotom\w*|medical assistant|"
+    # building trades that say "engineer" / "systems" / "developer"
+    r"facilit\w*|maintenance|stationary|hvac|boiler|building engineer|curriculum developer)\b",
     re.IGNORECASE,
 )
 
@@ -573,6 +575,9 @@ def fetch_dejobs(org, company):
     not the full board, and dated when the state bank picked them up."""
     r = _retry_get("https://dejobs.org/jobs/feed/json",
                    params={"q": '"%s"' % company, "num_items": 100})
+    if "json" not in r.headers.get("Content-Type", ""):
+        raise RuntimeError("dejobs answered %s with %s, not JSON (blocked from this network?)"
+                           % (r.status_code, r.headers.get("Content-Type")))
     jobs = [j for j in r.json() if (j.get("company") or "").upper().startswith(company.upper())]
     _seen(org, len(jobs))
     out = []
