@@ -1,7 +1,7 @@
 {
- "new_today": 35,
- "updated": "2026-11-20T16:27:45+00:00",
- "count": 688,
+ "new_today": 34,
+ "updated": "2026-11-21T15:41:36+00:00",
+ "count": 696,
  "errors": [
   {
    "org": "WellSky",
@@ -18,10 +18,6 @@
   {
    "org": "Cityblock Health",
    "error": "429 Client Error: Too Many Requests for url: https://cityblockhealth.wd1.myworkdayjobs.com/wday/cxs/cityblockhealth/CityblockExternalCareerSite/jobs"
-  },
-  {
-   "org": "Coastline Elderly Services",
-   "error": "HTTPSConnectionPool(host='coastlinenb.org', port=443): Max retries exceeded with url: /wp-json/wp/v2/categories?slug=employment-opportunities (Caused by ConnectTimeoutError(<HTTPSConnection(host='coastlinenb.org', port=443) at 0x71bfa8f06c00>, 'Connection to coastlinenb.org timed out. (connect timeout=30)'))"
   },
   {
    "org": "Ethos",
@@ -58,10 +54,6 @@
   {
    "org": "Alignment Health",
    "error": "429 Client Error: Too Many Requests for url: https://alignmenthealthcare.wd12.myworkdayjobs.com/wday/cxs/alignmenthealthcare/ahc_external/jobs"
-  },
-  {
-   "org": "Oak Street Health (CVS)",
-   "error": "429 Client Error: Too Many Requests for url: https://cvshealth.wd1.myworkdayjobs.com/wday/cxs/cvshealth/CVS_Health_Careers/jobs"
   },
   {
    "org": "Trinity Health",
@@ -176,7 +168,7 @@
   "Honor / Home Instead": {
    "n": 4,
    "total": 17,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
@@ -190,13 +182,13 @@
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 1,
+   "zero_days": 2,
    "alert": false
   },
   "AlayaCare": {
    "n": 14,
    "total": 28,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 28,
    "fail_days": 0,
    "empty_days": 0,
@@ -204,9 +196,9 @@
    "alert": false
   },
   "PointClickCare": {
-   "n": 51,
-   "total": 86,
-   "last_hit": "2026-11-20",
+   "n": 52,
+   "total": 87,
+   "last_hit": "2026-11-21",
    "max_total": 87,
    "fail_days": 0,
    "empty_days": 0,
@@ -215,8 +207,8 @@
   },
   "HHAeXchange": {
    "n": 11,
-   "total": 25,
-   "last_hit": "2026-11-20",
+   "total": 26,
+   "last_hit": "2026-11-21",
    "max_total": 28,
    "fail_days": 0,
    "empty_days": 0,
@@ -226,7 +218,7 @@
   "August Health": {
    "n": 3,
    "total": 6,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 6,
    "fail_days": 0,
    "empty_days": 0,
@@ -236,7 +228,7 @@
   "AARP": {
    "n": 1,
    "total": 14,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 72,
    "fail_days": 0,
    "empty_days": 0,
@@ -246,7 +238,7 @@
   "InnovAge (PACE)": {
    "n": 4,
    "total": 150,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
@@ -256,7 +248,7 @@
   "VNS Health": {
    "n": 7,
    "total": 150,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
@@ -268,7 +260,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 42,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -278,7 +270,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 78,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -288,7 +280,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 250,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -298,7 +290,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 39,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -310,23 +302,23 @@
    "max_total": 29,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 10,
+   "zero_days": 11,
    "alert": false
   },
   "NCOA (National Council on Aging)": {
    "n": 0,
-   "total": 3,
+   "total": 2,
    "last_hit": "2026-10-26",
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 28,
+   "zero_days": 29,
    "alert": false
   },
   "SCES (Somerville-Cambridge Elder Services)": {
    "n": 1,
    "total": 5,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -340,17 +332,17 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Central Boston Elder Services": {
    "n": 0,
-   "total": 7,
+   "total": 5,
    "last_hit": null,
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Elder Services of Cape Cod & the Islands": {
@@ -360,37 +352,37 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "LifePath": {
    "n": 0,
-   "total": 11,
+   "total": 12,
    "last_hit": null,
-   "max_total": 11,
+   "max_total": 12,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Bristol Aging & Wellness": {
    "n": 0,
-   "total": 10,
+   "total": 9,
    "last_hit": null,
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "AgeSpan": {
    "n": 0,
-   "total": 12,
+   "total": 11,
    "last_hit": "2026-11-19",
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 1,
+   "zero_days": 2,
    "alert": false
   },
   "Boston Senior Home Care": {
@@ -400,17 +392,17 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Greater Springfield Senior Services": {
    "n": 0,
-   "total": 9,
+   "total": 11,
    "last_hit": null,
    "max_total": 14,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Mystic Valley Aging Services": {
@@ -420,7 +412,7 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Old Colony Elder Services": {
@@ -430,7 +422,7 @@
    "max_total": 32,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Greater Lynn Senior Services": {
@@ -440,13 +432,13 @@
    "max_total": 12,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Springwell": {
    "n": 2,
    "total": 10,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -460,27 +452,27 @@
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Tri-Valley Inc.": {
-   "n": 0,
-   "total": 7,
-   "last_hit": null,
+   "n": 1,
+   "total": 8,
+   "last_hit": "2026-11-21",
    "max_total": 13,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 0,
    "alert": false
   },
   "Coastline Elderly Services": {
-   "n": null,
-   "total": null,
+   "n": 0,
+   "total": 0,
    "last_hit": "2026-11-12",
    "max_total": 2,
-   "fail_days": 1,
-   "empty_days": 5,
-   "zero_days": 5,
+   "fail_days": 0,
+   "empty_days": 6,
+   "zero_days": 6,
    "alert": false
   },
   "HESSCO Elder Services": {
@@ -490,7 +482,7 @@
    "max_total": 5,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 24,
+   "zero_days": 25,
    "alert": false
   },
   "Highland Valley Elder Services": {
@@ -500,7 +492,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 5,
+   "zero_days": 6,
    "alert": false
   },
   "SeniorCare Inc.": {
@@ -510,7 +502,7 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Elder Services of Worcester Area": {
@@ -520,7 +512,7 @@
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Ethos": {
@@ -528,7 +520,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 1,
-   "fail_days": 1,
+   "fail_days": 2,
    "empty_days": 0,
    "zero_days": 26,
    "alert": false
@@ -538,7 +530,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 4,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 2,
    "zero_days": 4,
    "alert": true
@@ -548,7 +540,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 6,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 4,
    "alert": true
@@ -558,7 +550,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 147,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -566,7 +558,7 @@
   "2Life Communities": {
    "n": 1,
    "total": 9,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 12,
    "fail_days": 0,
    "empty_days": 0,
@@ -580,7 +572,7 @@
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Upham's Elder Service Plan (PACE)": {
@@ -590,7 +582,7 @@
    "max_total": 24,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Sherrill House": {
@@ -600,7 +592,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Harbor Health (Elder Service Plan)": {
@@ -610,13 +602,13 @@
    "max_total": 50,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Fallon Health (Summit ElderCare PACE)": {
    "n": 6,
-   "total": 44,
-   "last_hit": "2026-11-20",
+   "total": 43,
+   "last_hit": "2026-11-21",
    "max_total": 52,
    "fail_days": 0,
    "empty_days": 0,
@@ -628,7 +620,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 35,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -638,7 +630,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 140,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -650,7 +642,7 @@
    "max_total": 26,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Brightview Senior Living": {
@@ -660,7 +652,7 @@
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 4,
+   "zero_days": 5,
    "alert": false
   },
   "Erickson Senior Living": {
@@ -668,15 +660,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 232,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Commonwealth of Massachusetts (MassCareers)": {
-   "n": 78,
-   "total": 830,
-   "last_hit": "2026-11-20",
+   "n": 79,
+   "total": 825,
+   "last_hit": "2026-11-21",
    "max_total": 833,
    "fail_days": 0,
    "empty_days": 0,
@@ -685,8 +677,8 @@
   },
   "City of Boston": {
    "n": 8,
-   "total": 82,
-   "last_hit": "2026-11-20",
+   "total": 80,
+   "last_hit": "2026-11-21",
    "max_total": 95,
    "fail_days": 0,
    "empty_days": 0,
@@ -696,7 +688,7 @@
   "NYC Department for the Aging": {
    "n": 2,
    "total": 10,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 22,
    "fail_days": 0,
    "empty_days": 0,
@@ -706,7 +698,7 @@
   "Atlanta Regional Commission": {
    "n": 2,
    "total": 5,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 5,
    "fail_days": 0,
    "empty_days": 0,
@@ -715,18 +707,18 @@
   },
   "LA County": {
    "n": 0,
-   "total": 416,
+   "total": 415,
    "last_hit": null,
    "max_total": 421,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 25,
+   "zero_days": 26,
    "alert": false
   },
   "Alzheimer's Association": {
    "n": 1,
    "total": 71,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 73,
    "fail_days": 0,
    "empty_days": 0,
@@ -739,14 +731,14 @@
    "last_hit": null,
    "max_total": 1,
    "fail_days": 0,
-   "empty_days": 17,
-   "zero_days": 27,
+   "empty_days": 18,
+   "zero_days": 28,
    "alert": false
   },
   "Council on Aging of Southwestern Ohio (AAA)": {
    "n": 1,
    "total": 6,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
@@ -760,13 +752,13 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 4,
+   "zero_days": 5,
    "alert": false
   },
   "Philadelphia Corporation for Aging (AAA)": {
    "n": 2,
    "total": 7,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -780,7 +772,7 @@
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 26,
+   "zero_days": 27,
    "alert": false
   },
   "Direction Home Akron Canton (AAA)": {
@@ -790,17 +782,17 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Homage Senior Services (AAA, Snohomish County)": {
    "n": 0,
-   "total": 3,
+   "total": 4,
    "last_hit": null,
-   "max_total": 3,
+   "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "USAging job board (AAAs nationwide)": {
@@ -810,7 +802,7 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 26,
+   "zero_days": 27,
    "alert": false
   },
   "ADvancing States job board (aging & disability)": {
@@ -820,14 +812,14 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 26,
+   "zero_days": 27,
    "alert": false
   },
   "Mather": {
    "n": 1,
-   "total": 41,
-   "last_hit": "2026-11-20",
-   "max_total": 41,
+   "total": 42,
+   "last_hit": "2026-11-21",
+   "max_total": 42,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -835,8 +827,8 @@
   },
   "Brookdale Senior Living": {
    "n": 2,
-   "total": 1916,
-   "last_hit": "2026-11-20",
+   "total": 1925,
+   "last_hit": "2026-11-21",
    "max_total": 2034,
    "fail_days": 0,
    "empty_days": 0,
@@ -850,13 +842,13 @@
    "max_total": 40,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Help at Home": {
    "n": 1,
    "total": 36,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 49,
    "fail_days": 0,
    "empty_days": 0,
@@ -868,7 +860,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 103,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -878,15 +870,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 61,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Clover Health": {
    "n": 14,
-   "total": 54,
-   "last_hit": "2026-11-20",
+   "total": 55,
+   "last_hit": "2026-11-21",
    "max_total": 60,
    "fail_days": 0,
    "empty_days": 0,
@@ -894,9 +886,9 @@
    "alert": false
   },
   "Humana / CenterWell": {
-   "n": 60,
-   "total": 68,
-   "last_hit": "2026-11-20",
+   "n": 61,
+   "total": 70,
+   "last_hit": "2026-11-21",
    "max_total": 80,
    "fail_days": 0,
    "empty_days": 0,
@@ -904,29 +896,29 @@
    "alert": false
   },
   "Oak Street Health (CVS)": {
-   "n": null,
-   "total": null,
-   "last_hit": "2026-11-15",
+   "n": 6,
+   "total": 10,
+   "last_hit": "2026-11-21",
    "max_total": 10,
-   "fail_days": 5,
+   "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
-   "alert": true
+   "alert": false
   },
   "Trinity Health": {
    "n": null,
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 1080,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Aledade": {
    "n": 17,
-   "total": 44,
-   "last_hit": "2026-11-20",
+   "total": 45,
+   "last_hit": "2026-11-21",
    "max_total": 47,
    "fail_days": 0,
    "empty_days": 0,
@@ -940,13 +932,13 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Arine": {
    "n": 5,
    "total": 7,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 14,
    "fail_days": 0,
    "empty_days": 0,
@@ -960,7 +952,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 27,
+   "zero_days": 28,
    "alert": false
   },
   "Sunrise Senior Living": {
@@ -968,7 +960,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 598,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -978,7 +970,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 230,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -988,7 +980,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 40,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -998,15 +990,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 29,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Planned Parenthood Federation": {
-   "n": 6,
-   "total": 22,
-   "last_hit": "2026-11-20",
+   "n": 5,
+   "total": 21,
+   "last_hit": "2026-11-21",
    "max_total": 26,
    "fail_days": 0,
    "empty_days": 0,
@@ -1016,7 +1008,7 @@
   "The Trevor Project": {
    "n": 2,
    "total": 5,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -1025,8 +1017,8 @@
   },
   "ACLU": {
    "n": 4,
-   "total": 20,
-   "last_hit": "2026-11-20",
+   "total": 19,
+   "last_hit": "2026-11-21",
    "max_total": 20,
    "fail_days": 0,
    "empty_days": 0,
@@ -1036,7 +1028,7 @@
   "Code for America": {
    "n": 5,
    "total": 10,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
@@ -1046,7 +1038,7 @@
   "Nava PBC": {
    "n": 7,
    "total": 19,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 23,
    "fail_days": 0,
    "empty_days": 0,
@@ -1055,8 +1047,8 @@
   },
   "ABCD Boston": {
    "n": 1,
-   "total": 69,
-   "last_hit": "2026-11-20",
+   "total": 67,
+   "last_hit": "2026-11-21",
    "max_total": 69,
    "fail_days": 0,
    "empty_days": 0,
@@ -1068,15 +1060,15 @@
    "total": null,
    "last_hit": "2026-11-18",
    "max_total": 17,
-   "fail_days": 2,
+   "fail_days": 3,
    "empty_days": 0,
    "zero_days": 0,
-   "alert": false
+   "alert": true
   },
   "American Institutes for Research": {
-   "n": 3,
-   "total": 13,
-   "last_hit": "2026-11-20",
+   "n": 1,
+   "total": 10,
+   "last_hit": "2026-11-21",
    "max_total": 18,
    "fail_days": 0,
    "empty_days": 0,
@@ -1088,7 +1080,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 395,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1098,7 +1090,7 @@
    "total": null,
    "last_hit": "2026-11-17",
    "max_total": 5,
-   "fail_days": 3,
+   "fail_days": 4,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1108,7 +1100,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 23,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1118,7 +1110,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 362,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1128,7 +1120,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 57,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1136,7 +1128,7 @@
   "Tufts University": {
    "n": 8,
    "total": 126,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 128,
    "fail_days": 0,
    "empty_days": 0,
@@ -1144,9 +1136,9 @@
    "alert": false
   },
   "Harvard University": {
-   "n": 60,
-   "total": 356,
-   "last_hit": "2026-11-20",
+   "n": 62,
+   "total": 354,
+   "last_hit": "2026-11-21",
    "max_total": 356,
    "fail_days": 0,
    "empty_days": 0,
@@ -1155,8 +1147,8 @@
   },
   "MIT": {
    "n": 61,
-   "total": 288,
-   "last_hit": "2026-11-20",
+   "total": 285,
+   "last_hit": "2026-11-21",
    "max_total": 288,
    "fail_days": 0,
    "empty_days": 0,
@@ -1164,9 +1156,9 @@
    "alert": false
   },
   "Boston University": {
-   "n": 41,
-   "total": 220,
-   "last_hit": "2026-11-20",
+   "n": 40,
+   "total": 217,
+   "last_hit": "2026-11-21",
    "max_total": 220,
    "fail_days": 0,
    "empty_days": 0,
@@ -1176,7 +1168,7 @@
   "Broad Institute": {
    "n": 11,
    "total": 34,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 36,
    "fail_days": 0,
    "empty_days": 0,
@@ -1188,15 +1180,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 6,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "UMass Amherst": {
    "n": 25,
-   "total": 151,
-   "last_hit": "2026-11-20",
+   "total": 153,
+   "last_hit": "2026-11-21",
    "max_total": 160,
    "fail_days": 0,
    "empty_days": 0,
@@ -1208,7 +1200,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 61,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1218,7 +1210,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 86,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1228,7 +1220,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 257,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1238,7 +1230,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 65,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1246,7 +1238,7 @@
   "ADA Forsyth Institute": {
    "n": 1,
    "total": 7,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -1255,8 +1247,8 @@
   },
   "UMass Chan Medical School": {
    "n": 13,
-   "total": 113,
-   "last_hit": "2026-11-20",
+   "total": 114,
+   "last_hit": "2026-11-21",
    "max_total": 134,
    "fail_days": 0,
    "empty_days": 0,
@@ -1268,7 +1260,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 1018,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1278,7 +1270,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 917,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1288,7 +1280,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 333,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1298,15 +1290,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 410,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Boston Children's Hospital": {
-   "n": 22,
-   "total": 293,
-   "last_hit": "2026-11-20",
+   "n": 23,
+   "total": 289,
+   "last_hit": "2026-11-21",
    "max_total": 293,
    "fail_days": 0,
    "empty_days": 0,
@@ -1318,7 +1310,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 444,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1328,7 +1320,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 363,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1338,7 +1330,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 72,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1348,7 +1340,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 52,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1358,7 +1350,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 100,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1368,7 +1360,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 22,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1380,13 +1372,13 @@
    "max_total": 206,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 1,
+   "zero_days": 2,
    "alert": false
   },
   "Supercell": {
    "n": 3,
    "total": 29,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 39,
    "fail_days": 0,
    "empty_days": 0,
@@ -1396,7 +1388,7 @@
   "Smartly.io": {
    "n": 7,
    "total": 72,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 73,
    "fail_days": 0,
    "empty_days": 0,
@@ -1405,8 +1397,8 @@
   },
   "Oura": {
    "n": 2,
-   "total": 97,
-   "last_hit": "2026-11-20",
+   "total": 96,
+   "last_hit": "2026-11-21",
    "max_total": 97,
    "fail_days": 0,
    "empty_days": 0,
@@ -1415,8 +1407,8 @@
   },
   "Adyen": {
    "n": 11,
-   "total": 242,
-   "last_hit": "2026-11-20",
+   "total": 241,
+   "last_hit": "2026-11-21",
    "max_total": 257,
    "fail_days": 0,
    "empty_days": 0,
@@ -1426,7 +1418,7 @@
   "Mollie": {
    "n": 2,
    "total": 48,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 54,
    "fail_days": 0,
    "empty_days": 0,
@@ -1439,14 +1431,14 @@
    "last_hit": "2026-11-06",
    "max_total": 72,
    "fail_days": 0,
-   "empty_days": 14,
-   "zero_days": 14,
+   "empty_days": 15,
+   "zero_days": 15,
    "alert": true
   },
   "N26": {
-   "n": 3,
-   "total": 24,
-   "last_hit": "2026-11-20",
+   "n": 2,
+   "total": 23,
+   "last_hit": "2026-11-21",
    "max_total": 38,
    "fail_days": 0,
    "empty_days": 0,
@@ -1455,8 +1447,8 @@
   },
   "HelloFresh": {
    "n": 3,
-   "total": 378,
-   "last_hit": "2026-11-20",
+   "total": 377,
+   "last_hit": "2026-11-21",
    "max_total": 394,
    "fail_days": 0,
    "empty_days": 0,
@@ -1466,7 +1458,7 @@
   "Celonis": {
    "n": 20,
    "total": 262,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 274,
    "fail_days": 0,
    "empty_days": 0,
@@ -1476,7 +1468,7 @@
   "Intercom": {
    "n": 13,
    "total": 120,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 120,
    "fail_days": 0,
    "empty_days": 0,
@@ -1485,8 +1477,8 @@
   },
   "Stripe": {
    "n": 11,
-   "total": 775,
-   "last_hit": "2026-11-20",
+   "total": 778,
+   "last_hit": "2026-11-21",
    "max_total": 795,
    "fail_days": 0,
    "empty_days": 0,
@@ -1495,8 +1487,8 @@
   },
   "Spotify": {
    "n": 5,
-   "total": 90,
-   "last_hit": "2026-11-20",
+   "total": 91,
+   "last_hit": "2026-11-21",
    "max_total": 92,
    "fail_days": 0,
    "empty_days": 0,
@@ -1506,7 +1498,7 @@
   "Delivery Hero": {
    "n": 8,
    "total": 500,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 500,
    "fail_days": 0,
    "empty_days": 0,
@@ -1514,9 +1506,9 @@
    "alert": false
   },
   "Workhuman": {
-   "n": 1,
-   "total": 8,
-   "last_hit": "2026-11-20",
+   "n": 2,
+   "total": 10,
+   "last_hit": "2026-11-21",
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
@@ -1528,15 +1520,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 26,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "University of Helsinki": {
    "n": 1,
-   "total": 18,
-   "last_hit": "2026-11-20",
+   "total": 17,
+   "last_hit": "2026-11-21",
    "max_total": 24,
    "fail_days": 0,
    "empty_days": 0,
@@ -1546,7 +1538,7 @@
   "Tampere University": {
    "n": 2,
    "total": 9,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
@@ -1560,13 +1552,13 @@
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 29,
+   "zero_days": 30,
    "alert": false
   },
   "KTH Royal Institute of Technology": {
-   "n": 7,
-   "total": 65,
-   "last_hit": "2026-11-20",
+   "n": 6,
+   "total": 63,
+   "last_hit": "2026-11-21",
    "max_total": 65,
    "fail_days": 0,
    "empty_days": 0,
@@ -1574,9 +1566,9 @@
    "alert": false
   },
   "Karolinska Institutet": {
-   "n": 2,
-   "total": 93,
-   "last_hit": "2026-11-20",
+   "n": 1,
+   "total": 86,
+   "last_hit": "2026-11-21",
    "max_total": 93,
    "fail_days": 0,
    "empty_days": 0,
@@ -1585,8 +1577,8 @@
   },
   "Uppsala University": {
    "n": 2,
-   "total": 82,
-   "last_hit": "2026-11-20",
+   "total": 76,
+   "last_hit": "2026-11-21",
    "max_total": 94,
    "fail_days": 0,
    "empty_days": 0,
@@ -1595,18 +1587,18 @@
   },
   "Stockholm University": {
    "n": 0,
-   "total": 4,
+   "total": 3,
    "last_hit": "2026-11-03",
    "max_total": 24,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 16,
+   "zero_days": 17,
    "alert": false
   },
   "Lund University": {
    "n": 1,
-   "total": 126,
-   "last_hit": "2026-11-20",
+   "total": 122,
+   "last_hit": "2026-11-21",
    "max_total": 126,
    "fail_days": 0,
    "empty_days": 0,
@@ -1614,9 +1606,9 @@
    "alert": false
   },
   "AcademicTransfer (NL universities)": {
-   "n": 8,
+   "n": 9,
    "total": 20,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 20,
    "fail_days": 0,
    "empty_days": 0,
@@ -1626,7 +1618,7 @@
   "Max Planck Society": {
    "n": 4,
    "total": 30,
-   "last_hit": "2026-11-20",
+   "last_hit": "2026-11-21",
    "max_total": 30,
    "fail_days": 0,
    "empty_days": 0,
@@ -1640,7 +1632,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 10,
+   "zero_days": 11,
    "alert": false
   }
  },
@@ -2003,6 +1995,19 @@
   },
   {
    "org": "MIT",
+   "title": "Technical Project Manager",
+   "location": "Cambridge, MA",
+   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=35215&localeCode=en-us",
+   "posted": "Nov 20, 20",
+   "category": "IT",
+   "source": "peopleclick",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "MIT",
    "title": "Executive Director, MIT AI Exchange",
    "location": "Cambridge, MA",
    "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=35131&localeCode=en-us",
@@ -2250,19 +2255,6 @@
   },
   {
    "org": "MIT",
-   "title": "Lead Full Stack Salesforce Developer, Executive Education",
-   "location": "Cambridge, MA",
-   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=34776&localeCode=en-us",
-   "posted": "Jul 21, 20",
-   "category": "Software",
-   "source": "peopleclick",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "MIT",
    "title": "Technical Associate II",
    "location": "Cambridge, MA",
    "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=34365&localeCode=en-us",
@@ -2444,6 +2436,97 @@
    "first_seen": "2026-10-26"
   },
   {
+   "org": "PointClickCare",
+   "title": "Solutions Analyst (EHR, Clinexus Customer Support) - CA",
+   "location": "Remote, Canada",
+   "url": "https://jobs.lever.co/pointclickcare/666eed2e-a629-4dae-8afd-cae397cca694",
+   "posted": "2026-11-20",
+   "category": "Data",
+   "source": "lever",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "PointClickCare",
+   "title": "Solutions Analyst (EHR, Clinexus Customer Support) - US",
+   "location": "Remote, USA",
+   "url": "https://jobs.lever.co/pointclickcare/f905a4e4-dc78-4a65-a81c-ad00339fb6e2",
+   "posted": "2026-11-20",
+   "category": "Data",
+   "source": "lever",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "MA state: EO of HHS PayRoll/Gen Admin",
+   "title": "Senior Operations Analyst",
+   "location": "Quincy, MA",
+   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=2600080M",
+   "posted": "2026-11-20",
+   "category": "Data",
+   "source": "taleo",
+   "sector": "Government & Public Sector",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "MA state: Mass Dept of Transportation",
+   "title": "Quality Assurance Analyst II",
+   "location": "Boston, MA",
+   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=26000805",
+   "posted": "2026-11-20",
+   "category": "Data",
+   "source": "taleo",
+   "sector": "Government & Public Sector",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "MA state: DMH - Central Office",
+   "title": "Assistant Director of Contract Administration, Audit, and Systems",
+   "location": "Westborough, MA",
+   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=260007Y0",
+   "posted": "2026-11-20",
+   "category": "IT",
+   "source": "taleo",
+   "sector": "Government & Public Sector",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "MA state: Div of Capital Planning & Oper (DPC3000)",
+   "title": "CAMIS/GIS Coordinator",
+   "location": "Boston, MA",
+   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=26000855",
+   "posted": "2026-11-20",
+   "category": "IT",
+   "source": "taleo",
+   "sector": "Government & Public Sector",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "MA state: Mass Dept of Transportation",
+   "title": "Technical Services Coordinator (Civil Engineer I)",
+   "location": "Hopkinton, MA",
+   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=260006TX",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "taleo",
+   "sector": "Government & Public Sector",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
    "org": "MA state: Exec Off & Office of Court Mgt",
    "title": "Security Systems Technician",
    "location": "Boston, MA",
@@ -2455,6 +2538,71 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Business Systems Analysis (Procurement Digital & AI Enablement)",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-438042",
+   "posted": "2026-11-20",
+   "category": "AI",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Machine Learning Engineer, Decision Intelligence",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437992",
+   "posted": "2026-11-20",
+   "category": "AI",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Lead Quality Engineer",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437306",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Lead Software Engineer - NBA",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-426820",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Genesys Cloud Access Management",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-429594",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Humana / CenterWell",
@@ -2497,42 +2645,42 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead Quality Engineer",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437306",
+   "title": "Senior AI Identity Security Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437656",
+   "posted": "2026-11-20",
+   "category": "AI",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Software Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-436676",
    "posted": "2026-11-20",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-20"
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Business Systems Analysis (Procurement Digital & AI Enablement)",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-438042",
+   "title": "Associate Director, Software Engineering",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-427494",
    "posted": "2026-11-20",
-   "category": "AI",
+   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Machine Learning Engineer, Decision Intelligence",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437992",
-   "posted": "2026-11-20",
-   "category": "AI",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-20"
+   "first_seen": "2026-11-10"
   },
   {
    "org": "Humana / CenterWell",
@@ -2548,6 +2696,32 @@
    "first_seen": "2026-11-20"
   },
   {
+   "org": "Humana / CenterWell",
+   "title": "Senior Software Engineer - NBA",
+   "location": "Nashville, Tennessee, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-425861",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Senior-Software-Engineer---Salesforce_R1066291",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 8,
+   "first_seen": "2026-11-21"
+  },
+  {
    "org": "Aledade",
    "title": "Senior Engineering Manager- Data Modeling",
    "location": "Remote, United States",
@@ -2559,6 +2733,123 @@
    "citizen_req": false,
    "years_req": 10,
    "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Director, Data & Technology, Alumni Engagement and Development",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017012907",
+   "posted": "2026-11-20",
+   "category": "Data",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Senior Application Analyst, AI Operations, IT",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017012286",
+   "posted": "2026-11-20",
+   "category": "AI",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Harvard University",
+   "title": "ServiceNow Platform Lead, IT",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017012276",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Harvard University",
+   "title": "AI Technical Product Manager, Dean's Office",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017012016",
+   "posted": "2026-11-20",
+   "category": "AI",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Managing Director, Technology Strategy & IT Architecture",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017011996",
+   "posted": "2026-11-20",
+   "category": "IT",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Managing Director, IT Strategic Planning & Governance",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017011986",
+   "posted": "2026-11-20",
+   "category": "IT",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Harvard University",
+   "title": "IT Project Manager",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017011496",
+   "posted": "2026-11-20",
+   "category": "IT",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Associate Director, IT Quality Engineering",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017011486",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Systems and Digital Scholarship Librarian",
+   "location": "Washington, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017002296",
+   "posted": "2026-11-20",
+   "category": "IT",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Harvard University",
@@ -2586,6 +2877,20 @@
    "citizen_req": false,
    "years_req": 5,
    "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Workhuman",
+   "title": "Part-time Principal Compensation Analyst",
+   "location": "Dublin, Ireland (HQ)",
+   "url": "https://jobs.ashbyhq.com/workhuman/2cd40869-baf8-422e-9f44-3ea807c22ac3",
+   "posted": "2026-11-20",
+   "category": "Data",
+   "source": "ashby",
+   "abroad": "Ireland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "AlayaCare",
@@ -2680,16 +2985,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "ECM Software Engineer",
-   "location": "Remote, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434203",
+   "title": "Genesys Cloud - Operations Engineer",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-430679",
    "posted": "2026-11-19",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-20"
+   "first_seen": "2026-11-12"
   },
   {
    "org": "Humana / CenterWell",
@@ -2703,6 +3008,19 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Full-Stack Engineer",
+   "location": "New York, New York, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-425672",
+   "posted": "2026-11-19",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-18"
   },
   {
    "org": "Humana / CenterWell",
@@ -2732,29 +3050,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Full-Stack Engineer",
-   "location": "New York, New York, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-425672",
+   "title": "ECM Software Engineer",
+   "location": "Remote, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-434203",
    "posted": "2026-11-19",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-18"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Genesys Cloud - Operations Engineer",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-430679",
-   "posted": "2026-11-19",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-12"
+   "first_seen": "2026-11-20"
   },
   {
    "org": "Humana / CenterWell",
@@ -2836,19 +3141,6 @@
   },
   {
    "org": "Harvard University",
-   "title": "IT Project Manager",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016977022",
-   "posted": "2026-11-19",
-   "category": "IT",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Harvard University",
    "title": "Associate Director of Imaging and Analysis, Center for Nanoscale Systems",
    "location": "Cambridge, US",
    "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016977156",
@@ -2867,32 +3159,6 @@
    "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016962396",
    "posted": "2026-11-19",
    "category": "Data",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-19"
-  },
-  {
-   "org": "Harvard University",
-   "title": "Managing Director, IT Strategic Planning & Governance",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016959956",
-   "posted": "2026-11-19",
-   "category": "IT",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-19"
-  },
-  {
-   "org": "Harvard University",
-   "title": "Managing Director, Technology Strategy & IT Architecture",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016959949",
-   "posted": "2026-11-19",
-   "category": "IT",
    "source": "smartrecruiters",
    "sector": "Academia & Research",
    "citizen_req": null,
@@ -3008,32 +3274,6 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead Data Architect - Corporate",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-424704",
-   "posted": "2026-11-18",
-   "category": "Data",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-18"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Epic Technology Leadership",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-435302",
-   "posted": "2026-11-18",
-   "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-19"
-  },
-  {
-   "org": "Humana / CenterWell",
    "title": "Financial Analyst",
    "location": "Remote, Nationwide, United States of America",
    "url": "https://careers.humana.com/us/en/job/R-428130",
@@ -3052,6 +3292,32 @@
    "url": "https://careers.humana.com/us/en/job/R-426819",
    "posted": "2026-11-18",
    "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-19"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Lead Data Architect - Corporate",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-424704",
+   "posted": "2026-11-18",
+   "category": "Data",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-18"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Epic Technology Leadership",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-435302",
+   "posted": "2026-11-18",
+   "category": "IT",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3164,71 +3430,6 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Director, Cross Segment Platform Engineering",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-429857",
-   "posted": "2026-11-17",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-18"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Data Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434927",
-   "posted": "2026-11-17",
-   "category": "Data",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-17"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Lead Technology Leader",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-436785",
-   "posted": "2026-11-17",
-   "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-17"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-436922",
-   "posted": "2026-11-17",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-18"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Software Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-424641",
-   "posted": "2026-11-17",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-18"
-  },
-  {
-   "org": "Humana / CenterWell",
    "title": "HEDIS Business Process Lead - AI and Digital",
    "location": "Remote, Nationwide, United States of America",
    "url": "https://careers.humana.com/us/en/job/R-437644",
@@ -3268,11 +3469,63 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Analytics Solutions Engineer",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-433143",
+   "title": "Data Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-434927",
    "posted": "2026-11-17",
    "category": "Data",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Director, Cross Segment Platform Engineering",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-429857",
+   "posted": "2026-11-17",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-18"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Lead Technology Leader",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-436785",
+   "posted": "2026-11-17",
+   "category": "IT",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Software Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-436922",
+   "posted": "2026-11-17",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-18"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Software Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-424641",
+   "posted": "2026-11-17",
+   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3502,19 +3755,6 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer, HGB IT",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-428269",
-   "posted": "2026-11-16",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-16"
-  },
-  {
-   "org": "Humana / CenterWell",
    "title": "Associate Director, Data Science",
    "location": "Remote, Nationwide, United States of America",
    "url": "https://careers.humana.com/us/en/job/R-433070",
@@ -3525,6 +3765,19 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-17"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Software Engineer, HGB IT",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-428269",
+   "posted": "2026-11-16",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-16"
   },
   {
    "org": "Aledade",
@@ -3738,6 +3991,19 @@
    "first_seen": "2026-11-14"
   },
   {
+   "org": "Oak Street Health (CVS)",
+   "title": "Sr Data Scientist, Clinical Intelligence",
+   "location": "NC - Work from home",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/NC---Work-from-home/Sr-Data-Scientist--Clinical-Intelligence_R1053144-1",
+   "posted": "2026-11-13",
+   "category": "Data",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 4,
+   "first_seen": "2026-11-21"
+  },
+  {
    "org": "ACLU",
    "title": "Financial Systems Analyst and Systems Administrator",
    "location": "New York, New York, United States",
@@ -3896,19 +4162,6 @@
    "first_seen": "2026-11-13"
   },
   {
-   "org": "Humana / CenterWell",
-   "title": "Senior Product Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434727",
-   "posted": "2026-11-12",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-13"
-  },
-  {
    "org": "Aledade",
    "title": "Program Data Analyst, Michigan",
    "location": "Michigan",
@@ -4026,6 +4279,19 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-12"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Software Development Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Senior-Software-Development-Engineer_R1099073",
+   "posted": "2026-11-11",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Harvard University",
@@ -4251,19 +4517,6 @@
    "first_seen": "2026-11-11"
   },
   {
-   "org": "Humana / CenterWell",
-   "title": "Senior Analyst, Hub Data & Analytics",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434704",
-   "posted": "2026-11-10",
-   "category": "Data",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-11"
-  },
-  {
    "org": "Nava PBC",
    "title": "Senior Infrastructure Manager (Cloud Hosting)",
    "location": "Remote",
@@ -4353,19 +4606,6 @@
    "citizen_req": false,
    "years_req": 5,
    "first_seen": "2026-11-09"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Associate Director, Software Engineering",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-427494",
-   "posted": "2026-11-09",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-10"
   },
   {
    "org": "Nava PBC",
@@ -4579,32 +4819,6 @@
    "sector": "Nonprofit & Civic",
    "citizen_req": false,
    "years_req": 2,
-   "first_seen": "2026-11-07"
-  },
-  {
-   "org": "Harvard University",
-   "title": "AI Technical Product Manager, Dean's Office",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016713606",
-   "posted": "2026-11-06",
-   "category": "AI",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-07"
-  },
-  {
-   "org": "Harvard University",
-   "title": "ServiceNow Platform Lead, IT",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016712196",
-   "posted": "2026-11-06",
-   "category": "Software",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
    "first_seen": "2026-11-07"
   },
   {
@@ -5382,6 +5596,19 @@
    "first_seen": "2026-10-30"
   },
   {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Manager - Digital Product (Risk Modeling)",
+   "location": "IL - Work from home",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IL---Work-from-home/Senior-Manager---Digital-Product--Risk-Modeling-_R1080292",
+   "posted": "2026-10-29",
+   "category": "IT",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
    "org": "Nava PBC",
    "title": "Senior Product Manager (Salesforce)",
    "location": "Remote",
@@ -5502,21 +5729,6 @@
    "first_seen": "2026-10-27"
   },
   {
-   "org": "N26",
-   "title": "Senior Analytics Manager - Grow & Engage",
-   "location": "Berlin, Barcelona",
-   "url": "https://n26.com/en-eu/careers/positions/8305606?gh_jid=8305606",
-   "posted": "2026-10-27",
-   "category": "Data",
-   "source": "greenhouse",
-   "abroad": "Germany",
-   "sector": "Tech / Software",
-   "relo": true,
-   "citizen_req": false,
-   "years_req": 3,
-   "first_seen": "2026-11-09"
-  },
-  {
    "org": "Delivery Hero",
    "title": "(Senior) Analyst, International Markets",
    "location": "Berlin, DE",
@@ -5543,19 +5755,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-28"
-  },
-  {
-   "org": "PointClickCare",
-   "title": "US - Sr Solutions Analyst (EHR Support)",
-   "location": "Remote - US",
-   "url": "https://jobs.lever.co/pointclickcare/51c9ddf7-deb9-4f3c-8b90-f95468ef3d47",
-   "posted": "2026-10-26",
-   "category": "Data",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 3,
-   "first_seen": "2026-11-14"
   },
   {
    "org": "VNS Health",
@@ -5662,38 +5861,12 @@
    "first_seen": "2026-10-24"
   },
   {
-   "org": "MA state: Mass Dept of Transportation",
-   "title": "Construction Contaminated Materials Supervisor (Environmental Analyst V)",
-   "location": "Boston, MA",
-   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=260006TE",
-   "posted": "2026-10-23",
-   "category": "Data",
-   "source": "taleo",
-   "sector": "Government & Public Sector",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
    "org": "MA state: Exec Office of Technology Services and Security",
    "title": "Procurement Analyst",
    "location": "Boston, MA",
    "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=260007BP",
    "posted": "2026-10-23",
    "category": "Data",
-   "source": "taleo",
-   "sector": "Government & Public Sector",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "MA state: Massachusetts Department of Transportation",
-   "title": "Resident Engineer (Civil Engineer III)",
-   "location": "Arlington, MA",
-   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=260006VN",
-   "posted": "2026-10-23",
-   "category": "Software",
    "source": "taleo",
    "sector": "Government & Public Sector",
    "citizen_req": null,
@@ -5792,6 +5965,32 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Senior-Salesforce-Engineer_R1066905",
+   "posted": "2026-10-22",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 8,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Staff Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Staff-Salesforce-Engineer_R1066930",
+   "posted": "2026-10-22",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 8,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Harvard University",
@@ -6229,19 +6428,6 @@
    "first_seen": "2026-10-26"
   },
   {
-   "org": "Harvard University",
-   "title": "Director, Data & Technology, Alumni Engagement and Development",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016154906",
-   "posted": "2026-10-15",
-   "category": "Data",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
    "org": "UMass Chan Medical School",
    "title": "Medical Program Auditor/ Analyst",
    "location": "Westborough, Massachusetts",
@@ -6279,45 +6465,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Harvard University",
-   "title": "Senior Application Analyst, AI Operations, IT",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016113667",
-   "posted": "2026-10-14",
-   "category": "AI",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "American Institutes for Research",
-   "title": "Technical Assistance Associate, Special Education (Part-Time)",
-   "location": "US-Remote",
-   "url": "https://job-boards.greenhouse.io/americaninstitutesforresearch/jobs/5447258008",
-   "posted": "2026-10-13",
-   "category": "IT",
-   "source": "greenhouse",
-   "sector": "Academia & Research",
-   "citizen_req": false,
-   "years_req": 2,
-   "first_seen": "2026-10-13"
-  },
-  {
-   "org": "American Institutes for Research",
-   "title": "Technical Assistance Consultant, Special Education (Part-Time)",
-   "location": "US-Remote",
-   "url": "https://job-boards.greenhouse.io/americaninstitutesforresearch/jobs/5447253008",
-   "posted": "2026-10-13",
-   "category": "IT",
-   "source": "greenhouse",
-   "sector": "Academia & Research",
-   "citizen_req": false,
-   "years_req": 6,
-   "first_seen": "2026-10-13"
   },
   {
    "org": "Supercell",
@@ -6547,19 +6694,6 @@
    "citizen_req": false,
    "years_req": 5,
    "first_seen": "2026-10-06"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer - NBA",
-   "location": "Remote, Tennessee, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-425861",
-   "posted": "2026-10-05",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-10-26"
   },
   {
    "org": "Humana / CenterWell",
@@ -7369,32 +7503,6 @@
    "first_seen": "2026-10-26"
   },
   {
-   "org": "MA state: Salem State College",
-   "title": "AI and Machine Learning Professor, Full-Time, Tenure-Track",
-   "location": "Salem, MA",
-   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=26000668",
-   "posted": "2026-09-10",
-   "category": "AI",
-   "source": "taleo",
-   "sector": "Government & Public Sector",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "MA state: Salem State College",
-   "title": "Software Engineering and Cloud Computing Professor, Full-Time, Tenure-Track",
-   "location": "Salem, MA",
-   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=26000667",
-   "posted": "2026-09-10",
-   "category": "Software",
-   "source": "taleo",
-   "sector": "Government & Public Sector",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
    "org": "MA state: Office for Admin and Finance (ANF1000)",
    "title": "Power Platform Developer",
    "location": "Boston, MA",
@@ -7762,19 +7870,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Planned Parenthood Federation",
-   "title": "Director, Development Operations Infrastructure Engineering",
-   "location": "New York, NY",
-   "url": "https://jobs.lever.co/ppfa/1905dd6c-b053-473e-be1a-1bb0c225f468",
-   "posted": "2026-08-19",
-   "category": "Software",
-   "source": "lever",
-   "sector": "Nonprofit & Civic",
-   "citizen_req": false,
-   "years_req": 8,
-   "first_seen": "2026-08-20"
   },
   {
    "org": "Celonis",
@@ -8806,16 +8901,16 @@
   },
   {
    "org": "Springwell",
-   "title": "Quality Improvement Manager",
+   "title": "Nonprofit Quality Improvement Manager",
    "location": "Waltham or Marlborough, MA",
-   "url": "https://springwell.applytojob.com/apply/MjFi1qmx0O/Quality-Improvement-Manager",
+   "url": "https://springwell.applytojob.com/apply/MjFi1qmx0O/Nonprofit-Quality-Improvement-Manager",
    "posted": null,
    "category": "IT",
    "source": "jazzhr",
    "sector": "Aging Services",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-20"
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Springwell",
@@ -8829,6 +8924,19 @@
    "citizen_req": false,
    "years_req": 2,
    "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Tri-Valley Inc.",
+   "title": "Help Desk Technician",
+   "location": "Dudley, MA",
+   "url": "https://tri-valley-inc.checkwritersrecruit.com/job/1077622/help-desk-technician",
+   "posted": null,
+   "category": "IT",
+   "source": "rss",
+   "sector": "Aging Services",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Fallon Health (Summit ElderCare PACE)",
@@ -9144,19 +9252,6 @@
   },
   {
    "org": "Boston University",
-   "title": "Senior Research Computing Applications & Data Specialist, IS&T Research Computing",
-   "location": "Boston, MA",
-   "url": "https://jobs.silkroad.com/BU/External/jobs/317250",
-   "posted": null,
-   "category": "Data",
-   "source": "silkroad",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Boston University",
    "title": "Senior Technology Experience Program Manager, Technology Experience & Community",
    "location": "Boston, MA",
    "url": "https://jobs.silkroad.com/BU/External/jobs/317487",
@@ -9245,6 +9340,19 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Boston University",
+   "title": "Climate & Environmental Reporting Fellow, News and Programming",
+   "location": "Boston, MA",
+   "url": "https://jobs.silkroad.com/BU/External/jobs/317521",
+   "posted": null,
+   "category": "IT",
+   "source": "silkroad",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Boston University",
@@ -9534,19 +9642,6 @@
   },
   {
    "org": "Boston University",
-   "title": "Training Specialist, EHR Office of Clinical Affairs",
-   "location": "Boston, MA",
-   "url": "https://jobs.silkroad.com/BU/External/jobs/317064",
-   "posted": null,
-   "category": "IT",
-   "source": "silkroad",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Boston University",
    "title": "Training Manager, Research Operations, Analytics & Systems",
    "location": "Boston, MA",
    "url": "https://jobs.silkroad.com/BU/External/jobs/317360",
@@ -9700,6 +9795,32 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
+  },
+  {
+   "org": "UMass Amherst",
+   "title": "3rd Class Power Plant Engineer",
+   "location": "Amherst, MA",
+   "url": "https://careers.pageuppeople.com/1232/cw/en-us/job/508987",
+   "posted": null,
+   "category": "Software",
+   "source": "rss",
+   "sector": "Academia & Research",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-10-26"
+  },
+  {
+   "org": "UMass Amherst",
+   "title": "Associate Director of Graduate Career Programs - College of Engineering",
+   "location": "Amherst, MA",
+   "url": "https://careers.pageuppeople.com/1232/cw/en-us/job/510294",
+   "posted": null,
+   "category": "Software",
+   "source": "rss",
+   "sector": "Academia & Research",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "UMass Amherst",
@@ -9872,19 +9993,6 @@
   },
   {
    "org": "UMass Amherst",
-   "title": "Materials Evaluation Training Manager - Nutrition Education Program",
-   "location": "Amherst, MA",
-   "url": "https://careers.pageuppeople.com/1232/cw/en-us/job/510014",
-   "posted": null,
-   "category": "IT",
-   "source": "rss",
-   "sector": "Academia & Research",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "UMass Amherst",
    "title": "Assistant Professor (TT)- Electrical & Computer Engineering- Power Electronics Devices & Systems",
    "location": "Amherst, MA",
    "url": "https://careers.pageuppeople.com/1232/cw/en-us/job/509974",
@@ -9942,19 +10050,6 @@
    "url": "https://careers.pageuppeople.com/1232/cw/en-us/job/509915",
    "posted": null,
    "category": "IT",
-   "source": "rss",
-   "sector": "Academia & Research",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "UMass Amherst",
-   "title": "3rd Class Power Plant Engineer",
-   "location": "Amherst, MA",
-   "url": "https://careers.pageuppeople.com/1232/cw/en-us/job/508987",
-   "posted": null,
-   "category": "Software",
    "source": "rss",
    "sector": "Academia & Research",
    "citizen_req": false,
@@ -10025,6 +10120,19 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Boston Children's Hospital",
+   "title": "Senior Full-Stack JavaScript Engineer \u2013 Rapid Clinical Prototyping",
+   "location": "<strong>Position Summary</strong><br>The Computational Health Informatics Program (www.CHIP.org) at the nation\u2019s top pediatric institution, Boston Children\u2019s Hospital, a Harvard Medical School affiliate, is seeking an experienced full-stack web developer to join the SMART Health IT team (http://smarthealthit.org). In this role, you will rapidly prototype and build next-generation clinical interfaces that are deployed in real pediatric care settings, not just demos or proofs of concept.<p>You will be part of the team that has helped define national standards for healthcare data APIs and population-scale clinical data exchange, and that has created widely adopted open-source platforms used across health systems, researchers, and technology companies. Your work will sit at the intersection of software engineering, clinical care, and data standards, where design decisions directly shape how clinicians and patients interact with health data.</p><p>This role is ideal for a JavaScript developer who enjoys moving quickly from idea to&nbsp; working software, values clean, maintainable systems, and wants their work to have real-world clinical impact.</p><br><strong>Key Responsibilities</strong><ul><li>Researches and identifies the requirements of software development and application programming needs. Analyzes vendor, internally developed, and open source solutions to meet the integrated needs ranging the spectrum of artificial intelligence and biomedical informatics.</li><li>Specifies, designs, develops, codes, tests, and implements software that support the needs of multiple projects considering the individual goals and objectives of each entity.</li><li>Participates in leading the creation and maintenance of standards for development and software selection and makes software development process and design recommendations within the department or program and to project stakeholders.</li><li>Provides analytical and technical guidance to team members and stakeholders. Identifies requirements, develops software design, codes, plans, and executes testing, and ensures that the software delivered meets specifications.</li><li>Creates systems development life cycle documents and/or assists team members in the creation of project documents. Produces written documentation for new and existing processes, programs, code, applications, and workflow. Keeps software documentation accurate and up to date.</li><li>May assist team members in software administration and maintenance, including preparing and reviewing reports for operations, senior management, and stakeholders.</li><li>Creates all necessary documentation for code and applications and supports applications.</li></ul><br><strong>Minimum Qualifications<br>Education:&nbsp;</strong><ul><li>Bachelor's in&nbsp;Computer Science, Bioinformatics, Engineering, Mathematics, or related discipline.</li></ul><strong>Experience:</strong><ul><li>4 years of&nbsp;experience in a professional work environment outside of academic or educational settings or Master's in 2 years of experience.&nbsp;</li><li>Professional experience with NodeJs, HTML, React, CSS, SQL and other technologies used in web development (OAuth experience is a plus)</li><li>Strong proficiency with front-end development and data visualization using Javascript</li><li>Background with healthcare data formats and APIs like FHIR, SMART, and HL7 v2 are a strong plus</li><li>At least one other programming language (Python preferred)</li><li>Comfortable doing basic system administration in a Linux environment to deploy applications</li><li>Strong communication and collaboration skills</li><li>Sharing a link to your portfolio and/or work on GitHub is a plus</li><li>Excellent problem-solving ability, collaborative spirit, and scientific curiosity.</li></ul>",
+   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3775123",
+   "posted": null,
+   "category": "Software",
+   "source": "brassring",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Boston Children's Hospital",
@@ -10445,21 +10553,6 @@
    "first_seen": "2026-11-06"
   },
   {
-   "org": "KTH Royal Institute of Technology",
-   "title": "Research Engineer in experimental physics.",
-   "location": "Stockholm, Sweden",
-   "url": "https://kth.varbi.com/en/what:job/jobID:982960/",
-   "posted": null,
-   "category": "Software",
-   "source": "varbi",
-   "deadline": "2026-11-20",
-   "abroad": "Sweden",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-23"
-  },
-  {
    "org": "Karolinska Institutet",
    "title": "Research Assistant in Development of Nanoparticle Analytics with focus on Extracellular Vesicles and Lipid Nanoparticles",
    "location": "Stockholm, Sweden",
@@ -10473,21 +10566,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-09"
-  },
-  {
-   "org": "Karolinska Institutet",
-   "title": "Research Assistant \u2013 AI-Based Analysis Tool for Prostate Cancer",
-   "location": "Stockholm, Sweden",
-   "url": "https://ki.varbi.com/en/what:job/jobID:973539/",
-   "posted": null,
-   "category": "AI",
-   "source": "varbi",
-   "deadline": "2026-11-20",
-   "abroad": "Sweden",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-29"
   },
   {
    "org": "Uppsala University",
@@ -10575,6 +10653,20 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-09"
+  },
+  {
+   "org": "AcademicTransfer (NL universities)",
+   "title": "EngD position: Standardizing Fieldwork and Data Management for Utility Mapping",
+   "location": "Netherlands (via AcademicTransfer)",
+   "url": "https://www.academictransfer.com/en/jobs/364069/engd-position-standardizing-fieldwork-and-data-management-for-utility-mapping/",
+   "posted": null,
+   "category": "Data",
+   "source": "at-html",
+   "abroad": "Netherlands",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-21"
   },
   {
    "org": "AcademicTransfer (NL universities)",
