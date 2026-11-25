@@ -1,7 +1,7 @@
 {
- "new_today": 26,
- "updated": "2026-11-24T19:10:37+00:00",
- "count": 679,
+ "new_today": 35,
+ "updated": "2026-11-25T18:16:13+00:00",
+ "count": 683,
  "errors": [
   {
    "org": "WellSky",
@@ -48,20 +48,12 @@
    "error": "429 Client Error: Too Many Requests for url: https://erickson.wd108.myworkdayjobs.com/wday/cxs/erickson/External/jobs"
   },
   {
-   "org": "Alzheimer's Association",
-   "error": "HTTPSConnectionPool(host='recruiting2.ultipro.com', port=443): Read timed out. (read timeout=30)"
-  },
-  {
    "org": "SCAN Health Plan",
    "error": "429 Client Error: Too Many Requests for url: https://scanhealthplan.wd108.myworkdayjobs.com/wday/cxs/scanhealthplan/scancareers/jobs"
   },
   {
    "org": "Alignment Health",
    "error": "429 Client Error: Too Many Requests for url: https://alignmenthealthcare.wd12.myworkdayjobs.com/wday/cxs/alignmenthealthcare/ahc_external/jobs"
-  },
-  {
-   "org": "Oak Street Health (CVS)",
-   "error": "429 Client Error: Too Many Requests for url: https://cvshealth.wd1.myworkdayjobs.com/wday/cxs/cvshealth/CVS_Health_Careers/jobs"
   },
   {
    "org": "Trinity Health",
@@ -175,8 +167,8 @@
  "health": {
   "Honor / Home Instead": {
    "n": 4,
-   "total": 16,
-   "last_hit": "2026-11-24",
+   "total": 17,
+   "last_hit": "2026-11-25",
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
@@ -185,18 +177,18 @@
   },
   "Wellthy": {
    "n": 0,
-   "total": 15,
+   "total": 17,
    "last_hit": "2026-11-19",
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 5,
+   "zero_days": 6,
    "alert": false
   },
   "AlayaCare": {
    "n": 14,
    "total": 28,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 28,
    "fail_days": 0,
    "empty_days": 0,
@@ -204,9 +196,9 @@
    "alert": false
   },
   "PointClickCare": {
-   "n": 49,
-   "total": 87,
-   "last_hit": "2026-11-24",
+   "n": 44,
+   "total": 82,
+   "last_hit": "2026-11-25",
    "max_total": 87,
    "fail_days": 0,
    "empty_days": 0,
@@ -214,9 +206,9 @@
    "alert": false
   },
   "HHAeXchange": {
-   "n": 10,
-   "total": 26,
-   "last_hit": "2026-11-24",
+   "n": 9,
+   "total": 25,
+   "last_hit": "2026-11-25",
    "max_total": 28,
    "fail_days": 0,
    "empty_days": 0,
@@ -226,7 +218,7 @@
   "August Health": {
    "n": 3,
    "total": 6,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 6,
    "fail_days": 0,
    "empty_days": 0,
@@ -236,7 +228,7 @@
   "AARP": {
    "n": 1,
    "total": 13,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 72,
    "fail_days": 0,
    "empty_days": 0,
@@ -246,7 +238,7 @@
   "InnovAge (PACE)": {
    "n": 4,
    "total": 150,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
@@ -256,7 +248,7 @@
   "VNS Health": {
    "n": 6,
    "total": 150,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
@@ -268,7 +260,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 42,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -278,7 +270,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 78,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -288,7 +280,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 250,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -298,19 +290,19 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 39,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Element Care PACE": {
    "n": 0,
-   "total": 26,
+   "total": 25,
    "last_hit": "2026-11-10",
    "max_total": 29,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 14,
+   "zero_days": 15,
    "alert": false
   },
   "NCOA (National Council on Aging)": {
@@ -320,13 +312,13 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 32,
+   "zero_days": 33,
    "alert": false
   },
   "SCES (Somerville-Cambridge Elder Services)": {
    "n": 1,
    "total": 5,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -340,17 +332,17 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Central Boston Elder Services": {
    "n": 0,
-   "total": 5,
+   "total": 6,
    "last_hit": null,
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Elder Services of Cape Cod & the Islands": {
@@ -360,17 +352,17 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "LifePath": {
    "n": 0,
-   "total": 12,
+   "total": 13,
    "last_hit": null,
-   "max_total": 12,
+   "max_total": 13,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Bristol Aging & Wellness": {
@@ -380,7 +372,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "AgeSpan": {
@@ -390,7 +382,7 @@
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 5,
+   "zero_days": 6,
    "alert": false
   },
   "Boston Senior Home Care": {
@@ -400,17 +392,17 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Greater Springfield Senior Services": {
    "n": 0,
-   "total": 10,
+   "total": 9,
    "last_hit": null,
    "max_total": 14,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Mystic Valley Aging Services": {
@@ -420,7 +412,7 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Old Colony Elder Services": {
@@ -430,7 +422,7 @@
    "max_total": 32,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Greater Lynn Senior Services": {
@@ -440,13 +432,13 @@
    "max_total": 12,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Springwell": {
    "n": 2,
    "total": 10,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -460,13 +452,13 @@
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Tri-Valley Inc.": {
    "n": 1,
-   "total": 8,
-   "last_hit": "2026-11-24",
+   "total": 7,
+   "last_hit": "2026-11-25",
    "max_total": 13,
    "fail_days": 0,
    "empty_days": 0,
@@ -476,7 +468,7 @@
   "Coastline Elderly Services": {
    "n": 1,
    "total": 1,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
@@ -490,7 +482,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 28,
+   "zero_days": 29,
    "alert": false
   },
   "Highland Valley Elder Services": {
@@ -500,7 +492,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 9,
+   "zero_days": 10,
    "alert": false
   },
   "SeniorCare Inc.": {
@@ -510,7 +502,7 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Elder Services of Worcester Area": {
@@ -520,7 +512,7 @@
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Ethos": {
@@ -528,7 +520,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 1,
-   "fail_days": 5,
+   "fail_days": 6,
    "empty_days": 0,
    "zero_days": 26,
    "alert": true
@@ -538,7 +530,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 4,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 2,
    "zero_days": 4,
    "alert": true
@@ -548,7 +540,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 6,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 4,
    "alert": true
@@ -558,7 +550,7 @@
    "total": null,
    "last_hit": "2026-11-23",
    "max_total": 147,
-   "fail_days": 1,
+   "fail_days": 2,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
@@ -566,7 +558,7 @@
   "2Life Communities": {
    "n": 1,
    "total": 9,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 12,
    "fail_days": 0,
    "empty_days": 0,
@@ -575,12 +567,12 @@
   },
   "Rogerson Communities": {
    "n": 0,
-   "total": 11,
+   "total": 10,
    "last_hit": null,
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Upham's Elder Service Plan (PACE)": {
@@ -590,7 +582,7 @@
    "max_total": 24,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Sherrill House": {
@@ -600,7 +592,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Harbor Health (Elder Service Plan)": {
@@ -610,13 +602,13 @@
    "max_total": 50,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Fallon Health (Summit ElderCare PACE)": {
    "n": 4,
-   "total": 39,
-   "last_hit": "2026-11-24",
+   "total": 38,
+   "last_hit": "2026-11-25",
    "max_total": 52,
    "fail_days": 0,
    "empty_days": 0,
@@ -628,7 +620,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 35,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -638,25 +630,25 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 140,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Volunteers of America Massachusetts": {
    "n": 0,
-   "total": 17,
+   "total": 20,
    "last_hit": null,
    "max_total": 26,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Brightview Senior Living": {
    "n": 1,
    "total": 150,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
@@ -668,15 +660,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 232,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Commonwealth of Massachusetts (MassCareers)": {
-   "n": 80,
-   "total": 826,
-   "last_hit": "2026-11-24",
+   "n": 79,
+   "total": 817,
+   "last_hit": "2026-11-25",
    "max_total": 833,
    "fail_days": 0,
    "empty_days": 0,
@@ -686,7 +678,7 @@
   "City of Boston": {
    "n": 8,
    "total": 74,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 95,
    "fail_days": 0,
    "empty_days": 0,
@@ -694,9 +686,9 @@
    "alert": false
   },
   "NYC Department for the Aging": {
-   "n": 2,
-   "total": 10,
-   "last_hit": "2026-11-24",
+   "n": 6,
+   "total": 21,
+   "last_hit": "2026-11-25",
    "max_total": 22,
    "fail_days": 0,
    "empty_days": 0,
@@ -706,7 +698,7 @@
   "Atlanta Regional Commission": {
    "n": 2,
    "total": 5,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 5,
    "fail_days": 0,
    "empty_days": 0,
@@ -715,20 +707,20 @@
   },
   "LA County": {
    "n": 0,
-   "total": 416,
+   "total": 417,
    "last_hit": null,
    "max_total": 421,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 29,
+   "zero_days": 30,
    "alert": false
   },
   "Alzheimer's Association": {
-   "n": null,
-   "total": null,
-   "last_hit": "2026-11-23",
+   "n": 1,
+   "total": 71,
+   "last_hit": "2026-11-25",
    "max_total": 73,
-   "fail_days": 1,
+   "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
@@ -739,14 +731,14 @@
    "last_hit": null,
    "max_total": 1,
    "fail_days": 0,
-   "empty_days": 21,
-   "zero_days": 31,
+   "empty_days": 22,
+   "zero_days": 32,
    "alert": false
   },
   "Council on Aging of Southwestern Ohio (AAA)": {
    "n": 1,
    "total": 6,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
@@ -760,13 +752,13 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 8,
+   "zero_days": 9,
    "alert": false
   },
   "Philadelphia Corporation for Aging (AAA)": {
    "n": 2,
    "total": 7,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -780,7 +772,7 @@
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 30,
+   "zero_days": 31,
    "alert": false
   },
   "Direction Home Akron Canton (AAA)": {
@@ -790,17 +782,17 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Homage Senior Services (AAA, Snohomish County)": {
    "n": 0,
-   "total": 4,
+   "total": 5,
    "last_hit": null,
-   "max_total": 4,
+   "max_total": 5,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "USAging job board (AAAs nationwide)": {
@@ -810,7 +802,7 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 30,
+   "zero_days": 31,
    "alert": false
   },
   "ADvancing States job board (aging & disability)": {
@@ -820,13 +812,13 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 30,
+   "zero_days": 31,
    "alert": false
   },
   "Mather": {
    "n": 1,
    "total": 41,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 42,
    "fail_days": 0,
    "empty_days": 0,
@@ -835,8 +827,8 @@
   },
   "Brookdale Senior Living": {
    "n": 2,
-   "total": 1926,
-   "last_hit": "2026-11-24",
+   "total": 1935,
+   "last_hit": "2026-11-25",
    "max_total": 2034,
    "fail_days": 0,
    "empty_days": 0,
@@ -845,18 +837,18 @@
   },
   "On Lok (PACE)": {
    "n": 0,
-   "total": 33,
+   "total": 31,
    "last_hit": null,
    "max_total": 40,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Help at Home": {
    "n": 2,
-   "total": 39,
-   "last_hit": "2026-11-24",
+   "total": 38,
+   "last_hit": "2026-11-25",
    "max_total": 49,
    "fail_days": 0,
    "empty_days": 0,
@@ -868,7 +860,7 @@
    "total": null,
    "last_hit": "2026-11-23",
    "max_total": 103,
-   "fail_days": 1,
+   "fail_days": 2,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
@@ -878,15 +870,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 61,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Clover Health": {
    "n": 13,
-   "total": 52,
-   "last_hit": "2026-11-24",
+   "total": 53,
+   "last_hit": "2026-11-25",
    "max_total": 60,
    "fail_days": 0,
    "empty_days": 0,
@@ -894,9 +886,9 @@
    "alert": false
   },
   "Humana / CenterWell": {
-   "n": 57,
-   "total": 65,
-   "last_hit": "2026-11-24",
+   "n": 58,
+   "total": 67,
+   "last_hit": "2026-11-25",
    "max_total": 80,
    "fail_days": 0,
    "empty_days": 0,
@@ -904,11 +896,11 @@
    "alert": false
   },
   "Oak Street Health (CVS)": {
-   "n": null,
-   "total": null,
-   "last_hit": "2026-11-23",
+   "n": 6,
+   "total": 9,
+   "last_hit": "2026-11-25",
    "max_total": 10,
-   "fail_days": 1,
+   "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
@@ -918,16 +910,16 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 1080,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Aledade": {
    "n": 16,
-   "total": 46,
-   "last_hit": "2026-11-24",
-   "max_total": 47,
+   "total": 48,
+   "last_hit": "2026-11-25",
+   "max_total": 48,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -940,13 +932,13 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Arine": {
-   "n": 5,
-   "total": 7,
-   "last_hit": "2026-11-24",
+   "n": 6,
+   "total": 8,
+   "last_hit": "2026-11-25",
    "max_total": 14,
    "fail_days": 0,
    "empty_days": 0,
@@ -960,7 +952,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Sunrise Senior Living": {
@@ -968,7 +960,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 598,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -978,7 +970,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 230,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -988,7 +980,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 40,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -998,15 +990,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 29,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Planned Parenthood Federation": {
-   "n": 5,
-   "total": 21,
-   "last_hit": "2026-11-24",
+   "n": 6,
+   "total": 26,
+   "last_hit": "2026-11-25",
    "max_total": 26,
    "fail_days": 0,
    "empty_days": 0,
@@ -1016,7 +1008,7 @@
   "The Trevor Project": {
    "n": 2,
    "total": 4,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -1026,7 +1018,7 @@
   "ACLU": {
    "n": 4,
    "total": 19,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 20,
    "fail_days": 0,
    "empty_days": 0,
@@ -1036,7 +1028,7 @@
   "Code for America": {
    "n": 5,
    "total": 11,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -1044,9 +1036,9 @@
    "alert": false
   },
   "Nava PBC": {
-   "n": 6,
-   "total": 19,
-   "last_hit": "2026-11-24",
+   "n": 5,
+   "total": 18,
+   "last_hit": "2026-11-25",
    "max_total": 23,
    "fail_days": 0,
    "empty_days": 0,
@@ -1056,7 +1048,7 @@
   "ABCD Boston": {
    "n": 1,
    "total": 71,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 71,
    "fail_days": 0,
    "empty_days": 0,
@@ -1068,15 +1060,15 @@
    "total": null,
    "last_hit": "2026-11-22",
    "max_total": 18,
-   "fail_days": 2,
+   "fail_days": 3,
    "empty_days": 0,
    "zero_days": 0,
-   "alert": false
+   "alert": true
   },
   "American Institutes for Research": {
    "n": 1,
    "total": 10,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 18,
    "fail_days": 0,
    "empty_days": 0,
@@ -1088,7 +1080,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 395,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1098,7 +1090,7 @@
    "total": null,
    "last_hit": "2026-11-23",
    "max_total": 5,
-   "fail_days": 1,
+   "fail_days": 2,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
@@ -1108,7 +1100,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 23,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1118,7 +1110,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 362,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1128,15 +1120,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 57,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Tufts University": {
-   "n": 7,
-   "total": 120,
-   "last_hit": "2026-11-24",
+   "n": 6,
+   "total": 118,
+   "last_hit": "2026-11-25",
    "max_total": 128,
    "fail_days": 0,
    "empty_days": 0,
@@ -1144,29 +1136,29 @@
    "alert": false
   },
   "Harvard University": {
-   "n": 63,
-   "total": 357,
-   "last_hit": "2026-11-24",
-   "max_total": 358,
+   "n": 67,
+   "total": 364,
+   "last_hit": "2026-11-25",
+   "max_total": 364,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
   },
   "MIT": {
-   "n": 64,
-   "total": 291,
-   "last_hit": "2026-11-24",
-   "max_total": 291,
+   "n": 65,
+   "total": 295,
+   "last_hit": "2026-11-25",
+   "max_total": 295,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
   },
   "Boston University": {
-   "n": 41,
-   "total": 221,
-   "last_hit": "2026-11-24",
+   "n": 39,
+   "total": 217,
+   "last_hit": "2026-11-25",
    "max_total": 221,
    "fail_days": 0,
    "empty_days": 0,
@@ -1175,8 +1167,8 @@
   },
   "Broad Institute": {
    "n": 11,
-   "total": 35,
-   "last_hit": "2026-11-24",
+   "total": 34,
+   "last_hit": "2026-11-25",
    "max_total": 36,
    "fail_days": 0,
    "empty_days": 0,
@@ -1188,15 +1180,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 6,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "UMass Amherst": {
-   "n": 25,
+   "n": 24,
    "total": 151,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 160,
    "fail_days": 0,
    "empty_days": 0,
@@ -1208,7 +1200,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 61,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1218,7 +1210,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 86,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1228,7 +1220,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 257,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1238,15 +1230,15 @@
    "total": null,
    "last_hit": "2026-11-22",
    "max_total": 66,
-   "fail_days": 2,
+   "fail_days": 3,
    "empty_days": 0,
    "zero_days": 0,
-   "alert": false
+   "alert": true
   },
   "ADA Forsyth Institute": {
    "n": 1,
-   "total": 7,
-   "last_hit": "2026-11-24",
+   "total": 8,
+   "last_hit": "2026-11-25",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -1255,8 +1247,8 @@
   },
   "UMass Chan Medical School": {
    "n": 14,
-   "total": 114,
-   "last_hit": "2026-11-24",
+   "total": 113,
+   "last_hit": "2026-11-25",
    "max_total": 134,
    "fail_days": 0,
    "empty_days": 0,
@@ -1268,7 +1260,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 1018,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1278,7 +1270,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 917,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1288,7 +1280,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 333,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1298,15 +1290,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 410,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Boston Children's Hospital": {
-   "n": 23,
+   "n": 22,
    "total": 285,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 293,
    "fail_days": 0,
    "empty_days": 0,
@@ -1318,7 +1310,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 444,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1328,7 +1320,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 363,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1338,7 +1330,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 72,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1348,7 +1340,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 52,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1358,7 +1350,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 100,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1368,25 +1360,25 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 22,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Wolt": {
    "n": 0,
-   "total": 188,
+   "total": 180,
    "last_hit": "2026-11-19",
    "max_total": 206,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 5,
+   "zero_days": 6,
    "alert": false
   },
   "Supercell": {
    "n": 1,
    "total": 27,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 39,
    "fail_days": 0,
    "empty_days": 0,
@@ -1394,9 +1386,9 @@
    "alert": false
   },
   "Smartly.io": {
-   "n": 7,
+   "n": 6,
    "total": 72,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 73,
    "fail_days": 0,
    "empty_days": 0,
@@ -1404,19 +1396,19 @@
    "alert": false
   },
   "Oura": {
-   "n": 1,
-   "total": 95,
-   "last_hit": "2026-11-24",
-   "max_total": 97,
+   "n": 2,
+   "total": 98,
+   "last_hit": "2026-11-25",
+   "max_total": 98,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
   },
   "Adyen": {
-   "n": 13,
-   "total": 243,
-   "last_hit": "2026-11-24",
+   "n": 11,
+   "total": 241,
+   "last_hit": "2026-11-25",
    "max_total": 257,
    "fail_days": 0,
    "empty_days": 0,
@@ -1425,8 +1417,8 @@
   },
   "Mollie": {
    "n": 2,
-   "total": 48,
-   "last_hit": "2026-11-24",
+   "total": 46,
+   "last_hit": "2026-11-25",
    "max_total": 54,
    "fail_days": 0,
    "empty_days": 0,
@@ -1439,14 +1431,14 @@
    "last_hit": "2026-11-06",
    "max_total": 72,
    "fail_days": 0,
-   "empty_days": 18,
-   "zero_days": 18,
+   "empty_days": 19,
+   "zero_days": 19,
    "alert": true
   },
   "N26": {
    "n": 1,
-   "total": 22,
-   "last_hit": "2026-11-24",
+   "total": 26,
+   "last_hit": "2026-11-25",
    "max_total": 38,
    "fail_days": 0,
    "empty_days": 0,
@@ -1455,8 +1447,8 @@
   },
   "HelloFresh": {
    "n": 3,
-   "total": 356,
-   "last_hit": "2026-11-24",
+   "total": 354,
+   "last_hit": "2026-11-25",
    "max_total": 394,
    "fail_days": 0,
    "empty_days": 0,
@@ -1465,8 +1457,8 @@
   },
   "Celonis": {
    "n": 20,
-   "total": 258,
-   "last_hit": "2026-11-24",
+   "total": 260,
+   "last_hit": "2026-11-25",
    "max_total": 274,
    "fail_days": 0,
    "empty_days": 0,
@@ -1475,9 +1467,9 @@
   },
   "Intercom": {
    "n": 12,
-   "total": 124,
-   "last_hit": "2026-11-24",
-   "max_total": 124,
+   "total": 130,
+   "last_hit": "2026-11-25",
+   "max_total": 130,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -1485,8 +1477,8 @@
   },
   "Stripe": {
    "n": 10,
-   "total": 770,
-   "last_hit": "2026-11-24",
+   "total": 771,
+   "last_hit": "2026-11-25",
    "max_total": 795,
    "fail_days": 0,
    "empty_days": 0,
@@ -1495,9 +1487,9 @@
   },
   "Spotify": {
    "n": 6,
-   "total": 89,
-   "last_hit": "2026-11-24",
-   "max_total": 92,
+   "total": 93,
+   "last_hit": "2026-11-25",
+   "max_total": 93,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -1506,7 +1498,7 @@
   "Delivery Hero": {
    "n": 8,
    "total": 500,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 500,
    "fail_days": 0,
    "empty_days": 0,
@@ -1516,7 +1508,7 @@
   "Workhuman": {
    "n": 2,
    "total": 11,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -1528,15 +1520,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 26,
-   "fail_days": 9,
+   "fail_days": 10,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "University of Helsinki": {
    "n": 1,
-   "total": 19,
-   "last_hit": "2026-11-24",
+   "total": 18,
+   "last_hit": "2026-11-25",
    "max_total": 24,
    "fail_days": 0,
    "empty_days": 0,
@@ -1546,7 +1538,7 @@
   "Tampere University": {
    "n": 2,
    "total": 9,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
@@ -1560,14 +1552,14 @@
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "KTH Royal Institute of Technology": {
    "n": 9,
-   "total": 67,
-   "last_hit": "2026-11-24",
-   "max_total": 67,
+   "total": 70,
+   "last_hit": "2026-11-25",
+   "max_total": 70,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -1575,8 +1567,8 @@
   },
   "Karolinska Institutet": {
    "n": 1,
-   "total": 84,
-   "last_hit": "2026-11-24",
+   "total": 86,
+   "last_hit": "2026-11-25",
    "max_total": 93,
    "fail_days": 0,
    "empty_days": 0,
@@ -1585,8 +1577,8 @@
   },
   "Uppsala University": {
    "n": 1,
-   "total": 79,
-   "last_hit": "2026-11-24",
+   "total": 81,
+   "last_hit": "2026-11-25",
    "max_total": 94,
    "fail_days": 0,
    "empty_days": 0,
@@ -1595,18 +1587,18 @@
   },
   "Stockholm University": {
    "n": 0,
-   "total": 5,
+   "total": 6,
    "last_hit": "2026-11-03",
    "max_total": 24,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 20,
+   "zero_days": 21,
    "alert": false
   },
   "Lund University": {
    "n": 1,
    "total": 127,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 127,
    "fail_days": 0,
    "empty_days": 0,
@@ -1615,8 +1607,8 @@
   },
   "AcademicTransfer (NL universities)": {
    "n": 5,
-   "total": 19,
-   "last_hit": "2026-11-24",
+   "total": 20,
+   "last_hit": "2026-11-25",
    "max_total": 20,
    "fail_days": 0,
    "empty_days": 0,
@@ -1626,7 +1618,7 @@
   "Max Planck Society": {
    "n": 4,
    "total": 30,
-   "last_hit": "2026-11-24",
+   "last_hit": "2026-11-25",
    "max_total": 30,
    "fail_days": 0,
    "empty_days": 0,
@@ -1640,7 +1632,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 14,
+   "zero_days": 15,
    "alert": false
   }
  },
@@ -1730,19 +1722,6 @@
   },
   {
    "org": "MIT",
-   "title": "Technical Associate I",
-   "location": "Cambridge, MA",
-   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=34877&localeCode=en-us",
-   "posted": "Sep 21, 20",
-   "category": "IT",
-   "source": "peopleclick",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "MIT",
    "title": "Heat and Vent Instrument Systems Technician",
    "location": "Cambridge, MA",
    "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=34925&localeCode=en-us",
@@ -1808,11 +1787,11 @@
   },
   {
    "org": "MIT",
-   "title": "Technical Associate I",
+   "title": "Financial Analyst",
    "location": "Cambridge, MA",
-   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=34943&localeCode=en-us",
+   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=34935&localeCode=en-us",
    "posted": "Oct 5, 202",
-   "category": "IT",
+   "category": "Data",
    "source": "peopleclick",
    "sector": "Academia & Research",
    "citizen_req": null,
@@ -1821,11 +1800,11 @@
   },
   {
    "org": "MIT",
-   "title": "Financial Analyst",
+   "title": "Technical Associate I",
    "location": "Cambridge, MA",
-   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=34935&localeCode=en-us",
+   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=34943&localeCode=en-us",
    "posted": "Oct 5, 202",
-   "category": "Data",
+   "category": "IT",
    "source": "peopleclick",
    "sector": "Academia & Research",
    "citizen_req": null,
@@ -2003,16 +1982,29 @@
   },
   {
    "org": "MIT",
-   "title": "Research Engineer 2",
+   "title": "Technical Associate II",
    "location": "Cambridge, MA",
-   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=35229&localeCode=en-us",
-   "posted": "Nov 23, 20",
-   "category": "Software",
+   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=35259&localeCode=en-us",
+   "posted": "Nov 25, 20",
+   "category": "IT",
    "source": "peopleclick",
    "sector": "Academia & Research",
    "citizen_req": null,
    "years_req": null,
-   "first_seen": "2026-11-24"
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "MIT",
+   "title": "Technical Associate I",
+   "location": "Cambridge, MA",
+   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=35257&localeCode=en-us",
+   "posted": "Nov 25, 20",
+   "category": "IT",
+   "source": "peopleclick",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "MIT",
@@ -2026,6 +2018,19 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-23"
+  },
+  {
+   "org": "MIT",
+   "title": "Research Engineer 2",
+   "location": "Cambridge, MA",
+   "url": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=35229&localeCode=en-us",
+   "posted": "Nov 23, 20",
+   "category": "Software",
+   "source": "peopleclick",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-24"
   },
   {
    "org": "MIT",
@@ -2483,6 +2488,152 @@
    "first_seen": "2026-10-26"
   },
   {
+   "org": "InnovAge (PACE)",
+   "title": "Medication Use & Management Analyst",
+   "location": "Boulder, Colorado",
+   "url": "https://careers.innovage.com/jobs/7515",
+   "posted": "2026-11-25",
+   "category": "Data",
+   "source": "jibe",
+   "sector": "Aging Services",
+   "citizen_req": false,
+   "years_req": 3,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Dev Ops Platform Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-438587",
+   "posted": "2026-11-25",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Lead Engineer, SSPM & SaaS Security",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437582",
+   "posted": "2026-11-25",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Software Engineer, HGB IT",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-428269",
+   "posted": "2026-11-25",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-16"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Research Associate - Data Science and AI for Leaders",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017088856",
+   "posted": "2026-11-25",
+   "category": "AI",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Director, Straus Center for Conservation and Technical Studies",
+   "location": "Cambridge, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017085806",
+   "posted": "2026-11-25",
+   "category": "IT",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Programmer",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017079816",
+   "posted": "2026-11-25",
+   "category": "IT",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Harvard University",
+   "title": "SAS Programmer",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017079526",
+   "posted": "2026-11-25",
+   "category": "IT",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Programmer II",
+   "location": "Boston, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017079516",
+   "posted": "2026-11-25",
+   "category": "IT",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Oura",
+   "title": "Senior Manager, Data and AI Platform",
+   "location": "Hybrid - Helsinki, Uusimaa",
+   "url": "https://job-boards.greenhouse.io/oura/jobs/4516618009",
+   "posted": "2026-11-25",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Finland",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Celonis",
+   "title": "Associate (AI) Solution Consultant - Orbit Program",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/8216843003?gh_jid=8216843003",
+   "posted": "2026-11-25",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 2,
+   "first_seen": "2026-11-25"
+  },
+  {
    "org": "PointClickCare",
    "title": "Director, Software Engineering",
    "location": "Mississauga",
@@ -2510,16 +2661,29 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Epic Technology Leadership",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-435302",
+   "title": "Senior Platform Engineer - NBA",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-426815",
    "posted": "2026-11-24",
-   "category": "IT",
+   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-19"
+   "first_seen": "2026-11-24"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Informaticist",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-434463",
+   "posted": "2026-11-24",
+   "category": "Data",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Humana / CenterWell",
@@ -2536,16 +2700,81 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Platform Engineer - NBA",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-426815",
+   "title": "Epic Technology Leadership",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-435302",
+   "posted": "2026-11-24",
+   "category": "IT",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-19"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Lead Quality Engineering, Onboarding",
+   "location": "New York, New York, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-432250",
    "posted": "2026-11-24",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-24"
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Lead Technology Leadership Professional",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-435596",
+   "posted": "2026-11-24",
+   "category": "IT",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-04"
+  },
+  {
+   "org": "Planned Parenthood Federation",
+   "title": "National Director, Technology Business Partner",
+   "location": "New York, NY",
+   "url": "https://jobs.lever.co/ppfa/65cbf316-1793-463a-a801-7f94d85ddc3b",
+   "posted": "2026-11-24",
+   "category": "IT",
+   "source": "lever",
+   "sector": "Nonprofit & Civic",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Data Engineering Team Lead",
+   "location": "Cambridge, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017074916",
+   "posted": "2026-11-24",
+   "category": "Data",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Harvard University",
+   "title": "Business Systems Analyst",
+   "location": "Cambridge, US",
+   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990017070546",
+   "posted": "2026-11-24",
+   "category": "Data",
+   "source": "smartrecruiters",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Harvard University",
@@ -2584,20 +2813,6 @@
    "sector": "Academia & Research",
    "citizen_req": false,
    "years_req": 5,
-   "first_seen": "2026-11-24"
-  },
-  {
-   "org": "Adyen",
-   "title": "Senior AI Engineer (Forward Deployed Engineering)",
-   "location": "Amsterdam",
-   "url": "https://job-boards.greenhouse.io/adyen/jobs/8414492",
-   "posted": "2026-11-24",
-   "category": "AI",
-   "source": "greenhouse",
-   "abroad": "Netherlands",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": null,
    "first_seen": "2026-11-24"
   },
   {
@@ -2681,6 +2896,19 @@
   },
   {
    "org": "Humana / CenterWell",
+   "title": "Senior Analytics Solutions Engineer",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-433143",
+   "posted": "2026-11-23",
+   "category": "Data",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-24"
+  },
+  {
+   "org": "Humana / CenterWell",
    "title": "Lead Data Architect - Corporate",
    "location": "Louisville, Kentucky, United States of America",
    "url": "https://careers.humana.com/us/en/job/R-424704",
@@ -2691,32 +2919,6 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-18"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer - Appian Platform",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-431029",
-   "posted": "2026-11-23",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-23"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Director, Technology Solutions",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-435827",
-   "posted": "2026-11-23",
-   "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-24"
   },
   {
    "org": "Humana / CenterWell",
@@ -2733,16 +2935,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead Full Stack Engineer - NBA",
-   "location": "Boston, Massachusetts, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-421128",
+   "title": "Senior Software Engineer - Appian Platform",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-431029",
    "posted": "2026-11-23",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-10-26"
+   "first_seen": "2026-11-23"
   },
   {
    "org": "Humana / CenterWell",
@@ -2759,6 +2961,19 @@
   },
   {
    "org": "Humana / CenterWell",
+   "title": "Director, Technology Solutions",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-435827",
+   "posted": "2026-11-23",
+   "category": "IT",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-24"
+  },
+  {
+   "org": "Humana / CenterWell",
    "title": "Senior Reliability Engineer",
    "location": "Dallas, Texas, United States of America",
    "url": "https://careers.humana.com/us/en/job/R-435538",
@@ -2772,16 +2987,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Analytics Solutions Engineer",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-433143",
+   "title": "Lead Full Stack Engineer - NBA",
+   "location": "Boston, Massachusetts, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-421128",
    "posted": "2026-11-23",
-   "category": "Data",
+   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-24"
+   "first_seen": "2026-10-26"
   },
   {
    "org": "Aledade",
@@ -3179,95 +3394,43 @@
    "first_seen": "2026-11-20"
   },
   {
-   "org": "Humana / CenterWell",
-   "title": "Senior DevOps Platform Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434335",
+   "org": "NYC Department for the Aging",
+   "title": "Senior Developer (Per-Diem)",
+   "location": "2 Lafayette St., N.Y., NY",
+   "url": "https://a127-jobs.nyc.gov/psc/nycjobs/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=808407&PostingSeq=1",
    "posted": "2026-11-20",
    "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
+   "source": "nyc-opendata",
+   "sector": "Aging Services",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-06"
+   "first_seen": "2026-11-25"
   },
   {
-   "org": "Humana / CenterWell",
-   "title": "Senior AI Identity Security Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437656",
+   "org": "NYC Department for the Aging",
+   "title": "Administrative Budget Analyst",
+   "location": "2 Lafayette St., N.Y., NY",
+   "url": "https://a127-jobs.nyc.gov/psc/nycjobs/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=809546&PostingSeq=1",
    "posted": "2026-11-20",
-   "category": "AI",
-   "source": "phenom",
-   "sector": "Healthcare",
+   "category": "Data",
+   "source": "nyc-opendata",
+   "sector": "Aging Services",
    "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-21"
+   "years_req": 3,
+   "first_seen": "2026-11-25"
   },
   {
-   "org": "Humana / CenterWell",
-   "title": "Lead Technology Professional",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-435320",
+   "org": "NYC Department for the Aging",
+   "title": "Senior Claiming & Revenue Analyst",
+   "location": "2 Lafayette St., N.Y., NY",
+   "url": "https://a127-jobs.nyc.gov/psc/nycjobs/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=807896&PostingSeq=1",
    "posted": "2026-11-20",
-   "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
+   "category": "Data",
+   "source": "nyc-opendata",
+   "sector": "Aging Services",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Technology Implementation Lead",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-433617",
-   "posted": "2026-11-20",
-   "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-436676",
-   "posted": "2026-11-20",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-21"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Associate Director, Software Engineering",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-427494",
-   "posted": "2026-11-20",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-10"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer - NBA",
-   "location": "Nashville, Tennessee, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-425861",
-   "posted": "2026-11-20",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-10-26"
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Humana / CenterWell",
@@ -3323,16 +3486,94 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead Quality Engineer",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437306",
+   "title": "Senior Software Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-436676",
    "posted": "2026-11-20",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior AI Identity Security Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437656",
+   "posted": "2026-11-20",
+   "category": "AI",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-21"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Lead Technology Professional",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-435320",
+   "posted": "2026-11-20",
+   "category": "IT",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
    "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Associate Director, Software Engineering",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-427494",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-10"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Technology Implementation Lead",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-433617",
+   "posted": "2026-11-20",
+   "category": "IT",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Software Engineer - NBA",
+   "location": "Nashville, Tennessee, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-425861",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Senior-Software-Engineer---Salesforce_R1066291",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 8,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Aledade",
@@ -3598,17 +3839,17 @@
    "first_seen": "2026-11-19"
   },
   {
-   "org": "Humana / CenterWell",
-   "title": "Cloud Solutions Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-438062",
+   "org": "NYC Department for the Aging",
+   "title": "Administrative Budget Analyst",
+   "location": "2 Lafayette St., N.Y., NY",
+   "url": "https://a127-jobs.nyc.gov/psc/nycjobs/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=1&JobOpeningId=788360&PostingSeq=1",
    "posted": "2026-11-19",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
+   "category": "Data",
+   "source": "nyc-opendata",
+   "sector": "Aging Services",
    "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-20"
+   "years_req": 5,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Humana / CenterWell",
@@ -3625,9 +3866,9 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Principal Quality Engineer",
-   "location": "New York, New York, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-438041",
+   "title": "Cloud Solutions Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-438062",
    "posted": "2026-11-19",
    "category": "Software",
    "source": "phenom",
@@ -3638,11 +3879,24 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Data Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-430106",
+   "title": "Associate Director, Technology Solutions",
+   "location": "Dallas, Texas, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437019",
    "posted": "2026-11-19",
-   "category": "Data",
+   "category": "IT",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Principal Quality Engineer",
+   "location": "New York, New York, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-438041",
+   "posted": "2026-11-19",
+   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3664,11 +3918,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Associate Director, Technology Solutions",
-   "location": "Dallas, Texas, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437019",
+   "title": "Data Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-430106",
    "posted": "2026-11-19",
-   "category": "IT",
+   "category": "Data",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3900,19 +4154,6 @@
    "first_seen": "2026-11-19"
   },
   {
-   "org": "Humana / CenterWell",
-   "title": "Senior Full Stack Engineer - NBA",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-426819",
-   "posted": "2026-11-18",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-19"
-  },
-  {
    "org": "Nava PBC",
    "title": "Senior/Principal Technical Product Manager",
    "location": "Remote",
@@ -4018,16 +4259,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Lead, Technology Solutions",
-   "location": "Arlington, Virginia, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434421",
+   "title": "HEDIS Business Process Lead - AI and Digital",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437644",
    "posted": "2026-11-17",
-   "category": "IT",
+   "category": "AI",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-17"
+   "first_seen": "2026-11-18"
   },
   {
    "org": "Humana / CenterWell",
@@ -4057,16 +4298,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "HEDIS Business Process Lead - AI and Digital",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437644",
+   "title": "Lead, Technology Solutions",
+   "location": "Arlington, Virginia, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-434421",
    "posted": "2026-11-17",
-   "category": "AI",
+   "category": "IT",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-18"
+   "first_seen": "2026-11-17"
   },
   {
    "org": "Aledade",
@@ -4080,19 +4321,6 @@
    "citizen_req": false,
    "years_req": 6,
    "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Tufts University",
-   "title": "Senior Clinical Systems Analyst",
-   "location": "Massachusetts, United States",
-   "url": "https://jobs.tufts.edu/jobs/25478?lang=en-us",
-   "posted": "2026-11-17",
-   "category": "Data",
-   "source": "jibe",
-   "sector": "Academia & Research",
-   "citizen_req": false,
-   "years_req": 10,
-   "first_seen": "2026-11-18"
   },
   {
    "org": "Tufts University",
@@ -4236,19 +4464,6 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-17"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer, HGB IT",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-428269",
-   "posted": "2026-11-16",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-16"
   },
   {
    "org": "Aledade",
@@ -4434,6 +4649,19 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-14"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Sr Data Scientist, Clinical Intelligence",
+   "location": "NC - Work from home",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/NC---Work-from-home/Sr-Data-Scientist--Clinical-Intelligence_R1053144-1",
+   "posted": "2026-11-13",
+   "category": "Data",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "ACLU",
@@ -4659,6 +4887,19 @@
    "first_seen": "2026-11-12"
   },
   {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Software Development Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Senior-Software-Development-Engineer_R1099073",
+   "posted": "2026-11-11",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
    "org": "Harvard University",
    "title": "IT Operations Engineer",
    "location": "Cambridge, US",
@@ -4686,34 +4927,19 @@
    "first_seen": "2026-11-18"
   },
   {
-   "org": "Celonis",
-   "title": "Senior Value Engineer - AI & Process Optimization",
-   "location": "Munich, Germany",
-   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201407003?gh_jid=8201407003",
+   "org": "N26",
+   "title": "Site Reliability Engineer - Data Platform",
+   "location": "Berlin",
+   "url": "https://n26.com/en-eu/careers/positions/8378357?gh_jid=8378357",
    "posted": "2026-11-11",
-   "category": "AI",
+   "category": "Data",
    "source": "greenhouse",
    "abroad": "Germany",
    "sector": "Tech / Software",
    "relo": true,
    "citizen_req": false,
-   "years_req": 5,
-   "first_seen": "2026-11-13"
-  },
-  {
-   "org": "Celonis",
-   "title": "Senior Value Engineer - AI & Process Optimization",
-   "location": "Remote, Finland",
-   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201379003?gh_jid=8201379003",
-   "posted": "2026-11-11",
-   "category": "AI",
-   "source": "greenhouse",
-   "abroad": "Finland",
-   "sector": "Tech / Software",
-   "relo": true,
-   "citizen_req": false,
-   "years_req": 5,
-   "first_seen": "2026-11-13"
+   "years_req": null,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Celonis",
@@ -4739,6 +4965,36 @@
    "category": "AI",
    "source": "greenhouse",
    "abroad": "Netherlands",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": "2026-11-13"
+  },
+  {
+   "org": "Celonis",
+   "title": "Senior Value Engineer - AI & Process Optimization",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201407003?gh_jid=8201407003",
+   "posted": "2026-11-11",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": "2026-11-13"
+  },
+  {
+   "org": "Celonis",
+   "title": "Senior Value Engineer - AI & Process Optimization",
+   "location": "Remote, Finland",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201379003?gh_jid=8201379003",
+   "posted": "2026-11-11",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Finland",
    "sector": "Tech / Software",
    "relo": true,
    "citizen_req": false,
@@ -4856,19 +5112,6 @@
    "first_seen": "2026-11-11"
   },
   {
-   "org": "MA state: Office of the Attorney General",
-   "title": "DIGITAL EVIDENCE ANALYST I | Digital Evidence Laboratory",
-   "location": "Boston; Springfield; New Bedford; Worcester, MA",
-   "url": "https://massanf.taleo.net/careersection/ex/jobdetail.ftl?job=260007WY",
-   "posted": "2026-11-10",
-   "category": "Data",
-   "source": "taleo",
-   "sector": "Government & Public Sector",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-11"
-  },
-  {
    "org": "Nava PBC",
    "title": "Senior Infrastructure Manager (Cloud Hosting)",
    "location": "Remote",
@@ -4958,19 +5201,6 @@
    "citizen_req": false,
    "years_req": 5,
    "first_seen": "2026-11-09"
-  },
-  {
-   "org": "Nava PBC",
-   "title": "Software Engineer (Backend-Java)",
-   "location": "Remote",
-   "url": "https://job-boards.greenhouse.io/navapbc/jobs/4482367009",
-   "posted": "2026-11-09",
-   "category": "Software",
-   "source": "greenhouse",
-   "sector": "Nonprofit & Civic",
-   "citizen_req": true,
-   "years_req": 5,
-   "first_seen": "2026-11-10"
   },
   {
    "org": "Harvard University",
@@ -5170,32 +5400,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-07"
-  },
-  {
-   "org": "PointClickCare",
-   "title": "Principal Application Engineer (Salesforce)",
-   "location": "Mississauga, Ontario",
-   "url": "https://jobs.lever.co/pointclickcare/230b8d92-f07c-4f44-b888-7f862314af15",
-   "posted": "2026-11-05",
-   "category": "Software",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-06"
-  },
-  {
-   "org": "PointClickCare",
-   "title": "Principal Application Engineer (Salesforce)",
-   "location": "Remote - US",
-   "url": "https://jobs.lever.co/pointclickcare/cd329d03-70ec-40bb-a5bb-ae2ff25b6937",
-   "posted": "2026-11-05",
-   "category": "Software",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-06"
   },
   {
    "org": "HHAeXchange",
@@ -5435,19 +5639,6 @@
    "first_seen": "2026-11-04"
   },
   {
-   "org": "PointClickCare",
-   "title": "US- Solutions Analyst (QMar- EHR Support)",
-   "location": "Remote, USA",
-   "url": "https://jobs.lever.co/pointclickcare/9565c3b5-5f1e-4142-8a3e-03cd7deda4f4",
-   "posted": "2026-11-03",
-   "category": "Data",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 2,
-   "first_seen": "2026-11-04"
-  },
-  {
    "org": "MA state: Northern Essex Comm College",
    "title": "Engineering Faculty",
    "location": "Haverhill; Lawrence, MA",
@@ -5498,19 +5689,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-03"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Lead Technology Leadership Professional",
-   "location": "Remote, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-435596",
-   "posted": "2026-11-03",
-   "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-04"
   },
   {
    "org": "Humana / CenterWell",
@@ -5721,6 +5899,19 @@
    "first_seen": "2026-10-30"
   },
   {
+   "org": "Alzheimer's Association",
+   "title": "Technical Assistance Specialist",
+   "location": "Boise, ID",
+   "url": "https://recruiting2.ultipro.com/ALZ1000ALZD/JobBoard/8fe6e004-a2b4-4c6f-b43f-6275765c4462/OpportunityDetail?opportunityId=28cb584c-b464-4141-bb74-8f14da595dc6",
+   "posted": "2026-10-30",
+   "category": "IT",
+   "source": "ultipro",
+   "sector": "Aging Services",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
    "org": "Humana / CenterWell",
    "title": "Director, Segment Quality Engineering",
    "location": "New York, New York, United States of America",
@@ -5852,6 +6043,19 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-10-30"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Manager - Digital Product (Risk Modeling)",
+   "location": "IL - Work from home",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IL---Work-from-home/Senior-Manager---Digital-Product--Risk-Modeling-_R1080292",
+   "posted": "2026-10-29",
+   "category": "IT",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "UMass Chan Medical School",
@@ -6039,6 +6243,32 @@
    "first_seen": "2026-10-26"
   },
   {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Senior-Salesforce-Engineer_R1066905",
+   "posted": "2026-10-26",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Staff Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Staff-Salesforce-Engineer_R1066930",
+   "posted": "2026-10-26",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
    "org": "Tufts University",
    "title": "Research Lab IT Manager",
    "location": "Medford, Massachusetts",
@@ -6049,19 +6279,6 @@
    "sector": "Academia & Research",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-10-24"
-  },
-  {
-   "org": "HHAeXchange",
-   "title": "Sr. Database Administrator",
-   "location": "United States",
-   "url": "https://jobs.lever.co/hhaexchange/f8d669ca-afb6-4e71-92e6-669fc7f1229d",
-   "posted": "2026-10-23",
-   "category": "Data",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 6,
    "first_seen": "2026-10-24"
   },
   {
@@ -6156,19 +6373,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
-  },
-  {
-   "org": "PointClickCare",
-   "title": "Intermediate Software Engineer",
-   "location": "Mississauga/Toronto/Kitchener/Waterloo/Cambridge",
-   "url": "https://jobs.lever.co/pointclickcare/6ec25484-b204-48a6-ab91-7b0b1625aa02",
-   "posted": "2026-10-21",
-   "category": "Software",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-10-22"
   },
   {
    "org": "MA state: Mass Dept of Transportation",
@@ -6433,19 +6637,6 @@
   },
   {
    "org": "Harvard University",
-   "title": "Programmer",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016191736",
-   "posted": "2026-10-16",
-   "category": "IT",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Harvard University",
    "title": "Director of Stewardship Reporting",
    "location": "Cambridge, US",
    "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990016175017",
@@ -6578,19 +6769,6 @@
    "citizen_req": false,
    "years_req": 6,
    "first_seen": "2026-10-16"
-  },
-  {
-   "org": "InnovAge (PACE)",
-   "title": "IT Field Support Specialist I",
-   "location": "Orlando, Florida",
-   "url": "https://careers.innovage.com/jobs/7571",
-   "posted": "2026-10-14",
-   "category": "IT",
-   "source": "jibe",
-   "sector": "Aging Services",
-   "citizen_req": false,
-   "years_req": 2,
-   "first_seen": "2026-10-15"
   },
   {
    "org": "Coastline Elderly Services",
@@ -6740,32 +6918,6 @@
    "first_seen": "2026-10-26"
   },
   {
-   "org": "Harvard University",
-   "title": "SAS Programmer",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990015997754",
-   "posted": "2026-10-08",
-   "category": "IT",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Harvard University",
-   "title": "Programmer II",
-   "location": "Boston, US",
-   "url": "https://jobs.smartrecruiters.com/HarvardUniversity/3743990015997696",
-   "posted": "2026-10-08",
-   "category": "IT",
-   "source": "smartrecruiters",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
    "org": "InnovAge (PACE)",
    "title": "Senior Salesforce Developer",
    "location": "Denver, Colorado",
@@ -6807,12 +6959,12 @@
   {
    "org": "Smartly.io",
    "title": "Senior Software Engineer - AI Platform",
-   "location": "Berlin, Berlin, Germany",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6126660004",
+   "location": "Helsinki, Uusimaa, Finland",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6218155004",
    "posted": "2026-10-06",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Germany",
+   "abroad": "Finland",
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
@@ -6821,12 +6973,12 @@
   {
    "org": "Smartly.io",
    "title": "Senior Software Engineer - AI Platform",
-   "location": "Helsinki, Uusimaa, Finland",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6218155004",
+   "location": "Berlin, Berlin, Germany",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6126660004",
    "posted": "2026-10-06",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Finland",
+   "abroad": "Germany",
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
@@ -7229,6 +7381,19 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-09-22"
+  },
+  {
+   "org": "PointClickCare",
+   "title": "Senior Machine Learning Systems Engineer (US)",
+   "location": "Remote - US",
+   "url": "https://jobs.lever.co/pointclickcare/37a529c4-afb9-4b50-a75c-df1508d8bde3",
+   "posted": "2026-09-22",
+   "category": "AI",
+   "source": "lever",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "MA state: Exec Office of Technology Services and Security",
@@ -7767,20 +7932,6 @@
    "first_seen": "2026-10-26"
   },
   {
-   "org": "Smartly.io",
-   "title": "Senior Data Platform Engineer",
-   "location": "Berlin, Berlin, Germany; Helsinki, Uusimaa, Finland",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6146519004",
-   "posted": "2026-08-25",
-   "category": "Data",
-   "source": "greenhouse",
-   "abroad": "Finland",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-08-25"
-  },
-  {
    "org": "Celonis",
    "title": "Enterprise AI Consultant",
    "location": "Munich, Germany",
@@ -7847,20 +7998,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Celonis",
-   "title": "Senior Value Engineer (Pharma) - AI & Process Optimization",
-   "location": "Copenhagen, Denmark",
-   "url": "https://job-boards.greenhouse.io/celonis/jobs/7885753003?gh_jid=7885753003",
-   "posted": "2026-08-19",
-   "category": "AI",
-   "source": "greenhouse",
-   "abroad": "Germany",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 5,
-   "first_seen": "2026-11-11"
   },
   {
    "org": "HHAeXchange",
@@ -7994,19 +8131,6 @@
    "first_seen": "2026-10-26"
   },
   {
-   "org": "PointClickCare",
-   "title": "Principal Salesforce Architect (CA)",
-   "location": "Mississauga",
-   "url": "https://jobs.lever.co/pointclickcare/79e96b19-638f-426c-b3ad-1c8f60d99595",
-   "posted": "2026-07-23",
-   "category": "IT",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 5,
-   "first_seen": "2026-09-03"
-  },
-  {
    "org": "Tufts University",
    "title": "Postdoctoral Scholar - Nutrient Profiling, Food Quality, and Artificial Intelligence",
    "location": "Boston, Massachusetts",
@@ -8031,32 +8155,6 @@
    "citizen_req": false,
    "years_req": 5,
    "first_seen": "2026-07-22"
-  },
-  {
-   "org": "PointClickCare",
-   "title": "Senior Salesforce Architect (CA)",
-   "location": "Mississauga, Ontario",
-   "url": "https://jobs.lever.co/pointclickcare/c9d09d1b-bbcb-4afe-a8de-444e2e64ef12",
-   "posted": "2026-07-21",
-   "category": "IT",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 10,
-   "first_seen": "2026-09-03"
-  },
-  {
-   "org": "PointClickCare",
-   "title": "Senior Salesforce Architect (US)",
-   "location": "Remote - US",
-   "url": "https://jobs.lever.co/pointclickcare/cc52ad1c-794f-4e16-90f8-45b011e4969e",
-   "posted": "2026-07-21",
-   "category": "IT",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 10,
-   "first_seen": "2026-09-03"
   },
   {
    "org": "Harvard University",
@@ -8220,12 +8318,12 @@
   {
    "org": "Smartly.io",
    "title": "Senior Machine Learning Engineer, AI Platform",
-   "location": "Helsinki, Uusimaa, Finland",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5658123004",
+   "location": "Berlin, Berlin, Germany",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6020669004",
    "posted": "2026-06-11",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Finland",
+   "abroad": "Germany",
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
@@ -8234,12 +8332,12 @@
   {
    "org": "Smartly.io",
    "title": "Senior Machine Learning Engineer, AI Platform",
-   "location": "Berlin, Berlin, Germany",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6020669004",
+   "location": "Helsinki, Uusimaa, Finland",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5658123004",
    "posted": "2026-06-11",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Germany",
+   "abroad": "Finland",
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
@@ -8299,6 +8397,19 @@
    "first_seen": "2026-11-14"
   },
   {
+   "org": "PointClickCare",
+   "title": "Senior Software Engineer, Platform Engineering",
+   "location": "Mississauga",
+   "url": "https://jobs.lever.co/pointclickcare/560fc3cf-e98e-44aa-b9b8-3ac3f3513b68",
+   "posted": "2026-05-05",
+   "category": "Software",
+   "source": "lever",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
    "org": "MA state: DOC-Central Facility Account",
    "title": "3rd Class Power Plant Engineer - Framingham",
    "location": "Framingham, MA",
@@ -8323,21 +8434,6 @@
    "citizen_req": false,
    "years_req": 4,
    "first_seen": "2026-10-26"
-  },
-  {
-   "org": "N26",
-   "title": "Engineering Manager - Data Platform",
-   "location": "Berlin",
-   "url": "https://n26.com/en-eu/careers/positions/7818361?gh_jid=7818361",
-   "posted": "2026-04-22",
-   "category": "Data",
-   "source": "greenhouse",
-   "abroad": "Germany",
-   "sector": "Tech / Software",
-   "relo": true,
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-04"
   },
   {
    "org": "Intercom",
@@ -8379,6 +8475,19 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": null
+  },
+  {
+   "org": "PointClickCare",
+   "title": "Intermediate AI-Enabled DevOps Engineer",
+   "location": "Remote - US",
+   "url": "https://jobs.lever.co/pointclickcare/94b85a28-9893-48c5-a2bb-a50175887ef1",
+   "posted": "2026-04-01",
+   "category": "AI",
+   "source": "lever",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Intercom",
@@ -8637,19 +8746,6 @@
    "first_seen": "2026-09-04"
   },
   {
-   "org": "PointClickCare",
-   "title": "Principal Salesforce Architect (US)",
-   "location": "Remote, USA",
-   "url": "https://jobs.lever.co/pointclickcare/84e054ca-ac75-4c41-bdb1-78640c364bc2",
-   "posted": "2025-10-07",
-   "category": "IT",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 5,
-   "first_seen": "2026-09-03"
-  },
-  {
    "org": "Aledade",
    "title": "Senior Technical Product Manager (Clinical Data Platform), Remote",
    "location": "Remote, United States",
@@ -8661,20 +8757,6 @@
    "citizen_req": false,
    "years_req": 8,
    "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Adyen",
-   "title": "Senior Data Engineer",
-   "location": "Amsterdam",
-   "url": "https://job-boards.greenhouse.io/adyen/jobs/6919020",
-   "posted": "2025-06-27",
-   "category": "Data",
-   "source": "greenhouse",
-   "abroad": "Netherlands",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": 7,
-   "first_seen": "2026-11-12"
   },
   {
    "org": "Intercom",
@@ -8889,6 +8971,19 @@
   },
   {
    "org": "Arine",
+   "title": "Senior Director, Information Technology (IT) & Security",
+   "location": "San Francisco, CA",
+   "url": "https://ats.rippling.com/arine/jobs/078915f8-cc28-4474-9ebd-0452bed97c25",
+   "posted": null,
+   "category": "IT",
+   "source": "rippling",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Arine",
    "title": "Senior Director of Engineering Operations",
    "location": "San Francisco, CA",
    "url": "https://ats.rippling.com/arine/jobs/425c977d-12d9-4787-95ce-c51513630dac",
@@ -9011,19 +9106,6 @@
    "url": "https://jobs.silkroad.com/BU/External/jobs/317485",
    "posted": null,
    "category": "AI",
-   "source": "silkroad",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Boston University",
-   "title": "Senior Learning & Event Technology Specialist, Technology Experience & Community",
-   "location": "Boston, MA",
-   "url": "https://jobs.silkroad.com/BU/External/jobs/317170",
-   "posted": null,
-   "category": "IT",
    "source": "silkroad",
    "sector": "Academia & Research",
    "citizen_req": null,
@@ -9240,19 +9322,6 @@
   },
   {
    "org": "Boston University",
-   "title": "Research Contract Analyst, Research",
-   "location": "Boston, MA",
-   "url": "https://jobs.silkroad.com/BU/External/jobs/317330",
-   "posted": null,
-   "category": "Data",
-   "source": "silkroad",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Boston University",
    "title": "Research Applications Developer II, Anatomy & Neurobiology",
    "location": "Boston, MA",
    "url": "https://jobs.silkroad.com/BU/External/jobs/317284",
@@ -9295,6 +9364,19 @@
    "title": "Research Scientist, Pharmacy, Physio & Biophys",
    "location": "Boston, MA",
    "url": "https://jobs.silkroad.com/BU/External/jobs/317377",
+   "posted": null,
+   "category": "Data",
+   "source": "silkroad",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Boston University",
+   "title": "Research Contract Analyst, Research",
+   "location": "Boston, MA",
+   "url": "https://jobs.silkroad.com/BU/External/jobs/317330",
    "posted": null,
    "category": "Data",
    "source": "silkroad",
@@ -9422,19 +9504,6 @@
   },
   {
    "org": "Boston University",
-   "title": "Systems Administrator III, IS&T Systems Operations",
-   "location": "Boston, MA",
-   "url": "https://jobs.silkroad.com/BU/External/jobs/317308",
-   "posted": null,
-   "category": "IT",
-   "source": "silkroad",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "Boston University",
    "title": "Training Manager, Research Operations, Analytics & Systems",
    "location": "Boston, MA",
    "url": "https://jobs.silkroad.com/BU/External/jobs/317360",
@@ -9484,19 +9553,6 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-19"
-  },
-  {
-   "org": "Broad Institute",
-   "title": "Associate Director, Software Product Management",
-   "location": "See posting",
-   "url": "https://broadinstitute.avature.net/en_US/careers/JobDetail/Associate-Director-Software-Product-Management/22881",
-   "posted": null,
-   "category": "Software",
-   "source": "avature",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-20"
   },
   {
    "org": "Broad Institute",
@@ -9575,6 +9631,19 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Broad Institute",
+   "title": "Software Engineer II - GTEx Group",
+   "location": "See posting",
+   "url": "https://broadinstitute.avature.net/en_US/careers/JobDetail/Software-Engineer-II-GTEx-Group/22185",
+   "posted": null,
+   "category": "Software",
+   "source": "avature",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Broad Institute",
@@ -9877,19 +9946,6 @@
   },
   {
    "org": "UMass Amherst",
-   "title": "Head of Operations: Lifelong, Interdisciplinary, and Digital Programming",
-   "location": "Amherst, MA",
-   "url": "https://careers.pageuppeople.com/1232/cw/en-us/job/509854",
-   "posted": null,
-   "category": "IT",
-   "source": "rss",
-   "sector": "Academia & Research",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-10-26"
-  },
-  {
-   "org": "UMass Amherst",
    "title": "Teaching Faculty (Lecturer/Sr. Lecturer) - Robotics/AI",
    "location": "Amherst, MA",
    "url": "https://careers.pageuppeople.com/1232/cw/en-us/job/509763",
@@ -9942,6 +9998,19 @@
   },
   {
    "org": "Boston Children's Hospital",
+   "title": "IT EPIC ANALYST II Willow Ambulatory and/or Inventory",
+   "location": "<table><tbody><tr><td><p><strong>IT Epic Analyst II- Willow Ambulatory and/or Inventory</strong><br><br><strong>Position Summary</strong></p><p><span style=\"border: 1pt none rgba(0, 0, 0, 1); font-size: 9pt; padding: 0\"><span style=\"line-height: 115%\"><span><span style=\"color: rgba(0, 0, 0, 1)\">Serves as a key Epic resource within the Ambulatory Clinical Applications team, with a significant focus on Epic Willow Ambulatory and Inventory. Will support EpicCare Ambulatory and related ambulatory clinical applications, including Epic and third-party integrated systems. This role partners with operational, clinical, pharmacy, revenue cycle, vendor, and technical stakeholders to design, configure, test, implement, support, and optimize solutions that improve ambulatory workflows and advance organizational priorities.</span></span></span></span><br><span style=\"border: 1pt none rgba(0, 0, 0, 1); font-size: 9pt; padding: 0\"><span style=\"line-height: 115%\"><span><span style=\"color: rgba(0, 0, 0, 1)\">The ideal candidate has Epic build and troubleshooting experience, can work across application boundaries, and is comfortable supporting both day-to-day operational needs and broader optimization efforts. Experience with Willow Ambulatory and/or Inventory is strongly preferred. Oerational outpatient pharmacy experience preferred, but the role is intended to provide flexible ambulatory optimization and support capacity rather than function as a single-application position</span></span></span></span><i><span style=\"border: 1pt none rgba(0, 0, 0, 1); font-size: 9pt; padding: 0\"><span style=\"line-height: 115%\"><span><span style=\"color: rgba(0, 0, 0, 1)\">.</span></span></span></span></i></p><p><strong>Key Responsibilities</strong></p><ul><li><p>Serve as a subject matter resource for assigned Epic applications and related operational workflows.</p></li><li><p>Partner with end users to gather requirements, analyze business processes, identify root causes, and recommend system solutions.</p></li><li><p>Scope requests, estimate work effort, and support projects from design through implementation while collaborating with Epic representatives, technical teams, and operational leaders.</p></li><li><p>Analyze and resolve moderately complex support tickets, identify enhancement opportunities, and troubleshoot application issues.</p></li><li><p>Independently perform Epic configuration and build activities, including rules, templates, security, and workflow modifications, while following change management and documentation standards.</p></li><li><p>Conduct unit testing, coordinate quality assurance testing, document build decisions, and support build migrations between environments.</p></li><li><p>Assist with Epic upgrades by reviewing release notes, developing test plans, executing testing, and implementing required changes.</p></li><li><p>Coordinate and support integrations with third-party applications, interfaces, devices, and vendors.</p></li><li><p>Communicate project status, milestones, risks, and solutions with leadership, team members, and stakeholders.</p></li><li><p>Build relationships with super users, provide user support and training, facilitate meetings, and present information to technical and non-technical audiences.</p></li><li><p>Mentor less experienced team members and provide technical guidance on build, testing, and workflow optimization.</p></li><li><p>Participate in ongoing professional development, Epic forums, and continuous process improvement initiatives.</p></li></ul><p><strong>Knowledge &amp; Skills</strong></p><ul><li><p>Knowledge of Epic Willow Ambulatory and/or Inventory application configuration, maintenance, and support.</p></li><li><p>Strong analytical, troubleshooting, and critical thinking skills.</p></li><li><p>Ability to identify root causes and develop practical, data-driven solutions.</p></li><li><p>Knowledge of project management principles and ability to manage multiple priorities.</p></li><li><p>Excellent organization, attention to detail, and time management skills.</p></li><li><p>Strong verbal and written communication skills with the ability to explain technical concepts to non-technical users.</p></li><li><p>Customer-focused with strong collaboration, facilitation, and relationship-building skills.</p></li><li><p>Ability to lead projects, guide team members, and adapt in a fast-paced environment.</p></li></ul><p><strong>Education</strong></p><ul><li>Bachelor's degree required. An Associate's degree with two additional years of related experience or a high school diploma/GED with four additional years of related experience may substitute for the bachelor's degree.</li><li>Required Epic certifications: Willow Ambulatory and/or Inventory</li></ul><p><strong>Experience</strong></p><p>Minimum of one year of experience supporting or implementing Epic applications, including application configuration, template management, or system build.&nbsp;</p></td></tr></tbody></table>",
+   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3773621",
+   "posted": null,
+   "category": "Data",
+   "source": "brassring",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Boston Children's Hospital",
    "title": "Senior Full-Stack JavaScript Engineer \u2013 Rapid Clinical Prototyping",
    "location": "<strong>Position Summary</strong><br>The Computational Health Informatics Program (www.CHIP.org) at the nation\u2019s top pediatric institution, Boston Children\u2019s Hospital, a Harvard Medical School affiliate, is seeking an experienced full-stack web developer to join the SMART Health IT team (http://smarthealthit.org). In this role, you will rapidly prototype and build next-generation clinical interfaces that are deployed in real pediatric care settings, not just demos or proofs of concept.<p>You will be part of the team that has helped define national standards for healthcare data APIs and population-scale clinical data exchange, and that has created widely adopted open-source platforms used across health systems, researchers, and technology companies. Your work will sit at the intersection of software engineering, clinical care, and data standards, where design decisions directly shape how clinicians and patients interact with health data.</p><p>This role is ideal for a JavaScript developer who enjoys moving quickly from idea to&nbsp; working software, values clean, maintainable systems, and wants their work to have real-world clinical impact.</p><br><strong>Key Responsibilities</strong><ul><li>Researches and identifies the requirements of software development and application programming needs. Analyzes vendor, internally developed, and open source solutions to meet the integrated needs ranging the spectrum of artificial intelligence and biomedical informatics.</li><li>Specifies, designs, develops, codes, tests, and implements software that support the needs of multiple projects considering the individual goals and objectives of each entity.</li><li>Participates in leading the creation and maintenance of standards for development and software selection and makes software development process and design recommendations within the department or program and to project stakeholders.</li><li>Provides analytical and technical guidance to team members and stakeholders. Identifies requirements, develops software design, codes, plans, and executes testing, and ensures that the software delivered meets specifications.</li><li>Creates systems development life cycle documents and/or assists team members in the creation of project documents. Produces written documentation for new and existing processes, programs, code, applications, and workflow. Keeps software documentation accurate and up to date.</li><li>May assist team members in software administration and maintenance, including preparing and reviewing reports for operations, senior management, and stakeholders.</li><li>Creates all necessary documentation for code and applications and supports applications.</li></ul><br><strong>Minimum Qualifications<br>Education:&nbsp;</strong><ul><li>Bachelor's in&nbsp;Computer Science, Bioinformatics, Engineering, Mathematics, or related discipline.</li></ul><strong>Experience:</strong><ul><li>4 years of&nbsp;experience in a professional work environment outside of academic or educational settings or Master's in 2 years of experience.&nbsp;</li><li>Professional experience with NodeJs, HTML, React, CSS, SQL and other technologies used in web development (OAuth experience is a plus)</li><li>Strong proficiency with front-end development and data visualization using Javascript</li><li>Background with healthcare data formats and APIs like FHIR, SMART, and HL7 v2 are a strong plus</li><li>At least one other programming language (Python preferred)</li><li>Comfortable doing basic system administration in a Linux environment to deploy applications</li><li>Strong communication and collaboration skills</li><li>Sharing a link to your portfolio and/or work on GitHub is a plus</li><li>Excellent problem-solving ability, collaborative spirit, and scientific curiosity.</li></ul>",
    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3775123",
@@ -9981,19 +10050,6 @@
   },
   {
    "org": "Boston Children's Hospital",
-   "title": "Staff Scientist (NE)",
-   "location": "<strong>Position Summary&nbsp;</strong><br>Works with PI in determining original scientific research projects\u2019 goals, methodologies, and deliverables. Leads and implements research under the PI\u2019s guidance. Guides and/or supervises research lab personnel at the direction of the faculty PI. Participates in writing grant proposals, and planning and implementing technical meetings and symposia. Collaborates with PI in preparing scientific papers, and presentations as needed.<br><br><strong>Key Responsibilities</strong><ul><li>Working with the Principal Investigator (PI) provides scientific expertise and leads and guides a research team in the development of original scientific research at BCH.</li><li>Conducts autonomous work and contributes to the development of research projects' strategy and outcome.</li><li>Collaborates with PI in preparing scientific papers as needed.</li><li>May participate in the writing of grant proposals, technical meetings, and symposia.</li><li>This role may manage and/or advise lab personnel and have latitude in decision-making, including a role in the management of departmental or institutional cores.</li><li>The individual remains under the supervision of a PI and is generally not expected to submit grants as a PI, except for those grants that might not require faculty rank for submission.</li><li>This is not considered a faculty-level position at BCH or HMS.</li></ul><strong>Minimum Qualifications&nbsp;<br>Education:&nbsp;</strong><ul><li>A Master's degree in a related discipline.&nbsp;</li></ul><strong>Experience:</strong><ul><li>At least 7 years original and relevant research of experience.</li></ul>",
-   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3775477",
-   "posted": null,
-   "category": "Data",
-   "source": "brassring",
-   "sector": "Healthcare",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-19"
-  },
-  {
-   "org": "Boston Children's Hospital",
    "title": "Bioinformatics Scientist",
    "location": "<strong>Position Summary:</strong><br>Research Informatics supports basic, translational, and clinical research by providing researchers with access to digital tools and technologies. Our computing environment consists of high-performance computing clusters, virtual machines, PetaByte-scale high-performance storage and cloud platforms. We work with scientists to develop solutions in support of cutting-edge research ranging from lattice light-sheet microscopy to CryoEM, genomics, and informatics.<br><br>You will work with PhD-level bioinformatics scientists and researchers who have single-cell RNA-seq and spatial transcriptomics data to investigate mouse and human diseases as well as with other pediatric scientists at BCH. The primary responsibilities will be building pipelines for the analysis, integration and sharing of these data. The ideal candidate should have enthusiasm for developing collaborative relationships and a desire to foster the use of bioinformatics data in research studies.<br><br><strong>Key Responsibilities:</strong><ul><li>Providing computational support by applying a wide range of bioinformatics tools and technologies; With supervision and direction, completing assignments in the required timeframe while consistently adhering to standard operating procedures and best practices; adapting to a changing environment, resolving problems associated with assignments and seeking supervisor assistance when needed.</li><li>Routinely co-leading or participating in research computing projects with other members from the BCH research community; setting goals and objectives for projects and demonstrating achievement of those goals and objectives; coordinating work activities with other stakeholders; contributing to the resulting presentations and/or publications.</li><li>Training staff and researchers; effectively tailoring presentations.</li><li>Communicating scientific findings clearly through presentations, email, memos, and scientific publications; presenting progress at project and departmental meetings; facilitating productive discussions and problem-solving.</li></ul><strong>Minimum Qualifications<br>Education:&nbsp;</strong><ul><li>Bachelor's degree in science, technology, engineering or mathematics. Preference for candidates with a Ph.D. in Bioinformatics, Computational Biology or related.&nbsp;</li></ul><strong>Experience:</strong><ul><li>A minimum of one year of position-specific experience.&nbsp;</li><li>Extensive knowledge of the use of open-source bioinformatics software and pipelines in high-performance computing (HPC) environments.</li><li>Extensive knowledge of technologies used in support of biomedical research, such as R,&nbsp; Python, databases (SQL), version control (Git), scientific workflow and AI tools, and HPC clusters. Cloud computing tools would be a bonus.</li><li>Strong publication record. Ability to effectively convey messages through written communication that are tailored to target audiences; meeting discussions and one-on-one verbal communications are clear and effective; ability to conduct effective meetings.</li></ul>",
    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3769790",
@@ -10007,11 +10063,11 @@
   },
   {
    "org": "Boston Children's Hospital",
-   "title": "Financial Analyst II",
-   "location": "<strong>Position Summary:</strong><br>Assists in monitoring and controlling the Hospital\u2019s operating budget. Performs accounting and budgeting functions. Develops work plans for financial planning projects. Conducts financial, statistical and analytical studies; prepares and assists in the preparation of financial reports and statements according to prescribed guidelines. Participates in the development and maintenance of the annual budget process. Position may reside in accounting, budget, or a department\u2019s management team.<br><br><strong>Key Responsibilities:</strong><ul><li>Performs detailed analyses of various general ledgers accounts, Hospital operating budget, and selected cost centers, as assigned. Performs account reconciliations and reviews activity for accuracy, completeness, reasonableness, interpreting trends or deviations and making recommendations for corrective action.</li><li>Develop workplans for financial planning projects to include objectives, timeliness, milestones and deliverables, if requested. Maintain organized and well documented project files. Participate in multi-disciplinary workgroup meetings.</li><li>Prepares various financial transactions, reports, and analyses related to the assigned function, which may include: operating financial statement, operating budget, intercompany activity, and other sub ledger activity and schedules. Presents financial statements to the Finance Committee and other Hospital wide or departmental senior managers.</li><li>Assists management with the development of clinical general fund and service fund budgets, if assigned. Monitors budget performance and coordinates variance reporting. Prepares appropriate budget analyses to measure performance.</li><li>Develops and prepares a variety of ad-hoc reporting, financial models and analyses to senior management as requested or as deemed necessary.</li><li>Researches and analyzes financial data for internal and external clients, creates, organizes, and maintains files using database and spreadsheet programs; retrieves and organizes data into required reporting formats; collects, retrieves and organizes data to identify financial discrepancies and resolve inquiries; recommends solutions and ensures that corrections or changes are implemented properly.</li></ul><br><strong>Knowledge, Skills, and Abilities:</strong><ul><li>Analytical skills to collect information from diverse sources, apply professional principles in performing various analyses, and summarize the information and data in order to solve problems or design relatively complex systems and programs that cross department/divisional lines.</li><li>Ability to communicate effectively both orally and in writing and provide empathy in difficult interpersonal situations.</li><li>Proficiency with MS Office applications, in particular Excel and Access.</li></ul><br><strong>Minimum Qualifications<br>Education:</strong><ul><li>Bachelor's Degree in Accounting or a closely related field of study.</li></ul><br><strong>Experience:</strong><ul><li>Two years of related experience.</li></ul>",
-   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3768816",
+   "title": "Lead, PO Financial Reporting",
+   "location": "<p><strong>Position Summary</strong></p><p>We are seeking a dynamic accounting professional with strong accounting and financial reporting expertise, Workday experience, and a continuous improvement mindset. This role supports the financial operations of the Physician Organization (PO) and Foundations by leading month-end close activities, financial reporting, analysis, audits, budgeting, and complex accounting projects. The successful candidate will serve as a key financial resource to Foundation leadership, provide guidance on financial and technical accounting matters, mentor team members, and identify opportunities to enhance financial processes and reporting. This position requires a proactive, collaborative individual who thrives in a fast-paced environment and is committed to delivering high-quality financial support.</p><p><strong>Key Responsibilities</strong></p><ul><li>Lead financial and analytical support for assigned Foundations, serving as the primary contact for financial matters, projects, and ad hoc requests while partnering with PO management, Foundation leadership, and hospital stakeholders.</li><li>Prepare and review journal entries, account reconciliations, intercompany transactions, financial schedules, and supporting documentation in accordance with close and reporting deadlines.</li><li>Manage month-end, quarterly, and year-end close processes, including preparation and review of financial statements, metrics, analyses, and management reports.</li><li>Analyze revenue and expense variances, budget-to-actual results, and financial trends, providing clear explanations and recommendations to leadership.</li><li>Support Foundation budget development and ongoing budget-to-actual monitoring and reporting.</li><li>Prepare audit workpapers, respond to auditor requests, maintain supporting schedules, and ensure compliance with accounting standards and organizational policies.</li><li>Prepare and review assigned tax returns, regulatory filings, and required reports for external agencies.</li><li>Serve as the primary liaison to Foundation leadership on financial reporting, technical accounting, and operational finance matters.</li><li>Present monthly financial results and analyses to Foundation Executive Administrators, Chiefs, Board members, and PO leadership.</li><li>Lead and mentor staff accountants through oversight, review of work, knowledge sharing, and professional development.</li><li>Drive special projects and process improvement initiatives that enhance financial reporting accuracy, efficiency, and overall financial performance.</li><li>Maintain complete and accurate financial records and supporting documentation in compliance with departmental, Foundation, and hospital standards.</li><li>Perform additional accounting, reconciliation, analytical, and project-based responsibilities as assigned.</li></ul><p><strong>Minimum Qualifications</strong></p><p><strong>Education:</strong></p><ul><li>Bachelor's Degree required.</li></ul><p><strong>Experience:</strong></p><ul><li>7+ years of accounting experience.</li><li>Strong analytical and problem-solving skills with the ability to resolve complex accounting and financial issues.</li><li>Demonstrated ability to lead projects, implement process improvements, and manage multiple priorities.</li><li>Excellent verbal and written communication skills with the ability to effectively partner with diverse stakeholders.</li><li>Proven ability to work independently, take initiative, and collaborate across all levels of the organization.</li></ul>",
+   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3775025",
    "posted": null,
-   "category": "Data",
+   "category": "IT",
    "source": "brassring",
    "sector": "Healthcare",
    "citizen_req": null,
@@ -10020,11 +10076,11 @@
   },
   {
    "org": "Boston Children's Hospital",
-   "title": "Lead, PO Financial Reporting",
-   "location": "<p><strong>Position Summary</strong></p><p>We are seeking a dynamic accounting professional with strong accounting and financial reporting expertise, Workday experience, and a continuous improvement mindset. This role supports the financial operations of the Physician Organization (PO) and Foundations by leading month-end close activities, financial reporting, analysis, audits, budgeting, and complex accounting projects. The successful candidate will serve as a key financial resource to Foundation leadership, provide guidance on financial and technical accounting matters, mentor team members, and identify opportunities to enhance financial processes and reporting. This position requires a proactive, collaborative individual who thrives in a fast-paced environment and is committed to delivering high-quality financial support.</p><p><strong>Key Responsibilities</strong></p><ul><li>Lead financial and analytical support for assigned Foundations, serving as the primary contact for financial matters, projects, and ad hoc requests while partnering with PO management, Foundation leadership, and hospital stakeholders.</li><li>Prepare and review journal entries, account reconciliations, intercompany transactions, financial schedules, and supporting documentation in accordance with close and reporting deadlines.</li><li>Manage month-end, quarterly, and year-end close processes, including preparation and review of financial statements, metrics, analyses, and management reports.</li><li>Analyze revenue and expense variances, budget-to-actual results, and financial trends, providing clear explanations and recommendations to leadership.</li><li>Support Foundation budget development and ongoing budget-to-actual monitoring and reporting.</li><li>Prepare audit workpapers, respond to auditor requests, maintain supporting schedules, and ensure compliance with accounting standards and organizational policies.</li><li>Prepare and review assigned tax returns, regulatory filings, and required reports for external agencies.</li><li>Serve as the primary liaison to Foundation leadership on financial reporting, technical accounting, and operational finance matters.</li><li>Present monthly financial results and analyses to Foundation Executive Administrators, Chiefs, Board members, and PO leadership.</li><li>Lead and mentor staff accountants through oversight, review of work, knowledge sharing, and professional development.</li><li>Drive special projects and process improvement initiatives that enhance financial reporting accuracy, efficiency, and overall financial performance.</li><li>Maintain complete and accurate financial records and supporting documentation in compliance with departmental, Foundation, and hospital standards.</li><li>Perform additional accounting, reconciliation, analytical, and project-based responsibilities as assigned.</li></ul><p><strong>Minimum Qualifications</strong></p><p><strong>Education:</strong></p><ul><li>Bachelor's Degree required.</li></ul><p><strong>Experience:</strong></p><ul><li>7+ years of accounting experience.</li><li>Strong analytical and problem-solving skills with the ability to resolve complex accounting and financial issues.</li><li>Demonstrated ability to lead projects, implement process improvements, and manage multiple priorities.</li><li>Excellent verbal and written communication skills with the ability to effectively partner with diverse stakeholders.</li><li>Proven ability to work independently, take initiative, and collaborate across all levels of the organization.</li></ul>",
-   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3775025",
+   "title": "Financial Analyst II",
+   "location": "<strong>Position Summary:</strong><br>Assists in monitoring and controlling the Hospital\u2019s operating budget. Performs accounting and budgeting functions. Develops work plans for financial planning projects. Conducts financial, statistical and analytical studies; prepares and assists in the preparation of financial reports and statements according to prescribed guidelines. Participates in the development and maintenance of the annual budget process. Position may reside in accounting, budget, or a department\u2019s management team.<br><br><strong>Key Responsibilities:</strong><ul><li>Performs detailed analyses of various general ledgers accounts, Hospital operating budget, and selected cost centers, as assigned. Performs account reconciliations and reviews activity for accuracy, completeness, reasonableness, interpreting trends or deviations and making recommendations for corrective action.</li><li>Develop workplans for financial planning projects to include objectives, timeliness, milestones and deliverables, if requested. Maintain organized and well documented project files. Participate in multi-disciplinary workgroup meetings.</li><li>Prepares various financial transactions, reports, and analyses related to the assigned function, which may include: operating financial statement, operating budget, intercompany activity, and other sub ledger activity and schedules. Presents financial statements to the Finance Committee and other Hospital wide or departmental senior managers.</li><li>Assists management with the development of clinical general fund and service fund budgets, if assigned. Monitors budget performance and coordinates variance reporting. Prepares appropriate budget analyses to measure performance.</li><li>Develops and prepares a variety of ad-hoc reporting, financial models and analyses to senior management as requested or as deemed necessary.</li><li>Researches and analyzes financial data for internal and external clients, creates, organizes, and maintains files using database and spreadsheet programs; retrieves and organizes data into required reporting formats; collects, retrieves and organizes data to identify financial discrepancies and resolve inquiries; recommends solutions and ensures that corrections or changes are implemented properly.</li></ul><br><strong>Knowledge, Skills, and Abilities:</strong><ul><li>Analytical skills to collect information from diverse sources, apply professional principles in performing various analyses, and summarize the information and data in order to solve problems or design relatively complex systems and programs that cross department/divisional lines.</li><li>Ability to communicate effectively both orally and in writing and provide empathy in difficult interpersonal situations.</li><li>Proficiency with MS Office applications, in particular Excel and Access.</li></ul><br><strong>Minimum Qualifications<br>Education:</strong><ul><li>Bachelor's Degree in Accounting or a closely related field of study.</li></ul><br><strong>Experience:</strong><ul><li>Two years of related experience.</li></ul>",
+   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3768816",
    "posted": null,
-   "category": "IT",
+   "category": "Data",
    "source": "brassring",
    "sector": "Healthcare",
    "citizen_req": null,
@@ -10088,19 +10144,6 @@
    "title": "Computational Health Informatics Data Manager II",
    "location": "<strong>Position Summary</strong><br>The Labs of Cognitive Neuroscience at Boston Children\u2019s Hospital seeks a full-time Computational Health Informatics Data Manager II to support research on development, neurodevelopmental disorders, and rare genetic conditions, including:<ul><li>Baby Steps Project: A longitudinal study tracking EEG and cognitive, language, and social development from infancy through early childhood to improve early identification of developmental delays and autism in diverse populations.</li><li>Data infrastructure initiatives, including database development and administration and harmonization of neuroimaging, behavioral, and clinical data across longitudinal studies for secondary analysis.</li></ul>This hybrid position is based at Two Brookline Place, Brookline, MA, with a minimum two-year commitment and potential for continued employment and professional growth based on performance, project needs, and funding.<br><br>The role oversees data quality across assessments, including questionnaires, behavioral observations, neuroimaging, and medical records, from collection through publication. Regular participant interaction is not required, though understanding data collection procedures is helpful, and opportunities to shadow study visits are available.<br><br><strong>Key Responsibilities</strong><ul><li>Oversee quality and management of longitudinal, multimodal research data. Develop audit tools and workflows to reduce errors; document changes to study measures and collection procedures, including version control.</li><li>Develop and maintain data infrastructure, including REDCap projects and Python tools. Collaborate with PIs and research staff to design, build, and validate a SQL database for large, harmonized datasets; ensure final data outputs are complete and accurate.</li><li>Improve data processing and harmonization pipelines throughout the study lifecycle. Support questionnaire, clinical, EEG, and medical record data using established standards and software.</li><li>Develop scoring scripts and automated workflows for data cleaning, preprocessing, and statistical analysis. Use AI-assisted tools where appropriate and validate outputs.</li><li>Coordinate data access and sharing, including collaborator requests, data use agreements, secure transfers, repository submissions (e.g., NDA), and IRB-required changes.</li><li>Train data collection staff on data management workflows and technologies; guide staff developing data tools.</li><li>Support progress reports and grant submissions by preparing preliminary datasets and streamlining recurring reports.</li></ul><strong>Minimum Qualifications<br>Education:</strong><ul><li>Bachelor\u2019s degree in computer science, biomedical engineering, biostatistics, biomedical data science, or a related field.</li></ul><strong>Experience:</strong><ul><li>Minimum 2 years of full-time clinical research data analysis or coordination experience, or equivalent.</li><li>Proficiency in Python, MATLAB, and Microsoft Office, particularly Excel, and experience with REDCap.</li><li>Experience cleaning and validating large datasets, maintaining documentation, and preparing data for statistical analysis using scalable workflows.</li><li>Experience with longitudinal datasets and harmonizing complex health research data across studies; knowledge of developmental science and neuroscience.</li><li>Strong communication and writing skills, including collaboration with multiple investigators and training research staff.</li><li>Strong organizational skills and attention to data accuracy and completeness; ability to work independently and solve problems proactively.</li><li>Familiarity with clinical research data protection best practices, including HIPAA requirements.</li><li>SQL programming and relational database design experience, including databases for large research datasets, preferred.</li><li>Experience with Brain Imaging Data Structure (BIDS) preferred.</li><li>Experience processing and managing EEG data preferred.</li></ul>",
    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3772047",
-   "posted": null,
-   "category": "Data",
-   "source": "brassring",
-   "sector": "Healthcare",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-03"
-  },
-  {
-   "org": "Boston Children's Hospital",
-   "title": "Director, CRM & Data Engineering for the Trust",
-   "location": "<strong>Job/Department Summary:</strong> Boston Children\u2019s Hospital Trust seeks a Director of CRM and Data Engineering to lead CRM administration, software development, data integration, and data platform optimization. Reporting to the Senior Director, Technology Strategy and Solutions, this leader is accountable for team performance, platform reliability, and delivery.<br><br><strong>Responsibilities:</strong><table><tbody><tr><td><ol><li>Partners with stakeholders and project management to define requirements, scope, acceptance criteria, and realistic expectations. Aligns CRM and data delivery plans with team priorities and recommends roadmap, platform, or vendor changes to the Senior Director.</li><li>Owns CRM administration, development, reliability, and usability, ensuring scalable, maintainable solutions within approved architecture and security standards. Contributes to complex Blackbaud CRM and Infinity SDK development, reviews code and designs, and coaches engineers while delegating routine implementation.</li><li>Defines and teaches software development life cycle (SDLC), release, and change management practices, including source control, testing, documentation, and deployment.</li><li>Leads team delivery and manages the backlog and Jira priorities by value, risk, dependencies, and capacity, challenging or declining requests as needed. Coordinates milestones and releases and reports progress, capacity, risks, and recommendations to the Senior Director.</li><li>Leads centralization, standardization, and automation, using data and pilots to simplify workflows and improve efficiency, data quality, and reliability.</li><li>Directs data architecture, ETL pipelines, and secure integrations across CRM, Snowflake, and hospital systems within data governance standards, delegating daily pipeline development and support to the data engineer.</li></ol></td></tr></tbody></table><br><strong>Education/Requirements:&nbsp;</strong><ul><li>Bachelor\u2019s degree in information systems, computer science, business, or a related field, or equivalent professional experience and 10 years of experience in office management is required.</li></ul><strong>Experience:</strong><br><br><table><tbody><tr><td><br><table><tbody> <tr><td><ol><li>Hands-on engineering experience building and supporting production Blackbaud CRM solutions using the Infinity SDK, C#/.NET, Angular, SQL Server, and REST APIs</li><li>Success managing technical teams and training staff in SDLC, release management, and change management</li><li>Expertise in CRM administration and fundraising operations, including permissions, constituent management, gift processing, financial reconciliation, and donor data governance</li><li>Experience designing data models, integrations, ETL/ELT pipelines, and warehouses with quality and reliability controls. Measurable success improving processes and automating work, using data to challenge assumptions and guide decisions</li><li>Experience gathering requirements, prioritizing backlogs, and coordinating delivery with project management. Clear stakeholder communication and negotiation, including setting expectations, explaining tradeoffs, and constructively declining requests</li><li>Preferred experience with modern data platforms such as Snowflake or Databricks; AWS, Azure, or GCP; event-driven architecture and publish/subscribe messaging; scalable automation and orchestration; and delivery tools and practices such as Jira, Confluence, CI/CD, automated testing, or infrastructure as code</li><li>Preferred experience applying AI, including generative AI or agent workflows, to development, research, or business processes, with methods to evaluate accuracy and value. Experience using statistics, mathematical modeling, or applied research to test assumptions, evaluate solutions, and measure outcomes is also preferred</li><li>Hybrid roll and requires to be onsite on Tuesdays and Thursdays</li></ol></td> </tr> </tbody></table></td></tr></tbody></table>",
-   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3771793",
    "posted": null,
    "category": "Data",
    "source": "brassring",
