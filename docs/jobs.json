@@ -1,7 +1,7 @@
 {
- "new_today": 18,
- "updated": "2026-11-26T17:58:43+00:00",
- "count": 682,
+ "new_today": 9,
+ "updated": "2026-11-27T17:44:25+00:00",
+ "count": 680,
  "errors": [
   {
    "org": "WellSky",
@@ -18,6 +18,14 @@
   {
    "org": "Cityblock Health",
    "error": "429 Client Error: Too Many Requests for url: https://cityblockhealth.wd1.myworkdayjobs.com/wday/cxs/cityblockhealth/CityblockExternalCareerSite/jobs"
+  },
+  {
+   "org": "HESSCO Elder Services",
+   "error": "marker 'CURRENT OPENINGS' not found: page redesigned?"
+  },
+  {
+   "org": "Highland Valley Elder Services",
+   "error": "marker 'id=\"job-list\"' not found: page redesigned?"
   },
   {
    "org": "Ethos",
@@ -54,10 +62,6 @@
   {
    "org": "Alignment Health",
    "error": "429 Client Error: Too Many Requests for url: https://alignmenthealthcare.wd12.myworkdayjobs.com/wday/cxs/alignmenthealthcare/ahc_external/jobs"
-  },
-  {
-   "org": "Oak Street Health (CVS)",
-   "error": "429 Client Error: Too Many Requests for url: https://cvshealth.wd1.myworkdayjobs.com/wday/cxs/cvshealth/CVS_Health_Careers/jobs"
   },
   {
    "org": "Trinity Health",
@@ -172,7 +176,7 @@
   "Honor / Home Instead": {
    "n": 4,
    "total": 16,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
@@ -186,13 +190,13 @@
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 7,
+   "zero_days": 8,
    "alert": false
   },
   "AlayaCare": {
    "n": 13,
    "total": 27,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 28,
    "fail_days": 0,
    "empty_days": 0,
@@ -201,8 +205,8 @@
   },
   "PointClickCare": {
    "n": 43,
-   "total": 80,
-   "last_hit": "2026-11-26",
+   "total": 81,
+   "last_hit": "2026-11-27",
    "max_total": 87,
    "fail_days": 0,
    "empty_days": 0,
@@ -212,7 +216,7 @@
   "HHAeXchange": {
    "n": 9,
    "total": 25,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 28,
    "fail_days": 0,
    "empty_days": 0,
@@ -222,7 +226,7 @@
   "August Health": {
    "n": 3,
    "total": 6,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 6,
    "fail_days": 0,
    "empty_days": 0,
@@ -232,7 +236,7 @@
   "AARP": {
    "n": 1,
    "total": 13,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 72,
    "fail_days": 0,
    "empty_days": 0,
@@ -242,7 +246,7 @@
   "InnovAge (PACE)": {
    "n": 4,
    "total": 150,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
@@ -252,7 +256,7 @@
   "VNS Health": {
    "n": 6,
    "total": 150,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
@@ -264,7 +268,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 42,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -274,7 +278,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 78,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -284,7 +288,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 250,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -294,7 +298,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 39,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -306,7 +310,7 @@
    "max_total": 29,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 16,
+   "zero_days": 17,
    "alert": false
   },
   "NCOA (National Council on Aging)": {
@@ -316,13 +320,13 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 34,
+   "zero_days": 35,
    "alert": false
   },
   "SCES (Somerville-Cambridge Elder Services)": {
    "n": 1,
    "total": 5,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -336,7 +340,7 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Central Boston Elder Services": {
@@ -346,7 +350,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Elder Services of Cape Cod & the Islands": {
@@ -356,7 +360,7 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "LifePath": {
@@ -366,7 +370,7 @@
    "max_total": 13,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Bristol Aging & Wellness": {
@@ -376,7 +380,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "AgeSpan": {
@@ -386,7 +390,7 @@
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 7,
+   "zero_days": 8,
    "alert": false
   },
   "Boston Senior Home Care": {
@@ -396,7 +400,7 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Greater Springfield Senior Services": {
@@ -406,7 +410,7 @@
    "max_total": 14,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Mystic Valley Aging Services": {
@@ -416,17 +420,17 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Old Colony Elder Services": {
    "n": 0,
-   "total": 18,
+   "total": 16,
    "last_hit": null,
    "max_total": 32,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Greater Lynn Senior Services": {
@@ -436,13 +440,13 @@
    "max_total": 12,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Springwell": {
    "n": 2,
    "total": 10,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -456,13 +460,13 @@
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Tri-Valley Inc.": {
    "n": 1,
-   "total": 7,
-   "last_hit": "2026-11-26",
+   "total": 6,
+   "last_hit": "2026-11-27",
    "max_total": 13,
    "fail_days": 0,
    "empty_days": 0,
@@ -472,7 +476,7 @@
   "Coastline Elderly Services": {
    "n": 1,
    "total": 1,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
@@ -480,21 +484,21 @@
    "alert": false
   },
   "HESSCO Elder Services": {
-   "n": 0,
-   "total": 9,
+   "n": null,
+   "total": null,
    "last_hit": null,
    "max_total": 10,
-   "fail_days": 0,
+   "fail_days": 1,
    "empty_days": 0,
    "zero_days": 30,
    "alert": false
   },
   "Highland Valley Elder Services": {
-   "n": 0,
-   "total": 1,
+   "n": null,
+   "total": null,
    "last_hit": "2026-11-13",
    "max_total": 1,
-   "fail_days": 0,
+   "fail_days": 1,
    "empty_days": 0,
    "zero_days": 11,
    "alert": false
@@ -506,7 +510,7 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Elder Services of Worcester Area": {
@@ -516,7 +520,7 @@
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Ethos": {
@@ -524,7 +528,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 1,
-   "fail_days": 7,
+   "fail_days": 8,
    "empty_days": 0,
    "zero_days": 26,
    "alert": true
@@ -534,7 +538,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 4,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 2,
    "zero_days": 4,
    "alert": true
@@ -544,7 +548,7 @@
    "total": null,
    "last_hit": null,
    "max_total": 6,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 4,
    "alert": true
@@ -554,7 +558,7 @@
    "total": null,
    "last_hit": "2026-11-23",
    "max_total": 147,
-   "fail_days": 3,
+   "fail_days": 4,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -562,7 +566,7 @@
   "2Life Communities": {
    "n": 1,
    "total": 9,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 12,
    "fail_days": 0,
    "empty_days": 0,
@@ -576,7 +580,7 @@
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Upham's Elder Service Plan (PACE)": {
@@ -586,7 +590,7 @@
    "max_total": 25,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Sherrill House": {
@@ -596,7 +600,7 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Harbor Health (Elder Service Plan)": {
@@ -606,13 +610,13 @@
    "max_total": 50,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Fallon Health (Summit ElderCare PACE)": {
    "n": 4,
    "total": 35,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 52,
    "fail_days": 0,
    "empty_days": 0,
@@ -624,7 +628,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 35,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -634,7 +638,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 140,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -646,13 +650,13 @@
    "max_total": 26,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Brightview Senior Living": {
    "n": 1,
    "total": 150,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 150,
    "fail_days": 0,
    "empty_days": 0,
@@ -664,15 +668,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 232,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Commonwealth of Massachusetts (MassCareers)": {
    "n": 78,
-   "total": 812,
-   "last_hit": "2026-11-26",
+   "total": 808,
+   "last_hit": "2026-11-27",
    "max_total": 833,
    "fail_days": 0,
    "empty_days": 0,
@@ -682,7 +686,7 @@
   "City of Boston": {
    "n": 8,
    "total": 73,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 95,
    "fail_days": 0,
    "empty_days": 0,
@@ -692,7 +696,7 @@
   "NYC Department for the Aging": {
    "n": 6,
    "total": 21,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 22,
    "fail_days": 0,
    "empty_days": 0,
@@ -702,7 +706,7 @@
   "Atlanta Regional Commission": {
    "n": 2,
    "total": 5,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 5,
    "fail_days": 0,
    "empty_days": 0,
@@ -716,13 +720,13 @@
    "max_total": 421,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 31,
+   "zero_days": 32,
    "alert": false
   },
   "Alzheimer's Association": {
    "n": 1,
    "total": 71,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 73,
    "fail_days": 0,
    "empty_days": 0,
@@ -735,14 +739,14 @@
    "last_hit": null,
    "max_total": 1,
    "fail_days": 0,
-   "empty_days": 23,
-   "zero_days": 33,
+   "empty_days": 24,
+   "zero_days": 34,
    "alert": false
   },
   "Council on Aging of Southwestern Ohio (AAA)": {
    "n": 1,
    "total": 6,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
@@ -756,13 +760,13 @@
    "max_total": 4,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 10,
+   "zero_days": 11,
    "alert": false
   },
   "Philadelphia Corporation for Aging (AAA)": {
    "n": 2,
    "total": 7,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -776,7 +780,7 @@
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 32,
+   "zero_days": 33,
    "alert": false
   },
   "Direction Home Akron Canton (AAA)": {
@@ -786,7 +790,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Homage Senior Services (AAA, Snohomish County)": {
@@ -796,7 +800,7 @@
    "max_total": 5,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "USAging job board (AAAs nationwide)": {
@@ -806,7 +810,7 @@
    "max_total": 9,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 32,
+   "zero_days": 33,
    "alert": false
   },
   "ADvancing States job board (aging & disability)": {
@@ -816,13 +820,13 @@
    "max_total": 7,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 32,
+   "zero_days": 33,
    "alert": false
   },
   "Mather": {
    "n": 1,
    "total": 41,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 42,
    "fail_days": 0,
    "empty_days": 0,
@@ -831,8 +835,8 @@
   },
   "Brookdale Senior Living": {
    "n": 1,
-   "total": 1947,
-   "last_hit": "2026-11-26",
+   "total": 1950,
+   "last_hit": "2026-11-27",
    "max_total": 2034,
    "fail_days": 0,
    "empty_days": 0,
@@ -846,13 +850,13 @@
    "max_total": 40,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Help at Home": {
    "n": 2,
    "total": 38,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 49,
    "fail_days": 0,
    "empty_days": 0,
@@ -864,7 +868,7 @@
    "total": null,
    "last_hit": "2026-11-23",
    "max_total": 103,
-   "fail_days": 3,
+   "fail_days": 4,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -874,7 +878,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 61,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -882,7 +886,7 @@
   "Clover Health": {
    "n": 13,
    "total": 52,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 60,
    "fail_days": 0,
    "empty_days": 0,
@@ -890,9 +894,9 @@
    "alert": false
   },
   "Humana / CenterWell": {
-   "n": 66,
-   "total": 76,
-   "last_hit": "2026-11-26",
+   "n": 61,
+   "total": 70,
+   "last_hit": "2026-11-27",
    "max_total": 80,
    "fail_days": 0,
    "empty_days": 0,
@@ -900,11 +904,11 @@
    "alert": false
   },
   "Oak Street Health (CVS)": {
-   "n": null,
-   "total": null,
-   "last_hit": "2026-11-25",
+   "n": 5,
+   "total": 8,
+   "last_hit": "2026-11-27",
    "max_total": 10,
-   "fail_days": 1,
+   "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
@@ -914,7 +918,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 1080,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -922,7 +926,7 @@
   "Aledade": {
    "n": 16,
    "total": 48,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 48,
    "fail_days": 0,
    "empty_days": 0,
@@ -936,13 +940,13 @@
    "max_total": 2,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Arine": {
    "n": 6,
    "total": 8,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 14,
    "fail_days": 0,
    "empty_days": 0,
@@ -956,7 +960,7 @@
    "max_total": 1,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 33,
+   "zero_days": 34,
    "alert": false
   },
   "Sunrise Senior Living": {
@@ -964,7 +968,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 598,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -974,7 +978,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 230,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -984,7 +988,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 40,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -994,7 +998,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 29,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1002,7 +1006,7 @@
   "Planned Parenthood Federation": {
    "n": 6,
    "total": 26,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 26,
    "fail_days": 0,
    "empty_days": 0,
@@ -1012,7 +1016,7 @@
   "The Trevor Project": {
    "n": 1,
    "total": 3,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -1022,7 +1026,7 @@
   "ACLU": {
    "n": 4,
    "total": 19,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 20,
    "fail_days": 0,
    "empty_days": 0,
@@ -1032,7 +1036,7 @@
   "Code for America": {
    "n": 5,
    "total": 11,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
@@ -1042,7 +1046,7 @@
   "Nava PBC": {
    "n": 5,
    "total": 18,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 23,
    "fail_days": 0,
    "empty_days": 0,
@@ -1052,7 +1056,7 @@
   "ABCD Boston": {
    "n": 1,
    "total": 71,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 71,
    "fail_days": 0,
    "empty_days": 0,
@@ -1064,7 +1068,7 @@
    "total": null,
    "last_hit": "2026-11-22",
    "max_total": 18,
-   "fail_days": 4,
+   "fail_days": 5,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1072,7 +1076,7 @@
   "American Institutes for Research": {
    "n": 1,
    "total": 10,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 18,
    "fail_days": 0,
    "empty_days": 0,
@@ -1084,7 +1088,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 395,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1094,7 +1098,7 @@
    "total": null,
    "last_hit": "2026-11-23",
    "max_total": 5,
-   "fail_days": 3,
+   "fail_days": 4,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1104,7 +1108,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 23,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1114,7 +1118,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 362,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1124,7 +1128,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 57,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1132,7 +1136,7 @@
   "Tufts University": {
    "n": 6,
    "total": 120,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 128,
    "fail_days": 0,
    "empty_days": 0,
@@ -1142,7 +1146,7 @@
   "Harvard University": {
    "n": 67,
    "total": 366,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 366,
    "fail_days": 0,
    "empty_days": 0,
@@ -1152,7 +1156,7 @@
   "MIT": {
    "n": 65,
    "total": 292,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 295,
    "fail_days": 0,
    "empty_days": 0,
@@ -1162,7 +1166,7 @@
   "Boston University": {
    "n": 39,
    "total": 217,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 221,
    "fail_days": 0,
    "empty_days": 0,
@@ -1172,7 +1176,7 @@
   "Broad Institute": {
    "n": 12,
    "total": 37,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 37,
    "fail_days": 0,
    "empty_days": 0,
@@ -1184,15 +1188,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 6,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "UMass Amherst": {
    "n": 24,
-   "total": 152,
-   "last_hit": "2026-11-26",
+   "total": 153,
+   "last_hit": "2026-11-27",
    "max_total": 160,
    "fail_days": 0,
    "empty_days": 0,
@@ -1204,7 +1208,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 61,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1214,7 +1218,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 86,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1224,7 +1228,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 257,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1234,7 +1238,7 @@
    "total": null,
    "last_hit": "2026-11-22",
    "max_total": 66,
-   "fail_days": 4,
+   "fail_days": 5,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1242,7 +1246,7 @@
   "ADA Forsyth Institute": {
    "n": 1,
    "total": 8,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 8,
    "fail_days": 0,
    "empty_days": 0,
@@ -1252,7 +1256,7 @@
   "UMass Chan Medical School": {
    "n": 14,
    "total": 112,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 134,
    "fail_days": 0,
    "empty_days": 0,
@@ -1264,7 +1268,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 1018,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1274,7 +1278,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 917,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1284,7 +1288,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 333,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1294,15 +1298,15 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 410,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Boston Children's Hospital": {
-   "n": 22,
-   "total": 280,
-   "last_hit": "2026-11-26",
+   "n": 21,
+   "total": 277,
+   "last_hit": "2026-11-27",
    "max_total": 293,
    "fail_days": 0,
    "empty_days": 0,
@@ -1314,7 +1318,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 444,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1324,7 +1328,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 363,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1334,7 +1338,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 72,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1344,7 +1348,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 52,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1354,7 +1358,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 100,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1364,25 +1368,25 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 22,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
   },
   "Wolt": {
    "n": 0,
-   "total": 184,
+   "total": 183,
    "last_hit": "2026-11-19",
    "max_total": 206,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 7,
+   "zero_days": 8,
    "alert": false
   },
   "Supercell": {
    "n": 1,
    "total": 28,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 39,
    "fail_days": 0,
    "empty_days": 0,
@@ -1392,7 +1396,7 @@
   "Smartly.io": {
    "n": 6,
    "total": 72,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 73,
    "fail_days": 0,
    "empty_days": 0,
@@ -1402,7 +1406,7 @@
   "Oura": {
    "n": 2,
    "total": 100,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 100,
    "fail_days": 0,
    "empty_days": 0,
@@ -1412,7 +1416,7 @@
   "Adyen": {
    "n": 9,
    "total": 232,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 257,
    "fail_days": 0,
    "empty_days": 0,
@@ -1421,8 +1425,8 @@
   },
   "Mollie": {
    "n": 2,
-   "total": 50,
-   "last_hit": "2026-11-26",
+   "total": 48,
+   "last_hit": "2026-11-27",
    "max_total": 54,
    "fail_days": 0,
    "empty_days": 0,
@@ -1435,14 +1439,14 @@
    "last_hit": "2026-11-06",
    "max_total": 72,
    "fail_days": 0,
-   "empty_days": 20,
-   "zero_days": 20,
+   "empty_days": 21,
+   "zero_days": 21,
    "alert": true
   },
   "N26": {
    "n": 1,
-   "total": 26,
-   "last_hit": "2026-11-26",
+   "total": 27,
+   "last_hit": "2026-11-27",
    "max_total": 38,
    "fail_days": 0,
    "empty_days": 0,
@@ -1451,8 +1455,8 @@
   },
   "HelloFresh": {
    "n": 3,
-   "total": 355,
-   "last_hit": "2026-11-26",
+   "total": 353,
+   "last_hit": "2026-11-27",
    "max_total": 394,
    "fail_days": 0,
    "empty_days": 0,
@@ -1461,8 +1465,8 @@
   },
   "Celonis": {
    "n": 20,
-   "total": 258,
-   "last_hit": "2026-11-26",
+   "total": 256,
+   "last_hit": "2026-11-27",
    "max_total": 274,
    "fail_days": 0,
    "empty_days": 0,
@@ -1471,9 +1475,9 @@
   },
   "Intercom": {
    "n": 12,
-   "total": 133,
-   "last_hit": "2026-11-26",
-   "max_total": 133,
+   "total": 135,
+   "last_hit": "2026-11-27",
+   "max_total": 135,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -1481,8 +1485,8 @@
   },
   "Stripe": {
    "n": 10,
-   "total": 768,
-   "last_hit": "2026-11-26",
+   "total": 766,
+   "last_hit": "2026-11-27",
    "max_total": 795,
    "fail_days": 0,
    "empty_days": 0,
@@ -1492,7 +1496,7 @@
   "Spotify": {
    "n": 6,
    "total": 97,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 97,
    "fail_days": 0,
    "empty_days": 0,
@@ -1500,9 +1504,9 @@
    "alert": false
   },
   "Delivery Hero": {
-   "n": 8,
+   "n": 7,
    "total": 500,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 500,
    "fail_days": 0,
    "empty_days": 0,
@@ -1512,7 +1516,7 @@
   "Workhuman": {
    "n": 2,
    "total": 12,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 12,
    "fail_days": 0,
    "empty_days": 0,
@@ -1524,7 +1528,7 @@
    "total": null,
    "last_hit": "2026-11-15",
    "max_total": 26,
-   "fail_days": 11,
+   "fail_days": 12,
    "empty_days": 0,
    "zero_days": 0,
    "alert": true
@@ -1532,7 +1536,7 @@
   "University of Helsinki": {
    "n": 1,
    "total": 18,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 24,
    "fail_days": 0,
    "empty_days": 0,
@@ -1541,9 +1545,9 @@
   },
   "Tampere University": {
    "n": 2,
-   "total": 10,
-   "last_hit": "2026-11-26",
-   "max_total": 10,
+   "total": 11,
+   "last_hit": "2026-11-27",
+   "max_total": 11,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
@@ -1551,18 +1555,18 @@
   },
   "University of Oulu": {
    "n": 0,
-   "total": 17,
+   "total": 16,
    "last_hit": "2026-10-25",
    "max_total": 17,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 35,
+   "zero_days": 36,
    "alert": false
   },
   "KTH Royal Institute of Technology": {
    "n": 9,
-   "total": 71,
-   "last_hit": "2026-11-26",
+   "total": 63,
+   "last_hit": "2026-11-27",
    "max_total": 71,
    "fail_days": 0,
    "empty_days": 0,
@@ -1571,8 +1575,8 @@
   },
   "Karolinska Institutet": {
    "n": 1,
-   "total": 85,
-   "last_hit": "2026-11-26",
+   "total": 90,
+   "last_hit": "2026-11-27",
    "max_total": 93,
    "fail_days": 0,
    "empty_days": 0,
@@ -1581,8 +1585,8 @@
   },
   "Uppsala University": {
    "n": 1,
-   "total": 79,
-   "last_hit": "2026-11-26",
+   "total": 81,
+   "last_hit": "2026-11-27",
    "max_total": 94,
    "fail_days": 0,
    "empty_days": 0,
@@ -1596,23 +1600,23 @@
    "max_total": 24,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 22,
+   "zero_days": 23,
    "alert": false
   },
   "Lund University": {
-   "n": 2,
-   "total": 127,
-   "last_hit": "2026-11-26",
-   "max_total": 127,
+   "n": 3,
+   "total": 133,
+   "last_hit": "2026-11-27",
+   "max_total": 133,
    "fail_days": 0,
    "empty_days": 0,
    "zero_days": 0,
    "alert": false
   },
   "AcademicTransfer (NL universities)": {
-   "n": 5,
+   "n": 4,
    "total": 20,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 20,
    "fail_days": 0,
    "empty_days": 0,
@@ -1622,7 +1626,7 @@
   "Max Planck Society": {
    "n": 6,
    "total": 30,
-   "last_hit": "2026-11-26",
+   "last_hit": "2026-11-27",
    "max_total": 30,
    "fail_days": 0,
    "empty_days": 0,
@@ -1636,7 +1640,7 @@
    "max_total": 10,
    "fail_days": 0,
    "empty_days": 0,
-   "zero_days": 16,
+   "zero_days": 17,
    "alert": false
   }
  },
@@ -2492,6 +2496,33 @@
    "first_seen": "2026-10-26"
   },
   {
+   "org": "Delivery Hero",
+   "title": "Senior / Staff Product Analyst - (Logistics, Service)",
+   "location": "Berlin, DE",
+   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000164011073",
+   "posted": "2026-11-27",
+   "category": "Data",
+   "source": "smartrecruiters",
+   "abroad": "Germany",
+   "sector": "Tech / Software",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-27"
+  },
+  {
+   "org": "PointClickCare",
+   "title": "Principal Software Engineer",
+   "location": "Remote - US",
+   "url": "https://jobs.lever.co/pointclickcare/4b3d7d51-2a0c-4447-8d74-fc659c63894f",
+   "posted": "2026-11-26",
+   "category": "Software",
+   "source": "lever",
+   "sector": "Tech / Software",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-27"
+  },
+  {
    "org": "InnovAge (PACE)",
    "title": "Medication Use & Management Analyst",
    "location": "Boulder, Colorado",
@@ -2514,19 +2545,6 @@
    "source": "taleo",
    "sector": "Government & Public Sector",
    "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-26"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Data Engineer",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-430583",
-   "posted": "2026-11-25",
-   "category": "Data",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-26"
   },
@@ -2571,6 +2589,32 @@
   },
   {
    "org": "Humana / CenterWell",
+   "title": "Director, Quality Engineering, Primary Care",
+   "location": "New York, New York, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-432222",
+   "posted": "2026-11-25",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-26"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Software Engineer, HGB IT",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-428269",
+   "posted": "2026-11-25",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-16"
+  },
+  {
+   "org": "Humana / CenterWell",
    "title": "Senior TVM Engineer/Critical Bridge Commander",
    "location": "Louisville, Kentucky, United States of America",
    "url": "https://careers.humana.com/us/en/job/R-437488",
@@ -2584,9 +2628,35 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Director, Quality Engineering, Primary Care",
-   "location": "New York, New York, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-432222",
+   "title": "Senior Data Manager",
+   "location": "Remote, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-438156",
+   "posted": "2026-11-25",
+   "category": "Data",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-26"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Software Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-434847",
+   "posted": "2026-11-25",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-26"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Cyber Security Engineer (PAM)",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437692",
    "posted": "2026-11-25",
    "category": "Software",
    "source": "phenom",
@@ -2623,50 +2693,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer, HGB IT",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-428269",
-   "posted": "2026-11-25",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-16"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434847",
-   "posted": "2026-11-25",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-26"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Data Manager",
-   "location": "Remote, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-438156",
+   "title": "Senior Data Engineer",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-430583",
    "posted": "2026-11-25",
    "category": "Data",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-26"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Cyber Security Engineer (PAM)",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437692",
-   "posted": "2026-11-25",
-   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -2847,29 +2878,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Informaticist",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434463",
-   "posted": "2026-11-24",
-   "category": "Data",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-25"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Platform Engineer - NBA",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-426815",
+   "title": "Lead Quality Engineering, Onboarding",
+   "location": "New York, New York, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-432250",
    "posted": "2026-11-24",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-24"
+   "first_seen": "2026-11-25"
   },
   {
    "org": "Humana / CenterWell",
@@ -2883,19 +2901,6 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-24"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Lead Quality Engineering, Onboarding",
-   "location": "New York, New York, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-432250",
-   "posted": "2026-11-24",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-25"
   },
   {
    "org": "Humana / CenterWell",
@@ -2922,6 +2927,32 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-04"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Informaticist",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-434463",
+   "posted": "2026-11-24",
+   "category": "Data",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Platform Engineer - NBA",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-426815",
+   "posted": "2026-11-24",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-24"
   },
   {
    "org": "Planned Parenthood Federation",
@@ -3056,24 +3087,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Analytics Consultant",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437469",
+   "title": "Director, Technology Solutions",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-435827",
    "posted": "2026-11-23",
-   "category": "Data",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-24"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Analytics Solutions Engineer",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-433143",
-   "posted": "2026-11-23",
-   "category": "Data",
+   "category": "IT",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3095,32 +3113,6 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior DevOps Platform Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-429469",
-   "posted": "2026-11-23",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-14"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Director, Technology Solutions",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-435827",
-   "posted": "2026-11-23",
-   "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-24"
-  },
-  {
-   "org": "Humana / CenterWell",
    "title": "Senior Software Engineer - Appian Platform",
    "location": "Louisville, Kentucky, United States of America",
    "url": "https://careers.humana.com/us/en/job/R-431029",
@@ -3131,6 +3123,32 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-23"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Analytics Consultant",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-437469",
+   "posted": "2026-11-23",
+   "category": "Data",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-24"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior DevOps Platform Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-429469",
+   "posted": "2026-11-23",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-14"
   },
   {
    "org": "Humana / CenterWell",
@@ -3170,6 +3188,19 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Analytics Solutions Engineer",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-433143",
+   "posted": "2026-11-23",
+   "category": "Data",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-24"
   },
   {
    "org": "Aledade",
@@ -3436,20 +3467,6 @@
    "first_seen": "2026-11-23"
   },
   {
-   "org": "Delivery Hero",
-   "title": "Senior / Staff Product Analyst - (Logistics, Service)",
-   "location": "Berlin, DE",
-   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000163198719",
-   "posted": "2026-11-23",
-   "category": "Data",
-   "source": "smartrecruiters",
-   "abroad": "Germany",
-   "sector": "Tech / Software",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-23"
-  },
-  {
    "org": "Clover Health",
    "title": "Senior Software Developer, Agentic AI - Canada",
    "location": "Remote - Canada",
@@ -3607,55 +3624,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Senior Business Systems Analysis (Procurement Digital & AI Enablement)",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-438042",
-   "posted": "2026-11-20",
-   "category": "AI",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Machine Learning Engineer, Decision Intelligence",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-437992",
-   "posted": "2026-11-20",
-   "category": "AI",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Lead Software Engineer - NBA",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-426820",
+   "title": "Associate Director, Software Engineering",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-427494",
    "posted": "2026-11-20",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-21"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Genesys Cloud Access Management",
-   "location": "Remote, Nationwide, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-429594",
-   "posted": "2026-11-20",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-21"
+   "first_seen": "2026-11-10"
   },
   {
    "org": "Humana / CenterWell",
@@ -3664,19 +3642,6 @@
    "url": "https://careers.humana.com/us/en/job/R-437656",
    "posted": "2026-11-20",
    "category": "AI",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-21"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Senior Software Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-436676",
-   "posted": "2026-11-20",
-   "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -3698,29 +3663,16 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Associate Director, Software Engineering",
+   "title": "Senior Software Engineer",
    "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-427494",
+   "url": "https://careers.humana.com/us/en/job/R-436676",
    "posted": "2026-11-20",
    "category": "Software",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
    "years_req": null,
-   "first_seen": "2026-11-10"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Technology Implementation Lead",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-433617",
-   "posted": "2026-11-20",
-   "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-20"
+   "first_seen": "2026-11-21"
   },
   {
    "org": "Humana / CenterWell",
@@ -3734,6 +3686,32 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-10-26"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "Senior Business Systems Analysis (Procurement Digital & AI Enablement)",
+   "location": "Remote, Nationwide, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-438042",
+   "posted": "2026-11-20",
+   "category": "AI",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Senior-Software-Engineer---Salesforce_R1066291",
+   "posted": "2026-11-20",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": 8,
+   "first_seen": "2026-11-27"
   },
   {
    "org": "Aledade",
@@ -4013,9 +3991,22 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Cloud Solutions Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-438062",
+   "title": "Principal Quality Engineer",
+   "location": "New York, New York, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-438041",
+   "posted": "2026-11-19",
+   "category": "Software",
+   "source": "phenom",
+   "sector": "Healthcare",
+   "citizen_req": false,
+   "years_req": null,
+   "first_seen": "2026-11-20"
+  },
+  {
+   "org": "Humana / CenterWell",
+   "title": "ECM Software Engineer",
+   "location": "Remote, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-434203",
    "posted": "2026-11-19",
    "category": "Software",
    "source": "phenom",
@@ -4039,11 +4030,11 @@
   },
   {
    "org": "Humana / CenterWell",
-   "title": "Principal Quality Engineer",
-   "location": "New York, New York, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-438041",
+   "title": "Data Engineer",
+   "location": "Louisville, Kentucky, United States of America",
+   "url": "https://careers.humana.com/us/en/job/R-430106",
    "posted": "2026-11-19",
-   "category": "Software",
+   "category": "Data",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -4057,32 +4048,6 @@
    "url": "https://careers.humana.com/us/en/job/R-437019",
    "posted": "2026-11-19",
    "category": "IT",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "ECM Software Engineer",
-   "location": "Remote, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-434203",
-   "posted": "2026-11-19",
-   "category": "Software",
-   "source": "phenom",
-   "sector": "Healthcare",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-20"
-  },
-  {
-   "org": "Humana / CenterWell",
-   "title": "Data Engineer",
-   "location": "Louisville, Kentucky, United States of America",
-   "url": "https://careers.humana.com/us/en/job/R-430106",
-   "posted": "2026-11-19",
-   "category": "Data",
    "source": "phenom",
    "sector": "Healthcare",
    "citizen_req": false,
@@ -4798,6 +4763,19 @@
    "first_seen": "2026-11-14"
   },
   {
+   "org": "Oak Street Health (CVS)",
+   "title": "Sr Data Scientist, Clinical Intelligence",
+   "location": "NC - Work from home",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/NC---Work-from-home/Sr-Data-Scientist--Clinical-Intelligence_R1053144-1",
+   "posted": "2026-11-13",
+   "category": "Data",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-27"
+  },
+  {
    "org": "ACLU",
    "title": "Financial Systems Analyst and Systems Administrator",
    "location": "New York, New York, United States",
@@ -4956,19 +4934,6 @@
    "first_seen": "2026-11-12"
   },
   {
-   "org": "PointClickCare",
-   "title": "Software Engineer",
-   "location": "Mississauga, Ontario",
-   "url": "https://jobs.lever.co/pointclickcare/4df74b15-3479-4a75-a4c4-5640ccde7346",
-   "posted": "2026-11-11",
-   "category": "Software",
-   "source": "lever",
-   "sector": "Tech / Software",
-   "citizen_req": false,
-   "years_req": null,
-   "first_seen": "2026-11-12"
-  },
-  {
    "org": "Clover Health",
    "title": "Senior Software Developer (R&D) - Canada",
    "location": "Remote - Canada",
@@ -5065,12 +5030,12 @@
   {
    "org": "Celonis",
    "title": "Senior Value Engineer - AI & Process Optimization",
-   "location": "Amsterdam, Netherlands",
-   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201411003?gh_jid=8201411003",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201407003?gh_jid=8201407003",
    "posted": "2026-11-11",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Netherlands",
+   "abroad": "Germany",
    "sector": "Tech / Software",
    "relo": true,
    "citizen_req": false,
@@ -5080,12 +5045,12 @@
   {
    "org": "Celonis",
    "title": "Senior Value Engineer - AI & Process Optimization",
-   "location": "Stockholm, Sweden",
-   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201377003?gh_jid=8201377003",
+   "location": "Amsterdam, Netherlands",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201411003?gh_jid=8201411003",
    "posted": "2026-11-11",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Sweden",
+   "abroad": "Netherlands",
    "sector": "Tech / Software",
    "relo": true,
    "citizen_req": false,
@@ -5110,27 +5075,12 @@
   {
    "org": "Celonis",
    "title": "Senior Value Engineer - AI & Process Optimization",
-   "location": "Munich, Germany",
-   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201407003?gh_jid=8201407003",
+   "location": "Stockholm, Sweden",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201377003?gh_jid=8201377003",
    "posted": "2026-11-11",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Germany",
-   "sector": "Tech / Software",
-   "relo": true,
-   "citizen_req": false,
-   "years_req": 5,
-   "first_seen": "2026-11-13"
-  },
-  {
-   "org": "Celonis",
-   "title": "Senior Value Engineer (Pharma) - AI & Process Optimization",
-   "location": "Munich, Germany",
-   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201397003?gh_jid=8201397003",
-   "posted": "2026-11-11",
-   "category": "AI",
-   "source": "greenhouse",
-   "abroad": "Germany",
+   "abroad": "Sweden",
    "sector": "Tech / Software",
    "relo": true,
    "citizen_req": false,
@@ -5146,6 +5096,21 @@
    "category": "AI",
    "source": "greenhouse",
    "abroad": "Finland",
+   "sector": "Tech / Software",
+   "relo": true,
+   "citizen_req": false,
+   "years_req": 5,
+   "first_seen": "2026-11-13"
+  },
+  {
+   "org": "Celonis",
+   "title": "Senior Value Engineer (Pharma) - AI & Process Optimization",
+   "location": "Munich, Germany",
+   "url": "https://job-boards.greenhouse.io/celonis/jobs/8201397003?gh_jid=8201397003",
+   "posted": "2026-11-11",
+   "category": "AI",
+   "source": "greenhouse",
+   "abroad": "Germany",
    "sector": "Tech / Software",
    "relo": true,
    "citizen_req": false,
@@ -6153,6 +6118,19 @@
    "first_seen": "2026-10-30"
   },
   {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Manager - Digital Product (Risk Modeling)",
+   "location": "IL - Work from home",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IL---Work-from-home/Senior-Manager---Digital-Product--Risk-Modeling-_R1080292",
+   "posted": "2026-10-29",
+   "category": "IT",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-27"
+  },
+  {
    "org": "UMass Chan Medical School",
    "title": "Sr Research Scientist - Metabolomics",
    "location": "Worcester, Massachusetts",
@@ -6193,6 +6171,32 @@
    "first_seen": "2026-11-06"
   },
   {
+   "org": "Oak Street Health (CVS)",
+   "title": "Senior Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Senior-Salesforce-Engineer_R1066905",
+   "posted": "2026-10-28",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-27"
+  },
+  {
+   "org": "Oak Street Health (CVS)",
+   "title": "Staff Salesforce Engineer",
+   "location": "IRL - Galway",
+   "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/IRL---Galway/Staff-Salesforce-Engineer_R1066930",
+   "posted": "2026-10-28",
+   "category": "Software",
+   "source": "workday",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-27"
+  },
+  {
    "org": "Harvard University",
    "title": "Communications and Digital Director",
    "location": "Cambridge, US",
@@ -6230,20 +6234,6 @@
    "citizen_req": false,
    "years_req": null,
    "first_seen": "2026-11-16"
-  },
-  {
-   "org": "Delivery Hero",
-   "title": "(Senior) Analyst, International Markets",
-   "location": "Berlin, DE",
-   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000158069779",
-   "posted": "2026-10-27",
-   "category": "Data",
-   "source": "smartrecruiters",
-   "abroad": "Germany",
-   "sector": "Tech / Software",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-10-28"
   },
   {
    "org": "Delivery Hero",
@@ -6975,12 +6965,12 @@
   {
    "org": "Smartly.io",
    "title": "Senior Software Engineer - AI Platform",
-   "location": "Helsinki, Uusimaa, Finland",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6218155004",
+   "location": "Berlin, Berlin, Germany",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6126660004",
    "posted": "2026-10-06",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Finland",
+   "abroad": "Germany",
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
@@ -6989,12 +6979,12 @@
   {
    "org": "Smartly.io",
    "title": "Senior Software Engineer - AI Platform",
-   "location": "Berlin, Berlin, Germany",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6126660004",
+   "location": "Helsinki, Uusimaa, Finland",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6218155004",
    "posted": "2026-10-06",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Germany",
+   "abroad": "Finland",
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
@@ -8255,12 +8245,12 @@
   {
    "org": "Smartly.io",
    "title": "Senior Machine Learning Engineer, AI Platform",
-   "location": "Berlin, Berlin, Germany",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6020669004",
+   "location": "Helsinki, Uusimaa, Finland",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5658123004",
    "posted": "2026-06-11",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Germany",
+   "abroad": "Finland",
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
@@ -8269,12 +8259,12 @@
   {
    "org": "Smartly.io",
    "title": "Senior Machine Learning Engineer, AI Platform",
-   "location": "Helsinki, Uusimaa, Finland",
-   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/5658123004",
+   "location": "Berlin, Berlin, Germany",
+   "url": "https://job-boards.greenhouse.io/smartlyio/jobs/6020669004",
    "posted": "2026-06-11",
    "category": "AI",
    "source": "greenhouse",
-   "abroad": "Finland",
+   "abroad": "Germany",
    "sector": "Tech / Software",
    "citizen_req": false,
    "years_req": 5,
@@ -10026,19 +10016,6 @@
   },
   {
    "org": "Boston Children's Hospital",
-   "title": "Financial Analyst II",
-   "location": "<strong>Position Summary:</strong><br>Assists in monitoring and controlling the Hospital\u2019s operating budget. Performs accounting and budgeting functions. Develops work plans for financial planning projects. Conducts financial, statistical and analytical studies; prepares and assists in the preparation of financial reports and statements according to prescribed guidelines. Participates in the development and maintenance of the annual budget process. Position may reside in accounting, budget, or a department\u2019s management team.<br><br><strong>Key Responsibilities:</strong><ul><li>Performs detailed analyses of various general ledgers accounts, Hospital operating budget, and selected cost centers, as assigned. Performs account reconciliations and reviews activity for accuracy, completeness, reasonableness, interpreting trends or deviations and making recommendations for corrective action.</li><li>Develop workplans for financial planning projects to include objectives, timeliness, milestones and deliverables, if requested. Maintain organized and well documented project files. Participate in multi-disciplinary workgroup meetings.</li><li>Prepares various financial transactions, reports, and analyses related to the assigned function, which may include: operating financial statement, operating budget, intercompany activity, and other sub ledger activity and schedules. Presents financial statements to the Finance Committee and other Hospital wide or departmental senior managers.</li><li>Assists management with the development of clinical general fund and service fund budgets, if assigned. Monitors budget performance and coordinates variance reporting. Prepares appropriate budget analyses to measure performance.</li><li>Develops and prepares a variety of ad-hoc reporting, financial models and analyses to senior management as requested or as deemed necessary.</li><li>Researches and analyzes financial data for internal and external clients, creates, organizes, and maintains files using database and spreadsheet programs; retrieves and organizes data into required reporting formats; collects, retrieves and organizes data to identify financial discrepancies and resolve inquiries; recommends solutions and ensures that corrections or changes are implemented properly.</li></ul><br><strong>Knowledge, Skills, and Abilities:</strong><ul><li>Analytical skills to collect information from diverse sources, apply professional principles in performing various analyses, and summarize the information and data in order to solve problems or design relatively complex systems and programs that cross department/divisional lines.</li><li>Ability to communicate effectively both orally and in writing and provide empathy in difficult interpersonal situations.</li><li>Proficiency with MS Office applications, in particular Excel and Access.</li></ul><br><strong>Minimum Qualifications<br>Education:</strong><ul><li>Bachelor's Degree in Accounting or a closely related field of study.</li></ul><br><strong>Experience:</strong><ul><li>Two years of related experience.</li></ul>",
-   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3768816",
-   "posted": null,
-   "category": "Data",
-   "source": "brassring",
-   "sector": "Healthcare",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-19"
-  },
-  {
-   "org": "Boston Children's Hospital",
    "title": "Enterprise Release System Manager",
    "location": "<strong>Position Summary</strong><p>The Enterprise Systems Release Manager oversees release governance, environment coordination, deployment readiness, and cross-functional planning across enterprise business and clinical systems. Initially supporting Epic and Workday, this role establishes release processes, coordinates vendor and internal activities, facilitates testing, and ensures changes are introduced with minimal operational risk.</p><p>This role manages release governance across enterprise SaaS platforms. The ideal candidate is a technically oriented project or program manager with enterprise release management experience, preferably in healthcare IT and direct exposure to Epic or other EHR platforms. They bring strong vendor management, cross-functional coordination, and stakeholder communication skills, translating technical needs into actionable plans and engaging effectively with technical teams and senior leadership. Workday, ITIL, and change management experience are preferred. This strategic role emphasizes coordination, governance, and process development over hands-on configuration or engineering.</p><br><strong>Key responsibilities</strong><br><u>Release Governance &amp; Planning</u><br>Own the enterprise application release calendar for assigned platforms.<br>Establish and maintain release governance processes, standards, and procedures.<br>Develop release plans and schedules using approved templates and methodologies.<br>Coordinate release dependencies across application, vendor, infrastructure, and business teams.<br>Lead release readiness reviews and facilitate go/no-go decision meetings.<br>Maintain release documentation, risk assessments, and deployment records.<br>&nbsp; &nbsp;<br><u>Environment &amp; Tenant Coordination</u><br>Govern the use and lifecycle of production and non production environments across assigned platforms including standards, usage policies, refresh schedules, and access controls.<br>Coordinate environment refreshes, upgrades, maintenance windows, and release activities with vendors and internal stakeholders.<br>Ensure environments are aligned to testing, deployment, and operational requirements.<br>Maintain visibility into environment readiness, utilization, and release schedules.<br>&nbsp; &nbsp; &nbsp;&nbsp;<br><u>Testing Governance</u><br>Partner with testing coordinators, application teams, and testing resources to plan and coordinate testing activities.<br>Facilitate unit, integration, regression, and user acceptance testing activities performed by application teams.<br>Track testing progress, risks, defects, and remediation activities.<br>Validate completion of release readiness criteria prior to deployment.<br>&nbsp; &nbsp; &nbsp;<br><u>Vendor &amp; Stakeholder Management</u><br>Serve as the primary point of coordination for release related activities involving vendors and internal teams.<br>Coordinate SaaS vendor release schedules, upgrade cycles, and deployment activities.<br>Communicate release timelines, impacts, risks, and dependencies to stakeholders.<br>Coordinate issue resolution efforts with vendors and internal technical teams.<br>Ensure business and technical teams remain aligned throughout the release lifecycle.<br>&nbsp; &nbsp;<br><u>Risk Management &amp; Continuous Improvement</u><br>Identify and mitigate release related risks.<br>Facilitate post implementation reviews and lessons learned activities.<br>Monitor release metrics and drive process improvements.<br>Support business continuity and operational resiliency objectives.<br><br><strong>Minimum qualifications<br><br>Education:</strong><br>Bachelor\u2019s Degree or equivalent in Information Technology, Information Systems, Healthcare Informatics, Business Administration, or related field<br><br><strong>Experience:</strong><ul><li>5+ years of experience supporting enterprise application portfolios, ERP systems, EHR platforms, or related enterprise technologies.</li><li>3+ years of release management, deployment governance, program coordination, or environment management experience.</li><li>Experience coordinating enterprise SaaS application releases.</li><li>Experience leading cross functional planning and readiness activities involving technical and business stakeholders.</li></ul>",
    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3773836",
@@ -10065,19 +10042,6 @@
   },
   {
    "org": "Boston Children's Hospital",
-   "title": "Enterprise/Solution Architect \u2013 Infrastructure & Cloud",
-   "location": "<span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Position Summary/ Department Summary:</span></b></span></span></span><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">The Enterprise/Solution Architect \u2013 Infrastructure &amp; Cloud defines, designs, governs, and advances the organization's enterprise infrastructure and cloud architecture. The role provides strategic and technical leadership across AWS, Microsoft Azure, hybrid cloud, data centers, networking, telecommunications, compute, storage, virtualization, and supporting enterprise technologies.</span></span></span></span><br><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Key Responsibilities:</span></b></span></span></span><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Enterprise Architecture &amp; Strategy</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Develop infrastructure and cloud architecture principles, standards, reference architectures, and technology roadmaps.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Define current-state, target-state, and transition architectures. Identify gaps, dependencies, and technical debt.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Take part in architecture governance and technology investment decisions, using TOGAF-aligned practices.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Cloud Architecture &amp; Modernization</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Design secure, resilient, scalable, and cost-effective solutions across AWS, Azure, GCP, and hybrid/on-premises environments.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Define landing zones, connectivity, identity integration, security controls, and workload placement.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Guide cloud migration, modernization, and automation. Support CCoE guardrails and FinOps practices.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Infrastructure &amp; Network Architecture</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Architect WAN/LAN, SD-WAN, telecommunications, data center, compute, storage, and virtualization environments.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Set standards for availability, performance, resiliency, and disaster recovery.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Evaluate products and designs for security, lifecycle risk, and total cost of ownership.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Solution Design &amp; Governance</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Lead architecture assessments and solution designs for complex infrastructure and cloud initiatives.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Produce diagrams, design documents, decision records, and implementation roadmaps.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Review vendor proposals against enterprise standards. Provide guidance from planning through operational handoff.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Innovation &amp; Cost Optimization</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Evaluate infrastructure as code, automation, AI-enabling infrastructure, and emerging platforms.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Recommend consolidation, cost optimization, and technical debt reduction.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Intake, Delivery &amp; Capacity Planning</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Support a lean technology intake process that assesses architectural impact and prioritizes demand.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Use CMDB data to understand assets, dependencies, and change impacts, and promote data quality.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Manage architecture backlogs and decisions in Jira, using sound project management practices.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Partner with leaders and the PMO on capacity planning, forecasting, and sequencing of work.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Collaboration &amp; Leadership</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Act as a trusted advisor to IT leadership, project teams, and business stakeholders.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Work with Cloud, Network, Telecom, Data Center, Cybersecurity, and Enterprise Architecture teams.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Explain technical tradeoffs to both technical and nontechnical audiences and mentor technical staff.</span></span></span></span></li></ul><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Minimum Qualifications</span></b></span></span></span><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Education:</span></b></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Bachelor's Degree or 10 years of experience as an Enterprise/Solution Architect required.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Preferred area of study: Computer Science, Information Technology, Information Systems, Engineering, or a related field.</span></span></span></span></li></ul><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience:</span></b></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">10+ years of progressive experience in enterprise IT infrastructure, cloud, or related technical disciplines</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">5+ years in enterprise, solution, infrastructure, or cloud architecture roles</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Demonstrated experience designing complex enterprise infrastructure and AWS or Azure or GCP hybrid-cloud solutions</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience developing architecture standards, reference architectures, and roadmaps</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience in large, complex, highly available or regulated organizations; healthcare, academic medical center, or research preferred</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience using CMDB platforms (such as ServiceNow CMDB) to analyze configuration items, service dependencies, and infrastructure changes</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience with Jira and participation in lean intake, demand management, or project delivery processes</span></span></span></span></li></ul><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Licensure/ Certifications:</span></b></span></span></span><ul><li style=\"margin-left: 12px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">TOGAF certification required</span></span></span></span></li><li style=\"margin-left: 12px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Azure Solutions Architect Expert; relevant infrastructure, networking, or cybersecurity certifications preferred</span></span></span></span></li></ul>",
-   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3774508",
-   "posted": null,
-   "category": "Software",
-   "source": "brassring",
-   "sector": "Healthcare",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-12"
-  },
-  {
-   "org": "Boston Children's Hospital",
    "title": "Sr. Financial Reporting Analyst - remote",
    "location": "<p>Position summary</p><p>Senior Financial Reporting Analyst responsible for financial reporting and analysis related to restricted and philanthropic funds, trusts, endowments, and invested assets. This role works with temporarily restricted funds, spending rules, and fund distributions; analyzes and presents financial data; and partners with stakeholders on financial reporting and strategic projects. The team is looking for someone with nonprofit/fundraising or philanthropic fund experience who is proactive, independent, and comfortable presenting financial information.</p><p>Key responsibilities</p><p>\u2022 Lead analytical support for long-term strategic programs and assigned projects<br>\u2022 Prepare and review monthly, quarterly, and annual journal entries and account reconciliations<br>\u2022 Analyze general ledger accounts, cost centers, grants, and special funds<br>\u2022 Identify trends, variances, and opportunities for corrective action<br>\u2022 Support operating budget development and financial planning<br>\u2022 Prepare financial and statistical reports for monthly close, quarterly reviews, and year-end audits<br>\u2022 Prepare reports for grant sponsors, donors, and federal agencies<br>\u2022 Lead ad-hoc projects focused on improving hospital operations and financial performance<br>\u2022 Present executive-level financial analyses and recommendations<br>\u2022 Partner with department managers and senior leadership to develop action plans<br>\u2022 Review regulatory and external reporting requirements<br>\u2022 Mentor junior team members and support the development of analytics skills<br>\u2022 Maintain supporting documentation, schedules, reconciliations, and other financial records</p><p>Minimum qualifications</p><p>Education:<br>Bachelor\u2019s degree in Business, Healthcare Administration, or a closely related field.</p><p>Experience:<br>5 years of experience in financial reporting and analysis in a hospital setting.</p><p>Schedule:<br>Remote- 8-5 M-F</p>",
    "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3759401",
@@ -10088,6 +10052,19 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-18"
+  },
+  {
+   "org": "Boston Children's Hospital",
+   "title": "Enterprise/Solution Architect \u2013 Infrastructure & Cloud",
+   "location": "<span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Position Summary/ Department Summary:</span></b></span></span></span><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">The Enterprise/Solution Architect \u2013 Infrastructure &amp; Cloud defines, designs, governs, and advances the organization's enterprise infrastructure and cloud architecture. The role provides strategic and technical leadership across AWS, Microsoft Azure, hybrid cloud, data centers, networking, telecommunications, compute, storage, virtualization, and supporting enterprise technologies.</span></span></span></span><br><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Key Responsibilities:</span></b></span></span></span><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Enterprise Architecture &amp; Strategy</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Develop infrastructure and cloud architecture principles, standards, reference architectures, and technology roadmaps.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Define current-state, target-state, and transition architectures. Identify gaps, dependencies, and technical debt.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Take part in architecture governance and technology investment decisions, using TOGAF-aligned practices.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Cloud Architecture &amp; Modernization</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Design secure, resilient, scalable, and cost-effective solutions across AWS, Azure, GCP, and hybrid/on-premises environments.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Define landing zones, connectivity, identity integration, security controls, and workload placement.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Guide cloud migration, modernization, and automation. Support CCoE guardrails and FinOps practices.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Infrastructure &amp; Network Architecture</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Architect WAN/LAN, SD-WAN, telecommunications, data center, compute, storage, and virtualization environments.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Set standards for availability, performance, resiliency, and disaster recovery.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Evaluate products and designs for security, lifecycle risk, and total cost of ownership.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Solution Design &amp; Governance</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Lead architecture assessments and solution designs for complex infrastructure and cloud initiatives.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Produce diagrams, design documents, decision records, and implementation roadmaps.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Review vendor proposals against enterprise standards. Provide guidance from planning through operational handoff.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Innovation &amp; Cost Optimization</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Evaluate infrastructure as code, automation, AI-enabling infrastructure, and emerging platforms.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Recommend consolidation, cost optimization, and technical debt reduction.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Intake, Delivery &amp; Capacity Planning</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Support a lean technology intake process that assesses architectural impact and prioritizes demand.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Use CMDB data to understand assets, dependencies, and change impacts, and promote data quality.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Manage architecture backlogs and decisions in Jira, using sound project management practices.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Partner with leaders and the PMO on capacity planning, forecasting, and sequencing of work.</span></span></span></span></li></ul><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Collaboration &amp; Leadership</span></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Act as a trusted advisor to IT leadership, project teams, and business stakeholders.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Work with Cloud, Network, Telecom, Data Center, Cybersecurity, and Enterprise Architecture teams.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Explain technical tradeoffs to both technical and nontechnical audiences and mentor technical staff.</span></span></span></span></li></ul><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Minimum Qualifications</span></b></span></span></span><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Education:</span></b></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Bachelor's Degree or 10 years of experience as an Enterprise/Solution Architect required.</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Preferred area of study: Computer Science, Information Technology, Information Systems, Engineering, or a related field.</span></span></span></span></li></ul><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience:</span></b></span></span></span><ul><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">10+ years of progressive experience in enterprise IT infrastructure, cloud, or related technical disciplines</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">5+ years in enterprise, solution, infrastructure, or cloud architecture roles</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Demonstrated experience designing complex enterprise infrastructure and AWS or Azure or GCP hybrid-cloud solutions</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience developing architecture standards, reference architectures, and roadmaps</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience in large, complex, highly available or regulated organizations; healthcare, academic medical center, or research preferred</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience using CMDB platforms (such as ServiceNow CMDB) to analyze configuration items, service dependencies, and infrastructure changes</span></span></span></span></li><li style=\"margin-left: 8px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Experience with Jira and participation in lean intake, demand management, or project delivery processes</span></span></span></span></li></ul><br><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><b><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Licensure/ Certifications:</span></b></span></span></span><ul><li style=\"margin-left: 12px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">TOGAF certification required</span></span></span></span></li><li style=\"margin-left: 12px\"><span style=\"font-size: 12pt\"><span style=\"line-height: normal\"><span style=\"font-family: Aptos, sans-serif\"><span style=\"font-family: &quot;Times New Roman&quot;, serif\">Azure Solutions Architect Expert; relevant infrastructure, networking, or cybersecurity certifications preferred</span></span></span></span></li></ul>",
+   "url": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=368&siteid=5205&jobid=3774508",
+   "posted": null,
+   "category": "Software",
+   "source": "brassring",
+   "sector": "Healthcare",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-12"
   },
   {
    "org": "Boston Children's Hospital",
@@ -10263,6 +10240,21 @@
   },
   {
    "org": "KTH Royal Institute of Technology",
+   "title": "Research Engineer in Quantum Technology",
+   "location": "Stockholm, Sweden",
+   "url": "https://kth.varbi.com/en/what:job/jobID:995260/",
+   "posted": null,
+   "category": "Software",
+   "source": "varbi",
+   "deadline": "2026-12-18",
+   "abroad": "Sweden",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-27"
+  },
+  {
+   "org": "KTH Royal Institute of Technology",
    "title": "Research Engineer in Robotics, Perception and Learning",
    "location": "Stockholm, Sweden",
    "url": "https://kth.varbi.com/en/what:job/jobID:993382/",
@@ -10338,21 +10330,6 @@
   },
   {
    "org": "KTH Royal Institute of Technology",
-   "title": "Researcher in Privacy-Preserving AI",
-   "location": "Stockholm, Sweden",
-   "url": "https://kth.varbi.com/en/what:job/jobID:985107/",
-   "posted": null,
-   "category": "AI",
-   "source": "varbi",
-   "deadline": "2026-11-26",
-   "abroad": "Sweden",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-06"
-  },
-  {
-   "org": "KTH Royal Institute of Technology",
    "title": "PhD student in Agentic & Embodied AI for Adaptive Manufacturing Systems",
    "location": "Stockholm, Sweden",
    "url": "https://kth.varbi.com/en/what:job/jobID:978857/",
@@ -10425,6 +10402,21 @@
    "citizen_req": null,
    "years_req": null,
    "first_seen": "2026-11-11"
+  },
+  {
+   "org": "Lund University",
+   "title": "Student in AI: RAG for MAX IV data (part-time, temporary)",
+   "location": "Lund, Sweden",
+   "url": "https://lu.varbi.com/en/what:job/jobID:991590/",
+   "posted": null,
+   "category": "AI",
+   "source": "varbi",
+   "deadline": "2026-12-13",
+   "abroad": "Sweden",
+   "sector": "Academia & Research",
+   "citizen_req": null,
+   "years_req": null,
+   "first_seen": "2026-11-27"
   },
   {
    "org": "Lund University",
@@ -10513,18 +10505,18 @@
    "first_seen": "2026-11-02"
   },
   {
-   "org": "AcademicTransfer (NL universities)",
-   "title": "EngD position: AI for Underground Infrastructure Detection and Characterisation",
-   "location": "Netherlands (via AcademicTransfer)",
-   "url": "https://www.academictransfer.com/en/jobs/364070/engd-position-ai-for-underground-infrastructure-detection-and-characterisation/",
+   "org": "Max Planck Society",
+   "title": "Computational Physicist / Neutronics Engineer (m/f/d)",
+   "location": "Germany (Max Planck)",
+   "url": "https://www.mpg.de/job-ad6f3d738f260755d16dae512797d32e",
    "posted": null,
-   "category": "AI",
-   "source": "at-html",
-   "abroad": "Netherlands",
+   "category": "Software",
+   "source": "mpg-rss",
+   "abroad": "Germany",
    "sector": "Academia & Research",
    "citizen_req": null,
    "years_req": null,
-   "first_seen": "2026-10-26"
+   "first_seen": "2026-11-26"
   },
   {
    "org": "Max Planck Society",
@@ -10547,20 +10539,6 @@
    "url": "https://www.mpg.de/job-f76a72955affb8ad8080b05ad5ea8e79",
    "posted": null,
    "category": "Data",
-   "source": "mpg-rss",
-   "abroad": "Germany",
-   "sector": "Academia & Research",
-   "citizen_req": null,
-   "years_req": null,
-   "first_seen": "2026-11-26"
-  },
-  {
-   "org": "Max Planck Society",
-   "title": "Computational Physicist / Neutronics Engineer (m/f/d)",
-   "location": "Germany (Max Planck)",
-   "url": "https://www.mpg.de/job-ad6f3d738f260755d16dae512797d32e",
-   "posted": null,
-   "category": "Software",
    "source": "mpg-rss",
    "abroad": "Germany",
    "sector": "Academia & Research",
